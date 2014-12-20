@@ -1,0 +1,245 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+		   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml"><!--  manifest="skillpointcalc.appcache" -->
+
+	<!--
+	 This Script is Copyright by Tub (spam@authmann.de).
+	 The latest Version can be found on http://www.authmann.de/d2/mxl/skillpointplanner/
+
+	 You are permitted to store a copy on your computer for personal use.
+	 You are NOT permitted to distribute copies of this script. Ask for permission first.
+
+	 You are absolutely not permitted to sell this script, offer it on ad-supported sites or in any other way use it for monetary gain.
+
+	 kambala has permission to distribute this script in his offline version
+	-->
+
+	<head>
+		<title>Skillpoint-Planner for MedianXL</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="skillcalc.css" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" type="text/css" href="skillcalc_ie6.css" />
+		<![endif]-->
+		<script type="text/javascript" src="skills.js"></script>
+		<script type="text/javascript" src="skillpointcalc.js"></script>
+	</head>
+
+
+	<body onload="load()">
+
+	<div id="blackout" style="display: none;"> </div>
+
+	<div id="overlay" style="width: 1000px; margin: 0px auto; position: relative; display: none;">
+	<div id="overlay_save" style="text-align: center; display: none;">
+	
+		<span id="save_locally"><b>To save your Skill-Plan <u>offline</u></b>: Click the following Link, then bookmark the new page.<br />
+		<a id="save_url_locally" href="#" style="white-space: normal;">#</a>
+		<br />
+		<br />
+		</span>
+		<b>To save your Skill-Plan</b>: Click the following Link, then bookmark the new page.<br />
+		<a id="save_url" href="#" style="white-space: normal;">#</a>
+		<br />
+		<br />
+		<b>To share your Skill-Plan</b>: Just send the Link to your friends. You can also use this Forum-Code:
+		<input id="save_bbcode" type="text" style="width: 100%;" value="#" />
+		<br />
+		<br />
+		<a href="#" onClick="hideSave();return false;">back</a>
+	</div>
+
+	<div id="overlay_faq" style="top: 50px; display: none;">
+	<h1 style="text-align: center;">F.A.Q.</h1>
+	<ul>
+	<li><b>Q: What does this thingy do?</b><br />
+	A: It allows you to plan how many points you can put into each skill without running out of skill points when all those +maxskill-items start pouring in.</li>
+
+	<li><b>Q: I don't want to click the buttons 20 times until my skills are maxed!</b><br />
+	A: You can Shift-Click the + and - buttons.</li>
+
+	<li><b>Q: When will the most recent version be supported?</b><br />
+	A: usually after the official release. I will not support beta-versions, pre-releases or similar. Since I don't play MXL any more, I probably won't notice new releases right away - send me a PM on the forums if that happens.</li>
+
+	<li><b>Q: Can I plan a character with legacy items/charms?</b><br />
+	A: Not with this planner. That's intentional.</li>
+
+	<li><b>Q: Can I save my character?</b><br />
+	A: This is a planner, not a cheating tool. It will not create a character for you to play with.<br />
+	However, you can save your skill-plan, so you can look at it later, show it to your friends or link it in your guide. Just enter a name, hit the save button, then follow the instructions.</li>
+
+	<li><b>Q: Can I use this tool offline?</b><br />
+	A: Sure. Hit "File" -&gt; "Save Page As" to make a local copy. You can also download <a href="http://mxl.vn.cz/doc/" target="_blank">Full documentation in HTML format</a> which includes this calculator. Please note that you can only save your skill plans in the online version.</li>
+
+	<li><b>Q: How much damage will my skills do?</b><br />
+	A: I don't know, and my planner won't tell you.
+	Try the <a href="http://www.medianxl.com" target="_blank">Skill Progression Project</a>, although that's incomplete and partially outdated.</li>
+
+	<li><b>Q: Some Skill-Icons are wrong!</b><br />
+	A: Some Skill-Icons changed in newer patches. This calculator will always use the most current icon for each skill.</li>
+
+	<li><b>Q: I noticed a bug or have a suggestion</b><br />
+	A: Go ahead, post in <a href="http://www.medianxl.com" target="_blank">this thread</a>. I'll make sure to fix any serious bugs.</li>
+
+	<li><b>Q: I cannot put Points into "Light and Shadow"</b><br />
+	A: That's how the game worked before Omega 002. Pick any of the Light or Dark Level 1 skills first.</li>
+
+	<li><b>Q: Can I offer this tool on my homepage or similar?</b><br />
+	A: Not without my permission. Contact me first.</li>
+
+	<li><b>Q: Who should I thank for this nifty tool?</b><br />
+	A: Brother Laz of course, because he created the mod and the skill icons. :p<br />
+	I (<a href="http://www.medianxl.com" target="_blank">Tub</a>) just spent a couple of hours to hack a little 1000-line script together, hoping that others might find it as useful as I do.</li>
+
+	</ul>
+
+	<span style="display: block; text-align:center;">
+		<a href="#" onClick="showFaq(false);return false;">close FAQ</a>
+	</span>
+	</div>
+	</div>
+
+
+	<form id="mainform" action="" onsubmit="return false;">
+
+	<div style="width: 1000px; margin: 0 auto 10px auto; text-align: center;">
+	The most recent official version of this script can always be found at <a href="http://www.authmann.de/d2/mxl/skillpointplanner/">http://www.authmann.de/d2/mxl/skillpointplanner/</a>.
+	</div>
+
+<div style="text-align: center;">Insert link: <input id="load_input" style="width:600px;" /> <input type="button" value="Load" onclick="load(document.getElementById('load_input').value);" /></div>
+	
+	<table style="margin: 0 auto; border: 2px solid black;" cellspacing="0"><tr><td style="width: 500px; border-right: 2px solid black;" rowspan="18">
+
+	<!-- begin first cell -->
+	Median XL Version: <select name="version" size="1" onchange="changeVersion()">
+					<option value="199d">1.99d</option>
+					<option value="1A9">1.A9</option>
+					<option value="1D9">1.D9</option>
+					<option value="1E9">1.E9</option>
+					<option value="1F9">1.F9</option>
+					<option value="1G9">1.G9</option>
+					<option value="1Z9">1.Z9</option>
+					<option value="O001">&#937; 001</option>
+					<option value="O002">&#937; 002</option>
+					<option value="O003">&#937; 003</option>
+					<option value="2012">2012</option>
+					<option value="2012004">2012 v004</option>
+					<option value="2012005">2012 v005</option>
+					<option value="uxi">Ultimative XI</option>
+					<option value="uxiii" selected="selected">Ultimative XIII</option>
+				</select>
+	<select name="class" size="1" onchange="changeClass()">
+					<option value="1">Amazon</option>
+					<option value="2">Assassin</option>
+					<option value="3">Barbarian</option>
+					<option value="4">Druid</option>
+					<option value="5">Necromancer</option>
+					<option value="6">Paladin</option>
+					<option value="7">Sorceress</option>
+				</select>
+	Level <input type="text" value="120" name="clvl" size="3" maxlength="3" onchange="recalculate()" /><br />
+	Skill Plan name <input type="text" name="cname" value="" onchange="changeName()" /> <input type="button" value="Save" onclick="save()" /> <input type="button" onclick="resetSkills();" value="reset skills" /><br />
+	<br />
+	invested: <span id="pspent">0</span> of <span id="pavail">0</span> Points, 
+	maximum skill level: +<span id="slvlbonus">0</span><br />
+	<br />
+
+	<table border="0" width="100%" class="bonustable">
+		<tr><td>Den of Evil<br /><small>(+1 Skill Point each)</small></td><td>
+			<input type="checkbox" checked="checked" value="1" name="q1_0" onchange="recalculate()" /> Hatred<br />
+			<input type="checkbox" checked="checked" value="1" name="q1_1" onchange="recalculate()" /> Terror<br />
+			<input type="checkbox" checked="checked" value="1" name="q1_2" onchange="recalculate()" /> Destruction<br />
+		</td></tr>
+		<tr><td>Radament<br /><small>(+1 Skill Point each)</small></td><td>
+			<input type="checkbox" checked="checked" value="1" name="q2_0" onchange="recalculate()" /> Hatred<br />
+			<input type="checkbox" checked="checked" value="1" name="q2_1" onchange="recalculate()" /> Terror<br />
+			<input type="checkbox" checked="checked" value="1" name="q2_2" onchange="recalculate()" /> Destruction<br />
+		</td></tr>
+		<tr><td>Tyrael<br /><small>(+2 Skill Points each)</small></td><td>
+			<input type="checkbox" checked="checked" value="2" name="q3_0" onchange="recalculate()" /> Hatred<br />
+			<input type="checkbox" checked="checked" value="2" name="q3_1" onchange="recalculate()" /> Terror<br />
+			<input type="checkbox" checked="checked" value="2" name="q3_2" onchange="recalculate()" /> Destruction<br />
+		</td></tr>
+		<tr id="signetofskillrow"><td>Signets of Skill<br /><small>(+1 Skill Point each)</small></td><td>
+			<input type="checkbox" checked="checked" value="1" name="sos0" onchange="recalculate()" />
+			<input type="checkbox" checked="checked" value="1" name="sos1" onchange="recalculate()" />
+			<input type="checkbox" checked="checked" value="1" name="sos2" onchange="recalculate()" />
+		</td></tr>
+		<tr><td>Ennead challenge<br /><small>(unlocks ennead Skill<span id="enneadplusone">, +1 maximum Skill Level</span>)</small></td><td><input type="checkbox" checked="checked" value="1" name="ennead" onchange="recalculate()" /></td></tr>
+		<tr><td>Black Road challenge<br /><small>(unlocks Black Road Skill)</small></td><td><input type="checkbox" checked="checked" value="1" name="blackroad" onchange="recalculate()" /></td></tr>
+		<tr id="ac500_row"><td>Attribute Challenge 500<br /><small>(+2 maximum Skill Level)</small></td><td><input type="checkbox" value="2" name="ac500" onchange="recalculate()" /></td></tr>
+		<tr id="minigamerow"><td>Minigames<br /><small>(+1 maximum Skill Level each)</small></td><td>
+			<input type="checkbox" checked="checked" value="1" name="m0" onchange="recalculate()" /> Witch Queen<br />
+			<input type="checkbox" checked="checked" value="1" name="m1" onchange="recalculate()" /> Crowned<br />
+			<span id="windowsinhell"><input type="checkbox" checked="checked" value="1" name="m2" onchange="recalculate()" /> They have Windows in Hell<br /></span>
+			<input type="checkbox" checked="checked" value="1" name="m3" onchange="recalculate()" /> Mirror Mirror<br />
+		</td></tr>
+		<tr><td>Aldric Jitan: Moon of the Spider<br /><small>(+1 maximum Skill Level)</small></td><td><input type="checkbox" checked="checked" value="1" name="q4" onchange="recalculate()" /></td></tr>
+		<tr><td>Bartuc: Legacy of Blood<br /><small>(+2 maximum Skill Level)</small></td><td><input type="checkbox" checked="checked" value="2" name="q5" onchange="recalculate()" /></td></tr>
+		<tr><td>Bremmtown upgrade<br /><small>(+1 maximum Skill Level)</small></td><td><input type="checkbox" checked="checked" value="1" name="q6" onchange="recalculate()" /></td></tr>
+		<tr><td>Toraja upgrade<br /><small>(+<span id="toraja_bonus"></span> maximum Skill Level)</small></td><td><input type="checkbox" checked="checked" value="1" name="q7" onchange="recalculate()" /></td></tr>
+		<tr id="laz_upg"><td>Glorious Book of Median upgrade<br /><small>(+1 maximum Skill Level)</small></td><td><input type="checkbox" checked="checked" value="1" name="q10" onchange="recalculate()" /></td></tr>
+		<tr id="khanduran"><td>Khanduran Royal Pendant amulet (Realm-only)<br /><small>(+1 maximum Skill Level)</small></td><td><input type="checkbox" value="1" name="q11" onchange="recalculate()" /></td></tr>
+		<tr><td>Drekavac (Taha) gloves<br /><small>(+1 maximum Skill Level)</small></td><td><input type="checkbox" value="1" name="q8" onchange="recalculate()" /></td></tr>
+		<tr id="feels"><td>Feel Good Inc. (6x Fire) body armor<br /><small>(+(3 to 14) to Ancient Blood &rarr; +1 maximum Skill Level<br />if no hard point in Ancient Blood)</small></td><td><input type="checkbox" value="1" name="q12" onchange="uswitch(this); recalculate()" /></td></tr>
+		<tr id="slvl_by_item_row"><td><span id="venefica">Venefica (Qor) sorc body armor<br /><small>(+1 maximum Skill Level)</small></span>
+			<span id="hornedhunter">Horned Hunter sacred unique Stag Bow<br /><small>(+1 Wiccaning &rarr; +1 maximum Skill Level)</small></span>
+			</td><td><input type="checkbox" value="1" name="q9" onchange="uswitch(this); recalculate()" /></td></tr>
+		<tr id="energy_row"><td>Base Energy<br /><small>(+1 to Blood Skills each 100 Energy)</small></td><td><input type="text" size="4" value="15" name="energy" onchange="recalculate()" /></td></tr>
+		<tr><td colspan="2" style="text-align: center;">
+			<input type="button" onclick="checkAll(false);" value="check none" />
+			<input type="button" onclick="checkAll(true);" value="check all" />
+		</td></tr>
+	</table>
+
+	<br />
+	<br />
+	<div style="text-align: center;">
+		New to this calculator? See the <a href="#" onClick="showFaq();return false;">FAQ</a>
+	</div>
+
+	<!-- end first cell -->
+	</td>
+
+	<!-- begin autogenerated part -->
+		<td class="skillicon" id="skill21_img"></td><td style="width:200px"><span id="skill21_name">Name</span><br /><input type="button" id="skill21_minus" onclick="clickLower(event, 21)" value="-"/><input name="skill21_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill21_plus" onclick="clickRaise(event, 21)" value="+"/> <span id="skill21_max">0</span></td>	<td class="skillicon" id="skill26_img"></td><td style="width:200px"><span id="skill26_name">Name</span><br /><input type="button" id="skill26_minus" onclick="clickLower(event, 26)" value="-"/><input name="skill26_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill26_plus" onclick="clickRaise(event, 26)" value="+"/> <span id="skill26_max">0</span></td></tr>
+	<tr>
+		<td class="skillicon" id="skill22_img"></td><td style="width:200px"><span id="skill22_name">Name</span><br /><input type="button" id="skill22_minus" onclick="clickLower(event, 22)" value="-"/><input name="skill22_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill22_plus" onclick="clickRaise(event, 22)" value="+"/> <span id="skill22_max">0</span></td>	<td class="skillicon" id="skill27_img"></td><td style="width:200px"><span id="skill27_name">Name</span><br /><input type="button" id="skill27_minus" onclick="clickLower(event, 27)" value="-"/><input name="skill27_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill27_plus" onclick="clickRaise(event, 27)" value="+"/> <span id="skill27_max">0</span></td></tr>
+	<tr>
+		<td class="skillicon" id="skill23_img"></td><td style="width:200px"><span id="skill23_name">Name</span><br /><input type="button" id="skill23_minus" onclick="clickLower(event, 23)" value="-"/><input name="skill23_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill23_plus" onclick="clickRaise(event, 23)" value="+"/> <span id="skill23_max">0</span></td>	<td class="skillicon" id="skill28_img"></td><td style="width:200px"><span id="skill28_name">Name</span><br /><input type="button" id="skill28_minus" onclick="clickLower(event, 28)" value="-"/><input name="skill28_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill28_plus" onclick="clickRaise(event, 28)" value="+"/> <span id="skill28_max">0</span></td></tr>
+	<tr>
+		<td class="skillicon" id="skill24_img"></td><td style="width:200px"><span id="skill24_name">Name</span><br /><input type="button" id="skill24_minus" onclick="clickLower(event, 24)" value="-"/><input name="skill24_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill24_plus" onclick="clickRaise(event, 24)" value="+"/> <span id="skill24_max">0</span></td>	<td class="skillicon" id="skill29_img"></td><td style="width:200px"><span id="skill29_name">Name</span><br /><input type="button" id="skill29_minus" onclick="clickLower(event, 29)" value="-"/><input name="skill29_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill29_plus" onclick="clickRaise(event, 29)" value="+"/> <span id="skill29_max">0</span></td></tr>
+	<tr>
+		<td class="skillicon" id="skill25_img"></td><td style="width:200px"><span id="skill25_name">Name</span><br /><input type="button" id="skill25_minus" onclick="clickLower(event, 25)" value="-"/><input name="skill25_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill25_plus" onclick="clickRaise(event, 25)" value="+"/> <span id="skill25_max">0</span></td>	<td class="skillicon" id="skill30_img"></td><td style="width:200px"><span id="skill30_name">Name</span><br /><input type="button" id="skill30_minus" onclick="clickLower(event, 30)" value="-"/><input name="skill30_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill30_plus" onclick="clickRaise(event, 30)" value="+"/> <span id="skill30_max">0</span></td></tr>
+	<tr style="background-color: black;"><td colspan="4" style="height:4px"></td></tr>
+	<tr>
+		<td class="skillicon" id="skill11_img"></td><td style="width:200px"><span id="skill11_name">Name</span><br /><input type="button" id="skill11_minus" onclick="clickLower(event, 11)" value="-"/><input name="skill11_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill11_plus" onclick="clickRaise(event, 11)" value="+"/> <span id="skill11_max">0</span></td>	<td class="skillicon" id="skill16_img"></td><td style="width:200px"><span id="skill16_name">Name</span><br /><input type="button" id="skill16_minus" onclick="clickLower(event, 16)" value="-"/><input name="skill16_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill16_plus" onclick="clickRaise(event, 16)" value="+"/> <span id="skill16_max">0</span></td></tr>
+	<tr>
+		<td class="skillicon" id="skill12_img"></td><td style="width:200px"><span id="skill12_name">Name</span><br /><input type="button" id="skill12_minus" onclick="clickLower(event, 12)" value="-"/><input name="skill12_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill12_plus" onclick="clickRaise(event, 12)" value="+"/> <span id="skill12_max">0</span></td>	<td class="skillicon" id="skill17_img"></td><td style="width:200px"><span id="skill17_name">Name</span><br /><input type="button" id="skill17_minus" onclick="clickLower(event, 17)" value="-"/><input name="skill17_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill17_plus" onclick="clickRaise(event, 17)" value="+"/> <span id="skill17_max">0</span></td></tr>
+	<tr>
+		<td class="skillicon" id="skill13_img"></td><td style="width:200px"><span id="skill13_name">Name</span><br /><input type="button" id="skill13_minus" onclick="clickLower(event, 13)" value="-"/><input name="skill13_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill13_plus" onclick="clickRaise(event, 13)" value="+"/> <span id="skill13_max">0</span></td>	<td class="skillicon" id="skill18_img"></td><td style="width:200px"><span id="skill18_name">Name</span><br /><input type="button" id="skill18_minus" onclick="clickLower(event, 18)" value="-"/><input name="skill18_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill18_plus" onclick="clickRaise(event, 18)" value="+"/> <span id="skill18_max">0</span></td></tr>
+	<tr>
+		<td class="skillicon" id="skill14_img"></td><td style="width:200px"><span id="skill14_name">Name</span><br /><input type="button" id="skill14_minus" onclick="clickLower(event, 14)" value="-"/><input name="skill14_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill14_plus" onclick="clickRaise(event, 14)" value="+"/> <span id="skill14_max">0</span></td>	<td class="skillicon" id="skill19_img"></td><td style="width:200px"><span id="skill19_name">Name</span><br /><input type="button" id="skill19_minus" onclick="clickLower(event, 19)" value="-"/><input name="skill19_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill19_plus" onclick="clickRaise(event, 19)" value="+"/> <span id="skill19_max">0</span></td></tr>
+	<tr>
+		<td class="skillicon" id="skill15_img"></td><td style="width:200px"><span id="skill15_name">Name</span><br /><input type="button" id="skill15_minus" onclick="clickLower(event, 15)" value="-"/><input name="skill15_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill15_plus" onclick="clickRaise(event, 15)" value="+"/> <span id="skill15_max">0</span></td>	<td class="skillicon" id="skill20_img"></td><td style="width:200px"><span id="skill20_name">Name</span><br /><input type="button" id="skill20_minus" onclick="clickLower(event, 20)" value="-"/><input name="skill20_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill20_plus" onclick="clickRaise(event, 20)" value="+"/> <span id="skill20_max">0</span></td></tr>
+	<tr style="background-color: black;"><td colspan="4" style="height:4px"></td></tr>
+	<tr>
+		<td class="skillicon" id="skill1_img"></td><td style="width:200px"><span id="skill1_name">Name</span><br /><input type="button" id="skill1_minus" onclick="clickLower(event, 1)" value="-"/><input name="skill1_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill1_plus" onclick="clickRaise(event, 1)" value="+"/> <span id="skill1_max">0</span></td>	<td class="skillicon" id="skill6_img"></td><td style="width:200px"><span id="skill6_name">Name</span><br /><input type="button" id="skill6_minus" onclick="clickLower(event, 6)" value="-"/><input name="skill6_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill6_plus" onclick="clickRaise(event, 6)" value="+"/> <span id="skill6_max">0</span></td></tr>
+	<tr>
+		<td class="skillicon" id="skill2_img"></td><td style="width:200px"><span id="skill2_name">Name</span><br /><input type="button" id="skill2_minus" onclick="clickLower(event, 2)" value="-"/><input name="skill2_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill2_plus" onclick="clickRaise(event, 2)" value="+"/> <span id="skill2_max">0</span></td>	<td class="skillicon" id="skill7_img"></td><td style="width:200px"><span id="skill7_name">Name</span><br /><input type="button" id="skill7_minus" onclick="clickLower(event, 7)" value="-"/><input name="skill7_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill7_plus" onclick="clickRaise(event, 7)" value="+"/> <span id="skill7_max">0</span></td></tr>
+	<tr>
+		<td class="skillicon" id="skill3_img"></td><td style="width:200px"><span id="skill3_name">Name</span><br /><input type="button" id="skill3_minus" onclick="clickLower(event, 3)" value="-"/><input name="skill3_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill3_plus" onclick="clickRaise(event, 3)" value="+"/> <span id="skill3_max">0</span></td>	<td class="skillicon" id="skill8_img"></td><td style="width:200px"><span id="skill8_name">Name</span><br /><input type="button" id="skill8_minus" onclick="clickLower(event, 8)" value="-"/><input name="skill8_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill8_plus" onclick="clickRaise(event, 8)" value="+"/> <span id="skill8_max">0</span></td></tr>
+	<tr>
+		<td class="skillicon" id="skill4_img"></td><td style="width:200px"><span id="skill4_name">Name</span><br /><input type="button" id="skill4_minus" onclick="clickLower(event, 4)" value="-"/><input name="skill4_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill4_plus" onclick="clickRaise(event, 4)" value="+"/> <span id="skill4_max">0</span></td>	<td class="skillicon" id="skill9_img"></td><td style="width:200px"><span id="skill9_name">Name</span><br /><input type="button" id="skill9_minus" onclick="clickLower(event, 9)" value="-"/><input name="skill9_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill9_plus" onclick="clickRaise(event, 9)" value="+"/> <span id="skill9_max">0</span></td></tr>
+	<tr>
+		<td class="skillicon" id="skill5_img"></td><td style="width:200px"><span id="skill5_name">Name</span><br /><input type="button" id="skill5_minus" onclick="clickLower(event, 5)" value="-"/><input name="skill5_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill5_plus" onclick="clickRaise(event, 5)" value="+"/> <span id="skill5_max">0</span></td>	<td class="skillicon" id="skill10_img"></td><td style="width:200px"><span id="skill10_name">Name</span><br /><input type="button" id="skill10_minus" onclick="clickLower(event, 10)" value="-"/><input name="skill10_points" value="0" size="2" onchange="recalculate()" /><input type="button" id="skill10_plus" onclick="clickRaise(event, 10)" value="+"/> <span id="skill10_max">0</span></td></tr>
+	<!-- end autogenerated part -->
+
+	<tr><td colspan="4"> </td></tr>
+	</table>
+	<div class="copy">Version 1.13, Script © 2010-2014 <a href="http://www.medianxl.com">Tub</a>, MedianXL and all Skill Icons © <a href="http://modsbylaz.vn.cz/">BrotherLaz</a> and © <a href="http://www.medianxl.com">MarcoNecroX</a>.<br />
+	Please send bug reports and feedback to <a href="http://www.medianxl.com">this forum</a>.</div>
+
+	</form>
+	</body>
+	</html>

@@ -1,0 +1,1051 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head>
+		<title>
+			Shrine Bonuses List
+		</title>
+		
+		<link rel="shortcut icon" href="../images/favicon.ico">
+
+		<style type="text/css">
+			
+			
+			body
+			{
+				background-color: #CCCCCC; /*AAABBB*/
+				color: #222222;
+				margin: 5px 50px 0px 50px;
+				font-family: Arial, sans-serif;
+				font-size: 8pt;
+			}
+		
+			p, ul
+			{
+				margin-left: 50px;
+			}
+			
+			table.tablesorter
+			{
+				font-size:100%;
+				text-align:center;
+				margin-left:auto;
+				margin-right:auto;
+				border-collapse:collapse;
+				border-spacing:0;
+				margin-top:2em;
+				/*width:95%;*/
+				width:auto;
+				border-bottom: 2px solid black;
+				color: black;
+				margin-bottom:2em;
+			}
+			table.tablesorter thead > tr > th
+			{
+				font-size:120%;
+				border-top: 2px solid black;
+				border-bottom: 2px solid black;
+				white-space: nowrap;
+				padding-top:5px;
+				padding-bottom:5px;
+			}
+			table.tablesorter tbody tr td
+			{
+				padding-bottom:0.5em;
+			}
+			table.tablesorter tbody tr td:nth-child(3)
+			{
+				white-space: nowrap;
+			}
+			table.tablesorter tbody td:nth-child(3)
+			{
+				background-color: silver;
+			}
+			table.tablesorter tbody td:nth-child(4)
+			{
+				width:60px;
+			}
+			table.tablesorter tbody td:nth-child(5)
+			{
+				text-align:left;
+				/* vertical-align:top; */
+				padding-left:0.5em;
+				/*width:150px;*/
+			}
+			table.tablesorter tbody td:nth-child(2)
+			{
+				padding-right:5px;
+			}
+			
+			table.tablesorter tbody tr td:nth-child(2)
+			{
+				color: #886600; /* same as .holy */
+			}
+			table.tablesorter tbody tr td:nth-child(3)
+			{
+				color: #555570; /* same as .magic */
+			}
+			table.tablesorter tbody tr:not(:first-child) > td:nth-child(n+4)
+			{
+				border-top:1px solid silver;
+				border-bottom:1px solid silver;
+			}
+			
+			table.tablesorter tbody tr:hover
+			{
+				background-color: #e1e1e1;
+			}
+			table.tablesorter tbody tr:hover td:nth-child(3)
+			{
+				background-color: #d2d2d2;
+			}
+			/*table.tablesorter tbody tr:hover img
+			{
+				border:1px solid #F0F0F0;
+			}*/
+			
+			table.tablesorter td img
+			{
+				border:1px solid black;
+				padding:5px;
+			}
+			
+			hr
+			{
+				height: 1px;
+				border: 0px; /* overcomes hr color bug in FF */
+				border-top: 1px solid #444444; /* upper border only so the thickness can go below 2px */
+				width: 250px;
+				margin-left: 0px;
+				text-align: left;
+			}
+			.genbig
+			{
+				font-family: Arial, sans-serif;
+				font-size: 12pt;
+				font-weight: bold;
+				color: #626262; /* used to be 626270*/
+				margin-left:0px;
+			}
+			div.imabox {
+				border-style: hidden; /* left in css because I might want to turn it back on */
+				border-width:1px;
+				width:680px;
+				padding: 5px 5px 5px 0px;
+				margin: 15px 0px 0px 0px;
+				background-color: #AAAAAA;
+			}
+			.darkergrey {
+				color: #555555;
+			}
+			
+			a
+			{
+				color: #333333; /* used to be 333342 */
+				font-family: Arial, sans-serif;
+				font-size: 8pt;
+				text-decoration: none;
+			}
+			/* all unvisited links */
+			a:link
+			{
+				color: #333333;
+				text-decoration: none;
+			}
+			/* visited links */
+			a:visited
+			{
+				color: #333333;
+				text-decoration: none;
+			}
+			/* selected links */
+			a:active
+			{
+				color: #EEEEFF;
+				text-decoration: none;
+			}
+			/* links being hovered on */
+			a:hover
+			{
+				color: #EEEEFF;
+				text-decoration: none;
+			}
+			
+			.hidden
+			{
+				display: none;
+			}
+			.tr
+			{
+				display: default;
+			}
+			
+		</style>
+		<script type="text/javascript" src="JS/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="JS/jquery.tablesorter.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				// call the tablesorter plugin
+				$("table").tablesorter({
+					// sort on the column number 1 order asc
+					sortList: [[1,0]]
+				});
+			});
+
+			function filter_fu()
+			{
+				var f_type = document.getElementById('f_type').value;
+				var f_item = f_type;
+				
+
+				var f_table = document.getElementById('tablesorter');
+				var f_table_rows = f_table.rows;
+				var table_rows_length = f_table_rows.length;
+				
+				var arr_str_items = new Array();
+				var arr_str_items_length = 0;
+			
+				for (i=1; i<table_rows_length;i++) //0th row is the header row, so start from 1st
+				{
+					if (f_item == "Any")
+					{
+						f_table_rows[i].className="tr";
+					}
+					else
+					{
+						var colNumber_item = 4;
+						var str_items = "";
+					
+						str_items = f_table_rows[i].cells[colNumber_item].innerHTML;
+						arr_str_items = str_items.split(",");
+						arr_str_items_length = arr_str_items.length;
+						
+						
+						for (j=0; j<arr_str_items_length;j++)
+						{
+							item_ok = (arr_str_items[j].trim() == f_item);
+							if (item_ok)
+							{
+								break;
+							}
+						}
+						
+						if (item_ok)
+						{
+							f_table_rows[i].className="tr";
+						}
+						else
+						{
+							f_table_rows[i].className="hidden";
+						}
+					}
+				}
+			}
+
+		</script>
+		
+		
+	
+		
+	</head>
+	<body>
+	
+		<hr />
+			<p class="genbig">SHRINE BONUSES LIST</p> 
+
+			<p>This is a list of preset modifiers that can spawn on crafted items when shrine crafting or on rare, honorific and crafted items when shrine blessing.</p>
+			
+			<div class="imabox">
+				<p class="content"><b>What affixes will the item get when shrine crafting?</b>
+					<br />The resulting crafted item spawns with <u>0-3 preset crafting affixes</u> (seen in the table below) depending on luck and shrine type used, and <u>1-4 extra random rare affixes</u>.</p>
+
+				<p class="content">
+					See <a href="prefix_suffix.html" target="_self">THIS PAGE</a> for more information about <u>random rare affixes</u> when shrine crafting.
+				</p>
+			</div>
+			<div class="imabox">
+				<p class="content"><b>What affixes will the item get when shrine blessing?</b>
+					<br />The item retains its original affixes and gains <u>0-3 preset affixes</u> depending on luck and shrine type used. You can see them in the table below.</p>
+					
+			</div>
+			
+			<p class="content">Shrine crafting and blessing bonuses can stack when using the same shrine on an item, for a possibility for a double stat.</p>
+			
+			<p>See <a href="..\cube.html#shrines" target="_self">THIS PAGE</a> for more information about shrine crafting and shrine blessing.</p>
+			
+			<hr />
+			
+			<p>You can:
+			<ul>
+				<li>Sort the table by clicking a column name. Shift+click allows you to sort by multiple columns.</li>
+				<li>Highlight a row and get column names by moving the mouse over them.</li>
+				<li>Get table column explanations by moving the mouse over the column names.</li>
+			</ul></p>
+		
+		<hr />
+		
+		<!-- 
+		
+		Craft Sacred Minor (Armor)	ct1a = Armor (except Body Armor)
+		Craft Sacred Major (Armor)	ct2a = Body Armor
+		Craft Sacred Minor (Weapon)	ct1w = One-Handed Weapons
+		Craft Sacred Major (Weapon)	ct2w = Two-Handed Weapons
+
+		
+		-->
+		<label for="f_type" title="Item Type">Item Type Filter:
+
+		<select name="f_type" id="f_type" size=1 title="Item Type" onchange="filter_fu();">
+			<option selected='selected'>Any</option>
+			<option>One-Handed Weapons</option>
+			<option>Two-Handed Weapons</option>
+			<option>Armor (except Body Armor)</option>
+			<option>Body Armor</option>
+		</select></label>
+
+		<hr />
+		
+		
+		<table id="tablesorter" class="tablesorter">
+			<thead>
+				<tr>
+					<th title="Shrine image.">
+						Image
+					</th>
+					<th title="Shrine name.">
+						Shrine
+					</th>
+					<th width="270px" title="Stats indicate the 0-3 preset affixes the item can gain when crafting or blessing with a shrine.">
+						Stats
+					</th>
+					<th title="The chance to get each modifier.">
+						Chance
+					</th>
+					<th title="Indicates on which items the shrine stats can spawn.">
+						Items
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\enchanted.png" />
+					</td>
+					<td>
+						<b>Enchanted</b>
+					</td>
+					<td>
+						+(3 to 15)% to Physical/Magic Spell Damage<br />
+						Magic Resist +(1 to 2)%<br />
+						Decrease Maximum Mana -10%
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					50%
+					</td>
+					<td>
+						One-Handed Weapons, Armor (except Body Armor)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\enchanted.png" />
+					</td>
+					<td>
+						<b>Enchanted</b>
+					</td>
+					<td>
+						+(4 to 30)% to Physical/Magic Spell Damage<br />
+						Magic Resist +(2 to 4)%<br />
+						Decrease Maximum Mana -15%
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					50%
+					</td>
+					<td>
+						Two-Handed Weapons, Body Armor
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\sacred.png" />
+					</td>
+					<td>
+						<b>Sacred</b>
+					</td>
+					<td>
+						+(3 to 15)% to Cold Spell Damage<br>
+						-(6 to 15)% to Enemy Cold Resistance<br>
+						Decrease Maximum Mana -10%
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					50%
+					</td>
+					<td>
+						One-Handed Weapons, Armor (except Body Armor)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\ornate.png" />
+					</td>
+					<td>
+						<b>Ornate</b>
+					</td>
+					<td>
+						+(3 to 15)% to Lightning Spell Damage<br>
+						-(6 to 15)% to Enemy Lightning Resistance<br>
+						Decrease Maximum Mana -10%
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					50%
+					</td>
+					<td>
+						One-Handed Weapons, Armor (except Body Armor)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\shimmering.png" />
+					</td>
+					<td>
+						<b>Shimmering</b>
+					</td>
+					<td>
+						+(3 to 15)% to Poison Spell Damage<br>
+						-(6 to 15)% to Enemy Poison Resistance<br>
+						Decrease Maximum Mana -10%
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					50%
+					</td>
+					<td>
+						One-Handed Weapons, Armor (except Body Armor)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\creepy.png" />
+					</td>
+					<td>
+						<b>Creepy</b>
+					</td>
+					<td>
+						+(4 to 25) to Strength<br>
+						(4 to 10)% Bonus to Strength<br>
+						(2 to 5)% Chance of Crushing Blow
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					25%
+					</td>
+					<td>
+						One-Handed Weapons, Armor (except Body Armor)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\gloomy.png" />
+					</td>
+					<td>
+						<b>Gloomy</b>
+					</td>
+					<td>
+						(1 to 5)% Chance of Uninterruptable Attack<br>
+						Damage Reduced by (1 to 5)<br>
+						+(20 to 80)% Enhanced Defense
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					50%
+					</td>
+					<td>
+						Armor (except Body Armor)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\fascinating.png" />
+					</td>
+					<td>
+						<b>Fascinating</b>
+					</td>
+					<td>
+						+(4 to 30)% to Fire Spell Damage<br>
+						-(9 to 30)% to Enemy Fire Resistance<br>
+						Decrease Maximum Mana -15%
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					50%
+					</td>
+					<td>
+						Two-Handed Weapons, Body Armor
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\weird.png" />
+					</td>
+					<td>
+						<b>Weird</b>
+					</td>
+					<td>
+						+(2 to 38) to Maximum Damage<br>
+						+(2 to 8) to Minimum Damage
+					</td>
+					<td>
+					50%<br />
+					50%
+					</td>
+					<td>
+						Body Armor
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\quiet.png" />
+					</td>
+					<td>
+						<b>Quiet</b>
+					</td>
+					<td>
+						+(4 to 25) to Vitality<br>
+						(4 to 10)% Bonus to Vitality<br>
+						Replenish Life +(1 to 10)
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					25%
+					</td>
+					<td>
+						One-Handed Weapons, Armor (except Body Armor)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\tainted.png" />
+					</td>
+					<td>
+						<b>Tainted</b>
+					</td>
+					<td>
+						+(9 to 90)% Bonus to Summoned Minion Damage<br>
+						+(9 to 90)% Bonus to Summoned Minion Attack Rating
+					</td>
+					<td>
+					50%<br />
+					50%
+					</td>
+					<td>
+						Two-Handed Weapons, Body Armor
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\sacred.png" />
+					</td>
+					<td>
+						<b>Sacred</b>
+					</td>
+					<td>
+						+(4 to 30)% to Cold Spell Damage<br>
+						-(9 to 30)% to Enemy Cold Resistance<br>
+						Decrease Maximum Mana -15%
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					50%
+					</td>
+					<td>
+						Two-Handed Weapons, Body Armor
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\weird.png" />
+					</td>
+					<td>
+						<b>Weird</b>
+					</td>
+					<td>
+						+(2 to 38) to Maximum Damage<br>
+						+(2 to 8) to Minimum Damage<br>
+						+(30 to 120)% Enhanced Damage
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					50%
+					</td>
+					<td>
+						Two-Handed Weapons
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\abandoned.png" />
+					</td>
+					<td>
+						<b>Abandoned</b>
+					</td>
+					<td>
+						+(6 to 35) to Dexterity<br>
+						(6 to 15)% Bonus to Dexterity<br>
+						(36 to 210)% Bonus to Attack Rating
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					25%
+					</td>
+					<td>
+						Two-Handed Weapons, Body Armor
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\tainted.png" />
+					</td>
+					<td>
+						<b>Tainted</b>
+					</td>
+					<td>
+						+(6 to 60)% Bonus to Summoned Minion Damage<br>
+						+(6 to 60)% Bonus to Summoned Minion Attack Rating
+					</td>
+					<td>
+					50%<br />
+					50%
+					</td>
+					<td>
+						One-Handed Weapons, Armor (except Body Armor)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\stone.png" />
+					</td>
+					<td>
+						<b>Stone</b>
+					</td>
+					<td>
+						All Resists +(2 to 20)%<br>
+						Magic Damage Reduced by (2 to 20)
+					</td>
+					<td>
+					50%<br />
+					50%
+					</td>
+					<td>
+						One-Handed Weapons, Armor (except Body Armor)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\abandoned.png" />
+					</td>
+					<td>
+						<b>Abandoned</b>
+					</td>
+					<td>
+						+(4 to 25) to Dexterity<br>
+						(4 to 10)% Bonus to Dexterity<br>
+						(24 to 150)% Bonus to Attack Rating
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					25%
+					</td>
+					<td>
+						One-Handed Weapons, Armor (except Body Armor)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\shimmering.png" />
+					</td>
+					<td>
+						<b>Shimmering</b>
+					</td>
+					<td>
+						+(4 to 30)% to Poison Spell Damage<br>
+						-(9 to 30)% to Enemy Poison Resistance<br>
+						Decrease Maximum Mana -15%
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					50%
+					</td>
+					<td>
+						Two-Handed Weapons, Body Armor
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\magical.png" />
+					</td>
+					<td>
+						<b>Magical</b>
+					</td>
+					<td>
+						+(4 to 40)% Bonus to Summoned Minion Life<br>
+						+(4 to 20)% Bonus to Summoned Minion Resistances
+					</td>
+					<td>
+					50%<br />
+					50%
+					</td>
+					<td>
+						One-Handed Weapons, Armor (except Body Armor)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\gloomy.png" />
+					</td>
+					<td>
+						<b>Gloomy</b>
+					</td>
+					<td>
+						(2 to 8)% Chance of Uninterruptable Attack<br>
+						Damage Reduced by (2 to 8)<br>
+						+(30 to 120)% Enhanced Defense
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					50%
+					</td>
+					<td>
+						Body Armor
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\quiet.png" />
+					</td>
+					<td>
+						<b>Quiet</b>
+					</td>
+					<td>
+						+(6 to 35) to Vitality<br>
+						(6 to 15)% Bonus to Vitality<br>
+						Replenish Life +(2 to 15)
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					25%
+					</td>
+					<td>
+						Two-Handed Weapons, Body Armor
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\weird.png" />
+					</td>
+					<td>
+						<b>Weird</b>
+					</td>
+					<td>
+						+(1 to 25) to Maximum Damage<br>
+						+(1 to 5) to Minimum Damage
+					</td>
+					<td>
+					50%<br />
+					50%
+					</td>
+					<td>
+						Armor (except Body Armor)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\fascinating.png" />
+					</td>
+					<td>
+						<b>Fascinating</b>
+					</td>
+					<td>
+						+(3 to 15)% to Fire Spell Damage<br>
+						-(6 to 15)% to Enemy Fire Resistance<br>
+						Decrease Maximum Mana -10%
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					50%
+					</td>
+					<td>
+						One-Handed Weapons, Armor (except Body Armor)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\magical.png" />
+					</td>
+					<td>
+						<b>Magical</b>
+					</td>
+					<td>
+						+(6 to 60)% Bonus to Summoned Minion Life<br>
+						+(6 to 30)% Bonus to Summoned Minion Resistances
+					</td>
+					<td>
+					50%<br />
+					50%
+					</td>
+					<td>
+						Two-Handed Weapons, Body Armor
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\eerie.png" />
+					</td>
+					<td>
+						<b>Eerie</b>
+					</td>
+					<td>
+						+(6 to 35) to Energy<br>
+						(6 to 15)% Bonus to Energy<br>
+						+(9 to 90) Energy Factor to Spell Damage
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					25%
+					</td>
+					<td>
+						Two-Handed Weapons, Body Armor
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\eerie.png" />
+					</td>
+					<td>
+						<b>Eerie</b>
+					</td>
+					<td>
+						+(4 to 25) to Energy<br>
+						(4 to 10)% Bonus to Energy<br>
+						+(6 to 60) Energy Factor to Spell Damage
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					25%
+					</td>
+					<td>
+						One-Handed Weapons, Armor (except Body Armor)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\gloomy.png" />
+					</td>
+					<td>
+						<b>Gloomy</b>
+					</td>
+					<td>
+						(1 to 5)% Chance of Uninterruptable Attack<br>
+						Damage Reduced by (1 to 5)
+					</td>
+					<td>
+					50%<br />
+					50%
+					</td>
+					<td>
+						One-Handed Weapons
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\hidden.png" />
+					</td>
+					<td>
+						<b>Hidden</b>
+					</td>
+					<td>
+						1% Reanimate As: (1256 to 1566)<sup style="color:black;">*</sup><br>
+						2% Reanimate As: (1256 to 1566)<sup style="color:black;">*</sup><br>
+						2% Reanimate As: (1256 to 1566)<sup style="color:black;">*</sup>
+					</td>
+					<td>
+					25%<br />
+					10%<br />
+					5%
+					</td>
+					<td>
+						One-Handed Weapons, Two-Handed Weapons, Armor (except Body Armor), Body Armor
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\ornate.png" />
+					</td>
+					<td>
+						<b>Ornate</b>
+					</td>
+					<td>
+						+(4 to 30)% to Lightning Spell Damage<br>
+						-(9 to 30)% to Enemy Lightning Resistance<br>
+						Decrease Maximum Mana -15%
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					50%
+					</td>
+					<td>
+						Two-Handed Weapons, Body Armor
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\stone.png" />
+					</td>
+					<td>
+						<b>Stone</b>
+					</td>
+					<td>
+						All Resists +(3 to 30)%<br>
+						Magic Damage Reduced by (3 to 30)
+					</td>
+					<td>
+					50%<br />
+					50%
+					</td>
+					<td>
+						Two-Handed Weapons, Body Armor
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\weird.png" />
+					</td>
+					<td>
+						<b>Weird</b>
+					</td>
+					<td>
+						+(1 to 25) to Maximum Damage<br>
+						+(1 to 5) to Minimum Damage<br>
+						+(20 to 80)% Enhanced Damage
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					50%
+					</td>
+					<td>
+						One-Handed Weapons
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\spiritual.png" />
+					</td>
+					<td>
+						<b>Spiritual</b>
+					</td>
+					<td>
+						(15 to 150)% Extra Gold from Monsters<br>
+						(6 to 60)% Better Chance of Getting Magic Items
+					</td>
+					<td>
+					50%<br />
+					50%
+					</td>
+					<td>
+						Two-Handed Weapons, Body Armor
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\creepy.png" />
+					</td>
+					<td>
+						<b>Creepy</b>
+					</td>
+					<td>
+						+(6 to 35) to Strength<br>
+						(6 to 15)% Bonus to Strength<br>
+						(3 to 7)% Chance of Crushing Blow
+					</td>
+					<td>
+					50%<br />
+					50%<br />
+					25%
+					</td>
+					<td>
+						Two-Handed Weapons, Body Armor
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\gloomy.png" />
+					</td>
+					<td>
+						<b>Gloomy</b>
+					</td>
+					<td>
+						(2 to 8)% Chance of Uninterruptable Attack<br>
+						Damage Reduced by (2 to 8)
+					</td>
+					<td>
+					50%<br />
+					50%
+					</td>
+					<td>
+						Two-Handed Weapons
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="..\images\cube\shrines\spiritual.png" />
+					</td>
+					<td>
+						<b>Spiritual</b>
+					</td>
+					<td>
+						(10 to 100)% Extra Gold from Monsters<br>
+						(4 to 40)% Better Chance of Getting Magic Items
+					</td>
+					<td>
+					50%<br />
+					50%
+					</td>
+					<td>
+						One-Handed Weapons, Armor (except Body Armor)
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p class="content"><sup>*</sup> See <a href="monster_skills.html" target="_self">THIS PAGE</a> for the list of reanimates.</p>
+		<hr />
+	</body>
+</html>
+
+<!-- This document saved from http://grig.vlexofree.com/shrinebonuses.html -->

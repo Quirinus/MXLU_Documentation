@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gift &amp; Special Box</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9;chrome=1;" />
+		<style type="text/css">
+			
+			body
+			{
+				background-color: #CCCCCC; /*AAABBB*/
+				color: #222222;
+				margin: 5px 50px 0px 50px;
+				font-family: Arial, sans-serif;
+				font-size: 8pt;
+			}
+		
+			p
+			{
+				margin-left: 50px;
+			}
+			hr
+			{
+				height: 1px;
+				border: 0px; /* overcomes hr color bug in FF */
+				border-top: 1px solid #444444; /* upper border only so the thickness can go below 2px */
+				width: 250px;
+				margin-left: 0px;
+				text-align: left;
+			}
+			.genbig {
+				font-family: Arial, sans-serif;
+				font-size: 12pt;
+				font-weight: bold;
+				color: #626262; /* used to be 626270*/
+				margin-left: 25px;
+			}
+			.gensmall {
+				font-family: Arial, sans-serif;
+				font-size: 10pt;
+				font-weight: bold;
+				color: #626262;
+				margin-left: 25px;
+				}
+			.genflat {
+				font-family: Arial, sans-serif;
+				font-size: 8pt;
+				text-align: justify;
+				margin-left: -25px;
+				}
+			/* charm pics + text on the right (div div img /div div text /div /div) */
+				div.charms {
+				/* text-align:center; */ /* for everything centered */
+				margin-bottom:1em;
+				}
+
+				div.charms img {
+				padding: 7px;
+				float:right; /* for everything tabled */
+				}
+
+				div.charms div {
+				display: inline-block;
+				vertical-align:middle;
+				text-align:center;
+				}
+
+				div.charms  > :nth-child(1) {
+				/* margin-right: 1em; */
+				margin-left:66px; /* for everything tabled */
+				width:72px; /* for everything tabled */
+				}
+
+				div.charms  > :nth-child(2) {
+				width:375px; /* for everything tabled */
+				}
+				.unique {
+					color: #706033;
+					}
+				.magic {
+					color: #555570;
+					}
+				.rare {
+					color: #909000;
+					}
+				.orange {
+					color: #b7741c; /* #d08420; from ingame */ /* #706033; old bright one*/
+					}
+				.brightgreen {
+					color: #00ca33; /* plagewrath reanim and similar, from the game */ /* #20B020 old */
+				}
+				.reagent {
+					color: #884400;
+					margin:0px 0px 0px 65px;
+					/*border: 1px solid #665500;
+					padding: 2px;*/
+					}
+				img.item {
+					margin-right: 3px;
+					float: left;
+					padding: 10px;
+					}
+				img {
+					border: 1px solid #000000;
+					border-color: #000000;
+					}
+				/* -------------------- LINK STYLES -------------------- */
+
+				/* the links in the regular text; this appears to be ignored? I suspect it conflicts with something else, like images */
+				a {
+					color: #333333; /* used to be 333342 */
+					font-family: Arial, sans-serif;
+					font-size: 8pt;
+					text-decoration: none;
+					}
+				/* all unvisited links */
+				a:link  {
+					color: #333333;
+					text-decoration: none;
+					}
+				/* visited links */
+				a:visited  {
+					color: #333333;
+					text-decoration: none;
+					}
+				/* selected links */
+				a:active  {
+					color: #EEEEFF;
+					text-decoration: none;
+					}
+				/* links being hovered on */
+				a:hover  {
+					color: #EEEEFF;
+					text-decoration: none;
+					}
+					
+				table#gift_box_items
+				{
+					text-align:center;
+					border-spacing: 0;
+					border-collapse:collapse;
+					white-space:nowrap;
+					margin-left:60px;
+				}
+				table#gift_box_items tr th
+				{
+					text-align:right;
+					padding-right:5px;
+					border-right:1px solid black;
+				}
+				table#gift_box_items tr :nth-child(2)
+				{
+					padding-left:5px;
+				}
+				table#gift_box_items tr:nth-child(odd) td
+				{
+					background-color: silver;
+				}
+				table#gift_box_items tr:hover th, table#gift_box_items tr:hover td
+				{
+					background-color: #e1e1e1;
+				}
+				
+		</style>
+	</head>
+	<body>
+		<hr />
+		<p class="genbig">GIFT BOX</p>
+		<p>One can find a <span class="orange">Gift Box</span> by killing <span class="unique">Griswold</span> in Tristram on Hatred difficulty. You may do so as many times as
+		you want.</p>
+		<div class="charms">
+			<div>
+				<img src="images/cube/gift_box.png" alt="Gift Box" title="Gift Box" />
+			</div>
+			<div>
+			<span class="orange">Gift Box</span>
+			<br />Put in the Horadric Cube and click Transmute!
+			<br />Enjoy your gifts!</div>
+		</div>
+		<p>As the description says, you can cube it to get some items.</p>
+		<p></p>
+		<div class="reagent" style="max-width: 750px">Gift Box &rarr; 3 different Regular Unique items (based on
+		Character Class)</div>
+		<p>It always gives the same predefined unique item classes, depending on your Character Class.<br />
+		Some of the items can even be higher than Tier 1.</p>
+		
+		<table id="gift_box_items">
+			<tr><th>Assassin</th><td>Assassin Weapon</td><td>Assasin Shield</td><td>Body Armor</td></tr>
+			<tr><th>Amazon</th><td>Amazon Weapon</td><td>Amazon Helm</td><td>Gloves</td></tr>
+			<tr><th>Barbarian</th><td>Barbarian Class Item</td><td>Sword</td><td>Belt</td></tr>
+			<tr><th>Druid</th><td>Druid Weapon<br />or Other Weapon</td><td>Druid Helm</td><td>Boots</td></tr>
+			<tr><th>Necromancer</th><td>Necromancer Weapon</td><td>Body Armor</td><td>Helm</td></tr>
+			<tr><th>Paladin</th><td>Paladin Weapon</td><td>Paladin Shield</td><td>Paladin Helm</td></tr>
+			<tr><th>Sorceress</th><td>Sorceress Weapon<br />or Staff</td><td>Sorceress Armor</td><td>Staff</td></tr>
+		</table>
+		<p>
+			<b>NOTE</b>: These Uniques cannot be disenchanted, but can be disenchanted normally after uptiering them.
+		</p>
+		<hr />
+		<p class="genbig">SPECIAL BOX</p>
+		<p>One can find a <span class="orange">Special Box</span> by killing <span class="unique">Griswold</span> in Tristram on Terror difficulty. You may do so as many times as
+		you want.</p>
+		<div class="charms">
+			<div>
+				<img src="images/cube/special_box.png" alt="Special Box" title="Special Box" />
+			</div>
+			<div>
+			<span class="orange">Special Box</span>
+			<br />Cube with an Oil and click Transmute!
+			<br />Enjoy your gifts!</div>
+		</div>
+		<!-- can carry max 1, like charms? -->
+		<p>As the description says, to get some items, you can cube it with any of the 6 Oils available at weapon shops.<br />Note that some outcomes are more likely than other.</p>
+		<p></p>
+		<div class="reagent" style="max-width: 750px">Special Box + Oil of Renewal &rarr; (1 to 3) Arcane Shards or (1 or 3) Arcane Crystals</div>
+		<div class="reagent" style="max-width: 750px">Special Box + Oil of Enchantment &rarr; 1 to 3 Signets of Learning</div>
+		<div class="reagent" style="max-width: 750px">Special Box + Oil of Craft &rarr; 1 to 3 Shrines (random)</div>
+		<div class="reagent" style="max-width: 750px">Special Box + Oil of Disjunction &rarr; 1 to 3 high level runes</div>
+		<div class="reagent" style="max-width: 750px">Special Box + Oil of Absolution &rarr; Set item<sup>*</sup> or Apple</div>
+		<div class="reagent" style="max-width: 750px">Special Box + Oil of Luck &rarr; Blessed Oil of Luck<sup>**</sup></div>
+		<p><sup>*</sup> One specific item from each set can never appear. Testament of the Apes, Yshari and Tribute set items can never appear.<br />The item will have just 1 socket, and cannot be disenchanted to Arcane Shards.<br />
+		<sup>**</sup> Check the following sub-section for a detailed explanation.</p>
+		
+		<p><span class="gensmall genflat">BLESSED LUCKY BONUS</span></p>
+		
+			<p style="max-width:600px;">As the Lucky Bonus recipe, this one adds small bonuses to the items. There's a lower chance to gain the bonuses, but they are much better than the Lucky Bonus. Any item that has been transmuted with this recipe will show up as "<span class="brightgreen" style="white-space:nowrap;">Already upgraded!</span>". Items marked as such cannot be used for this recipe.</p>
+			<p>
+				<div class="reagent" style="max-width: 750px">Any item + Blessed Oil of Luck &rarr; returns item, may add bonuses</div>
+			</p>
+			<p class="content"><i>This recipe has 15% chance to add any of the following bonuses:</i></p>
+			
+			<p class="content"><b>Weapon: </b><span class="magic">+(40 to 60)% Enhanced Damage</span> and/or <span class="magic">(100 to 200)% Bonus to Attack Rating</span>
+				<br /><b>Armour: </b><span class="magic">+(40 to 60)% Enhanced Defense</span> and/or <span class="magic">Damage Reduced by (1 to 2)%</span>
+				<br /><b>Amulet: </b>  <span class="magic">+(1 to 2) to All Skills</span>
+				<br /><b>Ring: </b><span class="magic">+(10 to 15)% to Spell Damage</span>
+				<br /><b>Quiver: </b>  <span class="magic">(5 to 10)% Bonus to all Attributes</span>
+				<br /><b>Jewel: </b><span class="magic">+(2 to 4) to Strength</span> and/or <span class="magic">+(2 to 4) to Dexterity</span> and/or <span class="magic">+(2 to 4) to Energy</span> and/or <span class="magic">+(2 to 4) to Vitality</span>
+			</p>
+			<p>See <a href="cube.html#affix" target="_self">THIS PAGE</a> for more information about the Lucky Bonus.</p>
+		
+		<hr />
+	</body>
+</html>

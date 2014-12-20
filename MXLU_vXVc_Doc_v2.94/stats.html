@@ -1,0 +1,1438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+  <title>Stats Explanation</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="m_2.css" />
+  
+  <style type="text/css">
+	table.mini_table
+	{
+		margin-left:275px;
+		border-spacing:0;
+		border-collapse:collapse;
+		white-space:nowrap;
+		text-align:center;
+		border-bottom:1px solid black;
+	}
+	
+	table.mini_table tr :first-child
+	{
+		text-align:right;
+	}
+	
+	table.mini_table tr > *
+	{
+		padding-right:5px;
+	}
+	
+	table.mini_table tr th
+	{
+		border-top:1px solid black;
+		border-bottom:1px solid black;
+	}
+	
+	/*table tbody tr:not(:first-child) > *
+	{
+		border-top:1px solid silver;
+		border-bottom:1px solid silver;
+	}*/
+	
+	table.mini_table tr:nth-child(even)
+	{
+		background-color:silver;
+	}
+	
+	table.mini_table tr:not(:first-child):hover
+	{
+		background-color: #e1e1e1;
+	}
+	
+  </style>
+  
+</head>
+
+<body class="content">
+
+A second has 25 frames.
+
+<p class="genbig">Concept: WDM</p>
+
+	<p class="content">WDM is short for 'Weapon Damage Modifier'. It refers to attacks/skills (melee and missile) whose damage depends on the damage of the equipped weapon (even if the damage is converted to another element). Those attacks have a chance to hit roll. Spells are not WDM because their damage does not depend on the equipped weapon damage (they do not trigger a chance to hit roll).</p>
+	
+	<p class="content">For example, the Paladin Vessel of Judgement spell creates missiles that do physical damage, but it does not depend on the damage of the equipped weapon, so it is not a WDM skill and does not have a chance to hit roll.<br />On the other hand, Barbarian's Stormblast melee skill creates missiles that do 1/2 damage that a normal melee attack does (so it's a WDM skill).
+	
+	<p class="content">Note that a melee skill still always hits with a normal melee attack (some rare skills modify it) if it creates missiles. Ie. the original melee attack is the trigger for creating the missiles. This confusion might arise with some skill that only list the modifiers for the missiles created with the attack and don't list any modifiers for the original melee attack - eg. Stormblast, again.</p>
+	
+<p class="genbig">Concept: Damage conversion</p>
+
+	<p class="content"></p>
+	
+<p class="genbig">Concept: Attacks with charges</p>
+
+<p class="content"></p>
+
+<p class="genbig">Concept: Special Monster Types</p>
+
+	<!--
+	<p class="genbig genflat content">Totem</p>
+
+	<ul class="content">
+		<li></li>
+	</ul>
+	
+	<p class="genbig genflat content">Minion</p>
+
+	<ul class="content">
+		<li></li>
+	</ul>
+	
+	<p class="genbig genflat content">Undead</p>
+
+	<ul class="content">
+		<li></li>
+	</ul>
+	
+	<p class="genbig genflat content">Demon</p>
+
+	<ul class="content">
+		<li></li>
+	</ul>
+	
+	<p class="genbig genflat content">Elite</p>
+
+	<ul class="content">
+		<li></li>
+	</ul>
+	
+	<p class="genbig genflat content">Heroic</p>
+
+	<ul class="content">
+		<li></li>
+	</ul>
+	
+	<p class="genbig genflat content">Veteran</p>
+
+	<ul class="content">
+		<li></li>
+	</ul>
+	
+	<p class="genbig genflat content">Ubermonsters</p>
+
+	<ul class="content">
+		<li></li>
+	</ul>
+	
+	<p class="genbig genflat content">Champion (Champion, Berserker, Fanatic, Ghostly and Possessed) &ndash; disabled in Median XL</p>
+
+	<ul class="content magic">
+		<li></li>
+	</ul>
+	
+	<p class="genbig genflat content">Unique &ndash; disabled in Median XL</p>
+
+	<ul class="content">
+		<li>80% chance to spawn when a random Champion or Unique pack spawns</li>
+		<li>Always have one unique bonus in Hatred, and one more added per each next difficulty</li>
+		<br />
+		<li><span class="magic">Ignore Target's Defense</span> doesn't work</li>
+		<li>Chilled instead of frozen (with any chill modifiers)</li>
+		<li><span class="magic">Stun Attack</span> has only 10% chance to apply Stun</li>
+		<li>Life loss from <span class="magic">Open Wounds</span> is 1/2</li>
+		<li>Immune to effects that alter AI behavior (eg. monster flee)</li>
+	</ul>-->
+	
+	<p class="genbig genflat content">Super Unique</p>
+
+	<ul class="content">
+		<li>Spawn always on the same place</li>
+		<li>Can have predefined unique bonuses</li>
+		<li>Additional random unique bonus is added in Terror and one more in Destruction</li>
+		<br />
+		<li><span class="magic">Ignore Target's Defense</span> doesn't work</li>
+		<li><span class="magic">-% Target Defense</span> is only 1/2 effective</li>
+		<li>Chilled instead of frozen (with any chill modifiers)</li>
+		<li><span class="magic">Stun Attack</span> has only 10% chance to apply Stun</li>
+		<li>Some can't be <span class="magic">Knockbacked</span></li>
+		<li>Life lost to <span class="magic">Crushing Blow</span> and <span class="magic">Open Wounds</span> is reduced by 1/2</li>
+		<li>Do not naturally regenerate</li>
+		<li>Immune to effects that alter AI behavior (eg. monster flee)</li>
+	</ul>
+
+	<p class="genbig genflat content">Boss</p>
+
+	<ul class="content">
+		<li>Spawn always on the same place</li>
+		<li>Griswold, Radament and Nihlathak gain a random unique bonus in Terror and one more in Destruction</li>
+		<br />
+		<li><span class="magic">Ignore Target's Defense</span> doesn't work</li>
+		<li><span class="magic">-% Target Defense</span> is only 1/2 effective</li>
+		<li>Chilled instead of frozen (with any chill modifiers)</li>
+		<li><span class="magic">Stun Attack</span> does not work</li>
+		<li>Most can't be <span class="magic">Knockbacked</span></li>
+		<li>Life lost to <span class="magic">Crushing Blow</span> and <span class="magic">Open Wounds</span> is reduced by 1/2</li>
+		<li>Some do naturally regenerate</li>
+		<li>Immune to effects that alter AI behavior (eg. monster flee)</li>
+	</ul>
+	
+	<!-- not sure if there's Evil in Median XL -->
+	<!--<p class="genbig genflat content">Evil</p>
+
+	<ul class="content">
+		<li></li>
+	</ul>-->
+
+<p class="genbig" id="concept_hit_recovery">Concept: Animation-lock and Hit recovery</p>
+
+<p class="content"><b>hit recovery caused by</b>: high damage or a hit while having the stun swirlies above the head (but not being necessarily stunned).<br />
+<b>'animation' lock:</b> block-lock, knockback, freeze, stun attack.</p>
+
+<p class="content"><u><b>best defense against most of these is to not get hit, or get hit less often or reduce the effect/duration:</b></u><br />
+higher defense (not spells), avoid, block (not spells), moving, hit recovery speed (check frames), do not run (running reduces defense to 0 and chance to block to 1/3). having uninteruptable attack helps to deliver an attack without being interrupted thus maybe killing some attackers to ease the lock. any kind of minions to tank hits, distract or kill enemies. reducing enemy numbers or hit chance/rate (either by being a much higher level or directly reducing it by debuffs/auras/curses or crowd control or slowly killing them, area damage spells/attack)</p>
+
+<p class="content"><u><b>reducing specific lockdowns</b></u><br />
+<b>how to fight hit recovery:</b> having higher life, damage reduction/resistances/absorbs/magic shield.<br />
+<b>how to reduce block-lock:</b> turn on running and run to reduce block rate to 1/3 (but will reduce defense to 0), higher block rate, lower chance to block (from items/skills/spells), lower dexterity.<br />
+<b>freeze:</b> half freeze duration, cannot be frozen, cold resistance/immunity, having a higher level than the attacker.<br />
+<b>stun:</b> hit recovery speed (check frames, helps if not stunned but if you're in the hit recovery because you were hit while having stun swirlies)<br />
+<b>knockback:</b> having something behind you (wall/unpassable terrain, other players/monsters, map objects like barrels/chests/urn, etc.)</p>
+
+<p class="genbig">Concept: Burn damage</p>
+
+<p class="content"></p>
+	
+<p class="genbig">What do player hits carry?</p>
+
+	<p class="genbig genflat content">Melee (WDM)</p>
+
+	<ul class="content magic">
+		<li>Adds #-## damage</li>
+		<li>% Deadly Strike</li>
+		<li>% Chance of Crushing Blow</li>
+		<li>% Chance of Open Wounds</li>
+		<li>Prevent Monster Heal</li>
+		<li>Stun Attack</li>
+		<li>Knockback</li>
+		<li>-# to Monster Defense per Hit (stacks)</li>
+		<li>-% Target Defense</li>
+		<li>Ignore Target's Defense</li>
+		<li>% CtC on Attack</li>
+		<li>% CtC on Striking</li>
+		<li>% CtC when you Kill an Enemy</li>
+		<li>% CtC when your Enemy is Slain</li>
+		<li>% Life/Mana/Stamina stolen per Hit (% of applied physical damage)</li>
+		<li>Life/Mana on Striking</li>
+		<li>Life/Mana on Striking in Melee</li>
+		<li>+% to Spell Damage</li>
+		<li>-% to Enemy Resistances</li>
+		<li>Life/Mana after each Kill</li>
+		<li>Life after each Demon Kill</li>
+		<li>Slow Melee Target by %</li>
+		<li>Slow Target by %</li>
+		<li>Hit Blinds Target +#</li>
+		<li>Freezes Target +#</li>
+		<li>% Reanimate as:</li>
+		<li>Slain Monsters Rest in Peace</li>
+	</ul>
+
+	<p class="genbig genflat content">Missile (WDM)</p>
+
+	<ul class="content magic">
+		<li>Adds #-## damage</li>
+		<li>% Deadly Strike</li>
+		<li>% Chance of Crushing Blow (1/2 damage)</li>
+		<li>% Chance of Open Wounds</li>
+		<li>Prevent Monster Heal</li>
+		<li>Knockback</li>
+		<li>-# to Monster Defense per Hit (stacks)</li>
+		<li>-% Target Defense</li>
+		<li>Ignore Target's Defense</li>
+		<li>% CtC on Striking</li>
+		<li>% CtC when you Kill an Enemy</li>
+		<li>% CtC when your Enemy is Slain</li>
+		<li>% Life/Mana/Stamina stolen per Hit (% of applied physical damage)</li>
+		<li>+# Life/Mana on Striking</li>
+		<li>-% to Enemy Resistances</li>
+		<li>+# Life/Mana after each Kill</li>
+		<li>+# Life after each Demon Kill</li>
+		<li>Slow Target by %</li>
+		<li>Hit Blinds Target +#</li>
+		<li>Freezes Target +#</li>
+		<li>% Reanimate as:</li>
+		<li>Slain Monsters Rest in Peace</li>
+	</ul>
+
+	<p class="genbig genflat content">Spell (Non-WDM)</p>
+
+	<ul class="content magic">
+		<li>% CtC when you Kill an Enemy (poison only, more than 1 frame)</li>
+		<li>% CtC when your Enemy is Slain</li>
+		<li>+% to Spell Damage</li>
+		<li>-% to Enemy Resistances</li>
+		<li>+# Life/Mana after each Kill</li>
+		<li>+# Life after each Demon Kill</li>
+		<li>% Reanimate as:</li>
+		<li>Slain Monsters Rest in Peace</li>
+	</ul>
+	
+	<p class="genbig genflat content">Explosion (Deathstrike)</p>
+	
+ 	<ul class="content magic">
+		<li>Elemental (what?)</li>
+		<li>% Deadly Strike</li>
+		<li>% CtC when your Enemy is Slain (unsure?)</li>
+		<li>-% to Enemy Resistances</li>
+		<li>% Reanimate as:</li>
+		<li>Slain Monsters Rest in Peace <!-- not 100% sure --></li>
+	</ul>
+	
+	<!-- knockback? howl? life mana after demon kill -->
+	<p class="content"><span class="magic">-% to Enemy Resistances</span>, <span class="magic">+% to Spell Damage</span> and <span class="magic">Adds #-## damage</span> can be for any element: physical, magical, fire, lightning, cold and/or poison.</p>
+	
+	<!--<p class="content">Not sure about OW and % CtC when your Enemy is Slain on explosions.</p>-->
+
+	<!--<p class="genbig">Dual-wielding</p>
+	
+	<p class="content">When using a non-dual-wielding skill to attack, your main-hand attacks do not get 
+	
+	<p class="genbig genflat content">Melee</p>
+
+	<ul class="content">
+		<li>Adds #-## damage<sup style="color:black;">*</sup></li>
+		<li>% Deadly Strike</li>
+		<li>% Chance of Crushing Blow</li>
+		<li>% Chance of Open Wounds</li>
+		<li>Stun Attack</li>
+		<li>% CtC on Attack</li>
+		<li>% CtC on Striking</li>
+		<li>% CtC when you Kill an Enemy</li>
+		<li>% CtC when your Enemy is Slain</li>
+		<li>% Life/Mana stolen per Hit</li>
+		<li>Life/Mana on Striking</li>
+		<li>Life/Mana on Striking in Melee</li>
+		<li>+% Spell Damage<sup style="color:black;">*</sup></li>
+		<li>-% Enemy Resistances<sup style="color:black;">*</sup></li>
+		<li>Life/Mana after each Kill</li>
+		<li>Life/Mana after each Demon Kill</li>
+		<li>Slow Melee Target by %</li>
+		<li>Slow Target by %</li>
+		<li>Hit Blinds Target +#</li>
+		<li>Freezes Target +#</li>
+		<li>% Reanimate as:</li>
+	</ul>-->
+	
+	
+	
+
+	<p class="genbig" id="spells">Spells</p>
+	
+	<p class="content"><span class="cubesmall">-% to Enemy [Element] Resistance</span></p>
+	<p class="content">Reduces enemy resistance from that element (fire, cold, lightning or poison), allowing you (not your minions or hirelings) to do more damage with it. If their resist from that element is under 0%, you actually do MORE damage than normal.</p>
+	
+	<p class="content">Remember that <span class="magic">-% to Enemy [Element] Resistance</span> only from items cannot pierce enemy element immunity. It can do so only if it's from skills, and you reduce the enemy resistance under 100% with it. <!-- However, when a skill breaks an immunity, it only functions at 1/5 effectiveness CHECK!!!! --> Note that some enemies have resistances stacked well over 100%, but they are very rare, and are usually found in uberquests, mostly as bosses.</p>
+
+	<p class="content">So in most cases, it's best to focus on one element and get it to <span class="magic">-199% to Enemy [Element] Resistance</span>, as <span class="magic">-100% [Element] Resist</span> is the lower cap for all monsters. Then, if the monsters are not immune, or drop their immunity, you can get it down from 99% to -100%.</p>
+	
+	<p class="content">See <a href="grig/monster_skills.html" target="_self">THIS PAGE</a> for a list of monster resistances (slightly outdated).</p>
+	
+	<p class="content">Note that <span class="magic">-% to Enemy Cold Resistance</span> affects the duration of chill and freeze effects by reducing resistance to cold.</span>
+	
+	<p class="content">See <a href="#slow_chill_freeze" target="_self">BELOW</a> for more information on chill and freeze.</p>
+	
+	<p class="content"><span class="cubesmall">-% to All Enemy Resistances</span></p>
+	<p class="content">Same as above, but for all 4 elements (fire, cold, lightning and poison) at the same time.</p>
+	
+	<p class="content"><span class="cubesmall">+% to Spell Damage</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+% to [element] Spell Damage</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+% to Physical/Magic Spell Damage</span></p>
+	<p class="content">increases physical spell damage AND magical spell damage, ie. damage of the spells that do physical damage and damage of the spells that do magic damage</p>
+	
+	<p class="content"><span class="cubesmall">+# Energy/Strength Factor to Spell Damage</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+% Bonus to Energy Factor</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+% Bonus to Poison Skill Duration</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">% Bonus to Buff/Debuff/Cold Skill Duration</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Spells Cost Life instead of Mana</span></p>
+	<p class="content"></p>
+	
+	<!--(0.25 per level)% to Cold Spell Damage (Based on Clvl)
+	(0.75 per level)% to Fire Spell Damage (Based on Clvl)
+	(0.75 per level)% to Lightning Spell Damage (Based on Clvl)
+	(1 per level)% to Poison Spell Damage (Based on Character Level)-->
+	
+
+
+	
+	
+	
+	
+	
+	<p class="genbig">Attack</p>
+	<p class="content">Final damage or attack rating is always rounded down.</p>
+	
+	<p class="content"><span class="cubesmall">Chance to hit</span></p>
+	<p class="content">The chance to hit is as follows:</p>
+			
+	<div class="reagent" style="max-width: 750px">Chance to hit = 100% * 2 * Attacker_Level/(Attacker_Level + Defender_Level) * AR/(AR + Defense)</div>
+			
+	<p class="content">Where AR is Attack Rating, and chance to hit is capped between 5% and 95%. Chance to hit a running player is 100%.</p>
+	
+	<p class="content"><span class="cubesmall">+# to Attack Rating</span></p>
+	<p class="content">Increases the attack rating beyond the base value, before the percentage bonus is applied. Base attack rating is:</p>
+	
+	<div class="reagent" style="max-width: 750px">Base Attack Rating = 5 * (Dexterity - 5)</div>
+	
+	<p class="content">for any character, unlike cLod.<!--actually the base attack rating is: 5 * (Dexterity - 7) + Class constant, but class constant is 10 for all characters in Median XL Ultimative--></p>
+
+	<p class="content"><span class="cubesmall">% Bonus to Attack Rating</span></p>
+	<p class="content">Applied after the above.</p>
+	
+	<p class="content"><span class="cubesmall">Adds #-## damage</span></p>
+	<p class="content">Adds # minimum and ## maximum physical damage to the attack damage after the weapon's <span class="magic">% Enhanced Damage</span>, but before <span class="magic">Enhanced Weapon Damage +%</span> from items and skills.</p>
+	
+	<p class="content"><span class="cubesmall">Adds #-## [element] damage</span></p>
+	<p class="content">Adds # minimum and ## maximum fire, lightning, cold or magic damage to the attack damage. Is it affected by <span class="magic">Enhanced Weapon Damage +%</span>?</p>
+	
+	<p class="content"><span class="cubesmall">Adds #-## poison damage over ### seconds</span></p>
+	<p class="content">See concept: poison damage. Is it affected by <span class="magic">Enhanced Weapon Damage +%</span>?</p>
+	
+	<p class="content"><span class="cubesmall">+# damage</span></p>
+	<p class="content">Adds # minimum and maximum physical damage to the attack before <span class="magic">Enhanced Weapon Damage +%</span> from items and skills.</p>
+	
+	<p class="content"><span class="cubesmall">+# [element] damage</span></p>
+	<p class="content">Adds # minimum and maximum fire, lightning, cold or magic damage to the attack. Is it affected by <span class="magic">Enhanced Weapon Damage +%</span>?</p>
+	
+	<p class="content"><span class="cubesmall">+# to Minimum Damage</span></p>
+	<p class="content">Adds # minimum physical damage to the attack before <span class="magic">Enhanced Weapon Damage +%</span> from items and skills.</p>
+	
+	<p class="content"><span class="cubesmall">+# to Maximum Damage</span></p>
+	<p class="content">Adds # maximum physical damage to the attack before <span class="magic">Enhanced Weapon Damage +%</span> from items and skills.</p>
+	
+	<p class="content"><span class="cubesmall">+# to Minimum [Element] Damage</span></p>
+	<p class="content">Adds # minimum fire, lightning, cold or magic damage to the attack. Is it affected by <span class="magic">Enhanced Weapon Damage +%</span>?</p>
+	
+	<p class="content"><span class="cubesmall">+# to Maximum [Element] Damage</span></p>
+	<p class="content">Adds # maximum fire, lightning, cold or magic damage to the attack. Is it affected by <span class="magic">Enhanced Weapon Damage +%</span>?</p>
+	
+	<p class="content"><span class="cubesmall">% Enhanced Damage</span></p>
+	<p class="content">Increases the weapon's minimum and maximum damage by % of the base minimum and maximum damages.</p>
+	
+	<p class="content"><span class="cubesmall">Enhanced Weapon Damage +%</span></p>
+	<p class="content">Increases the minimum and maximum damage of an attack by % after <span class="magic">% Enhanced Damage</span> and other # damage (integer damage) bonuses (multiplicative). Does it increase elemental damage?</p>
+	
+	<p class="content"><span class="magic">Enhanced Weapon Damage +%</span> from items comes in the formulas at the same place as <span class="magic">% Enhanced Damage</span> from skills (additive), so they can be regarded as equivalent.</p>
+	
+	<p class="content"><span class="cubesmall">Adds Strength Damage Bonus: (#/256 per Strength)%</span></p>
+	<p class="content">This modifier works in a similar way as <span class="magic">Enhanced Weapon Damage +%</span> (they're additive), but the % damage increase scales with Strength, as Strength * #/256. # is a number from the files, a majority of weapons usually have 51 or 76 &ndash; some less impressive weapon item types have 25, and more impressive 102.</p>
+	
+	<p class="content"><span class="cubesmall">Adds Dexterity Damage Bonus: (#/256 per Dexterity)%</span></p>
+	<p class="content">Same as above, but with Dexterity.</p>
+	
+	<p class="content"><span class="cubesmall">+% Damage to Undead</span></p>
+	<p class="content">This modifier works in a similar way as <span class="magic">Enhanced Weapon Damage +%</span> (they're additive), but is applied only when an Undead is hit. Blunt weapons always have at least <span class="magic">+50% Damage to Undead</span>.</p>
+	
+	<p class="content">See <a href="baseitems.html" target="_self">THIS PAGE</a> for a list of Blunt weapons.</p>
+	
+	<p class="content"><span class="cubesmall">+% Damage to Demons</span></p>
+	<p class="content">Same as above, but for Demons, except that Blunt weapons don't do extra damage to Demons.</p>
+	
+	<p class="content"><span class="cubesmall">% Enhanced Damage vs. Necrobots</span></p>
+	<p class="content">Same as above, but for Necrobots.</p>
+	
+	<p class="content"><span class="cubesmall">% Enhanced Damage vs. the Zakarum</span></p>
+	<p class="content">Same as above, but for the Zakarum.</p>
+	
+		<!-- +(6 per level) to Maximum Damage (Based on Clvl)
+	Enhanced Weapon Damage +(2 per level)% (Based on Character Level) -->
+	
+	
+	
+	
+	<p class="genbig genflat">Additional attack effects</p>
+	
+	<p class="content"><span class="cubesmall">-% to Enemy [Element] Resistance</span></p>
+	<p class="content">reduces it for flat element damage?</p>
+	<p class="content">See <a href="#spells" target="_self">ABOVE</a> for a more information about reducing enemy resistances.</p>
+	
+	<p class="content"><span class="cubesmall">-% to All Enemy Resistances</span></p>
+	<p class="content">reduces it for flat element damage?</p>
+	<p class="content">See <a href="#spells" target="_self">ABOVE</a> for a more information about reducing enemy resistances.</p>
+	
+	<p class="content"><span class="cubesmall">Stun Attack</span></p>
+	<p class="content">Stuns targets on melee hit for a specific amount of time<!-- capped at 10 sec?-->, different duration for each item or skill (or skill level). If a ranged skill has stun, it will work too. <!-- will it then get the aditional bonus duration from the item Stun Attack modifier? --> Target is incapacitated and cannot move, attack/cast or block during it, and has a small swirling overlay above. Stun timer can be reset by applying stun again &ndash; the last duration is applied.</p>
+	
+	<p class="content">Players cannot be fully stunned, but they still get the stun overlay. If you hit a player with the stun overly, he/she will be put into hit recovery even if you do no damage. Champions, Unique and Super Unique monsters have only 10% chance to be stunned. Bosses and some static units and monsters cannot be stunned.</p>
+	
+	<p class="content">See <a href="#concept_hit_recovery" target="_self">BELOW</a> for a more information about hit recovery.</p>
+	
+	<p class="content"><span class="cubesmall">Knockback (Item)</span></p>
+	<p class="content">Melee and ranged WDM on hit chance to push targets back and put them in hit recovery. Does not move back <!-- does it put in recovery though? --> if there is something blocking the path (wall, other monster, barrel, etc.) or the target is frozen.</p>
+	
+	<p class="content">75% chance for small targets, 50% for medium (players<!--/mercenaries except barbarian merc?--> included), 25% for large. Bosses and most Superuniques can't be knocked back. The knockback distance is almost always the same, but sometimes, rarely, it can be shorter or even none.</p>
+	
+	<p class="content">Skill knockback can have a different chance and different effects on different targets.</p>
+	
+	<p class="content"><span class="cubesmall">Ignore Target's Defense</span></p>
+	<p class="content">Makes it as if the targeted monsters doesn't have any defense &ndash; meaning the chance to hit them (WDM melee and missile) is always:</p>
+
+	<div class="reagent" style="max-width: 750px">Chance To Hit = 100% * 2 * Attacker_Level / (Attacker_Level + Defender_Level)</div>
+	
+	<!--<p class="content">Some classes get a bonus/malus to attacker level:</p>
+	
+	<ul class="content">
+		<li>+20 &ndash; Barbarians and Paladins</li>
+		<li>+15 &ndash; Assassins</li>
+		<li>+5 &ndash; Amazons and Druids</li>
+		<li>-10 &ndash; Necromancers</li>
+		<li>-15 &ndash; Sorceresses</li>
+	</ul>
+	
+	^apparently this is only a bonus to the base AR, not attacker level?
+	-->
+	
+	<p class="content">Capped between 5% and 95%, rounded down.</p>
+	
+	<p class="content">Does not work on:</p>
+
+	<ul class="content">
+		<li>Champions</li>
+		<li>(Super) Unique Monsters</li>
+		<li>Bosses</li>
+		<li>Hirelings</li>
+		<li>Players</li>
+	</ul>
+	
+	<p class="content">To always have 95% chance to hit with ITD, the monster level has to be at most 10% more than the character level, meaning a level 120 character can hit any monster with 95% chance (unless maybe if they're in the list above).</p>
+	
+	<p class="content">If it's on a weapon, works only on that weapon WDM carrying attacks (melee &amp; missile). Check if true?</p>
+	
+	<p class="content"><span class="cubesmall">Prevent Monster Heal</span></p>
+	<p class="content">Stops monster natural life regeneration for 120000 frames (80 minutes) on melee and ranged WDM hit by a player (can't be applied by other units). It is only applied if the life has changed, either due to damage taken or regenerated. If <span class="magic">Prevent Monster Heal</span> is applied, <span class="magic">Open Wounds</span> cannot be applied unless the target takes damage or is a player.<!-- what if the monster gains life in some way?--></p>
+	 
+	<p class="content"><span class="cubesmall">Slain Monsters Rest in Peace</span></p>
+	<p class="content">If a character has this modifier (can be applied only by players), bodies of monsters he/she killed cannot be reanimated or used in any other way (resurrect, corpse explosion, etc.). This is useful to prevent monsters from using corpses or to prevent reanimates because of lag or them attracting unwanted attention.</p>
+	
+	<p class="content"><!--It will work only if you kill the enemy with a physical damage or elemental (Blizzard or Fireball) and not magical damage. CHECK IF TRUE! --> It is not applied if the monster is killed by reflected damage, attacker takes ([element]) damage or if the modifier is on the off-hand weapon but the monster was killed by the main-hand weapon.</p>
+
+	<p class="content"><span class="cubesmall">% Chance of Crushing Blow</span></p>
+	<p class="content">When you hit a monster with an WDM attack (melee or missile), this modifier indicates the chance to reduce the target's current life by:</p>
+	
+	<table class="mini_table">
+		<tr>
+			<th>Target</th><th>Melee</th><th>Missile</th>
+		</tr>
+		<tr>
+			<td>Player<br />Hireling</td><td>1/10</td><td>1/20</td>
+		</tr>
+		<tr>
+			<td>Super Unique<br />Boss</td><td>1/8</td><td>1/16</td>
+		</tr>
+		<tr>
+			<td>Other</td><td>1/4</td><td>1/8</td>
+		</tr>
+	</table>
+	
+	<p class="content">This life reduction is done before the hit damage is applied. Increased player count makes crushing blow reduce life by the same amount as if there was just one player present, but as monster's life increased, it would take a smaller fraction of life.</p>
+	
+	<p class="content">Positive physical resistance (ie. <span class="magic">Damage Reduced by %</span>) reduces the life that crushing blow takes, and at 100% it gives immunity to <span class="magic">Crushing Blow</span>. Players with physical resistance over 50% still get the bonus over 50% and can get the immunity at 100% &ndash; eg. 75% physical resistance for players reduces normal physical damage by 50% (cap), but still reduces life lost from crushing blow by 75%.</p>
+	
+	<!-- 	(0.25 per level)% Chance of Crushing Blow (Based on Clvl) -->
+	
+	<p class="content"><span class="cubesmall">% Deadly Strike</span></p>
+<p class="content">It's the chance to double your physical damage from melee and missile sources (not spells). It's calculated after all other damage modifiers, but before any damage conversion (physical to other element) takes place &ndash; so it doubles the converted element damage as well, when it happens. Only the chance from the attacking weapon is added when dual-wielding.</p>
+	
+	<p class="content"><span class="cubesmall">% Chance of Open Wounds</span></p>
+<p class="content">A chance to apply a life drain and bleeding to an enemy for 8 seconds (200 frames) on hitting (WDM melee and missile). It disables the natural regeneration, but does not disable any other life gain/loss, eg. skill life gain, item <span class="magic">Regenerate Life</span>, <span class="magic">Life after each Kill</span>, etc. When dual-wielding, only the attacking weapon adds towards the total chance.</p>
+	
+	<table class="mini_table">
+		<tr>
+			<th>Character<br />Level</th><th>Life Drain<br />per frame</th>
+		</tr>
+		<tr>
+			<td>1 to 15</td><td class="reagent">(9*clvl + 31)/256</td>
+		</tr>
+		<tr>
+			<td>16 to 30</td><td class="reagent">(18*clvl - 104)/256</td>
+		</tr>
+		<tr>
+			<td>31 to 45</td><td class="reagent">(27*clvl - 374)/256</td>
+		</tr>
+		<tr>
+			<td>46 to 60</td><td class="reagent">(36*clvl - 779)/256</td>
+		</tr>
+		<tr>
+			<td>&gt; 60</td><td class="reagent">(45*clvl - 1319)/256</td>
+		</tr>
+	</table>
+	
+	<p class="content">Some targets have modified life drain:</p>
+
+	<ul class="content">
+		<li>1/4 &ndash; melee attack on a player</li>
+		<li>1/8 &ndash; ranged attack on a player</li>
+		<li>1/2 &ndash; melee or ranged attack on any Champion, Unique, Super Unique, Boss or Evil</li>
+	</ul>
+
+	<p class="content">In the first frame there is no life drain. If the target's life doesn't change (after a hit or by regeneration), it will not get <span class="magic">Open Wounds</span><!-- check this by doing H butcher -->, unless the target is a player character. There is no way to resist it after it has been applied and any subsequent hits just reset the duration &ndash; the life drain does not stack and the amount of life drain stays the same as was from the first attack. Bleeding occurs even if life drain cannot be applied.</p>
+
+	
+	<!-- "The only time OW doesn't work is when a non-player target is in full health - meaning it'll only work on non-player targets if it is already in regeneration. So if you only deal physical damage on a monster that is Physical Immune, you won't trigger OW. In PvP however, hostile players will always suffer OW damage, regardless of their actual Hit Points. " -->
+	
+	<p class="content"><span class="cubesmall">% Chance of Uninterruptable Attack</span></p>
+	<p class="content"></p>
+	
+	<!--<p class="content"><span class="cubesmall">+% damage when apple</span></p>
+	<p class="content"></p>-->
+	
+	<p class="content"><span class="cubesmall">Target Takes Additional Damage of #</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Hit Causes Monster to Flee +%</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Hit Blinds Target +#</span></p>
+	<p class="content"></p>
+	
+	<!-- Hit Blinds Target
+Decreases radius of awareness similar to the Necromancer Curse: Dim Vision.
+The formula is as follows:
+
+Chance = 50 + (Attacker Level + (Bonus * 4) - Defender Level) * 5
+Where the bonus is how many items of hit blinds target the character has -1. Some items have something like hit blinds target +2, which means they count as 2 items for the bonus calculation. Missile Attacks are at 1/3 this chance.
+
+The level of Dim Vision that's cast on the target is equal to (Chance - Roll)/5+1, max of 20. -->
+
+	<p class="content"><span class="cubesmall">Freezes Target +#</span></p>
+	<!--<p class="content">Items with <span class="magic">Freezes Target</span> have a chance to freeze targets.</p>
+	
+	<div class="reagent" style="max-width: 750px">Chance of freezing = 50 + (Attacker_Level - Defender_Level + (# * 4)) * 5</div>
+
+	<p class="content">Penalty for ranged hits:
+	<ul class="content">
+		<li>Attacker_Level: -6</li>
+		<li>Chance of freezing: 1/3</li>
+	</ul>
+
+	<div class="reagent" style="max-width: 750px">Freeze length = (Chance - Roll) * 2 + 25 frames</div>
+
+	<p class="content">Capped between 25 frames (1 second) and 250 frames (10 seconds).</p>-->
+	
+	<!-- the above formulas are probably wrong, compare with the formulas from the amazon basin -->
+	
+	<p class="content"><span class="cubesmall">-% Target Defense</span></p>
+	<p class="content">Reduces the total target defense by % when calculating the chance to hit with WDM melee attack and missiles. Cannot reduce defense under 0, and the actual defense stays the same, this is only used to calculate the chance to hit. It is equivalent to increasing the <span class="magic">Attack Rating</span> by 100%/(100% - % Target Defense).</p>
+	
+	<p class="content">Unlike <span class="magic">Ignore Target's Defense</span>, it works on all monsters, but only at half the effectiveness against: Players, Hirelings, Super Uniques and Bosses. It can be stacked to -200% to gain -100% against those monster types, though.</p>
+	
+	<p class="content"><span class="cubesmall">-# to Monster Defense per Hit</span></p>
+	<p class="content">Reduces a monster's defense on WDM melee and missile hit, and stays applied after it, stacking with further applications. Does not affect the defense before the actual hit, unlike <span class="magic">-% Target Defense</span>. It helps just the player who applied it<!-- are you sure it doesn't help other allied players and their minions/hirelings? --> and his/her minions and hirelings.</p>
+	
+	
+	
+	
+	
+	<p class="genbig genflat" id="slow_chill_freeze">Slow, Chill and Freeze</p>
+	
+	<p class="content"><span class="cubesmall">Cold Length slow (Chill)</span></p>
+	<p class="content">20% slow on hit (10% for players, since slow is 1/2 effective on them) <!-- wdm-only or any non-spell hit? --> that usually accompanies items/skills with cold damage. It can also come from trying to freeze monsters that cannot be frozen. Duration can vary from item to item, but generally, the higher the damage, the longer the chill (most items have about 1-2 sec chill, but some have up to 8 sec). Some items don't chill even though they do cold damage, but they're a small minority.</p>
+
+	<p class="content">Unlike cLod, it does not reduce with difficulty. <span class="magic">Cold Resist %</span> (countered by <span class="magic">-% to Enemy Cold Resistance</span>) and <span class="magic">Half Freeze Duration</span> reduce the chill duration (multiplicative). <span class="magic">Cold Immunity</span> and <span class="magic">Cannot Be Frozen</span> give immunity to it. Some monsters have reduced or 0 chill effectiveness (not duration), possibly even different values on different difficulties.</p>
+	
+	<p class="content">Monsters have a 20% chance to shatter if killed while chilled, leaving no body.</p>
+	
+	<p class="content"><span class="cubesmall">Freeze Length</span></p>
+	<p class="content">Can freeze normal and minion monsters, thus incapacitating them, and it chills all other units (if they can be chilled). The duration can be affected in the same way as chill is (see above), and monsters with 0 chill effectiveness cannot be frozen, as well.</span></p>
+	
+	<p class="content">Monsters shatter when they are killed while frozen, leaving no body behind.</p>
+	
+	<p class="content"><span class="cubesmall">Slow</span></p>
+	<p class="content">One of the most powerful modifiers in the game because it allows you, by superior maneuverability, to avoid getting hit or simply a slower enemy attack rate and movement speed (these are capped at minimum of 15% and 25%, respectively<!-- check! -->). It has been heavily nerfed many times to balance the game. There are many different sources of slow &ndash; items, cold damage, skills, minion skills... The cap for slow is:</p>
+	
+	<ul>
+		<li>50% for Players, Hirelings, Champions, (Super) Uniques &amp; Bosses</li>
+		<li>90% from one source</li>
+		<li>95% from more than one source</li>
+	</ul>
+		
+	<p class="content">All different sources of slow stack (additively), but same sources override each other &ndash; the last applied slow stays on, with its indicated slow % and duration reseted.</p>
+	
+	<p class="content">The 4 slows below are actually the same slow source, but triggered at different times, so they do not stack with each other. The one to hit last will override the previous slow, and it lasts 30 sec. <span class="magic">Slows Target by %</span> has priority over <span class="magic">Slows Melee Target by %</span>.</p>
+		
+	<p class="content"><span class="cubesmall">Slows Target by %</span></p>
+	<p class="content">Slows any enemy you hit, and is carried by WDM missiles.</p>
+
+	<p class="content"><span class="cubesmall">Slows Melee Target by %</span></p>
+	<p class="content">Slows an enemy you hit in melee, and is not carried by WDM missiles.</p>
+
+	<p class="content"><span class="cubesmall">Slows Attacker by %</span></p>
+	<p class="content">Slows an enemy that hits you in melee.</p>
+
+	<p class="content"><span class="cubesmall">Slows Ranged Attacker by %</span></p>
+	<p class="content">Slows an enemy that hits you with a missile attack (not spells).</p>
+	
+	<p class="content"><span class="cubesmall">Freezes Target +#</span></p>
+	<!--<p class="content">Items with <span class="magic">Freezes Target</span> have a chance to freeze targets.</p>
+	
+	<div class="reagent" style="max-width: 750px">Chance of freezing = 50 + (Attacker_Level - Defender_Level + (# * 4)) * 5</div>-->
+
+		<!--<p class="content">Some classes get a bonus/malus to attacker level:</p>
+		
+		<ul class="content">
+			<li>+20 &ndash; Barbarians and Paladins</li>
+			<li>+15 &ndash; Assassins</li>
+			<li>+5 &ndash; Amazons and Druids</li>
+			<li>-10 &ndash; Necromancers</li>
+			<li>-15 &ndash; Sorceresses</li>
+		</ul>-->
+		
+	<!--<p class="content">Penalty for ranged hits:
+	<ul class="content">
+		<li>Attacker_Level: -6</li>
+		<li>Chance of freezing: 1/3</li>
+	</ul>
+
+	<div class="reagent" style="max-width: 750px">Freeze length = (Chance - Roll) * 2 + 25 frames</div>
+
+	<p class="content">Capped between 25 frames (1 second) and 250 frames (10 seconds).</p>-->
+	
+	<p class="content"><span class="cubesmall">Freezes attacker +#</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">% Bonus to Buff/Debuff/Cold Skill Duration</span></p>
+	<p class="content">see spells and skill spell damage section</p>
+	
+	<p class="content"><span class="cubesmall">Half Freeze Duration</span></p>
+	<p class="content">Reduces chill and freeze duration by half. Does not stack. See chill and freeze above for details.</p>
+	
+	<p class="content"><span class="cubesmall">Cannot Be Frozen</span></p>
+	<p class="content">Gives immunity to chill and freeze. See chill and freeze above for details.</p>
+	
+	
+	
+	
+
+	<p class="genbig genflat">Life, mana and stamina gain</p>
+	
+	<p class="content"><span class="cubesmall">% Life/Mana/Stamina stolen per Hit (Leech)</span></p>
+	<p class="content">Returns life/mana/stamina equal to the % of the applied WDM physical damage on melee or missile hit.<!-- I assume it doesn't take crushing blow life reduction as damage.--><br />There is a penalty for life and mana leech: Hatred 1/4, Terror 1/50 and Destruction 1/100. <!-- missile leech is 100%? or 1/2? stamina leech has no penalty? is there a penalty for bosses/hirelings/players/(super)uniques/elites/champions?--></p>
+	
+	<p class="content"><span class="cubesmall">+# Life/Mana on Striking</span></p>
+	<p class="content">melee/ranged (any element? wdm?) hit</p>
+	
+	<p class="content"><span class="cubesmall">+# Life/Mana on Striking in Melee</span></p>
+	<p class="content">melee (any element? wdm?) hit</p>
+	
+	<p class="content"><span class="cubesmall">+# Life/Mana after each Kill</span></p>
+	<p class="content">melee/ranged/spell kill</p>
+	
+	<p class="content"><span class="cubesmall">+# Life after each Demon Kill</span></p>
+	<p class="content">melee/ranged/spell kill</p>
+	
+	<p class="content"><span class="cubesmall">+# Life/Mana when Struck by an Enemy</span></p>
+	<p class="content">on melee hit (any element?)</p>
+	
+	<p class="content"><span class="cubesmall">Replenish Life +# / Drain Life -#</span></p> <!--Replenish Life +(10 per level) (Based on Clvl)-->
+	<p class="content">Life gained/drained per frame is #/256. Unlike natural monster regeneration, it cannot be prevented by <span class="magic">Open Wounds</span> or doing (poison) damage in that frame.</p>
+	
+	<p class="content"><span class="cubesmall">Drains % Life per Second</span></p> <!-- regenerates % life per second (for xx minutes) - apple -->
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Regenerate Mana +%</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">% Damage Taken Goes To Mana </span></p>
+	<p class="content">If an item provides you with a 10% Damage taken Goes to Mana modifier, and you receive 40 damage, you will gain 10% * 40 = 4 mana. the damage you take will not be changed, you will just receive mana.</p>
+	
+	<p class="content"><span class="cubesmall">% Slower Stamina Drain</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">% Increased Healing Rate from Apples</span></p>
+	<p class="content"></p>
+
+	<p class="content"><span class="cubesmall">Natural monster regeneration</span></p>
+	<p class="content"></p>
+	
+	
+	
+	
+	<p class="genbig genflat">Procs</p>
+	
+	<p class="content">Procs give a chance to use/cast a skill/spell when triggered by something. Keep in mind the difference between <u>attacking</u> (may miss) and actually <u>hitting</u> something; also shield-blocks do not count as a hit. More than one proc can be triggered by the same event. Same procs with different levels trigger separately, but the chances stack and trigger just once if they are the same level.</p>
+	
+	<p class="content">They are cast as if you were using them as a skill at that level, meaning they get all bonuses a normal skill would get.</p>
+	
+	<p class="content">See <a href="proc_items.html" target="_self">THIS PAGE</a> for a list of items with procs.</p>
+	
+	<p class="content" style="margin-left:2em; font-weight:bold;">Innate item</p>
+	
+	<p class="content"><span class="cubesmall">Area Effect Attack / Area Effect Damage</span></p>
+	<p class="content">100% on melee hit: Deals 100% normal attack damage in a radius of 5 yards.</p>
+	
+	<p class="content"><span class="cubesmall">Thunderfury</span></p>
+	<p class="content">50% on melee hit: Emits charged bolts that do 75% normal attack damage as lightning.</p>
+	
+	<p class="content"><span class="cubesmall">Mega Impact</span></p>
+	<p class="content">5% on melee hit: Grants 100% damage avoidance for 1.6 seconds.</p>
+	
+	<p class="content"><span class="cubesmall">Amazing Grace</span></p>
+	<p class="content">25% on melee hit: Reduces target physical resistance by -25% for 2 seconds.</p>
+	
+	<p class="content" style="margin-left:2em; font-weight:bold;">% Chance to cast level # [skill]</p>
+	
+	<p class="content"><span class="cubesmall">on Striking</span></p>
+	<p class="content">When you hit an enemy with a WDM carrying source (melee and missile hit, not spells).</p>
+	
+	<p class="content"><span class="cubesmall">on Attack</span></p>
+	<p class="content">When you attack an enemy in melee and hit. If you use the normal attack, you don't have to hit the enemy.</p>
+	
+	<p class="content"><span class="cubesmall">when your Enemy is Slain</span></p>
+	<p class="content">When you kill an enemy. Works with WDM carrying and non-WDM sources (melee, missile and spells).</p> <!--check, I assume YOU have to kill, not your minion-->
+	
+	<p class="content"><span class="cubesmall">when you Kill an Enemy</span></p>
+	<p class="content">When you kill an enemy with a WDM carrying source (melee and missile, not spells). Poison that kills in more than 1 frame triggers it as well, even if it's from spells.</p><!--check, I assume YOU have to kill, not your minion-->
+	
+	<p class="content"><span class="cubesmall">when you Take Damage</span></p>
+	<p class="content">Whenever you take damage from anything except damage over time (poison or life drain), including spells.</p> <!-- does it proc on first frame of poison? -->
+	
+	<p class="content"><span class="cubesmall">when Struck</span></p>
+	<p class="content">When you get hit with a physical attack (melee and missile, not spells).</p> <!--physical check-->
+	
+	<p class="content"><span class="cubesmall">when Struck by a Missile</span></p>
+	<p class="content">When you get hit with a physical missile attack (not spell).</p> <!--physical check-->
+	
+	<p class="content"><span class="cubesmall">when Attacked</span></p>
+	<p class="content">When you get hit with a melee attack.</p>
+	
+	<p class="content"><span class="cubesmall">when you Die</span></p>
+	<p class="content">As it says. RIP.</p>
+	
+	<p class="content"><span class="cubesmall">when you Level-Up</span></p>
+	<p class="content">As it says.</p>
+	
+	
+	
+	
+	
+
+	<p class="genbig">Defense</p>
+	
+	<p class="content">defense, chance to be hit, etc.</p>
+	
+	<p class="content">See <a href="block_and_ac.html" target="_self">THIS PAGE</a> for more information.</p>
+	
+	<p class="content">Defense is calculated in this order:</p>
+	
+	
+	<ol class="content">
+		<b>Item:</b>
+		<li class="magic">Armor</li>
+		<li>Ethereal bonus</li>
+		<li class="magic">% Enhanced Defense</li>
+		<li class="magic">+# Defense</li>
+	</ol>
+	<ol class="content">
+		<b>Character:</b>
+		<li class="magic">+# Defense (from skills)</li>
+		<li>Total Defense from all items</li>
+		<li class="magic">-# Monster Defense per hit</li>
+		<li>Stone Skin Unique bonus</li>
+		<!--<li>Inner Sight</li>-->
+		<li class="magic">% to Defense per Socketed Rune + <!-- not 100% sure it goes here, but it probably should--> Total Character Defense Plus % + % Enhanced Defense (from skills)</li>
+		<!--<li>Berserk penalty</li>-->
+		<li class="magic">+# Defense vs. Melee</li>
+		<li class="magic">+# Defense vs. Missile</li>
+		<li class="magic">-% Target Defense</li>
+		<li class="magic">Total Character Defense = 0<br />
+		Ignore Target's Defense</li>
+	</ol>
+	
+	<p class="content">Where <span class="reagent_color">Base Defense</span> is Dexterity/4.<!-- though an additional small amount seems to appear with higher levels --></p>
+	
+	<p class="content"><span class="cubesmall">+# Defense</span></p>
+	<p class="content">This adds defense after all the other <u>item's</u> defense modifiers are calculated.</p>
+	
+	<p class="content"><span class="cubesmall">+# Defense vs. Melee</span></p>
+	<p class="content">This adds defense vs. melee attacks, applied after <span class="magic">Total Character Defense Plus %</span>.</p>
+	
+	<p class="content"><span class="cubesmall">+# Defense vs. Missile</span></p>
+	<p class="content">The same as above, but helps just vs. missile attacks.</p>
+	
+	<p class="content"><span class="cubesmall">% Enhanced Defense</span></p>
+	<p class="content">Increases the item's defense before any other bonuses (except <span class="magic">Ethereal</span>). Always increases the defense by <!--at least--> <span class="magic">+1 Defense</span>.</p>
+	
+	<p class="content"><span class="cubesmall">Total Character Defense Plus %</span></p>
+	<p class="content">Increases the total character defense after most modifiers (after the items' defense has been calculated).</p>
+	
+	<p class="content"><span class="cubesmall">% to Defense per Socketed Rune</span></p>
+	<p class="content">Same as above, but the % increase is for each rune in the sockets of the equipped items (items on switch don't count). You have to re-equip the items with runes after entering a game or after dying to get the bonus. This is esentially extra <span class="magic">Total Character Defense Plus %</span>.</p><!-- check if this is true -->
+	
+	<p class="content"><span class="cubesmall">Total Character Defense = 0</span></p><!-- this can help get def under 0, check it -->
+	<p class="content">Reduces your total character defense to zero.</p>
+	
+	<p class="content"><span class="cubesmall">% Increased Chance of Blocking</span></p>
+	<p class="content">See <a href="block_and_ac.html" target="_self">THIS PAGE</a> for more information.</p>
+	
+	<p class="content"><span class="cubesmall">% Chance to Avoid Damage</span></p>
+	<p class="content">Chance to avoid any damage, except from burn attacks<!-- check if this is true -->. This is actually a chance to avoid attacks (melee and ranged) <u>and spells</u>, not just damage &ndash; meaning that the associated procs won't trigger if the avoid was successful<!-- check if this is true -->. It is the single most powerful modifier in the game.</p>
+	
+	<p class="content"><span class="cubesmall">100% Avoid Shield</span></p>
+	<p class="content">Some bosses have <span class="magic">100% Chance to Avoid Damage</span> and can only be killed by sources of burn damage. There is no direct source of burn damage from items or character skills and minions, but the <span class="unique">Assur's Bane</span> quest ring provides the oskill <em>Purify</em> which deals burn damage. Some monsters deal burn damage as well.</p>
+	
+	<p class="content">See <a href="uniques_sacred.html#rings" target="_self">THIS PAGE</a> for more information about <span class="unique">Assur's Bane</span>.</p>
+<!-- +(20 per level) Defense (Based on Clvl)
++(3.5 per level)% Enhanced Defense (Based on Character Level)
+Total Character Damage Plus (0.25 per level)% (Based on Character Level) -->
+
+
+
+	<p class="genbig genflat">Player resists, absorb and damage/duration reduction</p>
+	
+	<p class="content">bla bla see bla for monster/minion/hireling/reanimate/totem resists.</p>
+	<p class="content">Monster 100% resistance to an element gives immunity to it.</p>
+	
+	<p class="content">The order of calculation is:</p>
+	
+	<ol class="content">
+		<li>Mana shield</li>
+		<li>Spell armor</li>
+		<li>(Magic) Damage Reduction</li>
+		<li>Resist %</li>
+		<li>Absorb %</li>
+		<li># Absorb</li>
+	</ol>
+	
+	<p class="content"><span class="cubesmall">[Element] Resist +%</span></p>
+	<p class="content">This is for all 5 elements (fire, cold, lightning, poison and magic), except physical. It reduces damage taken from [element] sources, be it in melee, by a missile, spell or otherwise. <span class="magic">Cold Resist</span> also reduces chill and freeze duration.</p>
+	
+	<p class="content">See <a href="#slow_chill_freeze" target="_self">ABOVE</a> for details about chill/freeze.</p>
+	 <!-- check if there's a cap on magic that's lower than 75-95% -->
+	<p class="content">These 5 resistances are capped between -100% and 75% (100% for monsters). It is possible to stack resistances above the upper cap, in case it gets reduced. It can be raised to 95% with <span class="magic">+% Maximum [Element] Resist</span>. Players cannot become immune to an element, except with shrines.<!-- check --></p>
+	
+	<p class="content">There is a penalty to 4 elemental resistances (fire, cold, lightning and poison) for players/hirelings/minions on higher difficulties: -50% for Terror and -100% for Destruction.</p>
+	
+	<p class="content"><span class="cubesmall">All Resists +%</span></p>
+	<p class="content">Same as above, but for 4 elemental resistances (fire, cold, lightning and poison) at the same time.</p>
+	
+	<p class="content"><span class="cubesmall">Damage Reduced by %</span></p>
+	<p class="content">Similar to <span class="magic">[Element] Resist +%</span>, but for the physical element. The only difference is that it is capped between -100% and 50% for players, but having it higher helps against <span class="magic">Crushing Blow</span> &ndash; 100% making you immune to it.</p>
+	
+	<p class="content"><span class="cubesmall">Random Resistance Bonus</span></p>
+	<p class="content">fire, cold, lightning and poison (probably not magic, but I can't check) from -30% to +80% every 2 sec</p>
+	
+	<p class="content"><span class="cubesmall">+% to Maximum [Element] Resist</span></p> <!-- check if there's a cap on magic that's lower than 95% -->
+	<p class="content">Increases the upper cap on 5 element resists (fire, cold, lightning, poison and magic) to a maximum of 95% for players and hirelings.</p>
+	
+	<p class="content"><span class="cubesmall">+% to All Maximum Resistances</span></p>
+	<p class="content">Same as above, but only for the 4 maximum elemental resistances (fire, cold, lightning and poison) at the same time.</p>
+
+	<p class="content"><span class="cubesmall">+# [Element] Absorb</span></p>
+	<p class="content">Reduces the damage from [Element] (fire, cold, lightning or magic) and then heals by the same amount. Works vs. any source of the [Element] damage.</p>
+
+	<p class="content"><span class="cubesmall">[Element] Absorb %</span></p>
+	<p class="content">Same as above, but this reduces/heals by a percentage of the damage instead, and has a cap at 40%.</p>
+
+	<p class="content"><span class="cubesmall">Damage Reduced by #</span></p>
+	<p class="content">Reduces the physical damage by the specified amount. If it is high enough, it can completely prevent any physical damage.</p>
+
+	<p class="content"><span class="cubesmall">Magic Damage Reduced by #</span></p>
+	<p class="content">Similar as above, but this reduces magic, fire, cold and lightning damage at the same time, but separately for each element.</p><!-- high MDR vs low ele dmg. can roll over to DR# and help vs physical; the post that said that was talking about sorc's energy shield --> <!-- also, another post said that the per frame reduction was removed in 1.10 -->
+
+	
+	<p class="content"><span class="cubesmall">Poison Length Reduced by %</span></p>
+	<p class="content">Reduces the duration of poison, rounded down the nearest frame, but not under 1 frame. It is capped between -100% and 100% (minimum 1 frame duration), 75% for players and hirelings. It can be stacked above the cap to counter any negative effects to it, like <span class="magic">-% to Enemy Poison Resistance</span> (reduces it by subtraction) or -40% penalty in Terror <!-- check --> and -100% penalty in Destruction difficulty.</p>
+
+	<p class="content"><span class="cubesmall">% Curse Length Reduction</span></p>
+	<p class="content">Reduces the duration of curses. 100% makes you immune to curses. Keep in mind that curses are different from debuffs and auras.</p>
+
+	<p class="content"><span class="cubesmall">Half Freeze Duration</span></p>
+	<p class="content">Reduces chill and freeze duration by half. Does not stack.</p>
+	
+	<p class="content">See <a href="#slow_chill_freeze" target="_self">ABOVE</a> for more information about chill and freeze.</p>
+	
+	<p class="content"><span class="cubesmall">Cannot Be Frozen</span></p>
+	<p class="content">Gives immunity to chill and freeze.</p>
+
+	<p class="content">See <a href="#slow_chill_freeze" target="_self">ABOVE</a> for more information about chill and freeze.</p>
+	
+	<p class="content"><span class="cubesmall">Heroic Shield</span></p>
+	<p class="content">Some uberquest bosses have a Heroic Shield which renders them immune to all elements, except when it randomly drops one or more resistances under 100%. If you do not have <span class="magic">-% to Enemy [Element] Resistance</span> from skills, you cannot affect the immunity drop, but can only reduce their resistance once it drops. If you do have it, then you can make them drop it more often.</p>
+	
+	<p class="content"><span class="cubesmall">Unholy Armor &amp; Sacred Armor</span></p>
+	<p class="content">They provide huge amounts (50k) of <span class="magic">Damage Reduced by #</span> and <span class="magic">Magic Damage Reduced by #</span> for a short amount of time, making the player or a target ally practically invulnerable.</p>
+	
+	
+	
+	
+
+	<p class="genbig genflat">Additional defense effects</p>
+	
+	<p class="content"><span class="cubesmall">Attacker Flees after Striking %</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Attacker Takes Damage of #</span></p>
+	<p class="content">physical</p>
+
+	<p class="content"><span class="cubesmall">Attacker Takes [element] Damage of #</span></p>
+	<p class="content">fire, lightning, cold</p>
+
+	<p class="content"><span class="cubesmall">% Damage Reflected</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Blinds Attacker +#</span></p>
+	<p class="content"></p>
+	
+	<!-- Hit Blinds Target
+Decreases radius of awareness similar to the Necromancer Curse: Dim Vision.
+The formula is as follows:
+
+Chance = 50 + (Attacker Level + (Bonus * 4) - Defender Level) * 5
+Where the bonus is how many items of hit blinds target the character has -1. Some items have something like hit blinds target +2, which means they count as 2 items for the bonus calculation. Missile Attacks are at 1/3 this chance.
+
+The level of Dim Vision that's cast on the target is equal to (Chance - Roll)/5+1, max of 20. -->
+	
+	<p class="content"><span class="cubesmall">Freezes attacker +#</span></p>
+	<p class="content">see freeze section</p>
+	
+	
+	
+	
+	
+	
+	<p class="genbig">Minions, Totems, Hirelings, Reanimates. Resurrected, Converted and Charmed monsters</p>
+	
+	<p class="content">max res, immunity, level, what stats does it inherit</p>
+	
+	<p class="content">100% resistance to an element gives immunity to it.</p>	
+	
+	<p class="content">minion regeneration/heal is 1/256 of the player?</p>	
+	
+	<p class="content">Resurrected, Converted and Charmed monsters...</p>
+	
+	<p class="content"><span class="cubesmall">% Bonus to Summoned Minion Damage</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">% Bonus to Summoned Minion Attack Rating</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">% Bonus to Summoned Minion Life</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">% Bonus to Summoned Minion Resistances</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+# Extra Totems</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+# Extra Shadow Minions</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Shadows Spawn Corpses on Striking %</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+# to Maximum Necromancer Minions</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+# to Maximum Barbarian Minions</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">% Damage to Protector Spirit Bloodlust</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+# Enhanced Stance Radius</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">% Reanimate as: [monster]</span></p>
+	<p class="content"></p>
+	
+
+	
+	
+	
+	<p class="genbig">Attributes and skills</p>
+	
+	<p class="content"><span class="cubesmall">Increase Maximum Life %</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Increase Maximum Mana %</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Increase Maximum Life and Mana %</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+# Maximum Stamina</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+# to Life</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+# to Mana</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+# to [Primary Attribute]</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">% Bonus to [Primary Attribute]</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">% Bonus to Energy when using an Apple</span></p>
+	<p class="content"></p>
+	
+	<!--<p class="content"><span class="cubesmall">% Bonus to Vitality when using an Apple</span></p>
+	
+	<p class="content"></p>-->
+	
+	<p class="content"><span class="cubesmall">Hive Adds % of Poison Spell Damage Items to Vitality</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+# to all Attributes</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">% Bonus to All Attributes</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Maximum Skill Level Increased by #</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+# to All Skills</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+# to All Skills when using an Apple</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+# to [Class] Skill Levels</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+# to [Oskill]</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+# to [Skill] ([Class] Only)</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Level # [Oskill] (## Charges)</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Level # [Oskill] Aura when Equipped</span></p>
+	<p class="content"></p>
+	
+	
+	<!--+(1.5 per level) to Energy (Based on Clvl)
+	+(10 per skill level) to Strength (Based on Blessed Life Skill lvl)
+	+(1.25 per level) to Life (Based on Clvl)
+	+(20 per level) to Strength (Based on Blessed Life Skill Level)
+	+(20 per level) to Dexterity (Based on Blessed Life Skill Level)-->
+
+	
+
+	
+	<p class="genbig">Additional skill bonuses and effects</p>
+
+	<p class="content"><span class="cubesmall">Lion Stance Damage Bonus %</span></p>
+	<p class="content"></p>
+
+	<p class="content"><span class="cubesmall">% Bonus Damage to Bloodlust</span></p>
+	<p class="content"></p>
+
+	<p class="content"><span class="cubesmall">% Bonus Elemental Damage to Bloodlust</span></p>
+	<p class="content"></p>
+
+	<p class="content"><span class="cubesmall">% Damage to Protector Spirit Bloodlust</span></p>
+	<p class="content">see minions section</p>
+
+	<p class="content"><span class="cubesmall">% Bonus Damage to Mark of the Wild</span></p>
+	<p class="content"></p>
+
+	<p class="content"><span class="cubesmall">% Bonus Elemental Damage to Mark of the Wild</span></p>
+	<p class="content"></p>
+
+	<p class="content"><span class="cubesmall">% Duration Bonus to Mark of the Wild</span></p>
+	<p class="content"></p>
+
+	<p class="content"><span class="cubesmall">Doubled Terror Strike Duration</span></p>
+	<p class="content"></p>
+
+	<p class="content"><span class="cubesmall">Miasma Effect Duration: +# seconds</span></p>
+	<p class="content"></p>
+
+	<p class="content"><span class="cubesmall">% Bonus to Miasma Haunt Duration</span></p>
+	<p class="content"></p>
+
+	<p class="content"><span class="cubesmall">% to Searing Glow Dazzle Duration</span></p>
+	<p class="content"></p>
+
+	<p class="content"><span class="cubesmall">% Bonus to Buff/Debuff/Cold Skill Duration</span></p>
+	<p class="content">see spells and skill spell damage</p>
+
+	<p class="content"><span class="cubesmall">+# Hunting Banshee/Elemental Missiles</span></p>
+	<p class="content"></p>
+
+	<p class="content"><span class="cubesmall">+# Extra Magic Missiles Bolts</span></p>
+	<p class="content"></p>
+
+	<p class="content"><span class="cubesmall">Nova Charge Scatter Increased by %</span></p>
+	<p class="content"></p>
+
+	<p class="content"><span class="cubesmall">Doubled Venomous Aura Effect</span></p>
+	<p class="content"></p>
+
+	<p class="content"><span class="cubesmall">% Velocity Bonus to Sacred Armor</span></p>
+	<p class="content">see skills and frames section</p>
+
+	<p class="content"><span class="cubesmall">Lionheart Spell Blinds Attacker +#</span></p>
+	<p class="content"></p>
+	
+	<!-- Hit Blinds Target
+Decreases radius of awareness similar to the Necromancer Curse: Dim Vision.
+The formula is as follows:
+
+Chance = 50 + (Attacker Level + (Bonus * 4) - Defender Level) * 5
+Where the bonus is how many items of hit blinds target the character has -1. Some items have something like hit blinds target +2, which means they count as 2 items for the bonus calculation. Missile Attacks are at 1/3 this chance.
+
+The level of Dim Vision that's cast on the target is equal to (Chance - Roll)/5+1, max of 20. -->
+
+	<p class="content"><span class="cubesmall">Hive Adds % of Poison Spell Damage Items to Vitality</span></p>
+	<p class="content">see attributes section</p>
+
+	<p class="content"><span class="cubesmall">+# Enhanced Stance Radius</span></p>
+	<p class="content">see minions section</p>
+
+	<p class="content"><span class="cubesmall">Only Allows the Use of Melee, Summoning and Buff/Debuff Skills</span></p>
+	<p class="content"></p>
+
+
+	
+	
+	<p class="genbig" id="skills_frames">Speeds and frames</p>
+	
+	<p class="content">speed calculator, frames (all except faster run/walk are reliant on frame breakpoints), morphs, character differences, weapon differences for attacking/casting</p>
+	
+	<p class="content">Druid Morph, 
+	Treewarden Morph, 
+	Traprat Morph, 
+	Sorceress Morph, 
+	Superbeast Morph, 
+	Tiefling Morph, 
+	Baal Morph?, 
+	Diablo Morph?, 
+	Porkchop isn't a Morph - it's a debuff?</p>
+	
+	
+	<p class="content"><span class="cubesmall">% Increased Overall Speed</span></p>
+	<p class="content">This is short for all the 5 modifiers below all at once.</p>
+	
+	<p class="content"><span class="cubesmall">% Increased Attack Speed</span></p>
+	<p class="content">Increases your attacking speed. Keep in mind that this modifier has different power/effect if it is on a weapon, from skills or on other items (this one being the least effective). Attack speeds also vary with different characters (morphs), weapons and attacks/skills.</p>
+	
+	<p class="content"><span class="cubesmall">% Faster Cast Rate</span></p>
+	<p class="content">Similar as above, but <span class="magic">Faster Cast Rate</span> on a weapon doesn't have any different power than on any other item. Sorceresses, Druids and Necromancers have an increased cast rate with staves (the number of frames for the casting animation is reduced).</p>
+	
+	<p class="content"><span class="cubesmall">% Faster Hit Recovery</span></p>
+	<p class="content">Decreases the time it takes to recover once you're put in hit recovery. Again, base values for each character are different, and FHR from skills is more effective than from items.</p>
+	
+	<p class="content">See <a href="stats.html#concept_hit_recovery" target="_self">BELOW</a> for more information.</p>
+	
+	<p class="content"><span class="cubesmall">% Faster Block Rate</span></p>
+	<p class="content"><p class="content">Decreases the time it takes to do the blocking. Again, base values for each character are different, and FBR from skills is more effective than from items.</p></p>
+	
+	<p class="content"><span class="cubesmall">% Faster Run/Walk (Item)</span></p>
+	<p class="content">Increases your running/walking speed, with diminishing returns. Keep in mind that different characters have different base running/walking speed, so they benefit from this bonus in different amounts. <span class="magic">Faster Run/Walk</span> from items is less effective than from skills. The effective value for items is calculated as follows (rounded down, 150% cap):</p>
+	
+	<div class="reagent" style="max-width: 750px">Effective item %FR/W = (150% * %FR/W) / (150% + %FR/W) _________ is it still 150%?</div>
+	
+	<p class="content">This value can now be compared/added to <span class="magic">% Faster Run/Walk</span> values from skills.</p>
+	
+	<p class="content"><span class="cubesmall">Random Walk/Run Speed</span></p>
+	<p class="content">-75% to 125% every 2 sec. Cancelled by any other faster r/w? Any formula for the distribution of speeds? Is it added to item or skill movement speed?</p>
+	
+	<p class="content"><span class="cubesmall">% Faster Run/Walk (Skill), % Velocity</span></p>
+	<p class="content">Some skills call <span class="magic">Faster Run/Walk</span> as <span class="magic">Velocity</span>. A percentage of skill <span class="magic">Faster Run/Walk</span> (ie. <span class="magic">Velocity</span>) is more effective than the same percentage of <span class="magic">Faster Run/Walk</span> from items &ndash; they may be capped at different values for each skill, though. Different skills use different formulas.</p>
+	
+	<!-- Concept? --> <p class="content"><span class="cubesmall">Run/Walk Speed</span></p>
+	<p class="content">Total run and walk speeds can be calculated as follows:</p>
+	
+	<div class="reagent" style="max-width: 750px">Walk Speed = Base_walk_speed * (1 + Total_Speed_Modifier/100%)</div>
+	<div class="reagent" style="max-width: 750px">Run Speed = Base_run_speed + Base_walk_speed * Total_Speed_Modifier/100%</div>
+	
+	<p class="content">Neither can go below <span class="reagent_color">Base_walk_speed/4</span>, so the bottom caps are reached for:</p>
+	
+	<div class="reagent" style="max-width: 750px">Walk Speed: Total_Speed_Modifier = -75%</div>
+	<div class="reagent" style="max-width: 750px">Run Speed: Total_Speed_Modifier = 25% - 100% * Base_run_speed/Base_walk_speed</div>
+	
+	
+	<p class="content"><span class="reagent_color">Total_Speed_Modifier</span> is the sum of <span class="reagent_color">Effective item %FR/W</span> (see above), body armor/shield %FR/W penalty, skill %FR/W and any other modifier (eg. slow, debuffs).</p>
+	
+
+	
+	<p class="content">See <a href="baseitems.html" target="_self">THIS PAGE</a> for more information about body armor and shield slow.<br />
+	See <a href="#slow_chill_freeze" target="_self">ABOVE</a> for more information about slow.</p>
+	
+	<p class="content">The base walking and running speed for different characters and states (morphs) may be different. You can find the <span class="reagent_color">Base_walk_speed</span> and <span class="reagent_color">Base_run_speed</span> values for the 7 character classes from MXL 2012 v005 here (they've been increased in Ultimative):</p>
+	 
+	<table class="mini_table">
+		<tr><th>Character<br />Class</th><th>Base Walk<br />Speed</th><th>Base Run<br />Speed</th></tr>
+		<tr><td>Amazon</td><td>11</td><td>14</td></tr>
+		<tr><td>Other</td><td>10</td><td>12</td></tr>
+	</table>
+	
+
+	
+	<p class="genbig">Item specific</p>
+	
+	<p class="content"><span class="cubesmall">Superior</span></p>
+	<p class="content">See <a href="baseitems.html" target="_self">THIS PAGE</a> for more information.</p>
+	
+	<p class="content"><span class="cubesmall">Orb Effects Applied to this Item are Doubled</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Already upgraded!</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Indestructible</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Increase Maximum Durability %</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Repairs 1 Durability in # Seconds</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Worship the Crack Monkeys!</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Requirements -%</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+# Required Level</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Ethereal (Cannot be Repaired)</span></p>
+	<p class="content">See <a href="baseitems.html" target="_self">THIS PAGE</a> for more information.</p>
+	
+	<p class="content"><span class="cubesmall">Socketed: #</span></p>
+	<p class="content"></p>
+	
+	
+	<!--
+	<p class="content"><span class="cubesmall">[Item name with color]</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">[Item type with color]</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">[Item (use) description with color]</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">'[List of short names of socketed runes]'</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Throw Damage: # to ##</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">One-Hand Damage: # to ##</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Two-Hand Damage: # to ##</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Defense: #</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Chance to Block: %<span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Durability: # of ##</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">([Class] Only)</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Required Strength: #</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Required Dexterity: #</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Required Level: #</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">[Weapon Class] Class - [Weapon Speed] Attack Speed</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Current Strength Damage Bonus: %</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Current Dexterity Damage Bonus: %</span></p>
+	<p class="content"></p>
+	
+	
+	
+	<p class="content"><span class="cubesmall">+% Damage to Undead</span></p>
+	<p class="content"></p>
+	
+	
+	
+	<p class="content"><span class="cubesmall">% Enhanced Damage</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">% Enhanced Defense</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">% Bonus to Attack Rating</span></p>
+	<p class="content"></p>
+	-->
+	
+	<!-- staff for necro, sorc and druid; 2h axe for barb? -->
+	
+	
+	
+	<p class="genbig">General</p>
+	
+	<p class="content"><span class="cubesmall">% Better Chance of Getting Magic Items (Magic Find)</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">% Extra Gold from Monsters</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">Reduces all Vendor Prices %</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+% to Experience Gained</span></p>
+	<p class="content"></p>
+	<!--(1.5625 per level)% Magic Find (Based on Clvl)-->
+	
+	<p class="content"><span class="cubesmall">+# Crafting Points</span></p>
+	<p class="content"></p>
+	
+	<p class="content"><span class="cubesmall">+# to Light Radius</span></p>
+	<p class="content">It makes the area around you lighter or darker. The more you have, the farther the reach. It's really hard to see monsters on the edge of the screen if you have a very low <span class="magic">Light Radius</span>.</p>
+	
+	<p class="content">The maximum <span class="magic">Light Radius</span> you can have is 18. There is also a base starting <span class="magic">Light Radius</span> that is 13 for cLoD, but I'm not sure if it's different for MedianXL: Ultimative.</p>
+	
+	<br />
+	
+	<p class="content"><span class="cubesmall">Items disappear when on ground for:</span><br />
+	<br />
+	5 minutes: Game room stays open for 5 minutes after you've been in it for at least 5 minutes (not sure if it works like that when there's too many people in the waiting line).<br />
+	10 minutes: Basic items.<br />
+	20 minutes: Magic items, Gems and Runes.<br />
+	30 minutes: Rare, Honorific, Crafted, Set and Unique items.<br />
+	<br />
+	Picking an item onto your cursor and dropping it again resets the timer.</p>
+	
+
+	
+</body>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quest Reference List</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9;chrome=1;" />
+		<style type="text/css">
+			
+			body
+			{
+				background-color: #CCCCCC; /*AAABBB*/
+				color: #222222;
+				margin: 5px 0px 0px 0px;
+				font-family: Arial, sans-serif;
+				font-size: 8pt;
+			}
+		
+			p
+			{
+				margin-left: 50px;
+			}
+			ul
+			{
+				margin-left: 50px; //margin:0;
+			}
+			hr
+			{
+				height: 1px;
+				border: 0px; /* overcomes hr color bug in FF */
+				border-top: 1px solid #444444; /* upper border only so the thickness can go below 2px */
+				width: 250px;
+				margin-left: 50px;
+				text-align: left;
+			}
+			.genbig {
+				font-family: Arial, sans-serif;
+				font-size: 12pt;
+				font-weight: bold;
+				color: #626262; /* used to be 626270*/
+			}
+			/* charm pics + text on the right (div div img /div div text /div /div) */
+				div.charms {
+				/* text-align:center; */
+				margin-bottom:1em;
+				}
+
+				div.charms img {
+				padding: 7px;
+				float:right; 
+				}
+
+				div.charms div {
+				display: inline-block;
+				vertical-align:middle;
+				text-align:center;
+				}
+
+				div.charms  > :nth-child(1) {
+				/* margin-right: 1em; */
+				margin-left:66px;
+				width:72px;
+				}
+
+				div.charms  > :nth-child(2) {
+				width:375px;
+				}
+				.unique {
+					color: #706033;
+					}
+				.magic {
+					color: #555570;
+					}
+				.rare {
+					color: #909000;
+					}
+				.orange {
+					color: #b7741c; /* #d08420; from ingame */ /* #706033; old bright one*/
+					}
+				.set {
+					color: #117011;
+					}
+				.reagent {
+					color: #884400;
+					margin:0px 0px 0px 65px;
+					/*border: 1px solid #665500;
+					padding: 2px;*/
+					}
+				img.item {
+					margin-right: 3px;
+					float: left;
+					padding: 10px;
+					}
+				img {
+					border: 1px solid #000000;
+					border-color: #000000;
+					}
+				/* -------------------- LINK STYLES -------------------- */
+
+				/* the links in the regular text; this appears to be ignored? I suspect it conflicts with something else, like images */
+				a {
+					color: black;
+					font-family: Arial, sans-serif;
+					font-size: 8pt;
+					text-decoration: none;
+					}
+				/* all unvisited links */
+				a:link  {
+					color: black;
+					text-decoration: none;
+					}
+				/* visited links */
+				a:visited  {
+					color: black;
+					text-decoration: none;
+					}
+				/* selected links */
+				a:active  {
+					color: white; /* color: #EEEEFF; */
+					text-decoration: none;
+					}
+				/* links being hovered on */
+				a:hover  {
+					color: white; /* color: #EEEEFF; */
+					text-decoration: none;
+					}
+				table#quest_list tr td:nth-child(4) a
+				{
+					text-decoration: underline;
+				}
+					
+					
+				table#filter
+				{
+					margin-left:50px;
+				}
+				table#quest_list
+				{
+					cellspacing:0;
+					cellpading:0;
+					border-collapse:collapse;
+					border-bottom: 2px solid black;
+					margin-left:auto;
+					margin-right:auto;
+					width:990px;
+				}
+				table#quest_list thead tr th:nth-child(1) /* name */
+				{
+					width:150px;
+				}
+				table#quest_list thead tr th:nth-child(2) /* type */
+				{
+					width:80px;
+				}
+				table#quest_list thead tr th:nth-child(3) /* location */
+				{
+					width:195px;
+				}
+				table#quest_list thead tr th:nth-child(4) /* details */
+				{
+					width:290px;
+				}
+				table#quest_list thead tr th:nth-child(5) /* reward/recipe */
+				{
+					width:290px;
+				}
+				
+				table#quest_list td
+				{
+					vertical-align:top;
+				}
+				table#quest_list tbody td:first-child
+				{
+					font-weight: bold;
+				}
+				table#quest_list tbody tr th
+				{
+					border-top: 1px solid black;
+					border-bottom: 1px solid black;
+				}
+				table#quest_list thead tr th
+				{
+					font-size:120%;
+					border-top: 2px solid black;
+					border-bottom: 2px solid black;
+				}
+				table#quest_list thead tr:first-child th
+				{
+					font-size:220%;
+					padding-top:10px;
+					padding-bottom:10px;
+				}
+				table#quest_list thead tr:nth-child(2) th
+				{
+					padding-top:2px;
+					padding-bottom:2px;
+				}
+				table#quest_list tbody tr:nth-child(even)
+				{
+					background-color:silver;
+				}
+				/*table#quest_list tbody tr
+				{
+					border-top:1px solid silver;
+					border-bottom:1px solid silver;
+				}*/
+				table#quest_list tbody tr:hover > :not(th)
+				{
+					background-color: #e1e1e1;
+				}
+				
+				span
+				{
+					border-bottom:1px dotted black;
+				}
+		</style>
+		<script type="text/javascript">
+			function switchs(el)
+			{
+				var this_class = el.id;
+				var rows = document.getElementsByTagName("tr");
+				var num_rows = rows.length;
+				for (e=0;e<num_rows;e++)
+				{
+					if (rows[e].className.match(this_class) == this_class)
+					{
+						if (el.checked)
+						{
+							rows[e].style.display = "";
+							if (this_class == "second")
+							{
+								rows[e].style.display = "none";
+							}
+						}
+						else
+						{
+							rows[e].style.display = "none";
+							if (this_class == "second")
+							{
+								rows[e].style.display = "";
+							}
+						}
+					}
+				}
+				
+				var tablee = document.getElementsByTagName("table")[0];
+				var table_children = tablee.childNodes;
+				var diff_nodes_number = new Array();
+				var diff_nodes = new Array();
+				var diff_nodes_cummulative = new Array();
+				diff_nodes_cummulative[0] = 0;
+				diff_nodes_cummulative[1] = 0;
+				diff_nodes_cummulative[2] = 0;
+				diff_nodes_number[0] = 0;
+				diff_nodes_number[1] = 0;
+				diff_nodes_number[2] = 0;
+				diff_nodes_number[3] = 0;
+				var diff = 0;
+				var table_children_len = table_children.length;
+				for(e=0;e<table_children_len;e++)
+				{
+					if ((table_children[e].tagName == "THEAD"))
+					{
+						diff++;
+						diff_nodes[diff] = table_children[e];
+					}
+					if ((table_children[e].tagName == "TBODY"))
+					{
+						diff_nodes_number[diff]++;
+					}
+				}
+				diff_nodes.shift();
+				diff_nodes_number.shift();
+				diff_nodes_cummulative[0] = diff_nodes_number[0];
+				diff_nodes_cummulative[1] = diff_nodes_number[1] + diff_nodes_cummulative[0];;
+				diff_nodes_cummulative[2] = diff_nodes_number[2] + diff_nodes_cummulative[1];
+
+				var acts = document.getElementsByTagName("tbody");
+				var num_acts = acts.length;
+				/*var num_act_hidden = new Array;
+				num_act_hidden[0] = 0;
+				num_act_hidden[1] = 0;
+				num_act_hidden[2] = 0;*/
+				
+				var num_act_hidden = 0;
+				for(e=0;e<num_acts;e++)
+				{
+					var act_q = acts[e].getElementsByTagName("tr");
+					var num_act_q = act_q.length;
+					
+					var num_act_q_shown = 0;
+					for(f=0;f<num_act_q;f++)
+					{
+						if (act_q[f].style.display != "none")
+						{
+							num_act_q_shown++;
+						}
+					}
+					
+					if ((e == diff_nodes_cummulative[0])||(e == diff_nodes_cummulative[1])||(e == diff_nodes_cummulative[2]))
+					{
+						num_act_hidden=0;
+					}
+					
+					if (num_act_q_shown <= 1)
+					{
+						acts[e].style.display = "none";
+						num_act_hidden++;
+					}
+					else
+					{
+						acts[e].style.display = "";
+					}
+					
+					if ((e == (diff_nodes_cummulative[0]-1))&&((diff_nodes_cummulative[0]-num_act_hidden)==0))
+					{
+						diff_nodes[0].style.display = "none";
+					}
+					if ((e <= (diff_nodes_cummulative[0]-1))&&((diff_nodes_cummulative[0]-num_act_hidden)!=0))
+					{
+						diff_nodes[0].style.display = "";
+					}
+					if ((e == (diff_nodes_cummulative[1]-1))&&((diff_nodes_cummulative[1]-diff_nodes_cummulative[0]-num_act_hidden)==0))
+					{
+						diff_nodes[1].style.display = "none";
+					}
+					if ((e <= (diff_nodes_cummulative[1]-1))&&(e > (diff_nodes_cummulative[0]-1))&&((diff_nodes_cummulative[1]-diff_nodes_cummulative[0]-num_act_hidden)!=0))
+					{
+						diff_nodes[1].style.display = "";
+					}
+					if ((e == (diff_nodes_cummulative[2]-1))&&((diff_nodes_cummulative[2]-diff_nodes_cummulative[1]-num_act_hidden)==0))
+					{
+						diff_nodes[2].style.display = "none";
+					}
+					if ((e <= (diff_nodes_cummulative[2]-1))&&(e > (diff_nodes_cummulative[1]-1))&&((diff_nodes_cummulative[2]-diff_nodes_cummulative[1]-num_act_hidden)!=0))
+					{
+						diff_nodes[2].style.display = "";
+					}
+				}
+				return;
+			}
+			
+			function types(el)
+			{
+				var quests_list = document.getElementById("quest_list");
+				var quests = quest_list.getElementsByTagName("tr");
+				var num_q = quests.length;
+				var cell
+				if (el.checked)
+				{
+					for(f=0;f<num_q;f++)
+					{
+						cell = quests[f].childNodes;
+						if (cell.length >= 2)
+						{
+							cell[1].style.display = "";
+						}
+					}
+					quests_list.style.width="990px";
+				}
+				else 
+				{
+					for(f=0;f<num_q;f++)
+					{
+						cell = quests[f].childNodes;
+						if (cell.length >= 2)
+						{
+							cell[1].style.display = "none";
+						}
+					}
+					quests_list.style.width="910px";
+				}
+			}
+			
+			function reqlvl(el)
+			{
+				if (el.checked)
+				{
+					document.getElementById('hatred').checked=false;
+					switchs(document.getElementById('hatred'));
+					document.getElementById('hatred').checked=true;
+					
+					document.getElementById('terror').checked=false;
+					switchs(document.getElementById('terror'));
+					document.getElementById('terror').checked=true;
+					
+					document.getElementById('destruction').checked=false;
+					switchs(document.getElementById('destruction'));
+					
+					switchs(document.getElementById('reqlvl'));
+				}
+				else
+				{
+					document.getElementById('hatred').checked=true;
+					switchs(document.getElementById('hatred'));
+					
+					document.getElementById('terror').checked=true;
+					switchs(document.getElementById('terror'));
+					
+					document.getElementById('destruction').checked=true;
+					switchs(document.getElementById('destruction'));
+					
+					document.getElementById('uberq').checked=true;
+					switchs(document.getElementById('uberq'));
+					
+					document.getElementById('challenge').checked=true;
+					switchs(document.getElementById('challenge'));
+					
+					document.getElementById('quest').checked=true;
+					switchs(document.getElementById('suest'));
+					
+					document.getElementById('misc').checked=true;
+					switchs(document.getElementById('misc'));
+					
+					document.getElementById('second').checked=false;
+					switchs(document.getElementById('second'));
+					
+					//no idea why this part doesn't work
+					document.getElementById('typess').checked=true;
+					types(document.getElementById('typess'));
+					
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<hr />
+		<p class="genbig">QUEST REFERENCE LIST</p>
+		
+		<p>This is a short reference list for all the useful uberquests, quests, challenges and various other things.<br />They are ordered by difficulty and location. Hover the mouse over under-dotted text for more information.</p>
+		
+		<p>Keep this in mind:
+			<ul>
+				<li>Horadric Amulet and Staff of Kings can be found in Claw Viper Temple level 2.</li>
+				<li>The complete Khalim's Will can be found by killing the council in Travincal.</li>
+				<li>To keep the bonus from each Scroll of Resistances, cube them with the <span title="See Level Challenge 1 for details.">Sunstone of the Elements</span>.</li>
+				<li>Most of the uberquest rewards are charms. Some of them can be upgraded with the Trophy from the same boss.</li>
+				<li>If the charm has a fraction next to its name, it's the chance that it drops. Trophies always have 2% chance to drop.</li>
+				<li>To do summoning uberquests and challenges, you need the Dark Summoning skill to summon creatures.<br />
+				You can get it from the Book of Summoning, which is obtained by buying and cubing:<br />
+				<br />
+				<div class="reagent">Meditation Candle x3 + Sacrifical Heart x3 &rarr; Book of Summoning</div></li>
+			</ul>
+		</p>
+		
+		<hr />
+		
+		<p>You can filter the list with these:</p>
+		
+		<table id="filter">
+			<tr>
+				<td>Uberquests:</td>
+				<td><input type="checkbox" checked="checked" id="uberq" onchange="switchs(this);"/></td>
+				<td>Challenges:</td>
+				<td><input type="checkbox" checked="checked" id="challenge" onchange="switchs(this);" /></td>
+				<td>Level limited only:</td><td><input type="checkbox" id="reqlvl" onchange="reqlvl(this);"/></td>
+				<td>Quests:</td>
+				<td><input type="checkbox" checked="checked" id="quest" onchange="switchs(this);" /></td>
+				<td>Miscellaneous:</td>
+				<td><input type="checkbox" checked="checked" id="misc" onchange="switchs(this);" /></td>
+			</tr>
+			<tr>
+				<td>Hatred:</td>
+				<td><input type="checkbox" checked="checked" id="hatred" onchange="switchs(this);"/></td>
+				<td>Terror:</td>
+				<td><input type="checkbox" checked="checked" id="terror" onchange="switchs(this);"/></td>
+				<td>Destruction:</td>
+				<td><input type="checkbox" checked="checked" id="destruction" onchange="switchs(this);"/></td>
+				<td>Type:</td>
+				<td><input type="checkbox" checked="checked" id="typess" onchange="types(this);" /></td>
+				<td>Only one instance:</td>
+				<td><input type="checkbox" id="second" onchange="switchs(this);"/></td>
+			</tr>
+		</table>
+
+		<br />
+		
+		<table id="quest_list">
+			<thead>
+				<tr><th colspan="5">Hatred</th></tr>
+				<tr><th>Name &amp; Link</th><th>Type</th><th>Location</th><th>Details</th><th>Reward/Recipe</th></tr>
+			</thead>
+			<tbody>
+				<tr><th></th><th></th><th>Act 1</th><th colspan="2"></th></tr>
+				<tr class="challenge hatred reqlvl"><td><a href="levelchallenge0.html">Level Challenge 0</a></td><td>Challenge<br />Summoning</td><td>Outside of town</td><td>Read &amp; cube <span title="READ IT. No, really, read it. It's the statue you start with in the inventory.">Median Statue</span>. Summon. <span title="Timered instagib beam that starts in the south east part of the screen and rotates clockwise for a full circle. It has trailing beams that prevent you from following it closely.">Death beam</span>.<br />Traps give the boss invulnerability. Req lvl = 5. <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span>.</td><td><span title="READ IT. No, really, read it. It's the statue you start with in the inventory.">Median Statue</span> &rarr; Level Challenge 0 charm<br />Harkon Crystal + Gem</td></tr>
+				<tr class="quest hatred"><td>Den of Evil</td><td>Quest</td><td>Den of Evil (Blood Moor)</td><td>Kill everything, talk to Akara.<br />Prince Albrecht drops 4 <span title="READ IT. Remember to remove it at level 120. See the Character Orb page for details about recipes.">Character Orbs</span>.</td><td>+1 Skill Point, <span title="READ IT. Remember to remove it at level 120. See the Character Orb page for details about recipes.">Character Orb</span></td></tr>
+				<tr class="misc hatred"><td><a href="boxes.html">Gift Box</a></td><td>Miscellaneous</td><td>Tristram (Stony Field)</td><td>Griswold's drop. Semi-predefined items based on class.</td><td>Gift Box &rarr; 3 Tiered Unique items</td></tr>
+			</tbody>
+			<tbody>
+				<tr><th></th><th></th><th>Act 2</th><th colspan="2"></th></tr>
+				<tr class="challenge misc second hatred"><td><a href="eggs.html">Dragon's Eggs</a></td><td>Challenge<br />Miscellaneous</td><td><span title="Rocky Waste, Dry Hills, Far Oasis & Lost City">Open Desert Areas</span></td><td>Kill Egg &amp; Dragon. Summonable. Req lvl &leq; 60. <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span>. Swirlies required to level-up Paladin Deva King skill.</td><td>Deva King. Free <span title="Output item level in this difficulty is 40.">rare item</span> rerolls (30 sec):<br />Rare Item + Scroll of Town Portal</td></tr>
+				<tr class="quest hatred"><td>Radament</td><td>Quest</td><td>Sewers Level 3 (Lut Gholein)</td><td>Kill Radament, talk to Atma.</td><td>+1 Skill Point Book</td></tr>
+				<tr class="challenge hatred reqlvl"><td><a href="levelchallenge1.html">Level Challenge 1</a></td><td>Challenge</td><td>Halls of the Dead Level 3 (Dry Hills)</td><td><a href="images\uberquests\maps\ta.png" target='_blank'>MAP</a>. Entrance spire gives Sunstone of the Elements.<br />Kill 3 Bosses, cube each boss' Sunstone. <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span>.<br />Required level &leq; 50, no experience gain inside.</td><td>Sunstone of the Elements, 3 Sunstones<br />Sunstone + Scroll of Town Portal + Scroll of Identify<br />Sunstone (Upgraded) + Sunstone of the Elements</td></tr>
+			</tbody>
+			<tbody>
+				<tr><th></th><th></th><th>Act 3</th><th colspan="2"></th></tr>
+				<tr class="challenge misc second hatred"><td><a href="eggs.html">Dragon's Eggs</a></td><td>Challenge<br />Miscellaneous</td><td><span title="Spider Forest, Great Marsh & Flayer Jungle">Open Jungle Areas</span></td><td>Kill Egg &amp; Dragon. Summonable. Req lvl &leq; 60. <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span>. Swirlies required to level-up Paladin Deva King skill.</td><td>Deva King. Free item <span title="Rerolls item to any quality: Basic, Magic, Rare, Set and Tiered Unique. Output item level in this difficulty is 50.">Chaos Rerolls</span> (30 sec):<br />Any Item + Scroll of Town Portal</td></tr>
+				<tr class="challenge hatred reqlvl"><td><a href="ennead.html">The Ennead Challenge</a></td><td>Challenge</td><td>Arachnid Lair (Spider Forest)</td><td><a href="images\uberquests\maps\k3k.png" target='_blank'>MAP</a>. <a href="images\uberquests\maps\k3k_new.jpg" target='_blank'>MAP2</a>. Spires give invulnerability.<br />3 Bosses drop random Class Charms. Req lvl &leq; 80.</td><td>Class Charm (your class) + Jewel: Unlocks Ennead skill</td></tr>
+				<tr class="quest hatred"><td>The Golden Bird</td><td>Quest</td><td>Lower Kurast entrance</td><td>Kill Deathfire Bearer, talk to townsfolk.</td><td>+20 to Maximum Life Potion</td></tr>
+				<tr class="quest hatred"><td>Lam Essen's Tome</td><td>Quest</td><td>Ruined Temple (Kurast Bazaar)</td><td>Get the tome, talk to Alkor.</td><td>+5 Attribute Points</td></tr>
+			</tbody>
+			<tbody>
+				<tr><th></th><th></th><th>Act 4</th><th colspan="2"></th></tr>
+				<tr class="quest hatred"><td>The Fallen Angel</td><td>Quest</td><td>Plains of Despair</td><td>Kill Izual, talk to his spirit, then talk to Tyrael.</td><td>+2 Skill Points</td></tr>
+			</tbody>
+			<tbody>
+				<tr><th></th><th></th><th>Act 5</th><th colspan="2"></th></tr>
+				<tr class="quest hatred"><td>Anya</td><td>Quest</td><td>Frozen River (Crystalline River)</td><td>Find and free Anya, talk to Malah.</td><td>Scroll of Resistances + <span title="See Level Challenge 1 for details.">Sunstone of the Elements</span></td></tr>
+			</tbody>
+			<tbody>
+				<tr><th></th><th></th><th>Various Acts</th><th colspan="2"></th></tr>
+				<tr class="misc hatred second"><td>500 Signets of Learning</td><td>Miscellaneous</td><td>Anywhere</td><td>Turn unwanted items into Signets of Learning.</td><td><span title="Sacred Unique item. Includes SU, SSU and SSSU.">SU</span>/<span title="Set item">Set</span>/<span title="Unique Rings, Amulets and Jewels">Jewelry</span>/<span title="Unique Arrow and Bolt quivers">Quiver</span> + <span title="Buy from a shop.">Catalyst of Learning</span><br />&rarr; Signet of Learning (+1 Attribute Point, +500 max)</td></tr>
+			</tbody>
+			<thead>
+				<tr><th colspan="5">Terror</th></tr>
+				<tr><th>Name &amp; Link</th><th>Type</th><th>Location</th><th>Details</th><th>Reward/Recipe</th></tr>
+			</thead>
+			<tbody>
+				<tr><th></th><th></th><th>Act 1</th><th colspan="2"></th></tr>
+				<tr class="quest terror"><td>Den of Evil</td><td>Quest</td><td>Den of Evil (Blood Moor)</td><td>Kill everything, talk to Akara.</td><td>+1 Skill Point</td></tr>
+				<tr class="misc terror"><td><a href="boxes.html">Special Box</a></td><td>Miscellaneous</td><td>Tristram (Stony Field)</td><td>Griswold's drop. See the page for details.</td><td>Special Box + Oil (any of the 6) &rarr; something</td></tr>
+				<tr class="challenge terror"><td><a href="blackroad.html#fear">Trial of Fear</a><br />(<a href="blackroad.html">Black Road Challenge</a>)</td><td>Challenge<br />Summoning</td><td>The Hole Level 2 (Black Marsh)</td><td>Kill The Butcher. Vulnerable on the star that may appear on his hit. <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span>.</td><td>Cube <span title="See The Ennead Challenge for details.">Class Charm</span></td></tr>
+				<tr class="challenge terror"><td><a href="minigames.html#mini1">Minigame 1: Witch Queen</a></td><td>Challenge</td><td>Forgotten Tower Level 5 (Black Marsh)</td><td>Avoid <span title="They pounce on you and instakill you when you get too close.">Witches</span>. Kill Countess, <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span>.</td><td><span title="See The Ennead Challenge for details.">Class Charm</span> + Eth Rune</td></tr>
+				<tr class="challenge terror"><td><a href="minigames.html#mini2">Minigame 2: Crowned</a></td><td>Challenge</td><td>Tamoe Highlands</td><td>Get close to a <span title="They pounce on you and instakill you when you get too close.">Witch</span>, 15% chance for the star.</td><td><span title="See The Ennead Challenge for details.">Class Charm</span> + Thul Rune</td></tr>
+			</tbody>
+			<tbody>
+				<tr><th></th><th></th><th>Act 2</th><th colspan="2"></th></tr>
+				<tr class="challenge misc second terror"><td><a href="eggs.html">Dragon's Eggs</a></td><td>Challenge<br />Miscellaneous</td><td><span title="Rocky Waste, Dry Hills, Far Oasis & Lost City">Open Desert Areas</span></td><td>Kill Egg &amp; Dragon. Summonable. Req lvl &leq; 100. <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span>. Swirlies required to level-up Paladin Deva King skill.</td><td>Deva King. Free <span title="Output item level in this difficulty is 80.">rare item</span> rerolls (30 sec):<br />Rare Item + Scroll of Town Portal</td></tr>
+				<tr class="quest terror"><td>Radament</td><td>Quest</td><td>Sewers Level 3 (Lut Gholein)</td><td>Kill Radament, talk to Atma.</td><td>+1 Skill Point Book</td></tr>
+				<tr class="challenge second terror"><td><a href="minigames.html#mini2">Minigame 2: Crowned</a></td><td>Challenge</td><td>Rocky Waste</td><td>Get close to a <span title="They pounce on you and instakill you when you get too close.">Witch</span>, 15% chance for the star.</td><td><span title="See The Ennead Challenge for details.">Class Charm</span> + Thul Rune</td></tr>
+				<tr class="challenge terror"><td><a href="blackroad.html#knowledge">Trial of Knowledge</a><br />(<a href="blackroad.html">Black Road Challenge</a>)</td><td>Challenge</td><td>Stony Tomb Level 2 (Rocky Waste)</td><td><a href="images\uberquests\maps\fauz.jpg" target='_blank'>MAP</a>. Kill 5 Bosses for 5 Brains. Many monsters.</td><td><span title="See The Ennead Challenge for details.">Class Charm</span> + 5x Brain (different)</td></tr>
+				<tr class="challenge terror"><td><a href="blackroad.html#blood">Trial of Blood</a><br />(<a href="blackroad.html">Black Road Challenge</a>)</td><td>Challenge</td><td>Halls of the Dead Level 3 (Dry Hills)</td><td><a href="images\uberquests\maps\ta.png" target='_blank'>MAP</a>. Kill bosses Skovos &amp; Lycander &lt; 30 sec. <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span>.<br />Bias: Unique Items</td><td>Cube <span title="See The Ennead Challenge for details.">Class Charm</span></td></tr>
+				<tr class="challenge terror reqlvl"><td><a href="levelchallenge2.html">Level Challenge 2</a></td><td>Challenge<br />Summoning</td><td>Valley of Snakes</td><td>Minions give invulnerability.<br />Strong spell attacks. Req lvl &leq; 90. <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span>.</td><td><span title="See The Ennead Challenge for details.">Class Charm</span> + Perfect Gem</td></tr>
+			</tbody>
+			<tbody>
+				<tr><th></th><th></th><th>Act 3</th><th colspan="2"></th></tr>
+				<tr class="challenge misc second terror"><td><a href="eggs.html">Dragon's Eggs</a></td><td>Challenge<br />Miscellaneous</td><td><span title="Spider Forest, Great Marsh & Flayer Jungle">Open Jungle Areas</span></td><td>Kill Egg &amp; Dragon. Summonable. Req lvl &leq; 100. <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span>. Swirlies required to level-up Paladin Deva King skill.</td><td>Deva King. Free item <span title="Rerolls item to any quality: Basic, Magic, Rare, Set and Tiered Unique. Output item level in this difficulty is 80.">Chaos Rerolls</span> (30 sec):<br />Any Item + Scroll of Town Portal</td></tr>
+				<tr class="challenge second terror"><td><a href="ennead.html">The Ennead Challenge</a></td><td>Challenge</td><td>Arachnid Lair (Spider Forest)</td><td><a href="images\uberquests\maps\k3k.png" target='_blank'>MAP</a>. <a href="images\uberquests\maps\k3k_new.jpg" target='_blank'>MAP2</a>. Spires give invulnerability.<br />3 Bosses drop random Class Charms. Req lvl &leq; 80.</td><td>Class Charm (your class) + Jewel: Unlocks Ennead skill</td></tr>
+				<tr class="quest terror"><td>The Golden Bird</td><td>Quest</td><td>Lower Kurast entrance</td><td>Kill Deathfire Bearer, talk to townsfolk.</td><td>+20 to Maximum Life Potion</td></tr>
+				<tr class="quest terror"><td>Lam Essen's Tome</td><td>Quest</td><td>Ruined Temple (Kurast Bazaar)</td><td>Get the tome, talk to Alkor.</td><td>+5 Attribute Points</td></tr>
+			</tbody>
+			<tbody>
+				<tr><th></th><th></th><th>Act 4</th><th colspan="2"></th></tr>
+				<tr class="quest terror"><td>The Fallen Angel</td><td>Quest</td><td>Plains of Despair</td><td>Kill Izual, talk to his spirit, then talk to Tyrael.</td><td>+2 Skill Points</td></tr>
+			</tbody>
+			<tbody>
+				<tr><th></th><th></th><th>Act 5</th><th colspan="2"></th></tr>
+				<tr class="challenge second terror"><td><a href="minigames.html#mini2">Minigame 2: Crowned</a></td><td>Challenge</td><td>Frozen Tundra</td><td>Get close to a <span title="They pounce on you and instakill you when you get too close.">Witch</span>, 15% chance for the star.</td><td><span title="See The Ennead Challenge for details.">Class Charm</span> + Thul Rune</td></tr>
+				<tr class="quest terror"><td>Anya</td><td>Quest</td><td>Frozen River (Crystalline River)</td><td>Find and free Anya, talk to Malah.</td><td>Scroll of Resistances + <span title="See Level Challenge 1 for details.">Sunstone of the Elements</span></td></tr>
+				<tr class="challenge terror"><td><a href="blackroad.html#contrition">Trial of Contrition</a><br />(<a href="blackroad.html">Black Road Challenge</a>)</td><td>Challenge<br />Summoning</td><td>Arreat Summit</td><td>Kill King Koth. Minions make the boss invulnerable.<br />Boss puts you into hit recovery on striking. <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span>.</td><td>Cube <span title="See The Ennead Challenge for details.">Class Charm</span></td></tr>
+				<tr class="challenge terror"><td><a href="minigames.html#mini3">Minigame 3: Mirror Mirror</a></td><td>Challenge</td><td>The Worldstone Chamber</td><td>Kill <span title="There are a few on the level, and more are summoned by Baal. Once they die, they release floating runes. If you get hit by a rune you might get a short duration curse that kills you if you kill a monster.">Shardspawns</span>, 1% chance for <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span>.</td><td><span title="See The Ennead Challenge for details.">Class Charm</span> + Lem Rune</td></tr>
+			</tbody>
+			<tbody>
+				<tr><th></th><th></th><th>Various Acts</th><th colspan="2"></th></tr>
+				<tr class="challenge terror"><td><a href="blackroad.html#greed">Trial of Greed</a><br />(<a href="blackroad.html">Black Road Challenge</a>)</td><td>Challenge</td><td>Anywhere</td><td>Have 666,666 gold on your character.</td><td>Cube <span title="See The Ennead Challenge for details.">Class Charm</span></td></tr>
+				<tr class="challenge terror"><td><a href="blackroad.html#brc">Black Road Completion</a><br />(<a href="blackroad.html">Black Road Challenge</a>)</td><td>Challenge</td><td>Anywhere</td><td>You can finish it after doing the 5 trials first.</td><td><span title="See The Ennead Challenge for details.">Class Charm</span> + 4x <span title="Buy from a shop.">Sacrifical Heart</span>: Unlocks Black Road skill</td></tr>
+				<tr class="challenge terror"><td><a href="enemy_tokens.html#evil_eye">Veteran Tokens</td><td>Challenge</a></td><td><span title="Check the Monster Tokens page for detailed locations.">One on each act</span></td><td>Kill 5 different Veteran monsters to get Evil Eye tokens.</td><td><span title="See The Ennead Challenge for details.">Class Charm</span> + 5x Evil Eye (different)</td></tr>
+				<tr class="challenge terror"><td><a href="enemy_tokens.html#dogma">Act Boss Tokens</a></td><td>Challenge</td><td>Every act boss</td><td>Kill act bosses for Dogma tokens for Signets of Skill.</td><td>5x Dogma (different) + 2x Dogma (from one <span title="Mephisto, Diablo or Baal. Two same tokens from only one of the three.">Prime Evil</span>) &rarr; Signet of Skill (+1 Skill Point, +3 max)</td></tr>
+				<tr class="misc terror second"><td>500 Signets of Learning</td><td>Miscellaneous</td><td>Anywhere</td><td>Turn unwanted items into Signets of Learning.</td><td><span title="Sacred Unique item. Includes SU, SSU and SSSU.">SU</span>/<span title="Set item">Set</span>/<span title="Unique Rings, Amulets and Jewels">Jewelry</span>/<span title="Unique Arrow and Bolt quivers">Quiver</span> + <span title="Buy from a shop.">Catalyst of Learning</span><br />&rarr; Signet of Learning (+1 Attribute Point, +500 max)</td></tr>
+			</tbody>
+			<thead>
+				<tr><th colspan="5">Destruction</th></tr>
+				<tr><th>Name &amp; Link</th><th>Type</th><th>Location</th><th>Details</th><th>Reward/Recipe</th></tr>
+			</thead>
+			<tbody>
+				<tr><th></th><th></th><th>Act 1</th><th colspan="2"></th></tr>
+				<tr class="uberq destruction"><td><a href="heroiclevels.html#bpr">Bull Prince Rodeo</a></td><td>Heroic</td><td>Cow Level (Rogue Encampment)</td><td><span title="Requires the defeat of Baal on the Destruction (highest) difficulty. See Destruction Baal below.">Kill D Baal</span>. In town: Wirt's Leg + Tome of Town Portal<br /><span title="Heroic Shield. Heroic bosses have a shield that makes them invulnerable, but it drops some immunities from time to time.">HS</span>. Deadly stampede. <span title="Amazon spear skill. Teleports on the target creature (you or your minions), causing damage to nearby creatures.">Pounce</span>. Can be summoned.</td><td>Fool's Gold, <span title="Unique Mystic Orb. You can find what they are in Items &rarr; Mystic Orbs &rarr; Unique Mystic Orbs">UMO</span> (1/30)</td></tr>
+				<tr class="quest destruction"><td>Den of Evil</td><td>Quest</td><td>Den of Evil (Blood Moor)</td><td>Kill everything, talk to Akara.</td><td>+1 Skill Point</td></tr>
+				<tr class="uberq destruction"><td><a href="levelubers.html#dunc">Duncraig</a></td><td>Uberlevel</td><td>Cave Level 2 (Cold Plains)</td><td><a href="images\uberquests\maps\dunc.jpg" target='_blank'>MAP</a>. <a href="images\uberquests\maps\dunc2.jpg" target='_blank'>MAP2</a>. Monsters throw poison &amp; deadly barrels.<br />Monsters drop Ring of the Five. 5 Minibosses drop Sigils.<br />Boss <span title="Amazon spear skill. Teleports on the target creature (you or your minions), causing damage to nearby creatures.">pounces</span> &amp; strong spells. <span title="To kill the boss, you need the 'Purify' oskill from the Assur's Bane quest ring that can be obtained in the Duncraig uberquest. See the uberquest for details.">Purify</span>. Bias: Sacred Items</td><td>Ring of the Five + 5x Sigils (different) &rarr; Assur's Bane<br />Demonsbane + Trophy</td></tr>
+				<tr class="uberq destruction"><td><a href="levelubers.html#ureh">Kingdom of Shadow</a></td><td>Uberlevel</td><td>Crypt (Burial Grounds)</td><td><a href="images\uberquests\maps\ureh.jpg" target='_blank'>MAP</a>. Untargetable Zombies. Boss <span title="Black blizzard-like cloud that shoots an energy beam that causes massive multihit damage on a small spot on the target.">deathstrike</span> on death</td><td>Eternal Bone Pile + Trophy</td></tr>
+				<tr class="uberq destruction"><td><a href="heroiclevels.html#astrogha">Astrogha</a></td><td>Heroic</td><td>Mausoleum (Burial Grounds)</td><td><span title="Heroic Shield. Heroic bosses have a shield that makes them invulnerable, but it drops some immunities from time to time.">HS</span>. Summons Totems &amp; Darklings. Strong spell attack.<br />Teleports on being hit. Totems heal him when destroyed. Can be summoned.</td><td>Astrogha's Venom Stinger + Trophy + Upgrade<br />Upgrade: Astrogha's Venom Stinger + <span title="See the top of the page for details.">Book of Summoning</span></td></tr>
+				<tr class="uberq destruction"><td><a href="dungeonubers.html#cov">Cathedral of Vanity</a></td><td>Dungeon</td><td>Underground Passage Level 2<br />(Stony Fields &amp; Dark Wood)</td><td>Crystal Ball <span title="Timered instagib beam that starts in the south east part of the screen and rotates clockwise for a full circle. It has trailing beams that prevent you from following it closely.">death beam</span> and gives invulnerability shield.</td><td>Idol of Vanity + Trophy + Upgrade<br />Upgrade: Idol of Vanity + <span title="Can be obtained in the Inarius' Revenge uberquest. See below.">Spirit of Damnation</span></td></tr>
+				<tr class="uberq destruction"><td><a href="summoningubers.html#inarius">Inarius' Revenge</a></td><td>Summoning</td><td>Underground Passage Level 2<br />(Stony Fields &amp; Dark Wood)</td><td>Minions' invulnerability shield and <span title="Black blizzard-like cloud that shoots an energy beam that causes massive multihit damage on a small spot on the target.">deathstrike</span> on death.</td><td>Spirit of Damnation (for <span title="Can be obtained in the Cathedral of Vanity uberquest. See above.">Idol of Vanity</span> upgrade)</td></tr>
+				<tr class="uberq destruction"><td><a href="summoningubers.html#butcher">The Butcher</a></td><td>Summoning</td><td>The Hole Level 2 (Black Marsh)</td><td>Vulnerable on the star that may appear on his hit.</td><td>The Butcher's Tooth</td></tr>
+				<tr class="uberq destruction"><td><a href="summoningubers.html#lob">Legacy of Blood</a></td><td>Summoning</td><td>Tower Cellar (Black Marsh)</td><td>Vulnerable after casting.</td><td>Legacy of Blood + Trophy</td></tr>
+				<tr class="uberq destruction"><td><a href="dungeonubers.html#im">Infernal Machine</a></td><td>Dungeon</td><td>The Pit Level 2 (Tamoe Highland)</td><td>Summons monsters. <span title="Black blizzard-like cloud that shoots an energy beam that causes massive multihit damage on a small spot on the target.">Deathstrike</span> when hit.</td><td>Optical Detector</td></tr>
+				<tr class="uberq destruction"><td><a href="summoningubers.html#jd">Judgment Day</a></td><td>Summoning</td><td>Inner Cloister</td><td>Untargetable minion boss: <span title="Druid spell. Shakes screen and reduces life of all the enemies on the screen by a percentage.">Tremor</span> &amp; summons a boss on striking. Boss nukes. <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span> upgrade: Kill both different bosses in 30 sec and cube charm.</td><td>Crystalline Flame Medallion + Trophy + Upgrade</td></tr>
+				<tr class="uberq destruction"><td><a href="levelubers.html#triune">The Triune</a></td><td>Uberlevel</td><td>The Triune (Cathedral)</td><td><a href="images\uberquests\maps\triune.png" target='_blank'>MAP</a>. <a href="images\uberquests\maps\triune_drawn.png" target='_blank'>MAP2</a>. Powerful monsters. Totems cast strong spell.<br />Kill miniboss to get Tome of Possession. Charm Arihan, take him to Primus' Messanger who will kill him.</td><td>9 Cycles (predefined variable stats)<!--<br />Golden Cycle--><br />Lucion's Soulstone + Trophy</td></tr>
+			</tbody>
+			<tbody>
+				<tr><th></th><th></th><th>Act 2</th><th colspan="2"></th></tr>
+				<tr class="challenge misc destruction"><td><a href="eggs.html">Dragon's Eggs</a></td><td>Challenge<br />Miscellaneous</td><td><span title="Rocky Waste, Dry Hills, Far Oasis & Lost City">Open Desert Areas</span></td><td>Kill Egg &amp; Dragon. Summonable. <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span>. Swirlies required to level-up Paladin Deva King skill.</td><td>Deva King. Free <span title="Output item level in this difficulty is 99.">rare item</span> rerolls (30 sec):<br />Rare Item + Scroll of Town Portal</td></tr>
+				<tr class="quest destruction"><td>Radament</td><td>Quest</td><td>Sewers Level 3 (Lut Gholein)</td><td>Kill Radament, talk to Atma.</td><td>+1 Skill Point Book</td></tr>
+				<tr class="uberq destruction"><td><a href="heroiclevels.html#qt">Quov Tsin</a></td><td>Heroic</td><td>Stony Tomb Level 1 (Rocky Waste)</td><td><span title="Heroic Shield. Heroic bosses have a shield that makes them invulnerable, but it drops some immunities from time to time.">HS</span>. Powerful elemental beam. Teleports on being hit. Can be summoned.</td><td>Silver Seal of Ureh + Trophy</td></tr>
+				<tr class="uberq destruction"><td><a href="levelubers.html#fauzt">Fauztinville</a></td><td>Uberlevel</td><td>Stony Tomb Level 2 (Rocky Waste)</td><td><a href="images\uberquests\maps\fauz.jpg" target='_blank'>MAP</a>. 5 Bosses. Many monsters. Bias: Runes &amp; Shrines</td><td>Great Runes: Taha, Ghal, Qor</td></tr>
+				<tr class="uberq destruction"><td><a href="levelubers.html#ta">Tran Athulua</a></td><td>Uberlevel</td><td>Halls of the Dead Level 3 (Dry Hills)</td><td><a href="images\uberquests\maps\ta.png" target='_blank'>MAP</a>. 3 Bosses. Bias: Unique Items</td><td>Sunstone of the Gods (1/6) + Trophy</td></tr>
+				<tr class="uberq destruction"><td><a href="heroiclevels.html#athulua">Athulua</a></td><td>Heroic</td><td>Halls of the Dead Level 3 (Dry Hills):<br />Tran Athulua Volcanic Shrine</td><td><a href="images\uberquests\maps\ta.png" target='_blank'>MAP</a>. Destroy Vulcanic Shrine, 1/10 chance to spawn.<br /><span title="Heroic Shield. Heroic bosses have a shield that makes them invulnerable, but it drops some immunities from time to time.">HS</span>. <span title="Very small untargetable rats that can deal considerable damage for their size.">Ratfinks</span>. Strong attacks. Teleports on being hit.<br />Destruction only.</td><td>Deity's Bow (for <span title="Check the uberquest for details.">recipes</span>)</td></tr>
+				<tr class="uberq destruction"><td><a href="levelubers.html#brachy">Brachyceran's Lair</a></td><td>Uberlevel</td><td>Maggot Lair Level 3 (Far Oasis)</td><td>Level 1: Eggs prevent heal. Untargetable poison monsters.<br />Level 2: Eggs prevent heal. Strong monsters.<br />Level 3: Strong monsters. Untargetable poison monsters.<br />Boss: Powerful spell attacks.</td><td>Brachyceran's Token, Cursed Crystal (for <span title="Check the uberquest for details.">recipes</span>)</td></tr>
+				<tr class="uberq destruction"><td><a href="dungeonubers.html#cof">Creature of Flame</a></td><td>Dungeon</td><td>Ancient Tunnels (Lost City)</td><td>Instagib magical missile.</td><td>Horazon's Focus</td></tr>
+				<tr class="uberq destruction"><td><a href="summoningubers.html#baal">The Binding of Baal</a></td><td>Summoning</td><td>Valley of Snakes</td><td>Minions give invulnerability. Strong spells.</td><td>Scroll of Kings</td></tr>
+				<tr class="uberq destruction"><td><a href="dungeonubers.html#uldy">Uldyssian</a></td><td>Dungeon</td><td>Duriel's Lair</td><td>Many stages of monsters. <!--<span title="Amazon spear skill. Teleports on the target creature (you or your minions), causing damage to nearby creatures.">Pounces</span>. <span title="To kill the boss, you need the 'Purify' oskill from the Assur's Bane quest ring that can be obtained in the Duncraig uberquest. See the uberquest for details.">Purify</span>. <span title="Destruction (hardest) difficulty ">D</span> only.--></td><td>Uldyssian's Sword + Trophy, 2-3 Unique Items</td></tr>
+			</tbody>
+			<tbody>
+				<tr><th></th><th></th><th>Act 3</th><th colspan="2"></th></tr>
+				<tr class="challenge misc destruction"><td><a href="eggs.html">Dragon's Eggs</a></td><td>Challenge<br />Miscellaneous</td><td><span title="Spider Forest, Great Marsh & Flayer Jungle">Open Jungle Areas</span></td><td>Kill Egg &amp; Dragon. Summonable. <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span>. Swirlies required to level-up Paladin Deva King skill.</td><td>Deva King. Free item <span title="Rerolls item to any quality: Basic, Magic, Rare, Set and Tiered Unique. Output item level in this difficulty is 99.">Chaos Rerolls</span> (30 sec):<br />Any Item + Scroll of Town Portal</td></tr>
+				<tr class="uberq destruction"><td><a href="levelubers.html#k3k">Kurast 3000 BA</a></td><td>Uberlevel</td><td>Arachnid Lair (Spider Forest)</td><td><a href="images\uberquests\maps\k3k.png" target='_blank'>MAP</a> <a href="images\uberquests\maps\k3k_new.jpg" target='_blank'>MAP2</a> Destroy spires. 3 Boss corners. Bias: Set Items</td><td>Hammer of the Taan Judges (1/12), Class Charm</td></tr>
+				<tr class="challenge second destruction"><td><a href="ennead.html">The Ennead Challenge</a></td><td>Challenge</td><td>Arachnid Lair (Spider Forest)</td><td><a href="images\uberquests\maps\k3k.png" target='_blank'>MAP</a>. <a href="images\uberquests\maps\k3k_new.jpg" target='_blank'>MAP2</a>. Spires give invulnerability. 3 Bosses drop random Class Charms. Req lvl &leq; 80. Bias: Set Items</td><td>Class Charm (your class) + Jewel: Unlocks Ennead skill</td></tr>
+				<tr class="uberq destruction"><td><a href="levelubers.html#yshari">Yshari Sanctum</a></td><td>Uberlevel</td><td>Spider Cavern (Spider Forest)</td><td><a href="images\uberquests\maps\yshari.jpg" target='_blank'>MAP</a>. Maze with 6 stages. Kill 5 bosses &amp; their minions to get the 2 quest sets. Fight the final boss.<br />Bias: Rare, Set &amp; Unique Items, Runes &amp; any Great Rune</td><td>2 Quest Sets<br />Unique Jewel (Final Boss)<br />The Ancient Repositories</td></tr>
+				<tr class="uberq destruction"><td><a href="dungeonubers.html#dp">Death Projector</a></td><td>Dungeon</td><td>Swampy Pit Level 3 (Flayer Jungle)</td><td>Vulnerable when Mechanics are near. <span title="Timered instagib beam that starts in the south east part of the screen and rotates clockwise for a full circle. It has trailing beams that prevent you from following it closely.">Death beam</span>. Mechanics are untargetable.</td><td>Laser Focus Crystal</td></tr>
+				<tr class="uberq destruction"><td><a href="summoningubers.html#laz">Brother Laz</a></td><td>Summoning</td><td>Swampy Pit Level 3 (Flayer Jungle)</td><td>Summons Totems &amp; Groupies. Totems reduce life to 1 on death. <span title="Amazon spear skill. Teleports on the target creature (you or your minions), causing damage to nearby creatures.">Pounces</span>. <span title="To kill the boss, you need the 'Purify' oskill from the Assur's Bane quest ring that can be obtained in the Duncraig uberquest. See the uberquest for details.">Purify</span>.</td><td>Glorious Book of Median (1/6) + Trophy + <span title="Check the uberquest for details.">Upgrade</span></td></tr>
+				<tr class="uberq destruction"><td><a href="dungeonubers.html#witch">Startled Witch</a></td><td>Dungeon</td><td>Flayer Dungeon Level 3 (Flayer Jungle)</td><td>Nests spawn monsters. Totems resurrect monsters.<br />Level 3: Stationary witches cast delayed <span title="Black blizzard-like cloud that shoots an energy beam that causes massive multihit damage on a small spot on the target.">deathstrike</span>.<br />Boss: Summons Nest. Teleports. Strong attack. <span title="To kill the boss, you need the 'Purify' oskill from the Assur's Bane quest ring that can be obtained in the Duncraig uberquest. See the uberquest for details.">Purify</span>.</td><td>The Sleep + Upgrade<br />Upgrade: The Sleep + <span title="Any trophy, except The Triune one. Just one trophy can be applied. Bonus depends on the trophy used. See the uberquest for details.">Trophy</span></td></tr>
+				<tr class="quest destruction"><td>The Golden Bird</td><td>Quest</td><td>Lower Kurast entrance</td><td>Kill Deathfire Bearer, talk to townsfolk.</td><td>+20 to Maximum Life Potion</td></tr>
+				<tr class="uberq destruction"><td><a href="dungeonubers.html#vizjun">Vizjun</a></td><td>Dungeon</td><td>Disused Fane (Kurast Bazaar)</td><td><a href="images\uberquests\maps\vizjun.jpg" target='_blank'>MAP</a>. Invisible summoning and bomb mines. <span title="To kill the boss, you need the 'Purify' oskill from the Assur's Bane quest ring that can be obtained in the Duncraig uberquest. See the uberquest for details.">Purify</span>.</td><td>Cold Fusion Schematics + Trophy</td></tr>
+				<tr class="uberq destruction"><td><a href="levelubers.html#chry">Chrysaor's Sewers</a></td><td>Uberlevel</td><td>Sewers Level 1 &amp; 2<br />(Kurast Bazaar &amp; Upper Kurast)</td><td>Level 1 (Elementals): Immune to their element.<br />Level 2 (Boss): <span title="Very small untargetable rats that can deal considerable damage for their size.">Ratfinks</span>. Heals.</td><td>Level 1 (Elementals): Elemental Stones + Unknown Skulls 1<br />Level 2 (Boss): Trader's Chest + <span title="Check the uberquest for details.">Upgrades</span>, 2 Unique Items</td></tr>
+				<tr class="uberq destruction"><td><a href="summoningubers.html#chry">Secret: Chrysaor</a></td><td>Summoning</td><td>Sewers Level 2<br />(Kurast Bazaar &amp; Upper Kurast)</td><td>Summons totems, <span title="To kill the totem, you need the 'Purify' oskill from the Assur's Bane quest ring that can be obtained in the Duncraig uberquest. See the uberquest for details.">Purify</span> them. Totems summon monsters and make everyone else invulnerable.</td><td>Unknown Skull 2 (for <span title="Check the uberquest for details.">recipes</span>)<br />Many Unique Items</td></tr>
+				<tr class="uberq destruction"><td><a href="dungeonubers.html#azmodan">Azmodan</a></td><td>Dungeon</td><td>Forgotten Reliquary (Upper Kurast)</td><td>Gives invulnerability shield to his minions.</td><td>Azmodan's Heart + Trophy</td></tr>
+				<tr class="uberq destruction"><td><a href="summoningubers.html#akarat">Akarat</a></td><td>Summoning</td><td>Kurast Causeway</td><td>Boss invulnerable, except when a minion is killed.<br />Minions heal, strong attack on death.</td><td>Visions of Akarat + Trophy</td></tr>
+				<tr class="uberq destruction"><td><a href="dungeonubers.html#rs">Rathma Square</a></td><td>Dungeon</td><td>Ruined Fane (Kurast Causeway)</td><td>Minions resurrect after 10 sec.</td><td>Spirit Trance Herb + Trophy</td></tr>
+				<tr class="uberq destruction"><td><a href="dungeonubers.html#kabraxis">Kabraxis</a></td><td>Dungeon</td><td>Disused Reliquary (Kurast Causeway)</td><td>Boss: <span title="Heroic Shield. Heroic bosses have a shield that makes them invulnerable, but it drops some immunities from time to time.">HS</span>. Summons prison &amp; big army. <span title="Amazon spear skill. Teleports on the target creature (you or your minions), causing damage to nearby creatures.">Pounces</span>. Spell.<br />Elementals: Can be damaged by their element.<br />Elemental bosses: Summon elementals. Strong spells. Invulnerability from minions. Drop Great Gems.</td><td>Soul of Kabraxis + Trophy + Upgrade<br />Upgrade: Soul of Kabraxis + 5x Great Gem (different)</td></tr>
+				<tr class="quest destruction"><td>Lam Essen's Tome</td><td>Quest</td><td>Ruined Temple (Kurast Bazaar)</td><td>Get the tome, talk to Alkor.</td><td>+5 Attribute Points</td></tr>
+				<tr class="uberq destruction"><td><a href="dungeonubers.html#void">The Void</a></td><td>Dungeon</td><td>Forgotten Temple (Upper Kurast)</td><td><a href="images\uberquests\maps\void\" target='_blank'>MAPS</a>. Reroll map to access new areas. Kill 7 Souls of Sin for reagents. Use upgraded ring to summon bosses.<br />Upgrade: Kill both bosses &lt; 60 sec. 2 <span title="You've got 60 sec to do a cube recipe while the red swirles are going around you.">longer Swirlies</span> to upgrade charm.</td><td>Ring of Pride + 6 Sin Scrolls &rarr; Sigil of the 7 Deadly Sins<br />Rathma's Supremacy + Upgrade<br /><span title="They drop only on this level.">Enchanting Crystal</span> + Enchantment Oil + SU/SSU/SSSU &rarr; SU/SSU/SSSU (rerolled, same type, can be different tier)</td></tr>
+			</tbody>
+			<tbody>
+				<tr><th></th><th></th><th>Act 4</th><th colspan="2"></th></tr>
+				<tr class="quest destruction"><td>The Fallen Angel</td><td>Quest</td><td>Plains of Despair</td><td>Kill Izual, talk to his spirit, then talk to Tyrael.</td><td>+2 Skill Points</td></tr>
+			</tbody>
+			<tbody>
+				<tr><th></th><th></th><th>Act 5</th><th colspan="2"></th></tr>
+				<tr class="uberq destruction"><td><a href="dungeonubers.html#toraja">Toraja</a></td><td>Dungeon</td><td>Abaddon (Frigid Highlands)</td><td>Summon <span title="To summon Edyrems, you need the 'Crystaline Flame Medallion' from the Judgment Day uberquest. See the uberquest for details.">Edyrems</span> to drop minions' invulnerability shield on attack. Boss summons and uses <span title="Shower of Rocks. Barbarian AOE physical &amp; magical melee delayed missile attack that does a lot of damage.">SoR</span>. <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span>.</td><td><span title="See the Judgment Day uberquest for details.">Crystaline Flame Medallion</span> + Arcane Crystal<br />Great Runes: Krys, Auhe, Sha'ad</td></tr>
+				<tr class="uberq destruction"><td><a href="levelubers.html#bremm">Ghosts of Old Bremmtown</a></td><td>Uberlevel</td><td>Pit of Acheron (Arreat Plateau)</td><td>Lots of large hidden minion pounce group traps.<br />Kill the Dragon boss &lt; 3 min. <span title="Timered instagib beam that starts in the south east part of the screen and rotates clockwise for a full circle. It has trailing beams that prevent you from following it closely.">Death beam</span>. <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span>. </td><td><span title="See the The Ennead Challenge for details.">Class Charm</span> + Arcane Crystal</td></tr>
+				<tr class="uberq destruction"><td><a href="levelubers.html#khalim">Khalimgrad</a></td><td>Uberlevel</td><td>Infernal Pit (Frozen Tundra)</td><td><a href="images\uberquests\maps\khalimgrad.jpg" target='_blank'>MAP</a>. Invulnerable orbs &amp; poison turrets. Minion death makes bosses vulnerable and makes them strong. Your minion death heals enemies. Bias: Rare Items</td><td>Zakarum's Ear (1/12)</td></tr>
+				<tr class="uberq destruction"><td><a href="levelubers.html#iotss">Island of the Sunless Sea</a></td><td>Uberlevel</td><td>Drifter Cavern (Glacial Trail)</td><td><a href="images\uberquests\maps\iotss.jpg" target='_blank'>MAP</a>. Right boss: Powerful homing missile. Left boss: Gives invulnerability shield to monsters. Bias: Gold</td><td>Six Angel Bag + Sunless Crystal Bird (Upgrade)</td></tr>
+				<tr class="uberq destruction"><td><a href="heroiclevels.html#belial">Belial</a></td><td>Heroic</td><td>Icy Cellar (Ancients' Way)</td><td><span title="Heroic Shield. Heroic bosses have a shield that makes them invulnerable, but it drops some immunities from time to time.">HS</span>. <span title="Very small untargetable rats that can deal considerable damage for their size.">Ratfinks</span>. <span title="Amazon spear skill. Teleports on the target creature (you or your minions), causing damage to nearby creatures.">Pounces</span>. Life burn curse. Poison. Summons minions. Can be summoned.</td><td>Book of Lies</td></tr>
+				<tr class="uberq destruction"><td><a href="summoningubers.html#arreat">Assault on Mount Arreat</a></td><td>Summoning</td><td>Arreat Summit</td><td>Minions make boss invulnerable. Boss: on hit hit recovery.</td><td>Sacred Worldstone Key</td></tr>
+				<tr class="quest destruction"><td>Anya</td><td>Quest</td><td>Frozen River (Crystalline River)</td><td>Find and free Anya, talk to Malah.</td><td>Scroll of Resistances + <span title="See Level Challenge 1 for details.">Sunstone of the Elements</span></td></tr>
+				<tr class="uberq destruction"><td><a href="summoningubers.html#laj">Lord Aldric Jitan</a></td><td>Summoning</td><td>Nihlathak's Temple (Harrogath)</td><td>Minions make the boss invulnerable. Boss heals.<br />Both cast <span title="Creates a guard tower that shoots arrows for a time.">Guard Tower</span>. Both cast <span title="Assassin skill. Small multihitting AOE trap that does massive damage the closer you are to the center.">Singularity</span> on death.</td><td>Moon of the Spider (1/6) + Trophy</td></tr>
+				<tr class="misc destruction"><td>Destruction Baal</td><td>Miscellaneous</td><td>The Worldstone Chamber</td><td><span title="Heroic Shield. Heroic bosses have a shield that makes them invulnerable, but it drops some immunities from time to time.">HS</span>. Many summons; may deadly debuff you on death.</td><td>Required for Destruction <span title="See Bull Prince Rodeo uberquest for details.">Cow Level</span></td></tr>
+				<tr class="challenge second destruction"><td><a href="minigames.html#mini3">Minigame 3: Mirror Mirror</a></td><td>Challenge</td><td>The Worldstone Chamber</td><td>Kill <span title="There are a few on the level, and more are summoned by Baal. Once they die, they release floating runes. If you get hit by a rune you might get a short duration curse that kills you if you kill a monster.">Shardspawns</span>, 1% chance for <span title="You've got 30 sec to do a cube recipe while the red swirles are going around you.">Swirlies</span>.</td><td><span title="See The Ennead Challenge for details.">Class Charm</span> + Lem Rune</td></tr>
+				<tr class="uberq destruction"><td><a href="summoningubers.html#marco">Secret: MarcoNecroX</a></td><td>Summoning</td><td>The Worldstone Chamber</td><td>Powerful attacks. Vulnerable when attacking?</td><td>Soulkeeper</td></tr>
+			</tbody>
+			<tbody>
+				<tr><th></th><th></th><th>Various Acts</th><th colspan="2"></th></tr>
+				<tr class="challenge second destruction"><td><a href="enemy_tokens.html#evil_eye">Veteran Tokens</a></td><td>Challenge</td><td><span title="Check the Monster Tokens page for detailed locations.">One on each act</span></td><td>Kill 5 different Veteran monsters to get Evil Eye tokens.</td><td><span title="See The Ennead Challenge for details.">Class Charm</span> + 5x Evil Eye (different)</td></tr>
+				<tr class="challenge second destruction"><td><a href="enemy_tokens.html#dogma">Act Boss Tokens</a></td><td>Challenge</td><td>Every act boss</td><td>Kill act bosses for Dogma tokens for Signets of Skill.</td><td>5x Dogma (different) + 2x Dogma (from one <span title="Mephisto, Diablo or Baal. Two same tokens from only one of the three.">Prime Evil</span>) &rarr; Signet of Skill (+1 Skill Point, +3 max)</td></tr>
+				<tr class="misc destruction"><td>500 Signets of Learning</td><td>Miscellaneous</td><td>Anywhere</td><td>Turn unwanted items into Signets of Learning.</td><td><span title="Sacred Unique item. Includes SU, SSU and SSSU.">SU</span>/<span title="Set item">Set</span>/<span title="Unique Rings, Amulets and Jewels">Jewelry</span>/<span title="Unique Arrow and Bolt quivers">Quiver</span> + <span title="Buy from a shop.">Catalyst of Learning</span><br />&rarr; Signet of Learning (+1 Attribute Point, +500 max)</td></tr>
+			</tbody>
+		</table>
+		
+
+		<br />
+		<hr />
+	</body>
+</html>
