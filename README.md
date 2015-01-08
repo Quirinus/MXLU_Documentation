@@ -13,7 +13,6 @@ TO-DO (those with no names are added by Quirinus):
 - Add: procs from new sets and set items to the procs list page
 - Update: any proc/oskill change on any item on the oskills/procs list page
 - Update: all character pages (partially done) and skillpoint planner
-- Fix: - Docs > FAQs > LFAQ (Less FAQ) > *Area Guides (Spoilers)* > maps for Triune and Vizjun are not loading. I get 404 not found, probably just some links missing. (Metalistas)
 - Add: Sin set weapon/shield have special graphic. Check the ss (ask quirinus or someone for it) and find the image on google/wikis or extract from mpq. Then put it in the right folder and apply it to the sets.html page.
 - Remove: Diablo Clone. (from the page and from the menu)
 - Add: Maybe include the socketed rune bonus in the RW stats (or make it toggleable).
@@ -56,5 +55,6 @@ Suggestions:
 DONE:
 - Pester Marco to explain in more detail about the new Amazon faster cast rate with staves and 2h weapons. Then update the note on the Amazon page if necessary.
 -  Add: GS abbreviation
+-  - Fix: - Docs > FAQs > LFAQ (Less FAQ) > *Area Guides (Spoilers)* > maps for Triune and Vizjun are not loading. I get 404 not found, probably just some links missing. (Metalistas) /// Also added extra maps to page
 
 
