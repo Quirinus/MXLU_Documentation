@@ -17,8 +17,6 @@ TO-DO (those with no names are added by Quirinus):
 - Remove: Diablo Clone. (from the page and from the menu)
 - Add: Maybe include the socketed rune bonus in the RW stats (or make it toggleable).
 - Add: Shield chance to block on all item pages (base+stat, for class-only add class base chance too).
-- Change: Maybe make the "Uniques" node in the menu not open the TU page on click (make it just a normal book that opens the sub-sections).
-- Fix: Area Effect Attack on mount arreat set should be orange.
 - Fix: Make ([Class] Only) either white or red for all items/classes. Currently only Barbarian items have it as white, the rest have red.(rish: if every other char have it as red.. make barb red too, will be easier and will look sexier. I did it for SU/TU/Sets page. If its fine then u can strike this Fix off this list)
 - Change: Prefix/suffix list: Make calculators not reset the filter dropdowns/inputs.
 - Change: Rename some of the areas that have changed names (uberquest pages, challenges, quest reference list and anywhere else that it might appear). Change their parent level names too if they're different.
@@ -55,6 +53,7 @@ Suggestions:
 DONE:
 - Pester Marco to explain in more detail about the new Amazon faster cast rate with staves and 2h weapons. Then update the note on the Amazon page if necessary.
 -  Add: GS abbreviation
--  - Fix: - Docs > FAQs > LFAQ (Less FAQ) > *Area Guides (Spoilers)* > maps for Triune and Vizjun are not loading. I get 404 not found, probably just some links missing. (Metalistas) /// Also added extra maps to page
-
+- Fix: - Docs > FAQs > LFAQ (Less FAQ) > *Area Guides (Spoilers)* > maps for Triune and Vizjun are not loading. I get 404 not found, probably just some links missing. (Metalistas) /// Also added extra maps to page
+- Fix: Area Effect Attack on mount arreat set should be orange.
+- Change: Maybe make the "Uniques" node in the menu not open the TU page on click (make it just a normal book that opens the sub-sections).
 
