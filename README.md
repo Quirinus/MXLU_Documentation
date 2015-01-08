@@ -21,7 +21,7 @@ TO-DO (those with no names are added by Quirinus):
 - Add: Shield chance to block on all item pages (base+stat, for class-only add class base chance too).
 - Change: Maybe make the "Uniques" node in the menu not open the TU page on click (make it just a normal book that opens the sub-sections).
 - Fix: Area Effect Attack on mount arreat set should be orange.
-- Fix: Make ([Class] Only) either white or red for all items/classes. Currently only Barbarian items have it as white, the rest have red.
+- Fix: Make ([Class] Only) either white or red for all items/classes. Currently only Barbarian items have it as white, the rest have red.(rish: if every other char have it as red.. make barb red too, will be easier and will look sexier. I will start work on this thing)
 - Change: Prefix/suffix list: Make calculators not reset the filter dropdowns/inputs.
 - Change: Rename some of the areas that have changed names (uberquest pages, challenges, quest reference list and anywhere else that it might appear). Change their parent level names too if they're different.
 - Change: Make clicking on a page_book tree open the tree and page, instead of just the page.
