@@ -49,6 +49,7 @@ Suggestions:
 - Add silver td border to RWs, base items and char orb, like in the rest of the pages?
 - Add links to some old/legacy docs to the doc, probably a new page under information. (http://www.medianxl.com/t4038-legacy-docs and the ones on the FTP location of the current docs)
 - Add a list of monsters that drop each GR in Yshari. I guess I gotta ask Marco if I can do it.
+- (claygame) Add pic of the armor/weapon type at the top of each section of RW page to let people know exactly what works for these RW?
 
 DONE:
 - Pester Marco to explain in more detail about the new Amazon faster cast rate with staves and 2h weapons. Then update the note on the Amazon page if necessary.
