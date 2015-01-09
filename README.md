@@ -25,7 +25,6 @@ TO-DO (those with no names are added by Quirinus):
 - Change: Make filters on all pages always float in vision (absolute pos)?
 - Change: TU page: make the amulets/rings/jewels/quivers be in columns of 2 if the filter is set on any tier, except "All".
 - Fix: Quest Reference list: difficulty headers not dissapearing when the contents are empty.
-- Fix: Check all files for outdated links to Laz's site: http://modsbylaz.hugelaser.com/ --> http://modsbylaz.vn.cz/
 - Add: Speed Calculator to the Characters (?) section, with explanations. http://www.medianxl.com/t5893-speed-mechanics-explained-updated-speedcalc
 - Add: Quest Reference list: K3K necros cast miasma now (add a tooltip that explains what miasma skill is and what it does, like the other skills)
 - Add: Quest Reference list: CoV and maybe DP have a proc on being struck - lazorz beam in the opposite(?) direction? Check and add if so. http://www.medianxl.com/t5684p860-short-questions-thread#154303
@@ -69,3 +68,4 @@ DONE:
 - Fix: Area Effect Attack on mount arreat set should be orange.
 - Change: Maybe make the "Uniques" node in the menu not open the TU page on click (make it just a normal book that opens the sub-sections).
 - Change: Make clicking on a page_book tree open the tree and page, instead of just the page.
+- Fix: Check all files for outdated links to Laz's site: http://modsbylaz.hugelaser.com/ --> http://modsbylaz.vn.cz/
