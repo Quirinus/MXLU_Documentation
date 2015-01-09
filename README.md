@@ -42,6 +42,8 @@ TO-DO (those with no names are added by Quirinus):
 - Check/Fix: Block chance formula (Concepts > Block & Defense): (Block% * (Dexterity - 16))/(Character_Level * 2) Check if it's 15 or 16 and if the max block table is correct (by trying ingame). Table 8% = 2266 or 2265?
 - Check/Fix: Is the Yshari Set Sword item type Mystic Sword? If not, correct it. I also hope all the other Yshari set item names are correct.
 - Fix: Trang'Oul/Trang-Oul --> Trag'Oul. (the first ones used to be correct, but blizz changed their minds...) Use Notepad++ to open up all doc files, then use "Replace All in All Opened Documents".
+- Check/Fix: Is the AoE on Mount Arreat set orange or gold or what color is it?
+- Add/Update: Quest Reference page with various stuff...
 
 
 
