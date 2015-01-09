@@ -73,7 +73,7 @@ DONE:
 - Fix: Check all files for outdated links to Laz's site: http://modsbylaz.hugelaser.com/ --> http://modsbylaz.vn.cz/
 - Fix (Claygame & Quirinus): Any proc rolls over after lvl 63. lvl 66 = 2. Looks like (o)skills cap at lvl 62 (so +65 = +62). Check for all instaces of it and fix on all pages.(CG: checked and corrected TU,SU,Sets,RW,Item Oskills page):
  All is One full set bonus gives "100% Chance to cast level 66 Death of a God when you Die" idk if it casts a lvl 2 or lvl 66 ctc, check and correct it if needed. SSSU Short bow have +65 to OHMAN --> 62, looks like it caps instead of rolls over. SSSU spirit edge proc lvl 66 --> 2. Fixed on their own pages, and on proc/oskill list pages.
-- Add: Signet of gold upgrade recipe to the cube page, if the recipe exists. eg. 2 or 3 gold sigs --> greater gold sig?
+- Add: Signet of gold upgrade recipe to the cube page, if the recipe exists. eg. 2 or 3 gold sigs --> greater gold sig? /// Tested with 2,3,4,5 sigs seems like recipe is disabled.
 - Check out manafire's rewrites for some of the uberquest tests (they're in a topic in the docs subforum) /// Also updated TA trophied Sleep stats
 - Remove: Diablo Clone. (from the page and from the menu) /// Commented him out in summoningubers and index.
 - Updated Book of summonning recipe, now cubes with Belial charm rather than Astrogha. Also updated Kabraxis' Soul charm. Trinity proc is now on base charm rather than upgrade.
