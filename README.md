@@ -16,7 +16,6 @@ Fix (Claygame & Quirinus): Any proc (and probably skill/oskill? check) rolls ove
 - Update: all character pages (partially done) and skillpoint planner
 - Add: Sin set weapon/shield have special graphic. Check the ss (ask quirinus or someone for it) and find the image on google/wikis or extract from mpq. Then put it in the right folder and apply it to the sets.html page.
 - Remove: Diablo Clone. (from the page and from the menu)
-- Add: Maybe include the socketed rune bonus in the RW stats (or make it toggleable).
 - Add: Shield chance to block on all item pages (base+stat, for class-only add class base chance too).
 - Fix: Make ([Class] Only) either white or red for all items/classes. Currently only Barbarian items have it as white, the rest have red.(rish: if every other char have it as red.. make barb red too, will be easier and will look sexier. I did it for SU/TU/Sets page. If its fine then u can strike this Fix off this list)
 - Change: Prefix/suffix list: Make calculators not reset the filter dropdowns/inputs.
@@ -73,3 +72,4 @@ DONE:
 - Change: Maybe make the "Uniques" node in the menu not open the TU page on click (make it just a normal book that opens the sub-sections).
 - Change: Make clicking on a page_book tree open the tree and page, instead of just the page.
 - Fix: Check all files for outdated links to Laz's site: http://modsbylaz.hugelaser.com/ --> http://modsbylaz.vn.cz/
+- Add: Maybe include the socketed rune bonus in the RW stats (or make it toggleable).
