@@ -32,6 +32,18 @@ TO-DO (those with no names are added by Quirinus):
 - Fix: FAQ: features -> uber and challenge links are broken.
 - All other changes from the XV and XVc changelog. 
 - (claygame) : do we really need 'armor looks' page?
+- Add: a note somewhere (TU/SU/RW/Set... etc.) pages that if you already have a skill that the item gives (from the character), it will only give at max 3 to it.
+- Check out manafire's rewrites for some of the uberquest tests (they're in a topic in the docs subforum)
+- Add: Signet of gold upgrade recipe to the cube page, if the recipe exists. eg. 2 or 3 gold sigs --> greater gold sig?
+- Check/update: Are Yshari set items drillable for sockets? Check each of the set items; use as many jewels as the size of the item permits. Add a note under them if they are, and how many sockets.
+- Check/Add: Can Ring of Pride be cubed with MOs? What about (More) Luck or Lottery? Can Sigil of the 7 Deadly Sins be cubed for (More) Luck or Lottery recipes?
+- Change: Abbreviations/Uberquests - separate RS, Rathma - each in its own line. Rathma can mean Rathma from the void or rathma from Rathma Square. RS means Rathma Square uber.
+- Add: Abbreviation/Uberquests: Mendeln to indicate void boss.
+- Check/Fix: Druid Trap Rat Set: Rainbow Warrior ratfink reanim color gold or magic?
+- Check/Fix: Block chance formula (Concepts > Block & Defense): (Block% * (Dexterity - 16))/(Character_Level * 2) Check if it's 15 or 16 and if the max block table is correct (by trying ingame). Table 8% = 2266 or 2265?
+- Check/Fix: Is the Yshari Set Sword item type Mystic Sword? If not, correct it. I also hope all the other Yshari set item names are correct.
+- Fix: Trang'Oul/Trang-Oul --> Trag'Oul. (the first ones used to be correct, but blizz changed their minds...) Use Notepad++ to open up all doc files, then use "Replace All in All Opened Documents".
+
 
 
 Suggestions:
@@ -47,7 +59,8 @@ Suggestions:
 - Add a list of monsters that drop each GR in Yshari. I guess I gotta ask Marco if I can do it.
 - (claygame) Add pic of the armor/weapon type at the top of each section of RW page to let people know exactly what works for these RW?
 - (claygame) Add the top row showing titles of each coloum for each time a separate section starts for Items->Base
-- 
+- Change: Rune/RWs: Level --> Required Level?
+- Base Items page: Maybe add a note that broken ethereal items cannot gain durability even if they have the 'repair xx durability in yy seconds' mod.
 
 DONE:
 - Pester Marco to explain in more detail about the new Amazon faster cast rate with staves and 2h weapons. Then update the note on the Amazon page if necessary.
