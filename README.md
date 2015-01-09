@@ -6,8 +6,8 @@ Median XL: Ultimative Documentation
 Add to-do stuff here.
 
 TO-DO (those with no names are added by Quirinus):
-Fix (Claygame & Quirinus): Any proc (and probably skill/oskill? check) rolls over after lvl 63. lvl 66 = 2. Check for all instaces of it and fix on all pages.(CG: checked and corrected TU,SU,Sets,RW,Item Oskills page)
-- check (CG): All is One full set bonus gives "100% Chance to cast level 66 Death of a God when you Die" idk if it casts a lvl 2 or lvl 66 ctc, check and correct it if needed. SSSU Short bow have +65 to OHMAN, check if lvl 63 cap apply to this too and correct if needed.
+- Fix (Claygame & Quirinus): Any proc rolls over after lvl 63. lvl 66 = 2. Looks like (o)skills cap at lvl 62 (so +65 = +62). Check for all instaces of it and fix on all pages.(CG: checked and corrected TU,SU,Sets,RW,Item Oskills page)
+- check (CG): All is One full set bonus gives "100% Chance to cast level 66 Death of a God when you Die" idk if it casts a lvl 2 or lvl 66 ctc, check and correct it if needed. SSSU Short bow have +65 to OHMAN --> 62, looks like it caps instead of rolls over. SSSU spirit edge proc lvl 66 --> 2. check if those are just display caps/rollovers or are they used to calculate the skill effects too.
 - Add: skill tree names to char pages
 - Add: WUW abbreviation: what you want (for it), explain that it's used when trading, look at N NN O R abbr.
 - Add: oskills from new sets and set items to the oskills list page
