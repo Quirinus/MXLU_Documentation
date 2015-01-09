@@ -15,7 +15,6 @@ TO-DO (those with no names are added by Quirinus):
 - Update: any proc/oskill change on any item on the oskills/procs list page
 - Update: all character pages (partially done) and skillpoint planner
 - Add: Sin set weapon/shield have special graphic. Check the ss (ask quirinus or someone for it) and find the image on google/wikis or extract from mpq. Then put it in the right folder and apply it to the sets.html page.
-- Remove: Diablo Clone. (from the page and from the menu)
 - Add: Maybe include the socketed rune bonus in the RW stats (or make it toggleable).
 - Add: Shield chance to block on all item pages (base+stat, for class-only add class base chance too).
 - Fix: Make ([Class] Only) either white or red for all items/classes. Currently only Barbarian items have it as white, the rest have red.(rish: if every other char have it as red.. make barb red too, will be easier and will look sexier. I did it for SU/TU/Sets page. If its fine then u can strike this Fix off this list)
@@ -30,11 +29,9 @@ TO-DO (those with no names are added by Quirinus):
 - Add: Quest Reference list: K3K necros cast miasma now (add a tooltip that explains what miasma skill is and what it does, like the other skills)
 - Add: Quest Reference list: CoV and maybe DP have a proc on being struck - lazorz beam in the opposite(?) direction? Check and add if so. http://www.medianxl.com/t5684p860-short-questions-thread#154303
 - Fix: FAQ: features -> uber and challenge links are broken.
-- All other changes from the XV and XVc changelog. 
+- All other changes from the XV and XVc changelog.
 - (claygame) : do we really need 'armor looks' page?
 - Add: a note somewhere (TU/SU/RW/Set... etc.) pages that if you already have a skill that the item gives (from the character), it will only give at max 3 to it.
-- Check out manafire's rewrites for some of the uberquest tests (they're in a topic in the docs subforum)
-- Add: Signet of gold upgrade recipe to the cube page, if the recipe exists. eg. 2 or 3 gold sigs --> greater gold sig?
 - Check/update: Are Yshari set items drillable for sockets? Check each of the set items; use as many jewels as the size of the item permits. Add a note under them if they are, and how many sockets.
 - Check/Add: Can Ring of Pride be cubed with MOs? What about (More) Luck or Lottery? Can Sigil of the 7 Deadly Sins be cubed for (More) Luck or Lottery recipes?
 - Change: Abbreviations/Uberquests - separate RS, Rathma - each in its own line. Rathma can mean Rathma from the void or rathma from Rathma Square. RS means Rathma Square uber.
@@ -45,6 +42,7 @@ TO-DO (those with no names are added by Quirinus):
 - Fix: Trang'Oul/Trang-Oul --> Trag'Oul. (the first ones used to be correct, but blizz changed their minds...) Use Notepad++ to open up all doc files, then use "Replace All in All Opened Documents".
 - Check/Fix: Is the AoE on Mount Arreat set orange or gold or what color is it?
 - Add/Update: Quest Reference page with various stuff...
+- Athulua, Strategy / Abilities section needs updating.
 
 
 
@@ -75,3 +73,8 @@ DONE:
 - Fix: Check all files for outdated links to Laz's site: http://modsbylaz.hugelaser.com/ --> http://modsbylaz.vn.cz/
 - Fix (Claygame & Quirinus): Any proc rolls over after lvl 63. lvl 66 = 2. Looks like (o)skills cap at lvl 62 (so +65 = +62). Check for all instaces of it and fix on all pages.(CG: checked and corrected TU,SU,Sets,RW,Item Oskills page):
  All is One full set bonus gives "100% Chance to cast level 66 Death of a God when you Die" idk if it casts a lvl 2 or lvl 66 ctc, check and correct it if needed. SSSU Short bow have +65 to OHMAN --> 62, looks like it caps instead of rolls over. SSSU spirit edge proc lvl 66 --> 2. Fixed on their own pages, and on proc/oskill list pages.
+- Add: Signet of gold upgrade recipe to the cube page, if the recipe exists. eg. 2 or 3 gold sigs --> greater gold sig?
+- Check out manafire's rewrites for some of the uberquest tests (they're in a topic in the docs subforum) /// Also updated TA trophied Sleep stats
+- Remove: Diablo Clone. (from the page and from the menu) /// Commented him out in summoningubers and index.
+- Updated Book of summonning recipe, now cubes with Belial charm rather than Astrogha. Also updated Kabraxis' Soul charm. Trinity proc is now on base charm rather than upgrade.
+- Item fixes: eternity runeword gives Enhanced Defence instead of Damage; steel punisher no longer gives Deathlord morph; blackened no longer gives Duriel reanimate; reaper's hand no longer gives queen of blades oskill; periapt of life umo now gives + 100 replenish life; ape set changed from +3 skills to +18 Deathstrike [few other changes to set not documented, request SS]
