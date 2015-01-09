@@ -6,7 +6,8 @@ Median XL: Ultimative Documentation
 Add to-do stuff here.
 
 TO-DO (those with no names are added by Quirinus):
-- Fix (Claygame & Quirinus): Any proc (and probably skill/oskill? check) rolls over after lvl 63. lvl 66 = 2. Check for all instaces of it and fix on all pages.
+Fix (Claygame & Quirinus): Any proc (and probably skill/oskill? check) rolls over after lvl 63. lvl 66 = 2. Check for all instaces of it and fix on all pages.(CG: checked and corrected TU,SU,Sets,RW,Item Oskills page)
+- check (CG): All is One full set bonus gives "100% Chance to cast level 66 Death of a God when you Die" idk if it casts a lvl 2 or lvl 66 ctc, check and correct it if needed. SSSU Short bow have +65 to OHMAN, check if lvl 63 cap apply to this too and correct if needed.
 - Add: skill tree names to char pages
 - Add: WUW abbreviation: what you want (for it), explain that it's used when trading, look at N NN O R abbr.
 - Add: oskills from new sets and set items to the oskills list page
@@ -62,6 +63,7 @@ Suggestions:
 - (claygame) Add the top row showing titles of each coloum for each time a separate section starts for Items->Base
 - Change: Rune/RWs: Level --> Required Level?
 - Base Items page: Maybe add a note that broken ethereal items cannot gain durability even if they have the 'repair xx durability in yy seconds' mod.
+- (claygame) : maybe add link to forum somehow in the About page that opens when docs r opened for the first time to make people come more often on forum?
 
 DONE:
 - Pester Marco to explain in more detail about the new Amazon faster cast rate with staves and 2h weapons. Then update the note on the Amazon page if necessary.
