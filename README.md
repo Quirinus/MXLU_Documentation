@@ -6,8 +6,8 @@ Median XL: Ultimative Documentation
 Add to-do stuff here.
 
 TO-DO (those with no names are added by Quirinus):
-- Fix (Claygame & Quirinus): Any proc rolls over after lvl 63. lvl 66 = 2. Looks like (o)skills cap at lvl 62 (so +65 = +62). Check for all instaces of it and fix on all pages.(CG: checked and corrected TU,SU,Sets,RW,Item Oskills page)
-- check (CG): All is One full set bonus gives "100% Chance to cast level 66 Death of a God when you Die" idk if it casts a lvl 2 or lvl 66 ctc, check and correct it if needed. SSSU Short bow have +65 to OHMAN --> 62, looks like it caps instead of rolls over. SSSU spirit edge proc lvl 66 --> 2. check if those are just display caps/rollovers or are they used to calculate the skill effects too.
+- All is One full set bonus gives ctc lol 66 --> displayed 2. SSSU Short bow have +65 to OHMAN --> 62. SSSU spirit edge proc lvl 66 --> 2. check if those are just display rollovers/caps, or are they used to calculate the skill too.
+ check if those are just display caps/rollovers or are they used to calculate the skill effects too.
 - Add: skill tree names to char pages
 - Add: WUW abbreviation: what you want (for it), explain that it's used when trading, look at N NN O R abbr.
 - Add: oskills from new sets and set items to the oskills list page
@@ -73,3 +73,5 @@ DONE:
 - Change: Maybe make the "Uniques" node in the menu not open the TU page on click (make it just a normal book that opens the sub-sections).
 - Change: Make clicking on a page_book tree open the tree and page, instead of just the page.
 - Fix: Check all files for outdated links to Laz's site: http://modsbylaz.hugelaser.com/ --> http://modsbylaz.vn.cz/
+- Fix (Claygame & Quirinus): Any proc rolls over after lvl 63. lvl 66 = 2. Looks like (o)skills cap at lvl 62 (so +65 = +62). Check for all instaces of it and fix on all pages.(CG: checked and corrected TU,SU,Sets,RW,Item Oskills page):
+ All is One full set bonus gives "100% Chance to cast level 66 Death of a God when you Die" idk if it casts a lvl 2 or lvl 66 ctc, check and correct it if needed. SSSU Short bow have +65 to OHMAN --> 62, looks like it caps instead of rolls over. SSSU spirit edge proc lvl 66 --> 2. Fixed on their own pages, and on proc/oskill list pages.
