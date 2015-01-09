@@ -15,11 +15,7 @@ TO-DO (those with no names are added by Quirinus):
 - Update: any proc/oskill change on any item on the oskills/procs list page
 - Update: all character pages (partially done) and skillpoint planner
 - Add: Sin set weapon/shield have special graphic. Check the ss (ask quirinus or someone for it) and find the image on google/wikis or extract from mpq. Then put it in the right folder and apply it to the sets.html page.
-<<<<<<< HEAD
-- Remove: Diablo Clone. (from the page and from the menu)
-=======
 - Add: Maybe include the socketed rune bonus in the RW stats (or make it toggleable).
->>>>>>> origin/master
 - Add: Shield chance to block on all item pages (base+stat, for class-only add class base chance too).
 - Fix: Make ([Class] Only) either white or red for all items/classes. Currently only Barbarian items have it as white, the rest have red.(rish: if every other char have it as red.. make barb red too, will be easier and will look sexier. I did it for SU/TU/Sets page. If its fine then u can strike this Fix off this list)
 - Change: Prefix/suffix list: Make calculators not reset the filter dropdowns/inputs.
@@ -67,6 +63,7 @@ Suggestions:
 - Base Items page: Maybe add a note that broken ethereal items cannot gain durability even if they have the 'repair xx durability in yy seconds' mod.
 - (claygame) : maybe add link to forum somehow in the About page that opens when docs r opened for the first time to make people come more often on forum?
 
+
 DONE:
 - Pester Marco to explain in more detail about the new Amazon faster cast rate with staves and 2h weapons. Then update the note on the Amazon page if necessary.
 -  Add: GS abbreviation
@@ -75,9 +72,6 @@ DONE:
 - Change: Maybe make the "Uniques" node in the menu not open the TU page on click (make it just a normal book that opens the sub-sections).
 - Change: Make clicking on a page_book tree open the tree and page, instead of just the page.
 - Fix: Check all files for outdated links to Laz's site: http://modsbylaz.hugelaser.com/ --> http://modsbylaz.vn.cz/
-<<<<<<< HEAD
-- Add: Maybe include the socketed rune bonus in the RW stats (or make it toggleable).
-=======
 - Fix (Claygame & Quirinus): Any proc rolls over after lvl 63. lvl 66 = 2. Looks like (o)skills cap at lvl 62 (so +65 = +62). Check for all instaces of it and fix on all pages.(CG: checked and corrected TU,SU,Sets,RW,Item Oskills page):
  All is One full set bonus gives "100% Chance to cast level 66 Death of a God when you Die" idk if it casts a lvl 2 or lvl 66 ctc, check and correct it if needed. SSSU Short bow have +65 to OHMAN --> 62, looks like it caps instead of rolls over. SSSU spirit edge proc lvl 66 --> 2. Fixed on their own pages, and on proc/oskill list pages.
 - Add: Signet of gold upgrade recipe to the cube page, if the recipe exists. eg. 2 or 3 gold sigs --> greater gold sig? /// Tested with 2,3,4,5 sigs seems like recipe is disabled.
@@ -85,4 +79,3 @@ DONE:
 - Remove: Diablo Clone. (from the page and from the menu) /// Commented him out in summoningubers and index.
 - Updated Book of summonning recipe, now cubes with Belial charm rather than Astrogha. Also updated Kabraxis' Soul charm. Trinity proc is now on base charm rather than upgrade.
 - Item fixes: eternity runeword gives Enhanced Defence instead of Damage; steel punisher no longer gives Deathlord morph; blackened no longer gives Duriel reanimate; reaper's hand no longer gives queen of blades oskill; periapt of life umo now gives + 100 replenish life; ape set changed from +3 skills to +18 Deathstrike [few other changes to set not documented, request SS]
->>>>>>> origin/master
