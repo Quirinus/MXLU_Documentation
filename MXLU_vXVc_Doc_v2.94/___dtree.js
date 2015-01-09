@@ -124,11 +124,14 @@ dTree.prototype.node = function(node, nodeId) {
 		if (node.target) str += ' target="' + node.target + '"';
 		if (this.config.useStatusText) str += ' onmouseover="window.status=\'' + node.name + '\';return true;" onmouseout="window.status=\'\';return true;" ';
 		if (this.config.useSelection && ((node._hc && this.config.folderLinks) || !node._hc))
-			str += ' onclick="javascript: ' + this.obj + '.s(' + nodeId + ');"';
+		if (node._hc && node.pid != this.root.id) //I hope I got this right...
+			str += ' onclick="javascript: ' + this.obj + '.o(' + nodeId + ');' + this.obj + '.s(' + nodeId + ');"'; //expands and selects node
+		else
+			str += ' onclick="javascript: ' + this.obj + '.s(' + nodeId + ');"'; //selects node
 		str += '>';
 	}
 	else if ((!this.config.folderLinks || !node.url) && node._hc && node.pid != this.root.id)
-		str += '<a href="javascript: ' + this.obj + '.o(' + nodeId + ');" class="node">';
+		str += '<a href="javascript: ' + this.obj + '.o(' + nodeId + ');" class="node">'; //expands node
 	str += node.name;
 	if (node.url || ((!this.config.folderLinks || !node.url) && node._hc)) str += '</a>';
 	str += '</div>';
