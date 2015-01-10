@@ -35,6 +35,7 @@ TO-DO (those with no names are added by Quirinus):
 - Check/Fix: Is the Yshari Set Sword item type Mystic Sword? If not, correct it. I also hope all the other Yshari set item names are correct.
 - Add/Update: Quest Reference page with various stuff...
 - Athulua, Strategy / Abilities section needs updating.
+- Add: (CG)- a title for the last 2 check boxes in the quest ref page.
 
 
 
