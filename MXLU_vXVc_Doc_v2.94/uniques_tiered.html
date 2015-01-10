@@ -9,7 +9,7 @@
 	<title>Regular Uniques</title>
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="m_2.css" />
-	
+
 	<style type="text/css">
 
 		.hidden
@@ -29,22 +29,22 @@
 			display: block;
 			clear: both;
 		}
-		
+
 	</style>
-	
+
 	<script type="text/javascript">
 
 		function filter_fu()
 		{
-		
+
 			var tables = document.getElementsByTagName('table');
 			var tables_len = tables.length; //222
 			var skip_last_x_tables = 5; //arrows, bolts, amus, rings, jewels
-			
+
 			var tier_number = document.getElementById('tier_list').value;
 			tier_number = tier_number.match(/[0-9]/);
 			tier_number = (tier_number?tier_number:0);
-			
+
 			var tier_row = 0;
 			var tier_column = 0;
 			var tt = new Array();
@@ -58,7 +58,7 @@
 			{
 				var table = tables[i];
 				var table_rows = table.rows;
-				
+
 				if (tier_number != 0)
 				{
 					//if (table.className == "item_table") //add a case if it's "tu_one"
@@ -69,9 +69,9 @@
 						table_rows[2].getElementsByTagName('td')[0].className = "hidden";
 						table_rows[2].getElementsByTagName('td')[1].className = "hidden";
 						table_rows[2].getElementsByTagName('td')[2].className = "hidden";
-						
+
 						table_rows[tier_row].getElementsByTagName('td')[tier_column].className = "";
-						
+
 						table.className = "tu_one";
 					//}
 				}
@@ -83,14 +83,14 @@
 					table_rows[2].getElementsByTagName('td')[0].className = "";
 					table_rows[2].getElementsByTagName('td')[1].className = "";
 					table_rows[2].getElementsByTagName('td')[2].className = "";
-					
+
 					table.className = "item_table";
 				}
 			}
-			
+
 			var zz = document.getElementsByTagName("div")[0].childNodes
 			var zz_len = zz.length
-			
+
 			var ii = 0;
 			var jj = 0;
 			var last_el;
@@ -100,7 +100,7 @@
 			var max_table_peroperties_height = 0;
 			for (i=0; i<zz_len;i++)
 			{
-							
+
 				tagname = zz[i].tagName;
 				if (tier_number != 0)
 				{
@@ -157,7 +157,7 @@
 							last_table.rows[tier_row].getElementsByTagName('td')[tier_column].style.height = max_table_peroperties_height + "px";
 						}
 						last_table = zz[i];
-					}						
+					}
 				}
 				else
 				{
@@ -177,14 +177,14 @@
 						zz[i].rows[2].getElementsByTagName('td')[0].style.height = "auto";
 						zz[i].rows[2].getElementsByTagName('td')[1].style.height = "auto";
 						zz[i].rows[2].getElementsByTagName('td')[2].style.height = "auto";
-					}						
+					}
 				}
 			}
 		}
 
 	</script>
-	
-	
+
+
 </head>
 
 <body id="#uniques" class="content">
@@ -192,7 +192,7 @@
 
 	<div class="text_on_the_left">
 		<p class="genbig">TIERED UNIQUES</p>
-		
+
 		<p class="content">The unique versions of tiered items can drop anywhere in the game. Their stats and level are affected by the
 		item tier. See the <a href="baseitems.html" target="_self">BASE ITEMS</a> page for details on item tiers.</p>
 		<hr />
@@ -204,7 +204,7 @@
 		If a unique has a skill bonus with no character class requirement (eg. <span class="magic">+3-6 to Summon Shadows</span>), then
 		the bonus is an &#39;oskill&#39;, giving this skill to any class for free.</p>
 		<hr />
-		
+
 		<label for="tier_list" title="Item Tier Filter">Item Tier Filter:
 
 		<select name="tier_list" id="tier_list" size=1 title="Item Tier Filter" onchange="filter_fu();">
@@ -216,7 +216,7 @@
 			<option>Tier 2</option>
 			<option>Tier 1</option>
 		</select></label>
-			
+
 		<hr />
 		<p class="genbig" id="one_handed_swords"><b>One-Handed Swords</b></p>
 
@@ -2234,7 +2234,7 @@
 			</tr>
 		</table>
 		<div class="comment"><sup style="color:black">*</sup> This monster is hostile.</div>
-		
+
 		<br />
 
 		<table class='item_table'>
@@ -27369,7 +27369,7 @@
 					+50 to Life<br />
 					5% Reanimate as: Magma Demon<br /></span>
 				</td>
-				
+
 				<td style='vertical-align:top;' width='320'>
 					<div class='unique' style='text-align:center;font-weight:bold;'>
 						Angel Heart
@@ -27397,7 +27397,7 @@
 					All Resists +10%<br />
 					+100 Mana after each Kill<br /></span>
 				</td>
-				
+
 				<td style='vertical-align:top;' width='320'>
 					<div class='unique' style='text-align:center;font-weight:bold;'>
 						Athulua&#39;s Oracle
@@ -27408,7 +27408,7 @@
 					(101 to 250)% Bonus to Attack Rating<br />
 					(16 to 20)% Chance of Uninterruptable Attack<br /></span>
 				</td>
-				
+
 				<td style='vertical-align:top;' width='320'>
 					<div class='unique' style='text-align:center;font-weight:bold;'>
 						The Dreamcatcher
@@ -27435,7 +27435,7 @@
 					Increase Maximum Mana 40%<br />
 					(11 to 15)% Damage Taken Goes To Mana<br /></span>
 				</td>
-				
+
 				<td style='vertical-align:top;' width='320'>
 					<div class='unique' style='text-align:center;font-weight:bold;'>
 						Fren Slairea
@@ -27446,7 +27446,7 @@
 					Decrease Maximum Mana -25%<br />
 					Lightning Absorb 10%</span><br />
 				</td>
-				
+
 				<td style='vertical-align:top;' width='320'>
 					<div class='unique' style='text-align:center;font-weight:bold;'>
 						Scarab of Death
@@ -27507,7 +27507,7 @@
 					Slows Attacker by (3 to 5)%<br />
 					+2 to Light Radius<br /></span>
 				</td>
-				
+
 				<td style='vertical-align:top;' width='320'>
 					<div class='unique' style='text-align:center;font-weight:bold;'>
 						Empyrean Band
@@ -27521,7 +27521,7 @@
 			<tr>
 				<td style='text-align:center; vertical-align:middle;' width="70"><img class='item2' src="images/baseitems/invrin2.jpg"
 				width="28" height="28" border="0" /></td>
-				
+
 				<td style='vertical-align:top;' width='320'>
 					<div class='unique' style='text-align:center;font-weight:bold;'>
 						Ripstar
@@ -27530,7 +27530,7 @@
 					(31 to 50)% Chance of Open Wounds<br />
 					+(11 to 20) Life on Striking in Melee<br /></span>
 				</td>
-				
+
 				<td style='vertical-align:top;' width='320'>
 					<div class='unique' style='text-align:center;font-weight:bold;'>
 						The Idiot Ball
@@ -27543,7 +27543,7 @@
 					Damage Reduction Decreased by -33%<br />
 					75% Magic Find<br /></span>
 				</td>
-				
+
 				<td style='vertical-align:top;' width='320'>
 					<div class='unique' style='text-align:center;font-weight:bold;'>
 						Xorine&#39;s Ring
@@ -27569,7 +27569,7 @@
 					Enhanced Weapon Damage +25%<br />
 					(6 to 10)% Bonus to Strength<br /></span>
 				</td>
-				
+
 				<td style='vertical-align:top;' width='320'>
 					<div class='unique' style='text-align:center;font-weight:bold;'>
 						Myokai&#39;s Path
@@ -27591,7 +27591,7 @@
 					Drains 2% Life per Second<br /></span>
 				</td>
 			</tr>
-			
+
 			<tr>
 				<td style='text-align:center; vertical-align:middle;' width="70"><img class='item2' src="images/baseitems/invrin1.jpg"
 				width="28" height="28" border="0" /></td>
@@ -27757,7 +27757,7 @@
 					<span class="magic">+(3 to 5) Energy Factor to Spell Damage<br />
 					+(1 to 3)% to Spell Damage<br /></span>
 				</td>
-				
+
 				<td style='vertical-align:top;' width='320'>
 					<div class='unique' style='text-align:center;font-weight:bold;'>
 						Farsight Globe
@@ -27793,7 +27793,7 @@
 					Stun Attack<br />
 					Enhanced Weapon Damage +5%</span><br />
 				</td>
-				
+
 				<td style='vertical-align:top;' width='320'>
 					<div class='unique' style='text-align:center;font-weight:bold;'>
 						Asheara&#39;s Cateye
