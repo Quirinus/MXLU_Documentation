@@ -12,7 +12,7 @@ TO-DO (those with no names are added by Quirinus):
 - Add: oskills from new sets and set items to the oskills list page
 - Add: procs from new sets and set items to the procs list page
 - Update: any proc/oskill change on any item on the oskills/procs list page
-- Update: all character pages (partially done) and skillpoint planner
+- Update: Skillpoint planner
 - Add: Sin set weapon/shield have special graphic. Check the ss (ask quirinus or someone for it) and find the image on google/wikis or extract from mpq. Then put it in the right folder and apply it to the sets.html page.
 - Add: Maybe include the socketed rune bonus in the RW stats (or make it toggleable).
 - Add: Shield chance to block on all item pages (base+stat, for class-only add class base chance too).
@@ -80,3 +80,4 @@ DONE:
 - Fix: FAQ: features -> uber and challenge links are broken.
 - (Claygame) Add a desc to tell that cc says "all trials completed" when all trials r done and hearts have not been cubed yet, idk coding so i cant do it.
 - Check/Fix: Is the AoE on Mount Arreat set orange or gold or what color is it? /// Text should be in correct colour now
+- Update: all character pages with new skills and images
