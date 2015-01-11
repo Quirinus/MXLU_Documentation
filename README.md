@@ -54,7 +54,7 @@ Suggestions:
 - Change: Rune/RWs: Level --> Required Level?
 - Base Items page: Maybe add a note that broken ethereal items cannot gain durability even if they have the 'repair xx durability in yy seconds' mod.
 - (claygame) : maybe add link to forum somehow in the About page that opens when docs r opened for the first time to make people come more often on forum?
-
+- (CG) : Add different colored pics for Sacred uniques to be seen when mouse-over them just like for special graphic items. example: parma su is black, ssu is green and sssu is black again.. so maybe parma looks green when mouse over the ssu part?
 
 DONE:
 - Pester Marco to explain in more detail about the new Amazon faster cast rate with staves and 2h weapons. Then update the note on the Amazon page if necessary.
