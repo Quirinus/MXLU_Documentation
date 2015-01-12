@@ -6,15 +6,9 @@ Median XL: Ultimative Documentation
 Add to-do stuff here.
 
 TO-DO (those with no names are added by Quirinus):
-- Check/Fix: Sorry, my bad, I gave the wrong version of the name qq: Trang&#8217;Oul, Trang&#39;Oul, Trang'Oul, Trang-Oul, Trag-Oul --> Trag&#8217;Oul
-- Add: Signet of gold upgrade recipe to the cube page. 3x gold sig (non-starting one) --> greater gold sig
 - Add: skill tree names to char pages
-- Add: oskills from new sets and set items to the oskills list page
-- Add: procs from new sets and set items to the procs list page
-- Update: any proc/oskill change on any item on the oskills/procs list page
 - Update: Skillpoint planner
 - Add: Sin set weapon/shield have special graphic. Check the ss (ask quirinus or someone for it) and find the image on google/wikis or extract from mpq. Then put it in the right folder and apply it to the sets.html page.
-- Add: Shield chance to block on all item pages (base+stat, for class-only add class base chance too).
 - Change: Prefix/suffix list: Make calculators not reset the filter dropdowns/inputs.
 - Change: Rename some of the areas that have changed names (uberquest pages, challenges, quest reference list and anywhere else that it might appear). Change their parent level names too if they're different.
 - Change: Make RW page in two columns; put name/level above properties, put rune description below that, and after that are the properties. Or something like that.
@@ -68,7 +62,6 @@ DONE:
 - Remove: Diablo Clone. (from the page and from the menu) /// Commented him out in summoningubers and index.
 - Updated Book of summonning recipe, now cubes with Belial charm rather than Astrogha. Also updated Kabraxis' Soul charm. Trinity proc is now on base charm rather than upgrade.
 - Item fixes: eternity runeword gives Enhanced Defence instead of Damage; steel punisher no longer gives Deathlord morph; blackened no longer gives Duriel reanimate; reaper's hand no longer gives queen of blades oskill; periapt of life umo now gives + 100 replenish life; ape set changed from +3 skills to +18 Deathstrike [few other changes to set not documented, request SS]
-- Fix: Trang-Oul/Trang&#8217;Oul --> Trang&#8217;Oul. (the first ones used to be correct, but blizz changed their minds...) Use Notepad++ to open up all doc files, then use "Replace All in All Opened Documents".
 - Remove: Proc/oskill page: Remove procs from Tier 1-5 (so only TU(6) should remain), to reduce the number of useless lines. /// Commented them out instead, as it is a lot of information in case we change our mind.
 - Check/Fix: Block chance formula (Concepts > Block & Defense): (Block% * (Dexterity - 16))/(Character_Level * 2) Check if it's 15 or 16 and if the max block table is correct (by trying ingame). Table 8% = 2266 or 2265? /// Correct constant in formula is 15 (no biggie tho). Adjusted table accordingly.
 - Add: WUW abbreviation: what you want (for it), explain that it's used when trading, look at N NN O R abbr.
@@ -79,3 +72,12 @@ DONE:
 - Update: all character pages with new skills and images
 - Add: Maybe include the socketed rune bonus in the RW stats (or make it toggleable). /// it's already included by default
 - Fix: Make ([Class] Only) either white or red for all items/classes. Currently only Barbarian items have it as white, the rest have red.(rish: if every other char have it as red.. make barb red too, will be easier and will look sexier. I did it for SU/TU/Sets page. If its fine then u can strike this Fix off this list)
+
+=======
+
+- Fixed Trag&#8217;Oul name references.
+- Add: Signet of gold upgrade recipe to the cube page. 3x gold sig (non-starting one) --> greater gold sig
+- Add: oskills from new sets and set items to the oskills list page
+- Add: procs from new sets and set items to the procs list page
+- Update: any proc/oskill change on any item on the oskills/procs list page
+- Add: Shield chance to block on all item pages (base+stat, for class-only add class base chance too).
