@@ -20,19 +20,17 @@ TO-DO (those with no names are added by Quirinus):
 - Add: Quest Reference list: CoV and maybe DP have a proc on being struck - lazorz beam in the opposite(?) direction? Check and add if so. http://www.medianxl.com/t5684p860-short-questions-thread#154303
 - All other changes from the XV and XVc changelog.
 - (claygame) : do we really need 'armor looks' page?
-- Add: a note somewhere (TU/SU/RW/Set... etc.) pages that if you already have a skill that the item gives (from the character), it will only give at max 3 to it.
 - Check/update: Are Yshari set items drillable for sockets? Check each of the set items; use as many jewels as the size of the item permits. Add a note under them if they are, and how many sockets.
 - Check/Add: Can Ring of Pride be cubed with MOs? What about (More) Luck or Lottery? Can Sigil of the 7 Deadly Sins be cubed for (More) Luck or Lottery recipes?
 - Check/Fix: Druid Trap Rat Set: Rainbow Warrior ratfink reanim color gold or magic?
 - Check/Fix: Is the Yshari Set Sword item type Mystic Sword? If not, correct it. I also hope all the other Yshari set item names are correct.
 - Add/Update: Quest Reference page with various stuff...
 - Athulua, Strategy / Abilities section needs updating.
-- Add: (CG)- a title for the last 2 check boxes in the quest ref page. which ones exactly?
-
+- Add: (CG)- a title for the last 2 check boxes in the quest ref page. which ones exactly
 
 
 Suggestions:
-- (Claygame) Add a pic below every recepie showing what the ingredient look like, for example: minigame recepie have pic of cc and the rune below or beside the recepie text.
+- (Claygame) Add a pic below every reciepe showing what the ingredient look like, for example: minigame recepie have pic of cc and the rune below or beside the recepie text.
 - (Claygame) Instead of having "see THIS PAGE for details" below descriptions, make the key part of text as a direct link to the intended page.
 - (Claygame) Add pictures of Veteran monster of each act on the monster token page.
 - Maybe somehow merge SU/SSU/SSSU and TU6 stuff so it can be more easily compared?
@@ -76,6 +74,7 @@ DONE:
 - (cg) fixed ctc name on tu morion as reported by marco here http://goo.gl/sbQLd3
 - (cg) corrected t6 Ravenbeak str bonus reported by stealthmaster here http://goo.gl/8dQ8NQ
 - (cg) corrected damage type bonus on Spectre rw reported by sergey9908 here http://goo.gl/vZIswN
+- (ItalianPower) Add: a note somewhere (TU/SU/RW/Set... etc.) pages that if you already have a skill that the item gives (from the character), it will only give at max 3 to it.
 
 =======
 
