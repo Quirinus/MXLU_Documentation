@@ -72,6 +72,10 @@ DONE:
 - Update: all character pages with new skills and images
 - Add: Maybe include the socketed rune bonus in the RW stats (or make it toggleable). /// it's already included by default
 - Fix: Make ([Class] Only) either white or red for all items/classes. Currently only Barbarian items have it as white, the rest have red.(rish: if every other char have it as red.. make barb red too, will be easier and will look sexier. I did it for SU/TU/Sets page. If its fine then u can strike this Fix off this list)
+- (cg) fixed str req on coat of darkness as per this report by chaomen http://goo.gl/OWGVER
+- (cg) fixed ctc name on tu morion as reported by marco here http://goo.gl/sbQLd3
+- (cg) corrected t6 Ravenbeak str bonus reported by stealthmaster here http://goo.gl/8dQ8NQ
+- (cg) corrected damage type bonus on Spectre rw reported by sergey9908 here http://goo.gl/vZIswN
 
 =======
 
