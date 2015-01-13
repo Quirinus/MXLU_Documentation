@@ -8,7 +8,6 @@ Add to-do stuff here.
 TO-DO (those with no names are added by Quirinus):
 - Add: skill tree names to char pages
 - Update: Skillpoint planner
-- Add: Sin set weapon/shield have special graphic. Check the ss (ask quirinus or someone for it) and find the image on google/wikis or extract from mpq. Then put it in the right folder and apply it to the sets.html page.
 - Change: Prefix/suffix list: Make calculators not reset the filter dropdowns/inputs.
 - Change: Rename some of the areas that have changed names (uberquest pages, challenges, quest reference list and anywhere else that it might appear). Change their parent level names too if they're different.
 - Change: Make RW page in two columns; put name/level above properties, put rune description below that, and after that are the properties. Or something like that.
@@ -16,18 +15,15 @@ TO-DO (those with no names are added by Quirinus):
 - Change: TU page: make the amulets/rings/jewels/quivers be in columns of 2 if the filter is set on any tier, except "All".
 - Fix: Quest Reference list: difficulty headers not dissapearing when the contents are empty.
 - Add: Speed Calculator to the Characters (?) section, with explanations. http://www.medianxl.com/t5893-speed-mechanics-explained-updated-speedcalc
-- Add: Quest Reference list: K3K necros cast miasma now (add a tooltip that explains what miasma skill is and what it does, like the other skills)
-- Add: Quest Reference list: CoV and maybe DP have a proc on being struck - lazorz beam in the opposite(?) direction? Check and add if so. http://www.medianxl.com/t5684p860-short-questions-thread#154303
 - All other changes from the XV and XVc changelog.
 - (claygame) : do we really need 'armor looks' page?
 - Check/update: Are Yshari set items drillable for sockets? Check each of the set items; use as many jewels as the size of the item permits. Add a note under them if they are, and how many sockets.
 - Check/Add: Can Ring of Pride be cubed with MOs? What about (More) Luck or Lottery? Can Sigil of the 7 Deadly Sins be cubed for (More) Luck or Lottery recipes?
-- Check/Fix: Druid Trap Rat Set: Rainbow Warrior ratfink reanim color gold or magic?
 - Check/Fix: Is the Yshari Set Sword item type Mystic Sword? If not, correct it. I also hope all the other Yshari set item names are correct.
 - Add/Update: Quest Reference page with various stuff...
 - Athulua, Strategy / Abilities section needs updating.
 - Add: (CG)- a title for the last 2 check boxes in the quest ref page. which ones exactly
-
+- Fix: New dunc map has wrong location of sigils
 
 Suggestions:
 - (Claygame) Add a pic below every reciepe showing what the ingredient look like, for example: minigame recepie have pic of cc and the rune below or beside the recepie text.
@@ -75,6 +71,10 @@ DONE:
 - (cg) corrected t6 Ravenbeak str bonus reported by stealthmaster here http://goo.gl/8dQ8NQ
 - (cg) corrected damage type bonus on Spectre rw reported by sergey9908 here http://goo.gl/vZIswN
 - (ItalianPower) Add: a note somewhere (TU/SU/RW/Set... etc.) pages that if you already have a skill that the item gives (from the character), it will only give at max 3 to it.
+- (kor) Add: Sin set weapon/shield have special graphic. Check the ss (ask quirinus or someone for it) and find the image on google/wikis or extract from mpq. Then put it in the right folder and apply it to the sets.html page.
+- (kor) Check/Fix: Druid Trap Rat Set: Rainbow Warrior ratfink reanim color gold or magic?
+- (kor) Add: Quest Reference list: CoV and maybe DP have a proc on being struck - lazorz beam in the opposite(?) direction? Check and add if so. http://www.medianxl.com/t5684p860-short-questions-thread#154303
+- (korc) Add: Quest Reference list: K3K necros cast miasma now (add a tooltip that explains what miasma skill is and what it does, like the other skills)
 
 =======
 
