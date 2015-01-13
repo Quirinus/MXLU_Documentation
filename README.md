@@ -23,7 +23,10 @@ TO-DO (those with no names are added by Quirinus):
 - Add/Update: Quest Reference page with various stuff...
 - Athulua, Strategy / Abilities section needs updating.
 - Add: (CG)- a title for the last 2 check boxes in the quest ref page. which ones exactly
-- Fix: New dunc map has wrong location of sigils
+- Fix: (kor) New dunc map has wrong location of sigils
+- Add/fix (cg) : check and add the range of barb skill on sssu balanced axe Lacerator as reported by seelenstein here http://goo.gl/L0uOok
+- Add/fix (cg) : check and update flee % on stormhowl bow, reported by mrtawsiti here http://goo.gl/lhCTw5
+
 
 Suggestions:
 - (Claygame) Add a pic below every reciepe showing what the ingredient look like, for example: minigame recepie have pic of cc and the rune below or beside the recepie text.
@@ -75,6 +78,8 @@ DONE:
 - (kor) Check/Fix: Druid Trap Rat Set: Rainbow Warrior ratfink reanim color gold or magic?
 - (kor) Add: Quest Reference list: CoV and maybe DP have a proc on being struck - lazorz beam in the opposite(?) direction? Check and add if so. http://www.medianxl.com/t5684p860-short-questions-thread#154303
 - (korc) Add: Quest Reference list: K3K necros cast miasma now (add a tooltip that explains what miasma skill is and what it does, like the other skills)
+- (cg) fix: updated ctc on tu assault helmet as reported by sWAP here http://goo.gl/uuByM6
+- (cg) fix: updated color of Area affect modifier on su hexblade and ssu flambnerge as reported by stealthmaster here http://goo.gl/rMIsBl
 
 =======
 
