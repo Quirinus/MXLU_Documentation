@@ -19,13 +19,11 @@ TO-DO (those with no names are added by Quirinus):
 - (claygame) : do we really need 'armor looks' page?
 - Check/update: Are Yshari set items drillable for sockets? Check each of the set items; use as many jewels as the size of the item permits. Add a note under them if they are, and how many sockets.
 - Check/Add: Can Ring of Pride be cubed with MOs? What about (More) Luck or Lottery? Can Sigil of the 7 Deadly Sins be cubed for (More) Luck or Lottery recipes?
-- Check/Fix: Is the Yshari Set Sword item type Mystic Sword? If not, correct it. I also hope all the other Yshari set item names are correct.
 - Add/Update: Quest Reference page with various stuff...
 - Athulua, Strategy / Abilities section needs updating.
-- Add: (CG)- a title for the last 2 check boxes in the quest ref page. which ones exactly
+- Add: (CG)- a title for the last 2 check boxes in the quest ref page. which ones exactly - kor: the names for boxes are left at left of each check boxes. so 'Miscellaneous' and 'Only one instance'. Maybe moved the names to right side to be more clear
 - Fix: (kor) New dunc map has wrong location of sigils
-- Add/fix (cg) : check and add the range of barb skill on sssu balanced axe Lacerator as reported by seelenstein here http://goo.gl/L0uOok
-- Add/fix (cg) : check and update flee % on stormhowl bow, reported by mrtawsiti here http://goo.gl/lhCTw5
+- Add/fix (cg) : check and update flee % on stormhowl bow, reported by mrtawsiti here http://goo.gl/lhCTw5 - kor: kambala said its 0.125% but we dont have txt file so quiri will have to check this)
 
 
 Suggestions:
@@ -43,7 +41,7 @@ Suggestions:
 - Change: Rune/RWs: Level --> Required Level?
 - Base Items page: Maybe add a note that broken ethereal items cannot gain durability even if they have the 'repair xx durability in yy seconds' mod.
 - (claygame) : maybe add link to forum somehow in the About page that opens when docs r opened for the first time to make people come more often on forum?
-- (CG) : Add different colored pics for Sacred uniques to be seen when mouse-over them just like for special graphic items. example: parma su is black, ssu is green and sssu is black again.. so maybe parma looks green when mouse over the ssu part?
+- (CG) : Add different colored pics for Sacred uniques to be seen when mouse-over them just like for special graphic items. example: parma su is black, ssu is green and sssu is black again.. so maybe parma looks green when mouse over the ssu part? - kor: I think you can do this by applying colorshift. Ill look into it more)
 
 DONE:
 - Pester Marco to explain in more detail about the new Amazon faster cast rate with staves and 2h weapons. Then update the note on the Amazon page if necessary.
@@ -75,11 +73,13 @@ DONE:
 - (cg) corrected damage type bonus on Spectre rw reported by sergey9908 here http://goo.gl/vZIswN
 - (ItalianPower) Add: a note somewhere (TU/SU/RW/Set... etc.) pages that if you already have a skill that the item gives (from the character), it will only give at max 3 to it.
 - (kor) Add: Sin set weapon/shield have special graphic. Check the ss (ask quirinus or someone for it) and find the image on google/wikis or extract from mpq. Then put it in the right folder and apply it to the sets.html page.
-- (kor) Check/Fix: Druid Trap Rat Set: Rainbow Warrior ratfink reanim color gold or magic?
-- (kor) Add: Quest Reference list: CoV and maybe DP have a proc on being struck - lazorz beam in the opposite(?) direction? Check and add if so. http://www.medianxl.com/t5684p860-short-questions-thread#154303
-- (korc) Add: Quest Reference list: K3K necros cast miasma now (add a tooltip that explains what miasma skill is and what it does, like the other skills)
+- (kor) Check/Fix: Druid Trap Rat Set: Rainbow Warrior ratfink reanim color gold or magic? /// gold
+- (kor) Add: Quest Reference list: CoV and maybe DP have a proc on being struck - lazorz beam in the opposite(?) direction? Check and add if so. http://www.medianxl.com/t5684p860-short-questions-thread#154303 /// Death Projector had on-hit proc while Crystal had chance to teleport when you are close
+- (kor) Add: Quest Reference list: K3K necros cast miasma now (add a tooltip that explains what miasma skill is and what it does, like the other skills) /// also added nightmare skill
 - (cg) fix: updated ctc on tu assault helmet as reported by sWAP here http://goo.gl/uuByM6
 - (cg) fix: updated color of Area affect modifier on su hexblade and ssu flambnerge as reported by stealthmaster here http://goo.gl/rMIsBl
+- (kor) Check/Fix: Is the Yshari Set Sword item type Mystic Sword? If not, correct it. I also hope all the other Yshari set item names are correct.
+- (kor) Add/fix: check and add the range of barb skill on sssu balanced axe Lacerator as reported by seelenstein here http://goo.gl/L0uOok
 
 =======
 
