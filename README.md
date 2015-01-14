@@ -83,9 +83,6 @@ DONE:
 - (kor) Check/Fix: Is the Yshari Set Sword item type Mystic Sword? If not, correct it. I also hope all the other Yshari set item names are correct.
 - (kor) Add/fix: check and add the range of barb skill on sssu balanced axe Lacerator as reported by seelenstein here http://goo.gl/L0uOok
 - (kor) Add: New elemental stone pictures /// I placed the transparent pictures on separate folder
-
-=======
-
 - Fixed Trag&#8217;Oul name references.
 - Add: Signet of gold upgrade recipe to the cube page. 3x gold sig (non-starting one) --> greater gold sig
 - Add: oskills from new sets and set items to the oskills list page
