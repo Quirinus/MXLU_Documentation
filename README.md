@@ -80,6 +80,7 @@ DONE:
 - (cg) fix: updated color of Area affect modifier on su hexblade and ssu flambnerge as reported by stealthmaster here http://goo.gl/rMIsBl
 - (kor) Check/Fix: Is the Yshari Set Sword item type Mystic Sword? If not, correct it. I also hope all the other Yshari set item names are correct.
 - (kor) Add/fix: check and add the range of barb skill on sssu balanced axe Lacerator as reported by seelenstein here http://goo.gl/L0uOok
+- (kor) Add: New elemental stone pictures /// I placed the transparent pictures on separate folder
 
 =======
 
