@@ -22,7 +22,6 @@ TO-DO (those with no names are added by Quirinus):
 - Add/Update: Quest Reference page with various stuff...
 - Athulua, Strategy / Abilities section needs updating.
 - Add: (CG)- a title for the last 2 check boxes in the quest ref page. which ones exactly - kor: the names for boxes are left at left of each check boxes. so 'Miscellaneous' and 'Only one instance'. Maybe moved the names to right side to be more clear
-- Fix: (kor) New dunc map has wrong location of sigils
 - Add/fix (cg) : check and update flee % on stormhowl bow, reported by mrtawsiti here http://goo.gl/lhCTw5 - kor: kambala said its 0.125% but we dont have txt file so quiri will have to check this)
 - check (CG) : check if holy avengers (sssu broad sword) have pala skills or not, if it do then add the range, reported by gcggcg here http://goo.gl/2ddBbO
 - (quiri) : remove anchors/links from menu when adding filter to the page http://goo.gl/fJc28a
@@ -89,3 +88,4 @@ DONE:
 - Add: procs from new sets and set items to the procs list page
 - Update: any proc/oskill change on any item on the oskills/procs list page
 - Add: Shield chance to block on all item pages (base+stat, for class-only add class base chance too).
+- (kor) Fix:New dunc map has wrong location of sigils
