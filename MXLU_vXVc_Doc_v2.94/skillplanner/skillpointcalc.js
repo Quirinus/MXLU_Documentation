@@ -463,6 +463,26 @@
 			skillnames = skillnames_uxiii;
 			func_constraints = check_constraints_O002;
 			break
+		case "uxvc":
+			hide("ac500_row");
+			uncheck("ac500");
+			hide("windowsinhell");
+			show("minigamerow");
+			show("signetofskillrow");
+			show("enneadplusone");
+			set("toraja_bonus", "1");
+			getFormElement("q7").value = 1;
+			
+			show("laz_upg");
+			show("khanduran");
+			show("feels");
+			check("q10");
+			uncheck("q11");
+			uncheck("q12");
+			
+			skillnames = skillnames_uxvc;
+			func_constraints = check_constraints_O002;
+			break
 		}
 		changeClass()
 	}
