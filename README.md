@@ -25,6 +25,32 @@ TO-DO (those with no names are added by Quirinus):
 - Add/fix (cg) : check and update flee % on stormhowl bow, reported by mrtawsiti here http://goo.gl/lhCTw5 - kor: kambala said its 0.125% but we dont have txt file so quiri will have to check this)
 - check (CG) : check if holy avengers (sssu broad sword) have pala skills or not, if it do then add the range, reported by gcggcg here http://goo.gl/2ddBbO
 - (quiri) : remove anchors/links from menu when adding filter to the page http://goo.gl/fJc28a
+- are there any changes in TU/SU/SSU/SSSU items? kinda hard to tell without files, but if you noticed something or it's in the changelog, fix it.
+- affix and stat related things on items, and some items still not updated from patch XV & XVc, but it's kinda hard to do it without files
+- update str/dex dmg bonus on: Cranebeak, Greil's Urvan, Forge Fire, Viperfork, Steel Pillar, Sky Scorcher, Divine Mandible, Tonbogiri, Polar Vortex, Wrath of Nature, Mistress of Pain, Glowing Vertigo & Tormentor. (not from legacy items obv) (you can probably find the right values if you search the XV bugs/feedback thread for my posts, but it's still good to check them)
+- use new pics for changed ubers (a few pages back) that didn't get a pic in the contest ; dunno which ones to choose when people disagree XD
+- on sets page, make the image valign: center (should be centered relative to the stats text)
+- include speedcalc. make a page for it in the items or char subsection, with marco's explanations, but a shorter version. provide a link to marcos explanations/dl.
+- for cube recipes: Upgrade to Non-magical Item, Upgrade to Magical/Rare Item - add they're only for armor/weapons
+- maybe add http://www.medianxl.com/t86-how-spell-damage-works as a new page in concepts, but rewritten a bit?
+- add a note to double mo bonus that the orbs added before don't get double stats (doesn't work retrogradely)
+- make the docs not collapse section when clicking on an open page_book (page_book_open). (in ___dtree.js, probably do something to line 128?)
+- Mammen Axe (2): now has 2 sockets. Hexblade (2): now has 2 sockets. update in baseitems. check if TU2 versions have 2 sockets or still 1.
+- add note: can't lucky or mo void rings (check how to add a note on, for example: Linarian's Legacy)
+- Marchosias' Deception chance to block add note that it can't go lower than 0%, but it will reduce class bonuses; same Wheel of the Seasons SSU
+- fix all & in docs change to &amp; , change all non-tag < and > to &lt; and &gt;
+- add SU:SSU:SSSU ratio = 10:4:1 to the SU page, and maybe abbreviation page.
+- on gs abbrev. - add note that gs number is automatically shown when you enter the game.
+- bremmtown upg - add flavor text from the bottom+color: http://www.medianxl.com/t6281p500-new-screenshot-items-2014-2015#180887
+- cc brc/ennead pages and wherever (char page?), fix color, stat order and remove 'challenge' word (check the color/text/order of empty cc): http://www.medianxl.com/t6281p500-new-screenshot-items-2014-2015#180887
+- cc brc completition note text, make it part of the recipe and put it as a stat, in the middle and not inline?
+- faq: What are Challenges?, lc0 req exactly lvl 5, not at most; What are Uberquests? maybe add heroics. maybe change color from blue to something normal?
+- remove deva king from quest ref (at all act/difficulty dragon eggs, so 6 places to change in total)
+- fix/update uber locations and parent levels in quest reference list
+- rename anchors and links to renamed bosses terul/zorun tzin (don't do this if you don't check for links EVERYWHERE, otherwise I'll do it)
+- check if there's still 2 Linarian's Legacy enabled: one with +2 Life on Striking (the real one) and the other with 1% Reanimate as: Inarius (the legacy one enabled by mistake)... kinda hard to disapprove it without files.
+- compare MO/UMO ingame and in the docs (mainly for missing/extra + and - signs and a few letter changes), I think I updated all, but it doesn't hurt to check. I tihnk you can use legacy umo from ss. (also, obv, stun attack with length is fine)
+- change "Socketed: x" to Socketed (x) everywhere - to match the ingame text. open all files and use replace all in all documents. use Regular Expression search mode for searching/replacing (click at the top of the file, have to start search from the beginning)
 
 
 Suggestions:
