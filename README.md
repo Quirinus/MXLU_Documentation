@@ -17,7 +17,6 @@ TO-DO (those with no names are added by Quirinus):
 - Add: Speed Calculator to the Characters (?) section, with explanations. http://www.medianxl.com/t5893-speed-mechanics-explained-updated-speedcalc
 - All other changes from the XV and XVc changelog.
 - (claygame) : do we really need 'armor looks' page?
-- Check/update: Are Yshari set items drillable for sockets? Check each of the set items; use as many jewels as the size of the item permits. Add a note under them if they are, and how many sockets.
 - Check/Add: Can Ring of Pride be cubed with MOs? What about (More) Luck or Lottery? Can Sigil of the 7 Deadly Sins be cubed for (More) Luck or Lottery recipes?
 - Add/Update: Quest Reference page with various stuff...
 - Athulua, Strategy / Abilities section needs updating.
@@ -116,3 +115,4 @@ DONE:
 - Update: any proc/oskill change on any item on the oskills/procs list page
 - Add: Shield chance to block on all item pages (base+stat, for class-only add class base chance too).
 - (kor) Fix:New dunc map has wrong location of sigils
+- Check/update: Are Yshari set items drillable for sockets? // Checked with maximum number of sockets possible on all pieces, jewels are consumed as per recipe but no sockets added on any of the items
