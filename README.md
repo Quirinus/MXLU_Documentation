@@ -7,7 +7,6 @@ Add to-do stuff here.
 
 TO-DO (those with no names are added by Quirinus):
 - Add: skill tree names to char pages
-- Update: Skillpoint planner
 - Change: Prefix/suffix list: Make calculators not reset the filter dropdowns/inputs.
 - Change: Rename some of the areas that have changed names (uberquest pages, challenges, quest reference list and anywhere else that it might appear). Change their parent level names too if they're different.
 - Change: Make RW page in two columns; put name/level above properties, put rune description below that, and after that are the properties. Or something like that.
@@ -17,22 +16,21 @@ TO-DO (those with no names are added by Quirinus):
 - Add: Speed Calculator to the Characters (?) section, with explanations. http://www.medianxl.com/t5893-speed-mechanics-explained-updated-speedcalc
 - All other changes from the XV and XVc changelog.
 - (claygame) : do we really need 'armor looks' page?
-- Check/Add: Can Ring of Pride be cubed with MOs? What about (More) Luck or Lottery? Can Sigil of the 7 Deadly Sins be cubed for (More) Luck or Lottery recipes?
 - Add/Update: Quest Reference page with various stuff...
 - Athulua, Strategy / Abilities section needs updating.
-- Add: (CG)- a title for the last 2 check boxes in the quest ref page. which ones exactly - kor: the names for boxes are left at left of each check boxes. so 'Miscellaneous' and 'Only one instance'. Maybe moved the names to right side to be more clear
-- Add/fix (cg) : check and update flee % on stormhowl bow, reported by mrtawsiti here http://goo.gl/lhCTw5 - kor: kambala said its 0.125% but we dont have txt file so quiri will have to check this)
-- check (CG) : check if holy avengers (sssu broad sword) have pala skills or not, if it do then add the range, reported by gcggcg here http://goo.gl/2ddBbO
+- Add: (CG)- a title for the last 2 check boxes in the quest ref page. which ones exactly? kor: the names for boxes are left at left of each check boxes. so 'Miscellaneous' and 'Only one instance'. Maybe moved the names to right side to be more clear
 - (quiri) : remove anchors/links from menu when adding filter to the page http://goo.gl/fJc28a
 - are there any changes in TU/SU/SSU/SSSU items? kinda hard to tell without files, but if you noticed something or it's in the changelog, fix it.
 - affix and stat related things on items, and some items still not updated from patch XV & XVc, but it's kinda hard to do it without files
 - update str/dex dmg bonus on: Cranebeak, Greil's Urvan, Forge Fire, Viperfork, Steel Pillar, Sky Scorcher, Divine Mandible, Tonbogiri, Polar Vortex, Wrath of Nature, Mistress of Pain, Glowing Vertigo & Tormentor. (not from legacy items obv) (you can probably find the right values if you search the XV bugs/feedback thread for my posts, but it's still good to check them)
 - use new pics for changed ubers (a few pages back) that didn't get a pic in the contest ; dunno which ones to choose when people disagree XD
 - on sets page, make the image valign: center (should be centered relative to the stats text)
+- change "Socketed: x" to Socketed (x) everywhere - to match the ingame text. open all files and use replace all in all documents. use Regular Expression search mode for searching/replacing (click at the top of the file, have to start search from the beginning):
+   find: Socketed: ([1-6])
+   replace with: Socketed \(\1\)
+   (the \1 in the replace line is replaced with the number found in the search line ([1-6]) )
 - include speedcalc. make a page for it in the items or char subsection, with marco's explanations, but a shorter version. provide a link to marcos explanations/dl.
-- for cube recipes: Upgrade to Non-magical Item, Upgrade to Magical/Rare Item - add they're only for armor/weapons
 - maybe add http://www.medianxl.com/t86-how-spell-damage-works as a new page in concepts, but rewritten a bit?
-- add a note to double mo bonus that the orbs added before don't get double stats (doesn't work retrogradely)
 - make the docs not collapse section when clicking on an open page_book (page_book_open). (in ___dtree.js, probably do something to line 128?)
 - Mammen Axe (2): now has 2 sockets. Hexblade (2): now has 2 sockets. update in baseitems. check if TU2 versions have 2 sockets or still 1.
 - add note: can't lucky or mo void rings (check how to add a note on, for example: Linarian's Legacy)
@@ -49,11 +47,11 @@ TO-DO (those with no names are added by Quirinus):
 - rename anchors and links to renamed bosses terul/zorun tzin (don't do this if you don't check for links EVERYWHERE, otherwise I'll do it)
 - check if there's still 2 Linarian's Legacy enabled: one with +2 Life on Striking (the real one) and the other with 1% Reanimate as: Inarius (the legacy one enabled by mistake)... kinda hard to disapprove it without files.
 - compare MO/UMO ingame and in the docs (mainly for missing/extra + and - signs and a few letter changes), I think I updated all, but it doesn't hurt to check. I tihnk you can use legacy umo from ss. (also, obv, stun attack with length is fine)
-- change "Socketed: x" to Socketed (x) everywhere - to match the ingame text. open all files and use replace all in all documents. use Regular Expression search mode for searching/replacing (click at the top of the file, have to start search from the beginning)
 - check procs "on Attack". was "on Attack" --> "on melee Attack" removed to get more space, or did marco add it in some of the lastest patches. if it's not too long (ie. it makes the page too wide because of some long ass procs), add "melee" back
 - (kor) add colored items to doc (set finished)
 - (kor) extract monster animations
 - (CG): remove Durability from Indestructible and throw weapons items in docs in sets/tu/su/ssu/sssu/RW pages.
+- fix hit causes monsters to flee % on all pages. check in the files.
 
 
 Suggestions:
@@ -71,6 +69,7 @@ Suggestions:
 - Change: Rune/RWs: Level --> Required Level?
 - Base Items page: Maybe add a note that broken ethereal items cannot gain durability even if they have the 'repair xx durability in yy seconds' mod.
 - (claygame) : maybe add link to forum somehow in the About page that opens when docs r opened for the first time to make people come more often on forum?
+- Add: skill tree names to skillpoint planner?
 
 DONE:
 - Pester Marco to explain in more detail about the new Amazon faster cast rate with staves and 2h weapons. Then update the note on the Amazon page if necessary.
@@ -118,3 +117,10 @@ DONE:
 - Add: Shield chance to block on all item pages (base+stat, for class-only add class base chance too).
 - (kor) Fix:New dunc map has wrong location of sigils
 - Check/update: Are Yshari set items drillable for sockets? // Checked with maximum number of sockets possible on all pieces, jewels are consumed as per recipe but no sockets added on any of the items
+- Update: Skillpoint planner
+- Add/fix (cg) : check and update flee % on stormhowl bow, reported by mrtawsiti here http://goo.gl/lhCTw5 - kor: kambala said its 0.125% but we dont have txt file so quiri will have to check this)
+- check (CG) : check if holy avenger (sssu broad sword) have pala skills or not, if it do then add the range, reported by gcggcg here http://goo.gl/2ddBbO
+- for cube recipes: Upgrade to Non-magical Item, Upgrade to Magical/Rare Item - add they're only for armor/weapons
+- add a note to double mo bonus that the orbs added before don't get double stats (doesn't work retrogradely)
+- Check/Add: Can Ring of Pride be cubed with MOs? What about (More) Luck or Lottery? Can Sigil of the 7 Deadly Sins be cubed for (More) Luck or Lottery recipes? // no and no and no no no
+- add note: can't lucky or mo void rings (check how to add a note on, for example: Linarian's Legacy)
