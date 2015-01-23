@@ -6,6 +6,7 @@ Median XL: Ultimative Documentation
 Add to-do stuff here.
 
 TO-DO (those with no names are added by Quirinus):
+- Fix: Quest Reference: all dragon recipes use TP scroll instead of some using ID and some TP
 - Add: skill tree names to char pages
 - Change: Prefix/suffix list: Make calculators not reset the filter dropdowns/inputs.
 - Change: Rename some of the areas that have changed names (uberquest pages, challenges, quest reference list and anywhere else that it might appear). Change their parent level names too if they're different.
