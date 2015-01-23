@@ -1735,34 +1735,42 @@
 
 	function check_constraints_uxvc() //fix to lock 6th tree and unlock uberskills
 	{
-		if (classnr == 1)
+		if (classnr == 1) //amazon
 		{
-			raiseMax(14, Math.floor((slvl[11] + slvl[12] + slvl[13] + slvl[15]) / 2));
+			raiseMax(14, Math.floor((slvl[11] + slvl[12] + slvl[13] + slvl[15]) / 2)); //investing in other spear tree skills increases max on lioness
+			//investing in 4th skill in any of the 5 trees disables the other trees
 			if (slvl[4] > 0)
 			{
-				lockout(6, 20)
+				lockout(6, 25)
 			}
 			if (slvl[9] > 0)
 			{
 				lockout(1, 5);
-				lockout(11, 20)
+				lockout(11, 25)
 			}
 			if (slvl[14] > 0)
 			{
 				lockout(1, 10);
-				lockout(16, 20)
+				lockout(16, 25)
 			}
 			if (slvl[19] > 0)
 			{
-				lockout(1, 15)
+				lockout(1, 15);
+				lockout(21, 25)
 			}
+			if (slvl[24] > 0)
+			{
+				lockout(1, 20)
+			}
+			//investing in 1st, 2nd or 3rd skill in any of the 5 trees disables the 4th skill for other trees
 			for (var f = 1; f <= 3; f++)
 			{
 				if (slvl[f] > 0)
 				{
 					lockout(9);
 					lockout(14);
-					lockout(19)
+					lockout(19);
+					lockout(24)
 				}
 			}
 			for (var f = 6; f <= 8; f++)
@@ -1771,7 +1779,8 @@
 				{
 					lockout(4);
 					lockout(14);
-					lockout(19)
+					lockout(19);
+					lockout(24)
 				}
 			}
 			for (var f = 11; f <= 13; f++)
@@ -1780,7 +1789,8 @@
 				{
 					lockout(4);
 					lockout(9);
-					lockout(19)
+					lockout(19);
+					lockout(24)
 				}
 			}
 			for (var f = 16; f <= 18; f++)
@@ -1789,38 +1799,84 @@
 				{
 					lockout(4);
 					lockout(9);
-					lockout(14)
+					lockout(14);
+					lockout(24)
+				}
+			}
+			for (var f = 21; f <= 23; f++)
+			{
+				if (slvl[f] > 0)
+				{
+					lockout(4);
+					lockout(9);
+					lockout(14);
+					lockout(19)
 				}
 			}
 			return
 		}
-		if (classnr == 3)
+		if (classnr == 3) //barbarian
 		{
-			if (slvl[22] > 0)
+			if (slvl[22] > 0) //ancient blood
 			{
 				slvlskillbonus += Math.floor(slvl[22] / 4) + 1
 			}
 			return
 		}
-		if (classnr == 4)
+		if (classnr == 4) //druid
 		{
-			raiseMax(24, Math.floor((slvl[21] + slvl[22] + slvl[23] + slvl[25]) / 2));
+			raiseMax(24, Math.floor((slvl[21] + slvl[22] + slvl[23] + slvl[25]) / 2)); //investing in other poison tree skills increases max on mythal
 			return
 		}
-		if (classnr == 5)
+		if (classnr == 5) //necro
 		{
+			//tri-ele totems raise each other's max skill level
 			raiseMax(2, Math.floor(slvl[3] / 2));
 			raiseMax(3, Math.floor(slvl[5] / 2));
 			raiseMax(5, Math.floor(slvl[2] / 2));
 			return
 		}
-		if (classnr == 6)
+		if (classnr == 6) //paladin
 		{
-			var j = Math.floor(slvl[1] / 2) + Math.floor(slvl[2] / 2) + Math.floor(slvl[3] / 2) + Math.floor(slvl[5] / 2);
-			raiseMax(4, j);
-			raiseMax(25, Math.floor(slvl[23] / 2));
-			var c = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 26);
-			var g = new Array(11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 27);
+			raiseMax(4, Math.floor((slvl[1] + slvl[2] + slvl[3] + slvl[5]) / 2)); //investing in other holy melee tree skills increases max on lionheart
+			raiseMax(10, Math.floor(slvl[8] / 2)); //investing in Solstice and Equinox increases max on Hoplite
+			raiseMax(25, Math.floor(slvl[23] / 2)); //investing in Life and Death increases max on Scourge
+			var c = new Array(1, 2, 3, 4, 5, 11, 12, 13, 14, 15, 32); //holy skills
+			var g = new Array(16, 17, 18, 19, 20, 26, 27, 28, 29, 30, 31); //unholy skills
+			var e = false;
+			var d = false;
+			for (var f = 0; f < c.length - 1; f++)
+			{
+				if (slvl[c[f]] > 0)
+				{
+					e = true
+				}
+			}
+			for (var f = 0; f < g.length - 1; f++)
+			{
+				if (slvl[g[f]] > 0)
+				{
+					d = true
+				}
+			}
+			e = e || (slvl[c[c.length - 1]] > 0);
+			d = d || (slvl[g[g.length - 1]] > 0);
+			if (d)
+			{
+				for (var f = 0; f < c.length; f++)
+				{
+					lockout(c[f])
+				}
+			}
+			if (e)
+			{
+				for (var f = 0; f < g.length; f++)
+				{
+					lockout(g[f])
+				}
+			}
+			var c = new Array(21, 22, 23, 24, 25); //shadow influence
+			var g = new Array(6, 7, 8, 9, 10); //light influence
 			var e = false;
 			var d = false;
 			for (var f = 0; f < c.length - 1; f++)
@@ -1855,7 +1911,7 @@
 			}
 			return
 		}
-		if (classnr == 7)
+		if (classnr == 7) //sorceress
 		{
 			var b = 0;
 			for (var f = 0; f < 4; f++)
@@ -1905,7 +1961,6 @@
 	skillnames_uxvc[2]=new Array("",Array("Batstrike",2,true),"Crucify", "Shadow Dancer","Barrier Strike", "Noctule","Scorpion Blade","Storm Crows","Wychwind","Maelstrom5","Broadside", "Backstab","Shadow Refuge","Twin Fang Strike","Laserblade","Hades Gate","Blink","Way of the Spider","Queen of Blades","Way of the Phoenix","Perfect Being", "Obliteration","Shuriken Flurry",Array("Psionic Storm",3,true),"Singularity","Doom","Cluster Mine","Limpet Laser",Array("Electrofield Sentry",2,true),Array("Fireball Sentry",2,true),"Tiefling Form","Beacon","Way of the Gryphon","Phase Bomb","Vampiric Icon","Psychic Scream");
 	skillnames_uxvc[3]=new Array("",Array("Earthquake",2,true), "Iceburst","Thunder Slam","Shower of Rocks",Array("Stormblast",2,true),"Bloodhatred", "IronSpiral", "Deathgaze", "Daedalus", "Windform","Bear Claw","Stampede","Rebound","Screaming Eagle","Overkill","Guardian Spirit","Defender Spirit","Protector Spirit","Greater Manifestations","Spirit Walk","Wolf Companion","Ancient Blood","Fortress","Spirit Guide","Mountain King","Lion Stance","Snake Stance","Bear Stance","Eagle Stance","Wolf Stance","Nephalem Weapons","Runemaster","Shamanic Trance","Immortal","Thundergod");
 	skillnames_uxvc[4]=new Array("",Array("Treewarden Form",2,true),"Pummel","Wildfire","Circle of Life","Idol Of Scosglen","Trap Rat Form","Quill Storm","Egg Trap","Ferocity","Thorn Wall","Werewolf Form", "Mana Pulse", "Harbinger", "Feed the Pack", "Twisted Claw","Elemental","Hunting Banshee","Pagan Rites","Rain of Fire",Array("Freezing Gale",2,true),Array("Poison Flash",2,true),"Elvensong","Plague Avatar",Array("Mythal",2,true),"Summon Acid Fiends","Laughing Ghost","Cascade","Spore Shot","Elfin Weapons","Nova Shot","Force of Nature","Faerie Fire","Tremor","Goodberry","Lifeshield");
-	skillnames_uxvc[4]=new Array("",Array("Treewarden Form",2,true),"Pummel","Wildfire","Circle of Life","Idol Of Scosglen","Trap Rat Form","Quill Storm","Egg Trap","Ferocity","Thorn Wall","Werewolf Form", "Mana Pulse", "Harbinger", "Feed the Pack", "Twisted Claw","Elemental","Hunting Banshee","Pagan Rites","Rain of Fire",Array("Freezing Gale",2,true),Array("Poison Flash",2,true),"Elvensong","Plague Avatar",Array("Mythal",2,true),"Summon Acid Fiends","Laughing Ghost","Cascade","Spore Shot","Elfin Weapons","Nova Shot","Force of Nature","Faerie Fire","Tremor","Goodberry","Lifeshield");
-	skillnames_uxvc[5]=new Array("","Deaths Fury Totem","Frostclaw Totem","Fireheart Totem","Howling Totem","Stormeye Totem","Embalming","Sacrifices","Bend the Shadows","Bane","Talons Hold","Summon Shadows","Summon Rampagor","Summon Lamia","Summon Veil King","Summon Void Archon","Massacre","Angel of Death","Famine","Parasite","Deathlord","Buckshot","Flametail Shot","Dragonfire Oil","Fragmentation Shot","Voodoo Shot","Summon Jinn","Rathmas Chosen","Death Ward","Black Mass","Graveyard");
+	skillnames_uxvc[5]=new Array("","Deaths Fury Totem","Frostclaw Totem","Fireheart Totem","Howling Totem","Stormeye Totem","Embalming","Sacrifices","Bend the Shadows","Bane","Talons Hold","Summon Shadows","Summon Rampagor","Summon Lamia","Summon Veil King","Summon Void Archon","Boneyard", "Funeral Pyre", "Rotting Flesh", "Nightwalker", "Pestilence","Massacre","Angel of Death","Famine","Parasite","Deathlord","Buckshot","Flametail Shot","Dragonfire Oil","Fragmentation Shot","Voodoo Shot","Summon Jinn","Rathmas Chosen","Death Ward","Black Mass","Graveyard");
 	skillnames_uxvc[6]=new Array("","Retaliate","Hammerstrike","Merkabah","Lionheart","Colosseum","Vessel of Retribution","Rapture",Array("Solstice and Equinox",16,false),Array("Sacred Armor",2,true), "Hoplite","Dragon Oath",Array("Dragonshout",2,true),Array("Burnout",2,true),Array("Demonrend",2,true),"Deva King","Terror Strike","Lemures",Array("Black Sleep",2,true),"Blood Thorns","Hymn","Vessel of Judgement", "Euphoria", "Life and Death", "Demiurge","Scourge","Tainted Blood","Mind Flay","Symphony Of Destruction","Slayer","Stormlord","Superbeast","Plague","Resurrect","Divine Apparition","Blessed Life");
 	skillnames_uxvc[7]=new Array("","Flamefront","Living Flame","Flamestrike","Pyroblast","Firedance","Forked Lightning","Thunderstone","Tempest","Warp Armor",Array("Nova Charge",2,true),"Shatter the Flesh",Array("Frigid Sphere",2,true),"Snow Queen","Abyss","Summon Ice Elementals","Lorenado","Vengeful Power","Miasma","Carpet of Spiders","Hive",Array("Immersion",11,false),"Familiar",Array("Arcane Torrent",2,true),"Mana Sweep", "Antimass","Moonstrike","Wraithsword", "Fusillade", "Summon Blade Spirits",Array("Bladestorm",2,true),Array("Chronofield",2,true),Array("Witch Blood",2,true),"Baneblade","Symbol of Esu","Force Blast");

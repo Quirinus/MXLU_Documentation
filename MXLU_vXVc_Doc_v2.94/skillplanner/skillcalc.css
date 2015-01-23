@@ -35,6 +35,9 @@ td.skillicon {
 	background-repeat: no-repeat;
 	background-image: none;
 }
+td.skill_name_value {
+	width: 175px;
+}
 
 #blackout {
 	position: fixed;

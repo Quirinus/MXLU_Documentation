@@ -891,7 +891,7 @@
 		for (a = 1; a <= skill_number; a++)
 		{
 			d = (a - 1) % 5;
-			if (a > 25)
+			if (a > skill_number-5) //uberskill max skill limit (7)
 			{
 				d = 15
 			}
@@ -904,33 +904,34 @@
 			{
 				slvl[a] = 0
 			}
-			if (clvl < d * 6)
+			if (clvl < d * 6) //disables challenge reward ubers
 			{
 				slvl[a] = max[a] = 0
 			}
 		}
-		if (slvl[26] > 0)
+		//disable other two uberskills if one is chosen
+		if (slvl[skill_number-4] > 0)
 		{
-			max[27] = max[28] = 0
+			max[skill_number-3] = max[skill_number-2] = 0
 		}
-		if (slvl[27] > 0)
+		if (slvl[skill_number-3] > 0)
 		{
-			max[26] = max[28] = 0
+			max[skill_number-4] = max[skill_number-2] = 0
 		}
-		if (slvl[28] > 0)
+		if (slvl[skill_number-2] > 0)
 		{
-			max[26] = max[27] = 0
+			max[skill_number-4] = max[skill_number-3] = 0
 		}
 		if (!ennead)
 		{
-			lockout(29)
+			lockout(skill_number-1)
 		}
 		if (!blackroad)
 		{
-			lockout(30)
+			lockout(skill_number)
 		}
 		func_constraints();
-		for (a = 0; a < 5; a++)
+		for (a = 0; a < skill_number/5 - 1; a++)
 		{
 			d = a * 5 + 1;
 			for (b = d; b < d + 4; b++)
@@ -1102,7 +1103,7 @@
 			clvl = parseInt(o[0].slice(4))
 		}
 		getFormElement("clvl").value = clvl;
-		h = c.match(/v=[0-9A-FOduxi]+/);
+		h = c.match(/v=[0-9A-FOduxivc]+/);
 		if (!h)
 		{
 			h = "199d"
