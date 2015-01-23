@@ -182,6 +182,8 @@
 			uncheck("laz_upg");
 			uncheck("feels");
 			
+			hide("xvc_skills"); //reset to 0?
+			
 			skillnames = skillnames_199d;
 			func_constraints = check_constraints_199d;
 			break;
@@ -201,6 +203,8 @@
 			uncheck("laz_upg");
 			uncheck("feels");
 			
+			hide("xvc_skills"); //reset to 0?
+			
 			skillnames = skillnames_1A9;
 			func_constraints = check_constraints_1A9;
 			break;
@@ -219,6 +223,8 @@
 			uncheck("khanduran");
 			uncheck("laz_upg");
 			uncheck("feels");
+			
+			hide("xvc_skills"); //reset to 0?
 			
 			skillnames = skillnames_1D9;
 			func_constraints = check_constraints_1D9;
@@ -240,6 +246,8 @@
 			uncheck("laz_upg");
 			uncheck("feels");
 			
+			hide("xvc_skills"); //reset to 0?
+			
 			skillnames = skillnames_1E9;
 			func_constraints = check_constraints_1E9;
 			break;
@@ -259,6 +267,8 @@
 			uncheck("khanduran");
 			uncheck("laz_upg");
 			uncheck("feels");
+			
+			hide("xvc_skills"); //reset to 0?
 			
 			skillnames = skillnames_1F9;
 			func_constraints = check_constraints_1F9;
@@ -280,6 +290,8 @@
 			uncheck("laz_upg");
 			uncheck("feels");
 			
+			hide("xvc_skills"); //reset to 0?
+			
 			skillnames = skillnames_1G9;
 			func_constraints = check_constraints_1G9;
 			break;
@@ -299,6 +311,8 @@
 			uncheck("khanduran");
 			uncheck("laz_upg");
 			uncheck("feels");
+			
+			hide("xvc_skills"); //reset to 0?
 			
 			skillnames = skillnames_1Z9;
 			func_constraints = check_constraints_1Z9;
@@ -320,6 +334,8 @@
 			uncheck("laz_upg");
 			uncheck("feels");
 			
+			hide("xvc_skills"); //reset to 0?
+			
 			skillnames = skillnames_O001;
 			func_constraints = check_constraints_O001;
 			break;
@@ -340,6 +356,8 @@
 			uncheck("laz_upg");
 			uncheck("feels");
 			
+			hide("xvc_skills"); //reset to 0?
+			
 			skillnames = skillnames_O001;
 			func_constraints = check_constraints_O002;
 			break;
@@ -353,12 +371,16 @@
 			set("toraja_bonus", "1");
 			getFormElement("q7").value = 1;
 			
+			hide("xvc_skills"); //reset to 0?
+			
 			hide("khanduran");
 			hide("laz_upg");
 			hide("feels");
 			uncheck("khanduran");
 			uncheck("laz_upg");
 			uncheck("feels");
+			
+			hide("xvc_skills"); //reset to 0?
 			
 			skillnames = skillnames_O003;
 			func_constraints = check_constraints_O002;
@@ -380,6 +402,8 @@
 			uncheck("laz_upg");
 			uncheck("feels");
 			
+			hide("xvc_skills"); //reset to 0?
+			
 			skillnames = skillnames_2012;
 			func_constraints = check_constraints_O002;
 			break;
@@ -399,6 +423,8 @@
 			uncheck("khanduran");
 			uncheck("laz_upg");
 			uncheck("feels");
+			
+			hide("xvc_skills"); //reset to 0?
 			
 			skillnames = skillnames_2012004;
 			func_constraints = check_constraints_O002;
@@ -420,6 +446,8 @@
 			uncheck("laz_upg");
 			uncheck("feels");
 			
+			hide("xvc_skills"); //reset to 0?
+			
 			skillnames = skillnames_2012005;
 			func_constraints = check_constraints_O002;
 			break
@@ -439,6 +467,8 @@
 			check("q10");
 			uncheck("q11");
 			uncheck("q12");
+			
+			hide("xvc_skills"); //reset to 0?
 			
 			skillnames = skillnames_uxi;
 			func_constraints = check_constraints_O002;
@@ -460,6 +490,8 @@
 			uncheck("q11");
 			uncheck("q12");
 			
+			hide("xvc_skills"); //reset to 0?
+			
 			skillnames = skillnames_uxiii;
 			func_constraints = check_constraints_O002;
 			break
@@ -480,8 +512,10 @@
 			uncheck("q11");
 			uncheck("q12");
 			
+			show("xvc_skills");
+			
 			skillnames = skillnames_uxvc;
-			func_constraints = check_constraints_O002;
+			func_constraints = check_constraints_uxvc;
 			break
 		}
 		changeClass()
@@ -512,6 +546,14 @@
 		{
 			hide("energy_row")
 		}
+		if (CURRENT_PATCH == "uxvc")
+		{
+			skill_number = 35;
+		}
+		else
+		{
+			skill_number = 30;
+		}
 		if (classnr == 1)
 		{
 			show("hornedhunter");
@@ -532,7 +574,7 @@
 		{
 			hide("slvl_by_item_row")
 		}
-		for (d = 1; d <= 30; d++)
+		for (d = 1; d <= skill_number; d++)
 		{
 			b_counter = 0
 			current_name = skillnames[classnr][d];
@@ -586,7 +628,7 @@
 						b = current_name[1];
 						if (f)
 						{
-							if ((b < 0) || (b >30))
+							if ((b < 0) || (b >skill_number))
 							{
 								f.style.backgroundColor = "red";
 								f.style.backgroundImage = "none";
@@ -762,7 +804,15 @@
 				slvlitembonus += get("q" + e)
 			}
 		}
-		for (a = 1; a <= 30; a++)
+		if (CURRENT_PATCH == "uxvc")
+		{
+			skill_number = 35;
+		}
+		else
+		{
+			skill_number = 30;
+		}
+		for (a = 1; a <= skill_number; a++)
 		{
 			slvl[a] = get("skill" + a + "_points");
 			if (slvl[a] < 0)
@@ -776,7 +826,7 @@
 			c = checkConstraints()
 		}
 		set("slvlbonus", slvlskillbonus + slvlitembonus);
-		for (a = 1; a <= 30; a++)
+		for (a = 1; a <= skill_number; a++)
 		{
 			set("skill" + a + "_max", max[a]);
 			h = getFormElement("skill" + a + "_points");
@@ -795,7 +845,7 @@
 			h.style.visibility = (slvl[a] > 0) ? "visible" : "hidden"
 		}
 		f = 0;
-		for (a = 1; a <= 30; a++)
+		for (a = 1; a <= skill_number; a++)
 		{
 			set("skill" + a + "_max", max[a] > 0 ? ("max: " + max[a]) : "");
 			h = getFormElement("skill" + a + "_points");
@@ -826,11 +876,19 @@
 		}
 	}
 
-	function checkConstraints()
+	function checkConstraints() //fix constrains, ubers are no longer 26-30, but 31-35, if the patch is uxcv
 	{
 		var a, d, b, c;
 		slvlskillbonus = 0;
-		for (a = 1; a <= 30; a++)
+		if (CURRENT_PATCH == "uxvc")
+		{
+			skill_number = 35;
+		}
+		else
+		{
+			skill_number = 30;
+		}
+		for (a = 1; a <= skill_number; a++)
 		{
 			d = (a - 1) % 5;
 			if (a > 25)
@@ -883,12 +941,12 @@
 				}
 			}
 		}
-		for (a = 1; a <= 30; a++)
+		for (a = 1; a <= skill_number; a++)
 		{
 			raiseMax(a, slvlskillbonus)
 		}
 		c = true;
-		for (a = 1; a <= 30; a++)
+		for (a = 1; a <= skill_number; a++)
 		{
 			if (slvl[a] > max[a])
 			{
@@ -984,7 +1042,15 @@
 	function resetSkills()
 	{
 		var a;
-		for (a = 1; a <= 30; a++)
+		if (CURRENT_PATCH == "uxvc")
+		{
+			skill_number = 35;
+		}
+		else
+		{
+			skill_number = 30;
+		}
+		for (a = 1; a <= skill_number; a++)
 		{
 			getFormElement("skill" + a + "_points").value = "0"
 		}
@@ -1096,7 +1162,15 @@
 			return
 		}
 		p = l.slice(7).split("_");
-		for (k = 1; k <= 30; k++)
+		if (CURRENT_PATCH == "uxvc")
+		{
+			skill_number = 35;
+		}
+		else
+		{
+			skill_number = 30;
+		}
+		for (k = 1; k <= skill_number; k++)
 		{
 			slvl[k] = parseInt(p[k - 1]);
 			getFormElement("skill" + k + "_points").value = slvl[k]
@@ -1179,7 +1253,15 @@
 			b += "&energy=" + energy
 		}
 		b += "&skills=";
-		for (e = 1; e <= 30; e++)
+		if (CURRENT_PATCH == "uxvc")
+		{
+			skill_number = 35;
+		}
+		else
+		{
+			skill_number = 30;
+		}
+		for (e = 1; e <= skill_number; e++)
 		{
 			b += slvl[e] + "_"
 		}

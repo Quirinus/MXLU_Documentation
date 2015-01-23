@@ -1733,6 +1733,173 @@
 	skillnames_uxiii[6]=new Array("","Retaliate","Hammerstrike","Merkabah","Lionheart","Colosseum","Dragon Oath","Dragonshout","Burnout","Demonrend","Deva King","Terror Strike","Lemures",Array("Black Sleep",2,true),"Blood Thorns","Hymn","Tainted Blood","Mind Flay","Symphony Of Destruction","Slayer","Stormlord","Vessel of Judgement","Rapture","Light and Shadow","Sacred Armor","Scourge","Plague","Superbeast","Resurrect","Divine Apparition","Blessed Life");
 	skillnames_uxiii[7]=new Array("","Flamefront","Living Flame","Flamestrike","Pyroblast","Firedance","Shatter the Flesh",Array("Frigid Sphere",2,true),"Snow Queen","Abyss","Summon Ice Elementals","Forked Lightning","Thunderstone","Tempest","Warp Armor",Array("Nova Charge",2,true),"Lorenado","Vengeful Power","Miasma","Carpet of Spiders","Hive","Moonstrike","Familiar","Arcane Torrent","Mana Sweep",Array("Bladestorm",2,true),Array("Chronofield",2,true),Array("Witch Blood",2,true),"Baneblade","Symbol of Esu","Force Blast");
 
+	function check_constraints_uxvc() //fix to lock 6th tree and unlock uberskills
+	{
+		if (classnr == 1)
+		{
+			raiseMax(14, Math.floor((slvl[11] + slvl[12] + slvl[13] + slvl[15]) / 2));
+			if (slvl[4] > 0)
+			{
+				lockout(6, 20)
+			}
+			if (slvl[9] > 0)
+			{
+				lockout(1, 5);
+				lockout(11, 20)
+			}
+			if (slvl[14] > 0)
+			{
+				lockout(1, 10);
+				lockout(16, 20)
+			}
+			if (slvl[19] > 0)
+			{
+				lockout(1, 15)
+			}
+			for (var f = 1; f <= 3; f++)
+			{
+				if (slvl[f] > 0)
+				{
+					lockout(9);
+					lockout(14);
+					lockout(19)
+				}
+			}
+			for (var f = 6; f <= 8; f++)
+			{
+				if (slvl[f] > 0)
+				{
+					lockout(4);
+					lockout(14);
+					lockout(19)
+				}
+			}
+			for (var f = 11; f <= 13; f++)
+			{
+				if (slvl[f] > 0)
+				{
+					lockout(4);
+					lockout(9);
+					lockout(19)
+				}
+			}
+			for (var f = 16; f <= 18; f++)
+			{
+				if (slvl[f] > 0)
+				{
+					lockout(4);
+					lockout(9);
+					lockout(14)
+				}
+			}
+			return
+		}
+		if (classnr == 3)
+		{
+			if (slvl[22] > 0)
+			{
+				slvlskillbonus += Math.floor(slvl[22] / 4) + 1
+			}
+			return
+		}
+		if (classnr == 4)
+		{
+			raiseMax(24, Math.floor((slvl[21] + slvl[22] + slvl[23] + slvl[25]) / 2));
+			return
+		}
+		if (classnr == 5)
+		{
+			raiseMax(2, Math.floor(slvl[3] / 2));
+			raiseMax(3, Math.floor(slvl[5] / 2));
+			raiseMax(5, Math.floor(slvl[2] / 2));
+			return
+		}
+		if (classnr == 6)
+		{
+			var j = Math.floor(slvl[1] / 2) + Math.floor(slvl[2] / 2) + Math.floor(slvl[3] / 2) + Math.floor(slvl[5] / 2);
+			raiseMax(4, j);
+			raiseMax(25, Math.floor(slvl[23] / 2));
+			var c = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 26);
+			var g = new Array(11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 27);
+			var e = false;
+			var d = false;
+			for (var f = 0; f < c.length - 1; f++)
+			{
+				if (slvl[c[f]] > 0)
+				{
+					e = true
+				}
+			}
+			for (var f = 0; f < g.length - 1; f++)
+			{
+				if (slvl[g[f]] > 0)
+				{
+					d = true
+				}
+			}
+			e = e || (slvl[c[c.length - 1]] > 0);
+			d = d || (slvl[g[g.length - 1]] > 0);
+			if (d)
+			{
+				for (var f = 0; f < c.length; f++)
+				{
+					lockout(c[f])
+				}
+			}
+			if (e)
+			{
+				for (var f = 0; f < g.length; f++)
+				{
+					lockout(g[f])
+				}
+			}
+			return
+		}
+		if (classnr == 7)
+		{
+			var b = 0;
+			for (var f = 0; f < 4; f++)
+			{
+				for (var k = 0; k < 5; k++)
+				{
+					if (slvl[f * 5 + k + 1] > 0)
+					{
+						b++;
+						break
+					}
+				}
+			}
+			if (b >= 2)
+			{
+				var h = 0;
+				for (var f = 0; f < 4; f++)
+				{
+					var a = false;
+					for (var k = 0; k < 5; k++)
+					{
+						if (slvl[f * 5 + k + 1] > 0)
+						{
+							a++;
+							break
+						}
+					}
+					if (!a || h >= 2)
+					{
+						lockout(f * 5 + 1, f * 5 + 5)
+					}
+					else
+					{
+						if (a)
+						{
+							h++
+						}
+					}
+				}
+			}
+			return
+		}
+	}
+	
 	var skillnames_uxvc=new Array();
 	skillnames_uxvc[1]=new Array("",Array("Sun Strike",2,true),"Barrage","Phalanx","Dragonlore","Wyrmshot","Moonbeam","Ricochet","Enfilade","Moon Queen","Fairy Ring","Takedown","Hyena Strike","Pounce","Lioness",Array("Great Hunt",2,true),"Magic Missiles","Balefire","Bloodstorm","Bacchanalia","Lava Pit", "Thundercrack", "Stormcall", "HammerofZerae", "Asterism", "MagneticField", "Wild and Free","Summon Fire Elementals","Balance",Array("Ecstatic Frenzy",2,true),"Defensive Harmony","Curare","Paragon","Spirit of Vengeance","Spellbind",Array("War Spirit",2,true));
 	skillnames_uxvc[2]=new Array("",Array("Batstrike",2,true),"Crucify", "Shadow Dancer","Barrier Strike", "Noctule","Scorpion Blade","Storm Crows","Wychwind","Maelstrom5","Broadside", "Backstab","Shadow Refuge","Twin Fang Strike","Laserblade","Hades Gate","Blink","Way of the Spider","Queen of Blades","Way of the Phoenix","Perfect Being", "Obliteration","Shuriken Flurry",Array("Psionic Storm",3,true),"Singularity","Doom","Cluster Mine","Limpet Laser",Array("Electrofield Sentry",2,true),Array("Fireball Sentry",2,true),"Tiefling Form","Beacon","Way of the Gryphon","Phase Bomb","Vampiric Icon","Psychic Scream");
