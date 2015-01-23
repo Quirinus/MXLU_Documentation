@@ -51,6 +51,8 @@ TO-DO (those with no names are added by Quirinus):
 - compare MO/UMO ingame and in the docs (mainly for missing/extra + and - signs and a few letter changes), I think I updated all, but it doesn't hurt to check. I tihnk you can use legacy umo from ss. (also, obv, stun attack with length is fine)
 - change "Socketed: x" to Socketed (x) everywhere - to match the ingame text. open all files and use replace all in all documents. use Regular Expression search mode for searching/replacing (click at the top of the file, have to start search from the beginning)
 - check procs "on Attack". was "on Attack" --> "on melee Attack" removed to get more space, or did marco add it in some of the lastest patches. if it's not too long (ie. it makes the page too wide because of some long ass procs), add "melee" back
+- (kor) add colored items to doc (set finished)
+- (kor) extract monster animations
 - (CG): remove Durability from Indestructible and throw weapons items in docs in sets/tu/su/ssu/sssu/RW pages.
 
 
@@ -69,7 +71,6 @@ Suggestions:
 - Change: Rune/RWs: Level --> Required Level?
 - Base Items page: Maybe add a note that broken ethereal items cannot gain durability even if they have the 'repair xx durability in yy seconds' mod.
 - (claygame) : maybe add link to forum somehow in the About page that opens when docs r opened for the first time to make people come more often on forum?
-- (CG) : Add different colored pics for Sacred uniques to be seen when mouse-over them just like for special graphic items. example: parma su is black, ssu is green and sssu is black again.. so maybe parma looks green when mouse over the ssu part? - kor: I think you can do this by applying colorshift. Ill look into it more)
 
 DONE:
 - Pester Marco to explain in more detail about the new Amazon faster cast rate with staves and 2h weapons. Then update the note on the Amazon page if necessary.
