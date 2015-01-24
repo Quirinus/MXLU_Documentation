@@ -9,6 +9,58 @@
 	<title>Sacred Uniques</title>
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="m_2.css" />
+	<script src="jquery-1.11.2.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	
+		$(document).ready(function() {
+			var name, folder, pic, pic_url, pic_url_su, pic_url_ssu, pic_url_sssu, su, ssu, sssu;
+			$('table.item_table tr:nth-of-type(2) td:nth-of-type(2)').hover(function () {
+				name = $(this).parent().parent().find('tr:first-of-type th');
+				folder = name.html().replace(/[\- ]/g, "_");
+				folder = folder.replace(/\&\#39\;/g, "");
+				folder = folder.replace(/\'/g, "");
+				
+				pic = $(this).parent().parent().find('tr:nth-of-type(2) td:first-of-type img');
+				pic_url = pic.attr('src');
+				pic_url_su = 'images/baseitems/colored/tu_su/'+folder+'/su.gif';
+				pic.attr('src', pic_url_su).error(function() {pic.attr('src',pic_url)});
+			}, function () {
+				//pic = $(this).parent().parent().find('tr:nth-of-type(2) td:first-of-type img');
+				//pic_url = pic.attr('src');
+				pic.attr('src',pic_url)
+			});
+			$('table.item_table tr:nth-of-type(2) td:nth-of-type(3)').hover(function () {
+				name = $(this).parent().parent().find('tr:first-of-type th');
+				folder = name.html().replace(/[\- ]/g, "_");
+				folder = folder.replace(/\&\#39\;/g, "");
+				folder = folder.replace(/\'/g, "");
+					
+				pic = $(this).parent().parent().find('tr:nth-of-type(2) td:first-of-type img');
+				pic_url = pic.attr('src');
+				pic_url_su = 'images/baseitems/colored/tu_su/'+folder+'/ssu.gif';
+				pic.attr('src', pic_url_su).error(function() {pic.attr('src',pic_url)});
+			}, function () {
+				//pic = $(this).parent().parent().find('tr:nth-of-type(2) td:first-of-type img');
+				//pic_url = pic.attr('src');
+				pic.attr('src',pic_url)
+			});
+			$('table.item_table tr:nth-of-type(2) td:nth-of-type(4)').hover(function () {
+				name = $(this).parent().parent().find('tr:first-of-type th');
+				folder = name.html().replace(/[\- ]/g, "_");
+				folder = folder.replace(/\&\#39\;/g, "");
+				folder = folder.replace(/\'/g, "");
+				
+				pic = $(this).parent().parent().find('tr:nth-of-type(2) td:first-of-type img');
+				pic_url = pic.attr('src');
+				pic_url_su = 'images/baseitems/colored/tu_su/'+folder+'/sssu.gif';
+				pic.attr('src', pic_url_su).error(function() {pic.attr('src',pic_url)});
+			}, function () {
+				//pic = $(this).parent().parent().find('tr:nth-of-type(2) td:first-of-type img');
+				//pic_url = pic.attr('src');
+				pic.attr('src',pic_url)
+			});
+		});
+	</script>
 </head>
 <body id="#uniques" class="content">
 	<hr />
@@ -5566,7 +5618,7 @@
 				</td>
 
 				<td title='This item has a special graphic.
-You can see it on the left if you hover your mouse over this cell.' onmouseover='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/bow_elefury.jpg"' onmouseout='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/invam1.jpg"'>
+You can see it on the left if you hover your mouse over this cell.'>
 					<div class="unique">
 						Elemental Fury<sup style='color:black;'>&dagger;</sup>
 					</div><span class="basic">Two-Hand Damage: <span class="magic">(541-667) to (636-775)</span><br />
@@ -6500,7 +6552,7 @@ You can see it on the left if you hover your mouse over this cell.' onmouseover=
 				</td>
 
 				<td title='This item has a special graphic.
-You can see it on the left if you hover your mouse over this cell.' onmouseover='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/naginagi.jpg"' onmouseout='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/invwsc.jpg"'>
+You can see it on the left if you hover your mouse over this cell.'>
 					<div class="unique">
 						Hovering Dame<sup style='color:black;'>&dagger;</sup>
 					</div><span class="basic">Two-Hand Damage: <span class="magic">(923-1256) to (1302-1650)</span><br />
@@ -7279,7 +7331,7 @@ You can see it on the left if you hover your mouse over this cell.' onmouseover=
 				</td>
 
 				<td title='This item has a special graphic.
-You can see it on the left if you hover your mouse over this cell.' onmouseover='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/labrryss.jpg"' onmouseout='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/invgaxu.jpg"'>
+You can see it on the left if you hover your mouse over this cell.'>
 					<div class="unique">
 						The King of Ents<sup style='color:black;'>&dagger;</sup>
 					</div><span class="basic">Two-Hand Damage: <span class="magic">(717-805) to (1329-1619)</span><br />
@@ -7737,7 +7789,7 @@ You can see it on the left if you hover your mouse over this cell.' onmouseover=
 				</td>
 
 				<td title='This item has a special graphic.
-You can see it on the left if you hover your mouse over this cell.' onmouseover='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/flammeen.jpg"' onmouseout='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/invcstu.jpg"'>
+You can see it on the left if you hover your mouse over this cell.'>
 					<div class="unique">
 						Mage&#39;s Pulse<sup style='color:black;'>&dagger;</sup>
 					</div><span class="basic">Two-Hand Damage: 96 to 102<br />
@@ -8747,7 +8799,7 @@ You can see it on the left if you hover your mouse over this cell.' onmouseover=
 				</td>
 
 				<td title='This item has a special graphic.
-You can see it on the left if you hover your mouse over this cell.' onmouseover='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/grimmw.jpg"' onmouseout='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/invgwn.jpg"'>
+You can see it on the left if you hover your mouse over this cell.'>
 					<div class="unique">
 						Vheran&#39;s Experiments<sup style='color:black;'>&dagger;</sup>
 					</div><span class="basic">One-Hand Damage: 77 to 88<br />
@@ -9071,7 +9123,7 @@ You can see it on the left if you hover your mouse over this cell.' onmouseover=
 				</td>
 
 				<td title='This item has a special graphic.
-You can see it on the left if you hover your mouse over this cell.' onmouseover='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/palhammer.jpg"' onmouseout='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/inv9gmu.jpg"'>
+You can see it on the left if you hover your mouse over this cell.'>
 					<div class="unique">
 						Blackened<sup style='color:black;'>&dagger;</sup>
 					</div><span class="basic">Two-Hand Damage: <span class="magic">(942-1028) to (1200-1287)</span><br />
@@ -9697,7 +9749,7 @@ You can see it on the left if you hover your mouse over this cell.' onmouseover=
 				</td>
 
 				<td title='This item has a special graphic.
-You can see it on the left if you hover your mouse over this cell.' onmouseover='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/warpbbl.jpg"' onmouseout='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/inv9cru.jpg"'>
+You can see it on the left if you hover your mouse over this cell.'>
 					<div class="unique">
 						Steel Punisher<sup style='color:black;'>&dagger;</sup>
 					</div><span class="basic">One-Hand Damage: <span class="magic">(438-486) to (834-919)</span><br />
@@ -10786,7 +10838,7 @@ You can see it on the left if you hover your mouse over this cell.' onmouseover=
 				</td>
 
 				<td title='This item has a special graphic.
-You can see it on the left if you hover your mouse over this cell.' onmouseover='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/mercbombb.jpg"' onmouseout='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/invaar.jpg"'>
+You can see it on the left if you hover your mouse over this cell.'>
 					<div class="unique">
 						Mercenary Bomb<sup style='color:black;'>&dagger;</sup>
 					</div><span class="basic">Defense: (2061-2552)<br />
@@ -11639,7 +11691,7 @@ You can see it on the left if you hover your mouse over this cell.' onmouseover=
 				</td>
 
 				<td title='This item has a special graphic.
-You can see it on the left if you hover your mouse over this cell.' onmouseover='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/trollskullz.jpg"' onmouseout='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/invbhm.jpg"'>
+You can see it on the left if you hover your mouse over this cell.'>
 					<div class="unique">
 						Trollskull<sup style='color:black;'>&dagger;</sup>
 					</div><span class="basic">Defense: <span class="magic">(194-1252)</span><br />
@@ -12559,7 +12611,7 @@ You can see it on the left if you hover your mouse over this cell.' onmouseover=
 				</td>
 
 				<td title='This item has a special graphic.
-You can see it on the left if you hover your mouse over this cell.' onmouseover='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/invblt.jpg"' onmouseout='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/invhbl.jpg"'>
+You can see it on the left if you hover your mouse over this cell.'>
 					<div class="unique">
 						Lilith&#39;s Temptation<sup style='color:black;'>&dagger;</sup>
 					</div><span>Defense: <span class="magic">(3917-4815)</span><br />
@@ -12693,7 +12745,7 @@ You can see it on the left if you hover your mouse over this cell.' onmouseover=
 				</td>
 
 				<td title='This item has a special graphic.
-You can see it on the left if you hover your mouse over this cell.' onmouseover='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/invbbb.jpg"' onmouseout='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/invvgl.jpg"'>
+You can see it on the left if you hover your mouse over this cell.'>
 					<div class="unique">
 						Ironbound Impact Tome<sup style='color:black;'>&dagger;</sup>
 					</div><span>Defense: <span class="magic">(1415-1683)</span><br />
@@ -12914,7 +12966,7 @@ You can see it on the left if you hover your mouse over this cell.' onmouseover=
 				</td>
 
 				<td title='This item has a special graphic.
-You can see it on the left if you hover your mouse over this cell.' onmouseover='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/gauntletsuu.jpg"' onmouseout='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/invhgl.jpg"'>
+You can see it on the left if you hover your mouse over this cell.'>
 					<div class="unique">
 						Centuria Insectorum<sup style='color:black;'>&dagger;</sup>
 					</div><span class="basic">Defense: <span class="magic">(1604-2106)</span><br />
@@ -13257,7 +13309,7 @@ You can see it on the left if you hover your mouse over this cell.' onmouseover=
 				</td>
 
 				<td title='This item has a special graphic.
-You can see it on the left if you hover your mouse over this cell.' onmouseover='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/greavessu3.jpg"' onmouseout='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/invhbt.jpg"'>
+You can see it on the left if you hover your mouse over this cell.'>
 					<div class="unique">
 						Knight&#39;s Grace<sup style='color:black;'>&dagger;</sup>
 					</div><span class="basic">Defense: <span class="magic">(2377-3010)</span><br />
@@ -15724,7 +15776,7 @@ You can see it on the left if you hover your mouse over this cell.' onmouseover=
 				</td>
 
 				<td title='This item has a special graphic.
-You can see it on the left if you hover your mouse over this cell.' onmouseover='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/invbbb.jpg"' onmouseout='this.parentNode.getElementsByTagName("td")[0].getElementsByTagName("img")[0].src="images/baseitems/invpa1.jpg"'>
+You can see it on the left if you hover your mouse over this cell.'>
 					<div class="unique">
 						The Book of Kalen<sup style='color:black;'>&dagger;</sup>
 					</div><span>Defense: <span class="magic">(3446-4263)</span><br />
