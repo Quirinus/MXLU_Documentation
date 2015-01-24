@@ -6,6 +6,8 @@ Median XL: Ultimative Documentation
 Add to-do stuff here.
 
 TO-DO (those with no names are added by Quirinus):
+- update: docs --> Characters --> Item-Only Skills page. Use a script to collect oskills from the oskills list in the Items section. Make the script format them nicely, like they are now. I'll also probably have to ask marco for the cotw oskills. Then we just need to add in descriptions manually.
+- add a note to shields that the class bonus isn't counted in, but all others are. link to the defense and block page or base items page.
 - Fix: Quest Reference: all dragon recipes use TP scroll instead of some using ID and some TP
 - Add: skill tree names to char pages
 - Change: Prefix/suffix list: Make calculators not reset the filter dropdowns/inputs.
