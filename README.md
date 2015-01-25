@@ -35,12 +35,10 @@ TO-DO (those with no names are added by Quirinus):
 - include speedcalc. make a page for it in the items or char subsection, with marco's explanations, but a shorter version. provide a link to marcos explanations/dl.
 - maybe add http://www.medianxl.com/t86-how-spell-damage-works as a new page in concepts, but rewritten a bit?
 - make the docs not collapse section when clicking on an open page_book (page_book_open). (in ___dtree.js, probably do something to line 128?)
-- add note: can't lucky or mo void rings (check how to add a note on, for example: Linarian's Legacy)
 - Marchosias' Deception chance to block add note that it can't go lower than 0%, but it will reduce class bonuses; same Wheel of the Seasons SSU
 - fix all & in docs change to &amp; , change all non-tag < and > to &lt; and &gt;
 - add SU:SSU:SSSU ratio = 10:4:1 to the SU page, and maybe abbreviation page.
 - on gs abbrev. - add note that gs number is automatically shown when you enter the game.
-- cc brc/ennead pages and wherever (char page?), fix color, stat order and remove 'challenge' word (check the color/text/order of empty cc): http://www.medianxl.com/t6281p500-new-screenshot-items-2014-2015#180887
 - cc brc completition note text, make it part of the recipe and put it as a stat, in the middle and not inline?
 - faq: What are Challenges?, lc0 req exactly lvl 5, not at most; What are Uberquests? maybe add heroics. maybe change color from blue to something normal?
 - remove deva king from quest ref (at all act/difficulty dragon eggs, so 6 places to change in total)
@@ -50,8 +48,14 @@ TO-DO (those with no names are added by Quirinus):
 - compare MO/UMO ingame and in the docs (mainly for missing/extra + and - signs and a few letter changes), I think I updated all, but it doesn't hurt to check. I tihnk you can use legacy umo from ss. (also, obv, stun attack with length is fine)
 - check procs "on Attack". was "on Attack" --> "on melee Attack" removed to get more space, or did marco add it in some of the lastest patches. if it's not too long (ie. it makes the page too wide because of some long ass procs), add "melee" back
 - (kor) extract monster animations
-- (CG): remove Durability from Indestructible and throw weapons items in docs in sets pages.(uniques pages are already done)
 - fix hit causes monsters to flee % on all pages. check in the files.
+- add note to SU page to hover over item to display graphic
+- add trophy pictures to witch charm recipe
+- add character pictures in athulua bow recipe, before character name?
+- athulua tokens: "Using these 3 reagents and other listed in this table, and transmuting them with the appropriate character, you can get all the Tokens." put "transmuting them with the appropriate character" in underline or something, to make it stand out so people see it
+- try to contact tub about updating his online skillpoint planner first, if he doesn't respond again, do this: remove tub page link, and link to his page when saving in skillpoint planner and replace it with online docs skillpoint planner
+- check korcola's guide/post for uber details and rewrite them if necessary: http://www.medianxl.com/t6739p100-mxlu-xvc-docs-2-94-unfinished#185409
+- script to make the oskills list into the char oskills with description (+add their ingame description from new skills.txt + tbls)
 
 
 Suggestions:
@@ -115,7 +119,7 @@ DONE:
 - Add: procs from new sets and set items to the procs list page
 - Update: any proc/oskill change on any item on the oskills/procs list page
 - Add: Shield chance to block on all item pages (base+stat, for class-only add class base chance too).
-- (kor) Fix:New dunc map has wrong location of sigils
+- (kor) Fix: New dunc map has wrong location of sigils
 - Check/update: Are Yshari set items drillable for sockets? // Checked with maximum number of sockets possible on all pieces, jewels are consumed as per recipe but no sockets added on any of the items
 - Update: Skillpoint planner
 - Add/fix (cg) : check and update flee % on stormhowl bow, reported by mrtawsiti here http://goo.gl/lhCTw5 - kor: kambala said its 0.125% but we dont have txt file so quiri will have to check this)
@@ -125,6 +129,9 @@ DONE:
 - Check/Add: Can Ring of Pride be cubed with MOs? What about (More) Luck or Lottery? Can Sigil of the 7 Deadly Sins be cubed for (More) Luck or Lottery recipes? // no and no and no no no
 - add note: can't lucky or mo void rings (check how to add a note on, for example: Linarian's Legacy)
 - (CG): remove Durability from Indestructible and throw weapons items in docs in tu/su/ssu/sssu pages.
+- (CG): remove Durability from Indestructible and throw weapons items in docs in sets pages.(uniques pages are already done)
 - (kor) add: colored items to doc
 - Mammen Axe (2): now has 2 sockets. Hexblade (2): now has 2 sockets. update in baseitems. check if TU2 versions have 2 sockets or still 1.
 - bremmtown upg - add flavor text from the bottom+color: http://www.medianxl.com/t6281p500-new-screenshot-items-2014-2015#180887
+- cc brc/ennead pages and wherever (char page?), fix color, stat order and remove 'challenge' word (check the color/text/order of empty cc): http://www.medianxl.com/t6281p500-new-screenshot-items-2014-2015#180887
+- add note: can't lucky or mo void rings (check how to add a note on, for example: Linarian's Legacy)
