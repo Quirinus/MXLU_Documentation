@@ -9,46 +9,39 @@ TO-DO (those with no names are added by Quirinus):
 - update: docs --> Characters --> Item-Only Skills page. Use a script to collect oskills from the oskills list in the Items section. Make the script format them nicely, like they are now. I'll also probably have to ask marco for the cotw oskills. Then we just need to add in descriptions manually.
 - add a note to shields that the class bonus isn't counted in, but all others are. link to the defense and block page or base items page.
 - Fix: Quest Reference: all dragon recipes use TP scroll instead of some using ID and some TP
-- Add: skill tree names to char pages
-- Change: Prefix/suffix list: Make calculators not reset the filter dropdowns/inputs.
 - Change: Rename some of the areas that have changed names (uberquest pages, challenges, quest reference list and anywhere else that it might appear). Change their parent level names too if they're different.
 - Change: Make RW page in two columns; put name/level above properties, put rune description below that, and after that are the properties. Or something like that.
-- Change: Make filters on all pages always float in vision (absolute pos)?
 - Change: TU page: make the amulets/rings/jewels/quivers be in columns of 2 if the filter is set on any tier, except "All".
 - Fix: Quest Reference list: difficulty headers not dissapearing when the contents are empty.
 - Add: Speed Calculator to the Characters (?) section, with explanations. http://www.medianxl.com/t5893-speed-mechanics-explained-updated-speedcalc
 - All other changes from the XV and XVc changelog.
-- (claygame) : do we really need 'armor looks' page?
 - Add/Update: Quest Reference page with various stuff...
 - Athulua, Strategy / Abilities section needs updating.
-- Add: (CG)- a title for the last 2 check boxes in the quest ref page. which ones exactly? kor: the names for boxes are left at left of each check boxes. so 'Miscellaneous' and 'Only one instance'. Maybe moved the names to right side to be more clear
 - (quiri) : remove anchors/links from menu when adding filter to the page http://goo.gl/fJc28a
 - are there any changes in TU/SU/SSU/SSSU items? kinda hard to tell without files, but if you noticed something or it's in the changelog, fix it.
 - affix and stat related things on items, and some items still not updated from patch XV & XVc, but it's kinda hard to do it without files
-- update str/dex dmg bonus on: Cranebeak, Greil's Urvan, Forge Fire, Viperfork, Steel Pillar, Sky Scorcher, Divine Mandible, Tonbogiri, Polar Vortex, Wrath of Nature, Mistress of Pain, Glowing Vertigo & Tormentor. (not from legacy items obv) (you can probably find the right values if you search the XV bugs/feedback thread for my posts, but it's still good to check them)
+
 - use new pics for changed ubers (a few pages back) that didn't get a pic in the contest ; dunno which ones to choose when people disagree XD
+
 - on sets page, make the image valign: center (should be centered relative to the stats text)
-- change "Socketed: x" to Socketed (x) everywhere - to match the ingame text. open all files and use replace all in all documents. use Regular Expression search mode for searching/replacing (click at the top of the file, have to start search from the beginning):
-   find: Socketed: ([1-6])
-   replace with: Socketed \(\1\)
-   (the \1 in the replace line is replaced with the number found in the search line ([1-6]) )
 - include speedcalc. make a page for it in the items or char subsection, with marco's explanations, but a shorter version. provide a link to marcos explanations/dl.
 - maybe add http://www.medianxl.com/t86-how-spell-damage-works as a new page in concepts, but rewritten a bit?
+
 - make the docs not collapse section when clicking on an open page_book (page_book_open). (in ___dtree.js, probably do something to line 128?)
-- Marchosias' Deception chance to block add note that it can't go lower than 0%, but it will reduce class bonuses; same Wheel of the Seasons SSU
+
 - fix all & in docs change to &amp; , change all non-tag < and > to &lt; and &gt;
-- add SU:SSU:SSSU ratio = 10:4:1 to the SU page, and maybe abbreviation page.
-- on gs abbrev. - add note that gs number is automatically shown when you enter the game.
-- cc brc completition note text, make it part of the recipe and put it as a stat, in the middle and not inline?
 - faq: What are Challenges?, lc0 req exactly lvl 5, not at most; What are Uberquests? maybe add heroics. maybe change color from blue to something normal?
-- remove deva king from quest ref (at all act/difficulty dragon eggs, so 6 places to change in total)
 - fix/update uber locations and parent levels in quest reference list
+
 - rename anchors and links to renamed bosses terul/zorun tzin (don't do this if you don't check for links EVERYWHERE, otherwise I'll do it)
+
 - check if there's still 2 Linarian's Legacy enabled: one with +2 Life on Striking (the real one) and the other with 1% Reanimate as: Inarius (the legacy one enabled by mistake)... kinda hard to disapprove it without files.
 - compare MO/UMO ingame and in the docs (mainly for missing/extra + and - signs and a few letter changes), I think I updated all, but it doesn't hurt to check. I tihnk you can use legacy umo from ss. (also, obv, stun attack with length is fine)
 - check procs "on Attack". was "on Attack" --> "on melee Attack" removed to get more space, or did marco add it in some of the lastest patches. if it's not too long (ie. it makes the page too wide because of some long ass procs), add "melee" back
 - (kor) extract monster animations
+
 - fix hit causes monsters to flee % on all pages. check in the files.
+
 - add note to SU page to hover over item to display graphic
 - add trophy pictures to witch charm recipe
 - add character pictures in athulua bow recipe, before character name?
@@ -56,6 +49,10 @@ TO-DO (those with no names are added by Quirinus):
 - try to contact tub about updating his online skillpoint planner first, if he doesn't respond again, do this: remove tub page link, and link to his page when saving in skillpoint planner and replace it with online docs skillpoint planner
 - check korcola's guide/post for uber details and rewrite them if necessary: http://www.medianxl.com/t6739p100-mxlu-xvc-docs-2-94-unfinished#185409
 - script to make the oskills list into the char oskills with description (+add their ingame description from new skills.txt + tbls)
+- update the about page with detailed changes
+- http://www.medianxl.com/t6275p40-xvc-bugsfeedback#173660 check in files and ingame, then fix
+- TU spear Ravenbeak check str stats
+- Skill tree names on Character pages --> check if you agree with tree names or some should be changed (I'm not sure about some), post in the thread
 
 
 Suggestions:
@@ -74,6 +71,9 @@ Suggestions:
 - Base Items page: Maybe add a note that broken ethereal items cannot gain durability even if they have the 'repair xx durability in yy seconds' mod.
 - (claygame) : maybe add link to forum somehow in the About page that opens when docs r opened for the first time to make people come more often on forum?
 - Add: skill tree names to skillpoint planner?
+- Change: Make filters on all pages always float in vision (absolute pos)?
+- (claygame) : do we really need 'armor looks' page?
+- SU page: remove the cross/title from items that have a special graphic?y
 
 DONE:
 - Pester Marco to explain in more detail about the new Amazon faster cast rate with staves and 2h weapons. Then update the note on the Amazon page if necessary.
@@ -135,3 +135,16 @@ DONE:
 - bremmtown upg - add flavor text from the bottom+color: http://www.medianxl.com/t6281p500-new-screenshot-items-2014-2015#180887
 - cc brc/ennead pages and wherever (char page?), fix color, stat order and remove 'challenge' word (check the color/text/order of empty cc): http://www.medianxl.com/t6281p500-new-screenshot-items-2014-2015#180887
 - add note: can't lucky or mo void rings (check how to add a note on, for example: Linarian's Legacy)
+- change "Socketed: x" to Socketed (x) everywhere - to match the ingame text. open all files and use replace all in all documents. use Regular Expression search mode for searching/replacing (click at the top of the file, have to start search from the beginning):
+   find: Socketed: ([1-6])
+   replace with: Socketed \(\1\)
+   (the \1 in the replace line is replaced with the number found in the search line ([1-6]) )
+- update str/dex dmg bonus on: Cranebeak, Greil's Urvan, Forge Fire, Viperfork, Steel Pillar, Sky Scorcher, Divine Mandible, Tonbogiri, Polar Vortex, Wrath of Nature, Mistress of Pain, Glowing Vertigo & Tormentor. (not from legacy items obv) (you can probably find the right values if you search the XV bugs/feedback thread for my posts, but it's still good to check them)
+- Change: Prefix/suffix list: Make calculators not reset the filter dropdowns/inputs. //some fields reset, some don't now.
+- Add: skill tree names to char pages
+- Add: (CG)- a title for the last 2 check boxes in the quest ref page. which ones exactly? kor: the names for boxes are left at left of each check boxes. so 'Miscellaneous' and 'Only one instance'. Maybe moved the names to right side to be more clear
+- Marchosias' Deception chance to block add note that it can't go lower than 0%, but it will reduce class bonuses; same Wheel of the Seasons SSU
+- add SU:SSU:SSSU ratio = 10:4:1 to the SU page, and maybe abbreviation page.
+- on gs abbrev. - add note that gs number is automatically shown when you enter the game.
+- cc brc completition note text, make it part of the recipe and put it as a stat, in the middle and not inline?
+- remove deva king from quest ref (at all act/difficulty dragon eggs, so 6 places to change in total)

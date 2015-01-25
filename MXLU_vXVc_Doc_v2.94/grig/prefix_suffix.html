@@ -246,7 +246,11 @@
 			{
 				display: default;
 			}
-
+			.do_button, select, #c_is_jewel, #c_is_jewel_label, #f_ancestors, #f_ancestors_label
+			{
+				cursor:pointer;
+			}
+			
 		</style>
 		<script type="text/javascript" src="JS/jquery-1.4.4.min.js"></script>
 		<script type="text/javascript" src="JS/jquery.tablesorter.min.js"></script>
@@ -423,9 +427,10 @@
 				
 				document.getElementById('f_alvl').value = document.getElementById('r_alvl').value;
 				document.getElementById('f_type').value = 'Both';
-				document.getElementById('f_rlvl').value = '';
-				document.getElementById('f_item').value = 'Any';
-				document.getElementById('f_property').value = 'Any';
+				//document.getElementById('f_rlvl').value = '';
+				//document.getElementById('f_item').value = 'Any';
+				//document.getElementById('f_property').value = 'Any';
+				document.getElementById('f_ancestors').checked = 'checked';
 				show_ancestors_fu();
 				filter_fu();
 			}
@@ -445,7 +450,7 @@
 				{
 					document.getElementById('c_output_ilvl').value = document.getElementById('c_ilvl').value;
 					document.getElementById('c_qlvl').value = check_value(90,1,check_value(71,0,document.getElementById('c_qlvl').value));
-					document.getElementById('f_item').value = 'Any';
+					//document.getElementById('f_item').value = 'Any';
 				}
 				document.getElementById('c_alvl').value = rare_get_alvl(document.getElementById('c_output_ilvl').value, document.getElementById('c_qlvl').value);
 				document.getElementById('c_number_of_affixes').innerHTML = affix_count(document.getElementById('c_output_ilvl').value);
@@ -453,8 +458,8 @@
 				
 				document.getElementById('f_alvl').value = document.getElementById('c_alvl').value;
 				document.getElementById('f_type').value = 'Both';
-				document.getElementById('f_rlvl').value = '';
-				document.getElementById('f_property').value = 'Any';
+				//document.getElementById('f_rlvl').value = '';
+				//document.getElementById('f_property').value = 'Any';
 				document.getElementById('f_ancestors').checked = 'checked';
 				show_ancestors_fu();
 				filter_fu();
@@ -992,7 +997,7 @@
 							<td style="text-align:right;"><input id="c_qlvl" name="c_qlvl" style="width:2em;text-align:center;" /></td>
 						</tr>
 						<tr>
-							<td><label for="c_is_jewel">Jewel: </label></td>
+							<td><label for="c_is_jewel" id="c_is_jewel_label">Jewel: </label></td>
 							<td><input id="c_is_jewel" name="c_is_jewel" type="checkbox" onclick="crafting_jewel_fu();"/></td>
 							<td colspan="2" style="text-align:right;"><input type="button" class="do_button" value="Calculate" onclick="crafting_calculation_fu();"/></td>
 						</tr>
@@ -1166,7 +1171,7 @@
 			</tr>
 			<tr title="If on, this option searches the 'Items' column for the chosen item class and its ancestor item classes, and then removes the ones that have the chosen item class or any ancestor item classes in the 'Excepted Items' column. Ie. it allows the display of all the properties that can appear on this item. If off, it searches the 'Items' column to find the chosen item class. Use the off option to search for properties that appear only on this item class and not on any of its ancestors - this search doesn't except anything.">
 				<td colspan="3">
-					<label for="f_ancestors">Include &amp; except: item &amp; ancestors?</label>
+					<label for="f_ancestors" id="f_ancestors_label">Include &amp; except: item &amp; ancestors?</label>
 				</td>
 				<td style="text-align:right;">
 					<input id="f_ancestors" name="f_ancestors" type="checkbox" checked="checked" onchange="show_ancestors_fu();"/>
