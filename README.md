@@ -35,13 +35,11 @@ TO-DO (those with no names are added by Quirinus):
 - include speedcalc. make a page for it in the items or char subsection, with marco's explanations, but a shorter version. provide a link to marcos explanations/dl.
 - maybe add http://www.medianxl.com/t86-how-spell-damage-works as a new page in concepts, but rewritten a bit?
 - make the docs not collapse section when clicking on an open page_book (page_book_open). (in ___dtree.js, probably do something to line 128?)
-- Mammen Axe (2): now has 2 sockets. Hexblade (2): now has 2 sockets. update in baseitems. check if TU2 versions have 2 sockets or still 1.
 - add note: can't lucky or mo void rings (check how to add a note on, for example: Linarian's Legacy)
 - Marchosias' Deception chance to block add note that it can't go lower than 0%, but it will reduce class bonuses; same Wheel of the Seasons SSU
 - fix all & in docs change to &amp; , change all non-tag < and > to &lt; and &gt;
 - add SU:SSU:SSSU ratio = 10:4:1 to the SU page, and maybe abbreviation page.
 - on gs abbrev. - add note that gs number is automatically shown when you enter the game.
-- bremmtown upg - add flavor text from the bottom+color: http://www.medianxl.com/t6281p500-new-screenshot-items-2014-2015#180887
 - cc brc/ennead pages and wherever (char page?), fix color, stat order and remove 'challenge' word (check the color/text/order of empty cc): http://www.medianxl.com/t6281p500-new-screenshot-items-2014-2015#180887
 - cc brc completition note text, make it part of the recipe and put it as a stat, in the middle and not inline?
 - faq: What are Challenges?, lc0 req exactly lvl 5, not at most; What are Uberquests? maybe add heroics. maybe change color from blue to something normal?
@@ -51,7 +49,6 @@ TO-DO (those with no names are added by Quirinus):
 - check if there's still 2 Linarian's Legacy enabled: one with +2 Life on Striking (the real one) and the other with 1% Reanimate as: Inarius (the legacy one enabled by mistake)... kinda hard to disapprove it without files.
 - compare MO/UMO ingame and in the docs (mainly for missing/extra + and - signs and a few letter changes), I think I updated all, but it doesn't hurt to check. I tihnk you can use legacy umo from ss. (also, obv, stun attack with length is fine)
 - check procs "on Attack". was "on Attack" --> "on melee Attack" removed to get more space, or did marco add it in some of the lastest patches. if it's not too long (ie. it makes the page too wide because of some long ass procs), add "melee" back
-- (kor) add colored items to doc (set finished)
 - (kor) extract monster animations
 - (CG): remove Durability from Indestructible and throw weapons items in docs in sets pages.(uniques pages are already done)
 - fix hit causes monsters to flee % on all pages. check in the files.
@@ -127,4 +124,10 @@ DONE:
 - add a note to double mo bonus that the orbs added before don't get double stats (doesn't work retrogradely)
 - Check/Add: Can Ring of Pride be cubed with MOs? What about (More) Luck or Lottery? Can Sigil of the 7 Deadly Sins be cubed for (More) Luck or Lottery recipes? // no and no and no no no
 - add note: can't lucky or mo void rings (check how to add a note on, for example: Linarian's Legacy)
+<<<<<<< HEAD
 - (CG): remove Durability from Indestructible and throw weapons items in docs in tu/su/ssu/sssu pages.
+=======
+- (kor) add: colored items to doc
+- Mammen Axe (2): now has 2 sockets. Hexblade (2): now has 2 sockets. update in baseitems. check if TU2 versions have 2 sockets or still 1.
+- bremmtown upg - add flavor text from the bottom+color: http://www.medianxl.com/t6281p500-new-screenshot-items-2014-2015#180887
+>>>>>>> origin/master
