@@ -831,6 +831,11 @@ table.sets_double tr td
 	font-size: 8pt;
 	text-align: center;
 	}
+.class
+{
+	border-bottom: 1px dotted black;
+	padding-right: 1px;
+}
 
 /* -------------------- LINK STYLES -------------------- */
 

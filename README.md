@@ -7,8 +7,6 @@ Add to-do stuff here.
 
 TO-DO (those with no names are added by Quirinus):
 - update: docs --> Characters --> Item-Only Skills page. Use a script to collect oskills from the oskills list in the Items section. Make the script format them nicely, like they are now. I'll also probably have to ask marco for the cotw oskills. Then we just need to add in descriptions manually.
-- add a note to shields that the class bonus isn't counted in, but all others are. link to the defense and block page or base items page.
-- Fix: Quest Reference: all dragon recipes use TP scroll instead of some using ID and some TP
 - Change: Rename some of the areas that have changed names (uberquest pages, challenges, quest reference list and anywhere else that it might appear). Change their parent level names too if they're different.
 - Change: Make RW page in two columns; put name/level above properties, put rune description below that, and after that are the properties. Or something like that.
 - Change: TU page: make the amulets/rings/jewels/quivers be in columns of 2 if the filter is set on any tier, except "All".
@@ -144,3 +142,5 @@ DONE:
 - make the docs not collapse section when clicking on an open page_book (page_book_open). (in ___dtree.js, probably do something to line 128?)
 - change anchor name for brachy to wretched_hive
 - use new pics for changed ubers (http://www.medianxl.com/t6739p20-mxlu-xvc-docs-2-94-unfinished#181878) that didn't get a pic in the contest ; dunno which ones to choose when people disagree XD // if you don't like some of the pics, post in the thread or get a better one
+- Fix: Quest Reference: all dragon recipes use TP scroll instead of some using ID and some TP
+- add a note to shields that the class bonus isn't counted in, but all others are. link to the defense and block page or base items page.
