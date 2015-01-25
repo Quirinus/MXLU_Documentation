@@ -14,14 +14,13 @@ TO-DO (those with no names are added by Quirinus):
 - Add: Speed Calculator to the Characters (?) section, with explanations. http://www.medianxl.com/t5893-speed-mechanics-explained-updated-speedcalc
 - All other changes from the XV and XVc changelog.
 - Add/Update: Quest Reference page with various stuff...
-- Athulua, Strategy / Abilities section needs updating.
 - (quiri) : remove anchors/links from menu when adding filter to the page http://goo.gl/fJc28a
 - are there any changes in TU/SU/SSU/SSSU items? kinda hard to tell without files, but if you noticed something or it's in the changelog, fix it.
 - affix and stat related things on items, and some items still not updated from patch XV & XVc, but it's kinda hard to do it without files
 - on sets page, make the image valign: center (should be centered relative to the stats text)
 - include speedcalc. make a page for it in the items or char subsection, with marco's explanations, but a shorter version. provide a link to marcos explanations/dl.
 - maybe add http://www.medianxl.com/t86-how-spell-damage-works as a new page in concepts, but rewritten a bit?
-- fix all & in docs change to &amp; , change all non-tag < and > to &lt; and &gt;
+- Change all non-tag < and > to &lt; and &gt;
 - faq: What are Challenges?, lc0 req exactly lvl 5, not at most; What are Uberquests? maybe add heroics. maybe change color from blue to something normal?
 - fix/update uber locations and parent levels in quest reference list
 - check if there's still 2 Linarian's Legacy enabled: one with +2 Life on Striking (the real one) and the other with 1% Reanimate as: Inarius (the legacy one enabled by mistake)... kinda hard to disapprove it without files.
@@ -39,7 +38,6 @@ TO-DO (those with no names are added by Quirinus):
 - gems and runes, bg/shadow: http://www.medianxl.com/t6774-poll-items-with-no-transparent-background#183234 , http://www.medianxl.com/t6739p70-mxlu-xvc-docs-2-94-unfinished#183051
 - Skill tree names on Character pages --> check if you agree with tree names or some should be changed (I'm not sure about some), post in the thread
 - I added new uber pics: Athulua, Witch, Zorun Tzin and Void. Check if you agree with it, and post in the thread if not.
-- introduction page update. eg. skills from 30 per class --> 35
 - skillpoint planner fix letter upper case
 
 
@@ -147,3 +145,5 @@ DONE:
 - use new pics for changed ubers (http://www.medianxl.com/t6739p20-mxlu-xvc-docs-2-94-unfinished#181878) that didn't get a pic in the contest ; dunno which ones to choose when people disagree XD // if you don't like some of the pics, post in the thread or get a better one
 - Fix: Quest Reference: all dragon recipes use TP scroll instead of some using ID and some TP
 - add a note to shields that the class bonus isn't counted in, but all others are. link to the defense and block page or base items page.
+- introduction page update. eg. skills from 30 per class --> 35 // most other stuff seems up to date, would it not be an idea for the docs to start with some sort of homepage, rather than about section?
+- Athulua, Strategy / Abilities section needs updating.
