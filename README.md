@@ -32,26 +32,17 @@ TO-DO (those with no names are added by Quirinus):
 - fix all & in docs change to &amp; , change all non-tag < and > to &lt; and &gt;
 - faq: What are Challenges?, lc0 req exactly lvl 5, not at most; What are Uberquests? maybe add heroics. maybe change color from blue to something normal?
 - fix/update uber locations and parent levels in quest reference list
-
-- rename anchors and links to renamed bosses terul/zorun tzin (don't do this if you don't check for links EVERYWHERE, otherwise I'll do it)
-
 - check if there's still 2 Linarian's Legacy enabled: one with +2 Life on Striking (the real one) and the other with 1% Reanimate as: Inarius (the legacy one enabled by mistake)... kinda hard to disapprove it without files.
 - compare MO/UMO ingame and in the docs (mainly for missing/extra + and - signs and a few letter changes), I think I updated all, but it doesn't hurt to check. I tihnk you can use legacy umo from ss. (also, obv, stun attack with length is fine)
 - check procs "on Attack". was "on Attack" --> "on melee Attack" removed to get more space, or did marco add it in some of the lastest patches. if it's not too long (ie. it makes the page too wide because of some long ass procs), add "melee" back
 - (kor) extract monster animations
-
-- fix hit causes monsters to flee % on all pages. check in the files.
-
-- add note to SU page to hover over item to display graphic
-- add trophy pictures to witch charm recipe
-- add character pictures in athulua bow recipe, before character name?
-- athulua tokens: "Using these 3 reagents and other listed in this table, and transmuting them with the appropriate character, you can get all the Tokens." put "transmuting them with the appropriate character" in underline or something, to make it stand out so people see it
 - try to contact tub about updating his online skillpoint planner first, if he doesn't respond again, do this: remove tub page link, and link to his page when saving in skillpoint planner and replace it with online docs skillpoint planner
 - check korcola's guide/post for uber details and rewrite them if necessary: http://www.medianxl.com/t6739p100-mxlu-xvc-docs-2-94-unfinished#185409
 - script to make the oskills list into the char oskills with description (+add their ingame description from new skills.txt + tbls)
 - update the about page with detailed changes
 - http://www.medianxl.com/t6275p40-xvc-bugsfeedback#173660 check in files and ingame, then fix
-- TU spear Ravenbeak check str stats
+- TU spear Ravenbeak check str stats if they match the docs, check multiple tiers
+- fix hit causes monsters to flee % on all pages. check in the files (RW,TU,SU). hmmmmm fix or show the real value which is x*100/128% or floored value instead of x%
 - Skill tree names on Character pages --> check if you agree with tree names or some should be changed (I'm not sure about some), post in the thread
 
 
@@ -148,3 +139,8 @@ DONE:
 - on gs abbrev. - add note that gs number is automatically shown when you enter the game.
 - cc brc completition note text, make it part of the recipe and put it as a stat, in the middle and not inline?
 - remove deva king from quest ref (at all act/difficulty dragon eggs, so 6 places to change in total)
+- add note to SU page to hover over item to display graphic
+- add character pictures in athulua bow recipe, before character name? //reordered the list too
+- add trophy pictures to witch charm recipe
+- athulua tokens: "Using these 3 reagents and other listed in this table, and transmuting them with the appropriate character, you can get all the Tokens." put "transmuting them with the appropriate character" in underline or something, to make it stand out so people see it
+- rename anchors and links to renamed bosses terul/zorun tzin (don't do this if you don't check for links EVERYWHERE, otherwise I'll do it)
