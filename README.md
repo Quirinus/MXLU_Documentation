@@ -38,6 +38,7 @@ TO-DO (those with no names are added by Quirinus):
 - abbreviation page, remove old: http://www.medianxl.com/t6739p90-mxlu-xvc-docs-2-94-unfinished#183314 , http://www.medianxl.com/t6739p90-mxlu-xvc-docs-2-94-unfinished#183416
 - gems and runes, bg/shadow: http://www.medianxl.com/t6774-poll-items-with-no-transparent-background#183234 , http://www.medianxl.com/t6739p70-mxlu-xvc-docs-2-94-unfinished#183051
 - Skill tree names on Character pages --> check if you agree with tree names or some should be changed (I'm not sure about some), post in the thread
+- I added new uber pics: Athulua, Witch, Zorun Tzin and Void. Check if you agree with it, and post in the thread if not.
 
 
 
