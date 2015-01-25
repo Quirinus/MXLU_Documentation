@@ -20,15 +20,9 @@ TO-DO (those with no names are added by Quirinus):
 - (quiri) : remove anchors/links from menu when adding filter to the page http://goo.gl/fJc28a
 - are there any changes in TU/SU/SSU/SSSU items? kinda hard to tell without files, but if you noticed something or it's in the changelog, fix it.
 - affix and stat related things on items, and some items still not updated from patch XV & XVc, but it's kinda hard to do it without files
-
-- use new pics for changed ubers (a few pages back) that didn't get a pic in the contest ; dunno which ones to choose when people disagree XD
-
 - on sets page, make the image valign: center (should be centered relative to the stats text)
 - include speedcalc. make a page for it in the items or char subsection, with marco's explanations, but a shorter version. provide a link to marcos explanations/dl.
 - maybe add http://www.medianxl.com/t86-how-spell-damage-works as a new page in concepts, but rewritten a bit?
-
-- make the docs not collapse section when clicking on an open page_book (page_book_open). (in ___dtree.js, probably do something to line 128?)
-
 - fix all & in docs change to &amp; , change all non-tag < and > to &lt; and &gt;
 - faq: What are Challenges?, lc0 req exactly lvl 5, not at most; What are Uberquests? maybe add heroics. maybe change color from blue to something normal?
 - fix/update uber locations and parent levels in quest reference list
@@ -41,9 +35,13 @@ TO-DO (those with no names are added by Quirinus):
 - script to make the oskills list into the char oskills with description (+add their ingame description from new skills.txt + tbls)
 - update the about page with detailed changes
 - http://www.medianxl.com/t6275p40-xvc-bugsfeedback#173660 check in files and ingame, then fix
-- TU spear Ravenbeak check str stats if they match the docs, check multiple tiers
+- TU spear Ravenbeak check str stats if they match the docs, check multiple tiers... maybe wait for files to check this one...
 - fix hit causes monsters to flee % on all pages. check in the files (RW,TU,SU). hmmmmm fix or show the real value which is x*100/128% or floored value instead of x%
+- abbreviation page, remove old: http://www.medianxl.com/t6739p90-mxlu-xvc-docs-2-94-unfinished#183314 , http://www.medianxl.com/t6739p90-mxlu-xvc-docs-2-94-unfinished#183416
+- gems and runes, bg/shadow: http://www.medianxl.com/t6774-poll-items-with-no-transparent-background#183234 , http://www.medianxl.com/t6739p70-mxlu-xvc-docs-2-94-unfinished#183051
+- use new pics for changed ubers (a few pages back) that didn't get a pic in the contest ; dunno which ones to choose when people disagree XD
 - Skill tree names on Character pages --> check if you agree with tree names or some should be changed (I'm not sure about some), post in the thread
+
 
 
 Suggestions:
@@ -144,3 +142,5 @@ DONE:
 - add trophy pictures to witch charm recipe
 - athulua tokens: "Using these 3 reagents and other listed in this table, and transmuting them with the appropriate character, you can get all the Tokens." put "transmuting them with the appropriate character" in underline or something, to make it stand out so people see it
 - rename anchors and links to renamed bosses terul/zorun tzin (don't do this if you don't check for links EVERYWHERE, otherwise I'll do it)
+- make the docs not collapse section when clicking on an open page_book (page_book_open). (in ___dtree.js, probably do something to line 128?)
+- change anchor name for brachy to wretched_hive

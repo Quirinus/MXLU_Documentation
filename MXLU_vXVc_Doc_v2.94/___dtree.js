@@ -122,16 +122,16 @@ dTree.prototype.node = function(node, nodeId) {
 		str += '<a id="s' + this.obj + nodeId + '" class="' + ((this.config.useSelection) ? ((node._is ? 'nodeSel' : 'node')) : 'node') + '" target="body" href="' + node.url + '"';
 		if (node.title) str += ' title="' + node.title + '"';
 		if (node.target) str += ' target="' + node.target + '"';
-		if (this.config.useStatusText) str += ' onmouseover="window.status=\'' + node.name + '\';return true;" onmouseout="window.status=\'\';return true;" ';
+		//if (this.config.useStatusText) str += ' onmouseover="window.status=\'' + node.name + '\';return true;" onmouseout="window.status=\'\';return true;" ';
 		if (this.config.useSelection && ((node._hc && this.config.folderLinks) || !node._hc))
 		if (node._hc && node.pid != this.root.id) //I hope I got this right...
-			str += ' onclick="javascript: ' + this.obj + '.o(' + nodeId + ');' + this.obj + '.s(' + nodeId + ');"'; //expands and selects node
+			str += ' onclick="javascript: ' + this.obj + '.ob(' + nodeId + ');' + this.obj + '.s(' + nodeId + ');"'; //expands and selects node
 		else
 			str += ' onclick="javascript: ' + this.obj + '.s(' + nodeId + ');"'; //selects node
 		str += '>';
 	}
 	else if ((!this.config.folderLinks || !node.url) && node._hc && node.pid != this.root.id)
-		str += '<a href="javascript: ' + this.obj + '.o(' + nodeId + ');" class="node">'; //expands node
+		str += '<a href="javascript: ' + this.obj + '.ob(' + nodeId + ');" class="node">'; //expands node
 	str += node.name;
 	if (node.url || ((!this.config.folderLinks || !node.url) && node._hc)) str += '</a>';
 	str += '</div>';
@@ -210,13 +210,25 @@ dTree.prototype.s = function(id) {
 	}
 };
 
-// Toggle Open or close
+// Toggle Open or close on +/- marks
 dTree.prototype.o = function(id) {
 	var cn = this.aNodes[id];
 	this.nodeStatus(!cn._io, id, cn._ls);
 	cn._io = !cn._io;
 	if (this.config.closeSameLevel) this.closeLevel(cn);
 	if (this.config.useCookies) this.updateCookie();
+};
+
+// Toggle Open or close on names
+dTree.prototype.ob = function(id) {
+	var cn = this.aNodes[id];
+	if (!((cn.icon == "img/chm_page_book.png")&&(cn._io))) //do not close chm_page_book_open
+	{
+		this.nodeStatus(!cn._io, id, cn._ls);
+		cn._io = !cn._io;
+		if (this.config.closeSameLevel) this.closeLevel(cn);
+		if (this.config.useCookies) this.updateCookie();
+	}
 };
 
 // Open or close all nodes
