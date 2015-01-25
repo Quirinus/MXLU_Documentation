@@ -31,7 +31,7 @@ TO-DO (those with no names are added by Quirinus):
 - try to contact tub about updating his online skillpoint planner first, if he doesn't respond again, do this: remove tub page link, and link to his page when saving in skillpoint planner and replace it with online docs skillpoint planner
 - check korcola's guide/post for uber details and rewrite them if necessary: http://www.medianxl.com/t6739p100-mxlu-xvc-docs-2-94-unfinished#185409
 - script to make the oskills list into the char oskills with description (+add their ingame description from new skills.txt + tbls)
-- update the about page with detailed changes
+- update the about page with detailed changes/credits
 - http://www.medianxl.com/t6275p40-xvc-bugsfeedback#173660 check in files and ingame, then fix
 - TU spear Ravenbeak check str stats if they match the docs, check multiple tiers... maybe wait for files to check this one...
 - fix hit causes monsters to flee % on all pages. check in the files (RW,TU,SU). hmmmmm fix or show the real value which is x*100/128% or floored value instead of x%
@@ -39,6 +39,8 @@ TO-DO (those with no names are added by Quirinus):
 - gems and runes, bg/shadow: http://www.medianxl.com/t6774-poll-items-with-no-transparent-background#183234 , http://www.medianxl.com/t6739p70-mxlu-xvc-docs-2-94-unfinished#183051
 - Skill tree names on Character pages --> check if you agree with tree names or some should be changed (I'm not sure about some), post in the thread
 - I added new uber pics: Athulua, Witch, Zorun Tzin and Void. Check if you agree with it, and post in the thread if not.
+- introduction page update. eg. skills from 30 per class --> 35
+- skillpoint planner fix letter upper case
 
 
 
