@@ -53,7 +53,7 @@ TO-DO (those with no names are added by Quirinus):
 - check procs "on Attack". was "on Attack" --> "on melee Attack" removed to get more space, or did marco add it in some of the lastest patches. if it's not too long (ie. it makes the page too wide because of some long ass procs), add "melee" back
 - (kor) add colored items to doc (set finished)
 - (kor) extract monster animations
-- (CG): remove Durability from Indestructible and throw weapons items in docs in sets/tu/su/ssu/sssu/RW pages.
+- (CG): remove Durability from Indestructible and throw weapons items in docs in sets pages.(uniques pages are already done)
 - fix hit causes monsters to flee % on all pages. check in the files.
 
 
@@ -127,3 +127,4 @@ DONE:
 - add a note to double mo bonus that the orbs added before don't get double stats (doesn't work retrogradely)
 - Check/Add: Can Ring of Pride be cubed with MOs? What about (More) Luck or Lottery? Can Sigil of the 7 Deadly Sins be cubed for (More) Luck or Lottery recipes? // no and no and no no no
 - add note: can't lucky or mo void rings (check how to add a note on, for example: Linarian's Legacy)
+- (CG): remove Durability from Indestructible and throw weapons items in docs in tu/su/ssu/sssu pages.
