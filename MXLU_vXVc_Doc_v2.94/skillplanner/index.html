@@ -59,7 +59,7 @@
 	A: You can Shift-Click the + and - buttons.</li>
 
 	<li><b>Q: When will the most recent version be supported?</b><br />
-	A: usually after the official release. I will not support beta-versions, pre-releases or similar. Since I don't play MXL any more, I probably won't notice new releases right away - send me a PM on the forums if that happens.</li>
+	A: Usually after the official release. I will not support beta-versions, pre-releases or similar. Since I don't play MXL any more, I probably won't notice new releases right away - send me a PM on the forums if that happens.</li>
 
 	<li><b>Q: Can I plan a character with legacy items/charms?</b><br />
 	A: Not with this planner. That's intentional.</li>
@@ -72,14 +72,13 @@
 	A: Sure. Hit "File" -&gt; "Save Page As" to make a local copy. You can also download <a href="http://mxl.vn.cz/doc/" target="_blank">Full documentation in HTML format</a> which includes this calculator. Please note that you can only save your skill plans in the online version.</li>
 
 	<li><b>Q: How much damage will my skills do?</b><br />
-	A: I don't know, and my planner won't tell you.
-	Try the <a href="http://www.medianxl.com" target="_blank">Skill Progression Project</a>, although that's incomplete and partially outdated.</li>
+	A: I don't know, and my planner can't tell you.
 
 	<li><b>Q: Some Skill-Icons are wrong!</b><br />
 	A: Some Skill-Icons changed in newer patches. This calculator will always use the most current icon for each skill.</li>
 
 	<li><b>Q: I noticed a bug or have a suggestion</b><br />
-	A: Go ahead, post in <a href="http://www.medianxl.com" target="_blank">this thread</a>. I'll make sure to fix any serious bugs.</li>
+	A: Go ahead, post in <a href="http://www.medianxl.com/t3217-mxl-u-xiv-b-docs-v293" target="_blank">this thread</a>. I'll make sure to fix any serious bugs.</li>
 
 	<li><b>Q: I cannot put Points into "Light and Shadow"</b><br />
 	A: That's how the game worked before Omega 002. Pick any of the Light or Dark Level 1 skills first.</li>
@@ -89,12 +88,12 @@
 
 	<li><b>Q: Who should I thank for this nifty tool?</b><br />
 	A: Brother Laz of course, because he created the mod and the skill icons. :p<br />
-	I (<a href="http://www.medianxl.com" target="_blank">Tub</a>) just spent a couple of hours to hack a little 1000-line script together, hoping that others might find it as useful as I do.</li>
+	I (<a href="http://www.authmann.de/d2/mxl/skillpointplanner/" target="_blank">Tub</a>) just spent a couple of hours to hack a little 1000-line script together, hoping that others might find it as useful as I do.</li>
 
 	</ul>
 
 	<span style="display: block; text-align:center;">
-		<a href="#" onClick="showFaq(false);return false;">close FAQ</a>
+		<a href="#" onClick="showFaq(false);return false;">Close FAQ</a>
 	</span>
 	</div>
 	</div>
@@ -106,7 +105,7 @@
 	The most recent official version of this script can always be found at <a href="http://www.authmann.de/d2/mxl/skillpointplanner/">http://www.authmann.de/d2/mxl/skillpointplanner/</a>.
 	</div>
 
-<div style="text-align: center;">Insert link: <input id="load_input" style="width:600px;" /> <input type="button" value="Load" onclick="load(document.getElementById('load_input').value);" /></div>
+<div style="text-align: center;">Insert load link: <input id="load_input" style="width:600px;" /> <input type="button" value="Load" onclick="load(document.getElementById('load_input').value);" /></div>
 	
 	<table style="margin: 0 auto; border: 2px solid black;" cellspacing="0"><tr><td style="width: 500px; border-right: 2px solid black;" rowspan="18">
 
@@ -139,10 +138,9 @@
 					<option value="7">Sorceress</option>
 				</select>
 	Level <input type="text" value="120" name="clvl" size="3" maxlength="3" onchange="recalculate()" /><br />
-	Skill Plan name <input type="text" name="cname" value="" onchange="changeName()" /> <input type="button" value="Save" onclick="save()" /> <input type="button" onclick="resetSkills();" value="reset skills" /><br />
+	Skill Plan Name <input type="text" name="cname" value="" onchange="changeName()" /> <input type="button" value="Save" onclick="save()" /> <input type="button" onclick="resetSkills();" value="Reset Skills" /><br />
 	<br />
-	invested: <span id="pspent">0</span> of <span id="pavail">0</span> Points, 
-	maximum skill level: +<span id="slvlbonus">0</span><br />
+	Invested Points: <span id="pspent">0</span> of <span id="pavail">0</span> &emsp;&emsp;&emsp; Maximum Skill Level: +<span id="slvlbonus">0</span><br />
 	<br />
 
 	<table border="0" width="100%" class="bonustable">
@@ -188,8 +186,8 @@
 			</td><td><input type="checkbox" value="1" name="q9" onchange="uswitch(this); recalculate()" /></td></tr>
 		<tr id="energy_row"><td>Base Energy<br /><small>(+1 to Blood Skills each 100 Energy)</small></td><td><input type="text" size="4" value="15" name="energy" onchange="recalculate()" /></td></tr>
 		<tr><td colspan="2" style="text-align: center;">
-			<input type="button" onclick="checkAll(false);" value="check none" />
-			<input type="button" onclick="checkAll(true);" value="check all" />
+			<input type="button" onclick="checkAll(false);" value="Check none(&cross;)" />
+			<input type="button" onclick="checkAll(true);" value="Check all(&check;)" />
 		</td></tr>
 	</table>
 
@@ -257,7 +255,7 @@
 	<tr><td colspan="4"> </td></tr>
 	</table></td></tr>
 	</table>
-	<div class="copy">Version 1.13, Script © 2010-2014 <a href="http://www.medianxl.com">Tub</a>, MedianXL and all Skill Icons © <a href="http://modsbylaz.vn.cz/">BrotherLaz</a> and © <a href="http://www.medianxl.com">MarcoNecroX</a>.<br />
+	<div class="copy">Version 1.14, Script © 2010-2015 <a href="http://www.medianxl.com">Tub</a>, MedianXL and all Skill Icons © <a href="http://modsbylaz.vn.cz/">BrotherLaz</a> and © <a href="http://www.medianxl.com">MarcoNecroX</a>.<br />
 	Please send bug reports and feedback to <a href="http://www.medianxl.com">this forum</a>.</div>
 
 	</form>
