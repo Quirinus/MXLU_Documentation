@@ -25,7 +25,6 @@ TO-DO (those with no names are added by Quirinus):
 - fix/update uber locations and parent levels in quest reference list
 - check if there's still 2 Linarian's Legacy enabled: one with +2 Life on Striking (the real one) and the other with 1% Reanimate as: Inarius (the legacy one enabled by mistake)... kinda hard to disapprove it without files.
 - compare MO/UMO ingame and in the docs (mainly for missing/extra + and - signs and a few letter changes), I think I updated all, but it doesn't hurt to check. I tihnk you can use legacy umo from ss. (also, obv, stun attack with length is fine)
-- check procs "on Attack". was "on Attack" --> "on melee Attack" removed to get more space, or did marco add it in some of the lastest patches. if it's not too long (ie. it makes the page too wide because of some long ass procs), add "melee" back
 - (kor) extract monster animations
 - try to contact tub about updating his online skillpoint planner first, if he doesn't respond again, do this: remove tub page link, and link to his page when saving in skillpoint planner and replace it with online docs skillpoint planner
 - check korcola's guide/post for uber details and rewrite them if necessary: http://www.medianxl.com/t6739p100-mxlu-xvc-docs-2-94-unfinished#185409
@@ -53,7 +52,6 @@ Suggestions:
 - Add links to some old/legacy docs to the doc, probably a new page under information. (http://www.medianxl.com/t4038-legacy-docs and the ones on the FTP location of the current docs)
 - Add a list of monsters that drop each GR in Yshari. I guess I gotta ask Marco if I can do it.
 - (claygame) Add pic of the armor/weapon type at the top of each section of RW page to let people know exactly what works for these RW?
-- (claygame) Add the top row showing titles of each coloum for each time a separate section starts for Items->Base
 - Change: Rune/RWs: Level --> Required Level?
 - Base Items page: Maybe add a note that broken ethereal items cannot gain durability even if they have the 'repair xx durability in yy seconds' mod.
 - (claygame) : maybe add link to forum somehow in the About page that opens when docs r opened for the first time to make people come more often on forum?
@@ -147,3 +145,4 @@ DONE:
 - add a note to shields that the class bonus isn't counted in, but all others are. link to the defense and block page or base items page.
 - introduction page update. eg. skills from 30 per class --> 35 // most other stuff seems up to date, would it not be an idea for the docs to start with some sort of homepage, rather than about section?
 - Athulua, Strategy / Abilities section needs updating.
+- check procs "on Attack". was "on Attack" --> "on melee Attack" removed to get more space, or did marco add it in some of the lastest patches. if it's not too long (ie. it makes the page too wide because of some long ass procs), add "melee" back
