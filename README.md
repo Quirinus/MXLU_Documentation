@@ -38,7 +38,7 @@ TO-DO (those with no names are added by Quirinus):
 - Skill tree names on Character pages --> check if you agree with tree names or some should be changed (I'm not sure about some), post in the thread
 - I added new uber pics: Athulua, Witch, Zorun Tzin and Void. Check if you agree with it, and post in the thread if not.
 - skillpoint planner fix letter upper case
-
+- (CG): Check the flat cold damage on tu short battle bow and see if it have min/max variation in t1 or if it is just flat damage
 
 
 Suggestions:
@@ -60,6 +60,7 @@ Suggestions:
 - (claygame) : do we really need 'armor looks' page?
 - SU page: remove the cross/title from items that have a special graphic?y
 - (CG) : add a 3rd column to the "Items with Oskill List" & "Items with procs list" and list the item name/type in that column instead of sticking it with item name.
+- (CG) : Add t1-t6 pocs and skills in "proc/Oskill from items page" and made them as hovetext just like shield's block.
 
 DONE:
 - Pester Marco to explain in more detail about the new Amazon faster cast rate with staves and 2h weapons. Then update the note on the Amazon page if necessary.
