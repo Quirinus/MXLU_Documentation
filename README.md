@@ -42,7 +42,7 @@ TO-DO (those with no names are added by Quirinus):
 
 
 Suggestions:
-- (Claygame) Add a pic below every reciepe showing what the ingredient look like, for example: minigame recepie have pic of cc and the rune below or beside the recepie text.
+- (Claygame) Add a pic below every recipe showing what the ingredient look like, for example: minigame recepie have pic of cc and the rune below or beside the recipe text.
 - (Claygame) Instead of having "see THIS PAGE for details" below descriptions, make the key part of text as a direct link to the intended page.
 - (Claygame) Add pictures of Veteran monster of each act on the monster token page.
 - Maybe somehow merge SU/SSU/SSSU and TU6 stuff so it can be more easily compared?
@@ -59,6 +59,7 @@ Suggestions:
 - Change: Make filters on all pages always float in vision (absolute pos)?
 - (claygame) : do we really need 'armor looks' page?
 - SU page: remove the cross/title from items that have a special graphic?y
+- (CG) : add a 3rd column to the "Items with Oskill List" & "Items with procs list" and list the item name/type in that column instead of sticking it with item name.
 
 DONE:
 - Pester Marco to explain in more detail about the new Amazon faster cast rate with staves and 2h weapons. Then update the note on the Amazon page if necessary.
