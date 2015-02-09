@@ -38,7 +38,6 @@ TO-DO (those with no names are added by Quirinus):
 - Skill tree names on Character pages --> check if you agree with tree names or some should be changed (I'm not sure about some), post in the thread
 - I added new uber pics: Athulua, Witch, Zorun Tzin and Void. Check if you agree with it, and post in the thread if not.
 - skillpoint planner fix letter upper case
-- (CG): Check the flat cold damage on tu short battle bow and see if it have min/max variation in t1 or if it is just flat damage
 - Make all item/gem/etc. pictures PNG. Reorder the picture file paths to make more sense.
 
 
@@ -62,6 +61,7 @@ Suggestions:
 - SU page: remove the cross/title from items that have a special graphic?y
 - (CG) : add a 3rd column to the "Items with Oskill List" & "Items with procs list" and list the item name/type in that column instead of sticking it with item name.
 - (CG) : Add t1-t6 pocs and skills in "proc/Oskill from items page" and made them as hovetext just like shield's block.
+- (CG) : Check if all the RWs r up to date or they need to be checked from file and corrected.
 
 DONE:
 - Pester Marco to explain in more detail about the new Amazon faster cast rate with staves and 2h weapons. Then update the note on the Amazon page if necessary.
@@ -149,3 +149,4 @@ DONE:
 - introduction page update. eg. skills from 30 per class --> 35 // most other stuff seems up to date, would it not be an idea for the docs to start with some sort of homepage, rather than about section?
 - Athulua, Strategy / Abilities section needs updating.
 - check procs "on Attack". was "on Attack" --> "on melee Attack" removed to get more space, or did marco add it in some of the lastest patches. if it's not too long (ie. it makes the page too wide because of some long ass procs), add "melee" back
+- (CG): Check the flat cold damage on tu short battle bow and see if it have min/max variation in t1 or if it is just flat damage, (its not flat damage, checked ingame)
