@@ -39,6 +39,7 @@ TO-DO (those with no names are added by Quirinus):
 - I added new uber pics: Athulua, Witch, Zorun Tzin and Void. Check if you agree with it, and post in the thread if not.
 - skillpoint planner fix letter upper case
 - (CG): Check the flat cold damage on tu short battle bow and see if it have min/max variation in t1 or if it is just flat damage
+- Make all item/gem/etc. pictures PNG. Reorder the picture file paths to make more sense.
 
 
 Suggestions:
