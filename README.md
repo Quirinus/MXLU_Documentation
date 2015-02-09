@@ -60,8 +60,8 @@ Suggestions:
 - Change: Make filters on all pages always float in vision (absolute pos)?
 - (claygame) : do we really need 'armor looks' page?
 - SU page: remove the cross/title from items that have a special graphic?y
-- (CG) : add a 3rd column to the "Items with Oskill List" & "Items with procs list" and list the item name/type in that column instead of sticking it with item name.
-- (CG) : Add t1-t6 pocs and skills in "proc/Oskill from items page" and made them as hovetext just like shield's block.
+- (CG) : add a 3rd column to the "Items with Oskill List" & "Items with procs list" and list the item name/type in that column instead of sticking it with item name. (Q) fix the css for it (3rd column), then use regexp to auto split the 2 columns into 3.
+- (CG) : Add t1-t6 pocs and skills in "proc/Oskill from items page" and made them as hovetext just like shield's block. (Q): or add a radio button: show all tiers, show only T6?
 
 DONE:
 - Pester Marco to explain in more detail about the new Amazon faster cast rate with staves and 2h weapons. Then update the note on the Amazon page if necessary.
