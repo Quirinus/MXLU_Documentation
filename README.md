@@ -59,9 +59,14 @@ Suggestions:
 - Change: Make filters on all pages always float in vision (absolute pos)?
 - (claygame) : do we really need 'armor looks' page?
 - SU page: remove the cross/title from items that have a special graphic?y
+<<<<<<< HEAD
 - (CG) : add a 3rd column to the "Items with Oskill List" & "Items with procs list" and list the item name/type in that column instead of sticking it with item name.
 - (CG) : Add t1-t6 pocs and skills in "proc/Oskill from items page" and made them as hovetext just like shield's block.
 - (CG) : Check if all the RWs r up to date or they need to be checked from file and corrected.
+=======
+- (CG) : add a 3rd column to the "Items with Oskill List" & "Items with procs list" and list the item name/type in that column instead of sticking it with item name. (Q) fix the css for it (3rd column), then use regexp to auto split the 2 columns into 3.
+- (CG) : Add t1-t6 pocs and skills in "proc/Oskill from items page" and made them as hovetext just like shield's block. (Q): or add a radio button: show all tiers, show only T6?
+>>>>>>> origin/master
 
 DONE:
 - Pester Marco to explain in more detail about the new Amazon faster cast rate with staves and 2h weapons. Then update the note on the Amazon page if necessary.
@@ -149,4 +154,7 @@ DONE:
 - introduction page update. eg. skills from 30 per class --> 35 // most other stuff seems up to date, would it not be an idea for the docs to start with some sort of homepage, rather than about section?
 - Athulua, Strategy / Abilities section needs updating.
 - check procs "on Attack". was "on Attack" --> "on melee Attack" removed to get more space, or did marco add it in some of the lastest patches. if it's not too long (ie. it makes the page too wide because of some long ass procs), add "melee" back
+<<<<<<< HEAD
 - (CG): Check the flat cold damage on tu short battle bow and see if it have min/max variation in t1 or if it is just flat damage, (its not flat damage, checked ingame)
+=======
+>>>>>>> origin/master
