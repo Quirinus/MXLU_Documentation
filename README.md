@@ -13,7 +13,6 @@ TO-DO (those with no names are added by Quirinus):
 - Fix: Quest Reference list: difficulty headers not dissapearing when the contents are empty.
 - Add: Speed Calculator to the Characters (?) section, with explanations. http://www.medianxl.com/t5893-speed-mechanics-explained-updated-speedcalc
 - All other changes from the XV and XVc changelog.
-- Add/Update: Quest Reference page with various stuff...
 - (quiri) : remove anchors/links from menu when adding filter to the page http://goo.gl/fJc28a
 - are there any changes in TU/SU/SSU/SSSU items? kinda hard to tell without files, but if you noticed something or it's in the changelog, fix it.
 - affix and stat related things on items, and some items still not updated from patch XV & XVc, but it's kinda hard to do it without files
@@ -22,23 +21,17 @@ TO-DO (those with no names are added by Quirinus):
 - maybe add http://www.medianxl.com/t86-how-spell-damage-works as a new page in concepts, but rewritten a bit?
 - Change all non-tag < and > to &lt; and &gt;
 - faq: What are Challenges?, lc0 req exactly lvl 5, not at most; What are Uberquests? maybe add heroics. maybe change color from blue to something normal?
-- fix/update uber locations and parent levels in quest reference list
 - check if there's still 2 Linarian's Legacy enabled: one with +2 Life on Striking (the real one) and the other with 1% Reanimate as: Inarius (the legacy one enabled by mistake)... kinda hard to disapprove it without files.
 - compare MO/UMO ingame and in the docs (mainly for missing/extra + and - signs and a few letter changes), I think I updated all, but it doesn't hurt to check. I tihnk you can use legacy umo from ss. (also, obv, stun attack with length is fine)
 - (kor) extract monster animations
-- try to contact tub about updating his online skillpoint planner first, if he doesn't respond again, do this: remove tub page link, and link to his page when saving in skillpoint planner and replace it with online docs skillpoint planner
+- try to contact tub about updating his online skillpoint planner first, if he doesn't respond again (edit: he's not responding, I sent him a mail...), do this: remove tub page link, and link to his page when saving in skillpoint planner and replace it with online docs skillpoint planner
 - check korcola's guide/post for uber details and rewrite them if necessary: http://www.medianxl.com/t6739p100-mxlu-xvc-docs-2-94-unfinished#185409
 - script to make the oskills list into the char oskills with description (+add their ingame description from new skills.txt + tbls)
-- update the about page with detailed changes/credits
-- http://www.medianxl.com/t6275p40-xvc-bugsfeedback#173660 check in files and ingame, then fix
-- TU spear Ravenbeak check str stats if they match the docs, check multiple tiers... maybe wait for files to check this one...
 - fix hit causes monsters to flee % on all pages. check in the files (RW,TU,SU). hmmmmm fix or show the real value which is x*100/128% or floored value instead of x%
 - abbreviation page, remove old: http://www.medianxl.com/t6739p90-mxlu-xvc-docs-2-94-unfinished#183314 , http://www.medianxl.com/t6739p90-mxlu-xvc-docs-2-94-unfinished#183416
 - gems and runes, bg/shadow: http://www.medianxl.com/t6774-poll-items-with-no-transparent-background#183234 , http://www.medianxl.com/t6739p70-mxlu-xvc-docs-2-94-unfinished#183051
-- Skill tree names on Character pages --> check if you agree with tree names or some should be changed (I'm not sure about some), post in the thread
-- I added new uber pics: Athulua, Witch, Zorun Tzin and Void. Check if you agree with it, and post in the thread if not.
-- skillpoint planner fix letter upper case
 - Make all item/gem/etc. pictures PNG. Reorder the picture file paths to make more sense.
+- check if on hover images in the SU page are cached once they're first loaded. maybe make them all precache with a loop that places them in a hidden div.
 
 
 Suggestions:
@@ -150,3 +143,11 @@ DONE:
 - Athulua, Strategy / Abilities section needs updating.
 - check procs "on Attack". was "on Attack" --> "on melee Attack" removed to get more space, or did marco add it in some of the lastest patches. if it's not too long (ie. it makes the page too wide because of some long ass procs), add "melee" back
 - (CG): Check the flat cold damage on tu short battle bow and see if it have min/max variation in t1 or if it is just flat damage, (its not flat damage, checked ingame)
+- update the about page with detailed changes/credits
+- Add/Update: Quest Reference page with various stuff...
+- fix/update: quest reference list: uber locations and parent levels
+- skillpoint planner fix letter upper case
+- I added new uber pics: Athulua, Witch, Zorun Tzin and Void. Check if you agree with it, and post in the thread if not.
+- Skill tree names on Character pages --> check if you agree with tree names or some should be changed (I'm not sure about some), post in the thread
+- http://www.medianxl.com/t6275p40-xvc-bugsfeedback#173660 check in files and ingame, then fix
+- TU spear Ravenbeak check str stats if they match the docs, check multiple tiers... maybe wait for files to check this one... (they do match)
