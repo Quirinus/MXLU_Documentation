@@ -10,19 +10,19 @@ TO-DO (those with no names are added by Quirinus):
 - Change: Rename some of the areas that have changed names (uberquest pages, challenges, quest reference list and anywhere else that it might appear). Change their parent level names too if they're different.
 - Change: Make RW page in two columns; put name/level above properties, put rune description below that, and after that are the properties. Or something like that.
 - Change: TU page: make the amulets/rings/jewels/quivers be in columns of 2 if the filter is set on any tier, except "All".
-- Fix: Quest Reference list: difficulty headers not dissapearing when the contents are empty.
+- Fix: Quest Reference list: difficulty headers not disappearing when the contents are empty.
 - Add: Speed Calculator to the Characters (?) section, with explanations. http://www.medianxl.com/t5893-speed-mechanics-explained-updated-speedcalc
 - All other changes from the XV and XVc changelog.
 - (quiri) : remove anchors/links from menu when adding filter to the page http://goo.gl/fJc28a
-- are there any changes in TU/SU/SSU/SSSU items? kinda hard to tell without files, but if you noticed something or it's in the changelog, fix it.
+- are there any changes in TU/SU/SSU/SSSU items? kinda hard to tell without files, but if you noticed something or it's in the changelog, fix it.(checked till items of Version XVc)
 - affix and stat related things on items, and some items still not updated from patch XV & XVc, but it's kinda hard to do it without files
-- on sets page, make the image valign: center (should be centered relative to the stats text)
+- on sets page, make the image align: center (should be centered relative to the stats text)
 - include speedcalc. make a page for it in the items or char subsection, with marco's explanations, but a shorter version. provide a link to marcos explanations/dl.
 - maybe add http://www.medianxl.com/t86-how-spell-damage-works as a new page in concepts, but rewritten a bit?
 - Change all non-tag < and > to &lt; and &gt;
 - faq: What are Challenges?, lc0 req exactly lvl 5, not at most; What are Uberquests? maybe add heroics. maybe change color from blue to something normal?
 - check if there's still 2 Linarian's Legacy enabled: one with +2 Life on Striking (the real one) and the other with 1% Reanimate as: Inarius (the legacy one enabled by mistake)... kinda hard to disapprove it without files.
-- compare MO/UMO ingame and in the docs (mainly for missing/extra + and - signs and a few letter changes), I think I updated all, but it doesn't hurt to check. I tihnk you can use legacy umo from ss. (also, obv, stun attack with length is fine)
+- compare MO/UMO ingame and in the docs (mainly for missing/extra + and - signs and a few letter changes), I think I updated all, but it doesn't hurt to check. I think you can use legacy umo from ss. (also, obv, stun attack with length is fine)
 - (kor) extract monster animations
 - try to contact tub about updating his online skillpoint planner first, if he doesn't respond again (edit: he's not responding, I sent him a mail...), do this: remove tub page link, and link to his page when saving in skillpoint planner and replace it with online docs skillpoint planner
 - check korcola's guide/post for uber details and rewrite them if necessary: http://www.medianxl.com/t6739p100-mxlu-xvc-docs-2-94-unfinished#185409
@@ -36,7 +36,7 @@ TO-DO (those with no names are added by Quirinus):
 
 Suggestions:
 - (Claygame) Add a pic below every recipe showing what the ingredient look like, for example: minigame recepie have pic of cc and the rune below or beside the recipe text.
-- (Claygame) Instead of having "see THIS PAGE for details" below descriptions, make the key part of text as a direct link to the intended page.
+- (Claygame) Instead of only having "see THIS PAGE for details" below descriptions, also make the key part of text as a direct link to the intended page.
 - (Claygame) Add pictures of Veteran monster of each act on the monster token page.
 - Maybe somehow merge SU/SSU/SSSU and TU6 stuff so it can be more easily compared?
 - Maybe add a link to the maps for the ubers that have it? Or add a note at the top of each uber page that the maps are available on Quest Reference page?
@@ -50,7 +50,6 @@ Suggestions:
 - (claygame) : maybe add link to forum somehow in the About page that opens when docs r opened for the first time to make people come more often on forum?
 - Add: skill tree names to skillpoint planner?
 - Change: Make filters on all pages always float in vision (absolute pos)?
-- (claygame) : do we really need 'armor looks' page?
 - SU page: remove the cross/title from items that have a special graphic?y
 - (CG) : Check if all the RWs r up to date or they need to be checked from file and corrected.
 - (CG) : add a 3rd column to the "Items with Oskill List" & "Items with procs list" and list the item name/type in that column instead of sticking it with item name. (Q) fix the css for it (3rd column), then use regexp to auto split the 2 columns into 3.
@@ -151,3 +150,4 @@ DONE:
 - Skill tree names on Character pages --> check if you agree with tree names or some should be changed (I'm not sure about some), post in the thread
 - http://www.medianxl.com/t6275p40-xvc-bugsfeedback#173660 check in files and ingame, then fix
 - TU spear Ravenbeak check str stats if they match the docs, check multiple tiers... maybe wait for files to check this one... (they do match)
+- (claygame) : do we really need 'armor looks' page? (cg: i guess this can stay as a flavour)
