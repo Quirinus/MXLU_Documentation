@@ -4,7 +4,7 @@
 
 	<!--
 	 This Script is Copyright by Tub (spam@authmann.de).
-	 The latest Version can be found on http://www.authmann.de/d2/mxl/skillpointplanner/
+	 The old Version can be found on http://www.authmann.de/d2/mxl/skillpointplanner/
 
 	 You are permitted to store a copy on your computer for personal use.
 	 You are NOT permitted to distribute copies of this script. Ask for permission first.
@@ -15,7 +15,7 @@
 	-->
 
 	<head>
-		<title>Skillpoint-Planner for MedianXL</title>
+		<title>Skillpoint-Planner for Median XL</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<link rel="stylesheet" type="text/css" href="skillcalc.css" />
 		<!--[if lt IE 7]>
@@ -32,21 +32,21 @@
 
 	<div id="overlay" style="width: 1000px; margin: 0px auto; position: relative; display: none;">
 	<div id="overlay_save" style="text-align: center; display: none;">
-	
-		<span id="save_locally"><b>To save your Skill-Plan <u>offline</u></b>: Click the following Link, then bookmark the new page.<br />
-		<a id="save_url_locally" href="#" style="white-space: normal;">#</a>
-		<br />
-		<br />
+		<h1>Save and share your Skill-Plan</h1>
+		<span id="save_locally"><b>Offline local version</b>: <a id="save_url_locally" href="#" style="white-space: normal;" target="_blank">#</a><br>
+		<small>Click the Link, then bookmark the page. Or right-click and copy/paste to share it.</small><br>
+		<br>
 		</span>
-		<b>To save your Skill-Plan</b>: Click the following Link, then bookmark the new page.<br />
-		<a id="save_url" href="#" style="white-space: normal;">#</a>
-		<br />
-		<br />
-		<b>To share your Skill-Plan</b>: Just send the Link to your friends. You can also use this Forum-Code:
-		<input id="save_bbcode" type="text" style="width: 100%;" value="#" />
-		<br />
-		<br />
-		<a href="#" onClick="hideSave();return false;">back</a>
+		<b>Online link</b>: <a id="save_url" href="#" style="white-space: normal;" target="_blank">#</a><br>
+		<small>Click the Link, then bookmark the page. Or right-click and copy/paste to share it.</small><br>
+		<br>
+		<b>Forum code/link</b>: <input id="save_bbcode" type="text" style="width: 100%;" value="#" /><br>
+		<small>Copy/paste this code and post it on the forum.</small><br>
+		<br>
+		<hr>
+		<small><b>Loading</b>: You can load any online AND offline links by entering them at the top of the page in the "Insert load link" field and then clicking "Load". For online links, you can also just open them in your browser.</small><br>
+		<br>
+		<a href="#" onClick="hideSave();return false;">Back</a>
 	</div>
 
 	<div id="overlay_faq" style="top: 50px; display: none;">
@@ -59,7 +59,7 @@
 	A: You can Shift-Click the + and - buttons.</li>
 
 	<li><b>Q: When will the most recent version be supported?</b><br />
-	A: Usually after the official release. I will not support beta-versions, pre-releases or similar. Since I don't play MXL any more, I probably won't notice new releases right away - send me a PM on the forums if that happens.</li>
+	A: Usually after the official release. I will not support beta-versions, pre-releases or similar. Since I don't play MXL any more, I probably won't notice new releases right away - send me a PM on the forums if that happens. (Note: <a href="http://www.authmann.de/d2/mxl/skillpointplanner/" target="_blank">Tub</a> doesn't post on the new forum, so you can report everything <a href="http://www.medianxl.com/t3217-mxl-u-xiv-b-docs-v293" target="_blank">here</a>.)</li>
 
 	<li><b>Q: Can I plan a character with legacy items/charms?</b><br />
 	A: Not with this planner. That's intentional.</li>
@@ -69,26 +69,26 @@
 	However, you can save your skill-plan, so you can look at it later, show it to your friends or link it in your guide. Just enter a name, hit the save button, then follow the instructions.</li>
 
 	<li><b>Q: Can I use this tool offline?</b><br />
-	A: Sure. Hit "File" -&gt; "Save Page As" to make a local copy. You can also download <a href="http://mxl.vn.cz/doc/" target="_blank">Full documentation in HTML format</a> which includes this calculator. Please note that you can only save your skill plans in the online version.</li>
+	A: Sure. Hit "File" -&gt; "Save Page As" to make a local copy. You can also download <a href="http://mxl.vn.cz/doc/" target="_blank">Full documentation in HTML format</a> which includes this calculator.</li>
 
 	<li><b>Q: How much damage will my skills do?</b><br />
-	A: I don't know, and my planner can't tell you.
+	A: I don't know, and my planner can't tell you.</li>
 
 	<li><b>Q: Some Skill-Icons are wrong!</b><br />
 	A: Some Skill-Icons changed in newer patches. This calculator will always use the most current icon for each skill.</li>
 
-	<li><b>Q: I noticed a bug or have a suggestion</b><br />
+	<li><b>Q: I noticed a bug or have a suggestion.</b><br />
 	A: Go ahead, post in <a href="http://www.medianxl.com/t3217-mxl-u-xiv-b-docs-v293" target="_blank">this thread</a>. I'll make sure to fix any serious bugs.</li>
 
-	<li><b>Q: I cannot put Points into "Light and Shadow"</b><br />
+	<li><b>Q: I cannot put Points into "Light and Shadow".</b><br />
 	A: That's how the game worked before Omega 002. Pick any of the Light or Dark Level 1 skills first.</li>
 
 	<li><b>Q: Can I offer this tool on my homepage or similar?</b><br />
-	A: Not without my permission. Contact me first.</li>
+	A: Not without my permission. Contact me first. (Note by <a href='http://www.medianxl.com/u530' target="_blank">Quirinus</a>: <a href="http://www.authmann.de/d2/mxl/skillpointplanner/" target="_blank">Tub</a>'s not responding to emails currenty, so...)</li>
 
 	<li><b>Q: Who should I thank for this nifty tool?</b><br />
 	A: Brother Laz of course, because he created the mod and the skill icons. :p<br />
-	I (<a href="http://www.authmann.de/d2/mxl/skillpointplanner/" target="_blank">Tub</a>) just spent a couple of hours to hack a little 1000-line script together, hoping that others might find it as useful as I do.</li>
+	I (<a href="http://www.authmann.de/d2/mxl/skillpointplanner/" target="_blank">Tub</a>) just spent a couple of hours to hack a little 1000-line script together, hoping that others might find it as useful as I do. <a href='http://www.medianxl.com/u530' target="_blank">Quirinus</a> updated it for all the Ultimative versions.</li>
 
 	</ul>
 
@@ -102,7 +102,7 @@
 	<form id="mainform" action="" onsubmit="return false;">
 
 	<div style="width: 1000px; margin: 0 auto 10px auto; text-align: center;">
-	The most recent official version of this script can always be found at <a href="http://www.authmann.de/d2/mxl/skillpointplanner/">http://www.authmann.de/d2/mxl/skillpointplanner/</a>.
+	The most recent official version of this script can always be found in the online<br><a href="http://mxl.vn.cz/doc/">Documentation</a> &rarr; Characters &rarr; Skillpoint Planner.
 	</div>
 
 <div style="text-align: center;">Insert load link: <input id="load_input" style="width:600px;" /> <input type="button" value="Load" onclick="load(document.getElementById('load_input').value);" /></div>
@@ -255,8 +255,8 @@
 	<tr><td colspan="4"> </td></tr>
 	</table></td></tr>
 	</table>
-	<div class="copy">Version 1.14, Script © 2010-2015 <a href="http://www.medianxl.com">Tub</a>, MedianXL and all Skill Icons © <a href="http://modsbylaz.vn.cz/">BrotherLaz</a> and © <a href="http://www.medianxl.com">MarcoNecroX</a>.<br />
-	Please send bug reports and feedback to <a href="http://www.medianxl.com">this forum</a>.</div>
+	<div class="copy">Version 1.14, Script &copy; 2010-2012 <a href="http://www.authmann.de/d2/mxl/skillpointplanner/" target="_blank">Tub</a>. Updated 2012-2015 by <a href='http://www.medianxl.com/u530' target="_blank">Quirinus</a>.<br>Median XL and all Skill Icons &copy; <a href="http://modsbylaz.vn.cz/" target="_blank">Brother Laz</a>. Ultimative and most Skill Icons &copy; <a href='http://www.medianxl.com/u1' target="_blank">MarcoNecroX</a>, some Skill Icons &copy; <a href='http://www.medianxl.com/u22' target="_blank">Inertia</a>.<br />
+	Please send bug reports and feedback to <a href="http://www.medianxl.com/t3217-mxl-u-xiv-b-docs-v293" target="_blank">this thread</a>.</div>
 
 	</form>
 	</body>
