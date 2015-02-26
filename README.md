@@ -16,7 +16,7 @@ TO-DO (those with no names are added by Quirinus):
 - (quiri) : remove anchors/links from menu when adding filter to the page http://goo.gl/fJc28a
 - are there any changes in TU/SU/SSU/SSSU items? kinda hard to tell without files, but if you noticed something or it's in the changelog, fix it.(checked till items of Version XVc)
 - affix and stat related things on items, and some items still not updated from patch XV & XVc, but it's kinda hard to do it without files
-- on sets page, make the image align: center (should be centered relative to the stats text)
+- on sets page, make the image vertical-align: middle (should be centered relative to the stats text)
 - include speedcalc. make a page for it in the items or char subsection, with marco's explanations, but a shorter version. provide a link to marcos explanations/dl.
 - maybe add http://www.medianxl.com/t86-how-spell-damage-works as a new page in concepts, but rewritten a bit?
 - Change all non-tag < and > to &lt; and &gt;
