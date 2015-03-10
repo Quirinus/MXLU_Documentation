@@ -13,9 +13,8 @@
 	<script type="text/javascript">
 	
 		$(document).ready(function() {
-			var name, folder, pic, pic_url, pic_url_su, pic_url_ssu, pic_url_sssu, su, ssu, sssu;
-			pw=false;
-			ph=false;
+			var name, folder, pic, pic_url, pic_url_su;
+
 			$('table.item_table tr:nth-of-type(2) td:nth-of-type(2)').hover(function () {
 				name = $(this).parent().parent().find('tr:first-of-type th');
 				folder = name.html().replace(/[\- ]/g, "_");
