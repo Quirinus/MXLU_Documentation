@@ -36,7 +36,6 @@ TO-DO (for everyone):
 - Change all non-tag < and > to &lt; and &gt;
 - check if there's still 2 Linarian's Legacy enabled: one with +2 Life on Striking (the real one) and the other with 1% Reanimate as: Inarius (the legacy one enabled by mistake)... kinda hard to disapprove it without files.
 - (kor) extract monster animations
-- abbreviation page, maybe remove some old: http://www.medianxl.com/t6739p90-mxlu-xvc-docs-2-94-unfinished#183314 , http://www.medianxl.com/t6739p90-mxlu-xvc-docs-2-94-unfinished#183416
 - sigil of the 7 deadly sins color is darker than ring of pride, extract the right pic with colorshift/palshift
 - for new rws/natasha and eternal, include the stats from runes in the rw stats (like normal rws have). check other elemental/great rune rws for this.
 - Add links to some old/legacy docs to the doc, probably a new page under information. (http://www.medianxl.com/t4038-legacy-docs and the ones on the FTP location of the current docs)
@@ -166,3 +165,4 @@ DONE:
 - check korcola's guide/post for uber details and rewrite them if necessary: http://www.medianxl.com/t6739p100-mxlu-xvc-docs-2-94-unfinished#185409
 - faq: What are Challenges?, lc0 req exactly lvl 5, not at most; What are Uberquests? maybe add heroics. maybe change color from blue to something normal?
 - Change: Rename some of the areas that have changed names (uberquest pages, challenges, quest reference list and anywhere else that it might appear). Change their parent level names too if they're different.
+- abbreviation page, maybe remove some old: http://www.medianxl.com/t6739p90-mxlu-xvc-docs-2-94-unfinished#183314 , http://www.medianxl.com/t6739p90-mxlu-xvc-docs-2-94-unfinished#183416
