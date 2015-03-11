@@ -836,6 +836,10 @@ table.sets_double tr td
 	border-bottom: 1px dotted black;
 	padding-right: 1px;
 }
+.underdotted
+{
+	border-bottom: 1px dotted black;
+}
 
 /* -------------------- LINK STYLES -------------------- */
 

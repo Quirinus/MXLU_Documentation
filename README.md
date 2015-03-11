@@ -5,34 +5,41 @@ Median XL: Ultimative Documentation
 
 Add to-do stuff here.
 
-TO-DO (those with no names are added by Quirinus):
+TO-DO (for Quirinus):
+- Make all item/gem/etc. pictures PNG. Reorder the picture file paths to make more sense.
 - update: docs --> Characters --> Item-Only Skills page. Use a script to collect oskills from the oskills list in the Items section. Make the script format them nicely, like they are now. I'll also probably have to ask marco for the cotw oskills. Then we just need to add in descriptions manually.
-- Change: Rename some of the areas that have changed names (uberquest pages, challenges, quest reference list and anywhere else that it might appear). Change their parent level names too if they're different.
 - Change: Make RW page in two columns; put name/level above properties, put rune description below that, and after that are the properties. Or something like that.
 - Change: TU page: make the amulets/rings/jewels/quivers be in columns of 2 if the filter is set on any tier, except "All".
 - Fix: Quest Reference list: difficulty headers not disappearing when the contents are empty.
 - Add: Speed Calculator to the Characters (?) section, with explanations. http://www.medianxl.com/t5893-speed-mechanics-explained-updated-speedcalc
-- All other changes from the XV and XVc changelog.
-- (quiri) : remove anchors/links from menu when adding filter to the page http://goo.gl/fJc28a
-- are there any changes in TU/SU/SSU/SSSU items? kinda hard to tell without files, but if you noticed something or it's in the changelog, fix it.(checked till items of Version XVc)
-- affix and stat related things on items, and some items still not updated from patch XV & XVc, but it's kinda hard to do it without files
+- remove anchors/links from menu when adding filter to the page http://goo.gl/fJc28a
 - on sets page, make the image vertical-align: middle (should be centered relative to the stats text)
+- script to make the oskills list into the char oskills with description (+add their ingame description from new skills.txt + tbls)
+- fix hit causes monsters to flee % on all pages. check in the files (RW,TU,SU). hmmmmm fix or show the real value which is x*100/128% or floored value instead of x%
+- Rare Affix Pool:
+	Indestructible: affix now spawns in the correct group.
+	Swords: now spawn with +druid skills.
+	Druid Staves: +(21 to 28) to Gamma Field
+	Scepters: wdm bonuses such as +min/max damage, %enhanced damage, etc. can now spawn.
+- Scepters: fixed strength damage bonus appearing as a base affix.
+- get base items from OT (then make the bg black with the script), these ones are too blurry
+- quest ref, under void name it's thick line
+- some items have negative stats listed as -(x to y) and others as (-x to -y). In some instances both can be found on one single item. (void http://www.medianxl.com/t3217p430-mxl-u-xiv-b-docs-v2-93#193048) - fix with regexp
+- RW move include type to type column: http://www.medianxl.com/t6739p160-mxlu-xvc-docs-2-94-unfinished#192317
+
+TO-DO (for everyone):
+- "check list.xlsx" (checking/comparing items from game (only items found in XVc, no legacy!) to the docs):
+	- TU/SU/SSU/SSSU items: 17 missing (http://www.medianxl.com/t5619p1060-screenshot-thread#193998 http://www.medianxl.com/t6928p330-new-screenshot-items-2015#193999)
+	- all set items need to be done
 - include speedcalc. make a page for it in the items or char subsection, with marco's explanations, but a shorter version. provide a link to marcos explanations/dl.
 - maybe add http://www.medianxl.com/t86-how-spell-damage-works as a new page in concepts, but rewritten a bit?
 - Change all non-tag < and > to &lt; and &gt;
-- faq: What are Challenges?, lc0 req exactly lvl 5, not at most; What are Uberquests? maybe add heroics. maybe change color from blue to something normal?
 - check if there's still 2 Linarian's Legacy enabled: one with +2 Life on Striking (the real one) and the other with 1% Reanimate as: Inarius (the legacy one enabled by mistake)... kinda hard to disapprove it without files.
-- compare MO/UMO ingame and in the docs (mainly for missing/extra + and - signs and a few letter changes), I think I updated all, but it doesn't hurt to check. I think you can use legacy umo from ss. (also, obv, stun attack with length is fine)
 - (kor) extract monster animations
-- try to contact tub about updating his online skillpoint planner first, if he doesn't respond again (edit: he's not responding, I sent him a mail...), do this: remove tub page link, and link to his page when saving in skillpoint planner and replace it with online docs skillpoint planner
-- check korcola's guide/post for uber details and rewrite them if necessary: http://www.medianxl.com/t6739p100-mxlu-xvc-docs-2-94-unfinished#185409
-- script to make the oskills list into the char oskills with description (+add their ingame description from new skills.txt + tbls)
-- fix hit causes monsters to flee % on all pages. check in the files (RW,TU,SU). hmmmmm fix or show the real value which is x*100/128% or floored value instead of x%
-- abbreviation page, remove old: http://www.medianxl.com/t6739p90-mxlu-xvc-docs-2-94-unfinished#183314 , http://www.medianxl.com/t6739p90-mxlu-xvc-docs-2-94-unfinished#183416
-- gems and runes, bg/shadow: http://www.medianxl.com/t6774-poll-items-with-no-transparent-background#183234 , http://www.medianxl.com/t6739p70-mxlu-xvc-docs-2-94-unfinished#183051
-- Make all item/gem/etc. pictures PNG. Reorder the picture file paths to make more sense.
-- check if on hover images in the SU page are cached once they're first loaded. maybe make them all precache with a loop that places them in a hidden div.
-
+- abbreviation page, maybe remove some old: http://www.medianxl.com/t6739p90-mxlu-xvc-docs-2-94-unfinished#183314 , http://www.medianxl.com/t6739p90-mxlu-xvc-docs-2-94-unfinished#183416
+- sigil of the 7 deadly sins color is darker than ring of pride, extract the right pic with colorshift/palshift
+- for new rws/natasha and eternal, include the stats from runes in the rw stats (like normal rws have). check other elemental/great rune rws for this.
+- Add links to some old/legacy docs to the doc, probably a new page under information. (http://www.medianxl.com/t4038-legacy-docs and the ones on the FTP location of the current docs)
 
 Suggestions:
 - (Claygame) Add a pic below every recipe showing what the ingredient look like, for example: minigame recepie have pic of cc and the rune below or beside the recipe text.
@@ -42,7 +49,6 @@ Suggestions:
 - Maybe add a link to the maps for the ubers that have it? Or add a note at the top of each uber page that the maps are available on Quest Reference page?
 - Base items: maybe use regex to remove 0 from req str/dex/lvl?
 - Add silver td border to RWs, base items and char orb, like in the rest of the pages?
-- Add links to some old/legacy docs to the doc, probably a new page under information. (http://www.medianxl.com/t4038-legacy-docs and the ones on the FTP location of the current docs)
 - Add a list of monsters that drop each GR in Yshari. I guess I gotta ask Marco if I can do it.
 - (claygame) Add pic of the armor/weapon type at the top of each section of RW page to let people know exactly what works for these RW?
 - Change: Rune/RWs: Level --> Required Level?
@@ -54,6 +60,10 @@ Suggestions:
 - (CG) : Check if all the RWs r up to date or they need to be checked from file and corrected.
 - (CG) : add a 3rd column to the "Items with Oskill List" & "Items with procs list" and list the item name/type in that column instead of sticking it with item name. (Q) fix the css for it (3rd column), then use regexp to auto split the 2 columns into 3.
 - (CG) : Add t1-t6 pocs and skills in "proc/Oskill from items page" and made them as hovetext just like shield's block. (Q): or add a radio button: show all tiers, show only T6?
+- gems and runes, bg/shadow: http://www.medianxl.com/t6774-poll-items-with-no-transparent-background#183234 , http://www.medianxl.com/t6739p70-mxlu-xvc-docs-2-94-unfinished#183051
+- check if on hover images in the SU page are cached once they're first loaded. maybe make them all precache with a loop that places them in a hidden div.
+- add maps from quest reference to main uber pages as well?
+- maybe add on hover explanations for -% All Enemy Resistances, +% Spell Damage, +% All Resists?
 
 DONE:
 - Pester Marco to explain in more detail about the new Amazon faster cast rate with staves and 2h weapons. Then update the note on the Amazon page if necessary.
@@ -151,3 +161,8 @@ DONE:
 - http://www.medianxl.com/t6275p40-xvc-bugsfeedback#173660 check in files and ingame, then fix
 - TU spear Ravenbeak check str stats if they match the docs, check multiple tiers... maybe wait for files to check this one... (they do match)
 - (claygame) : do we really need 'armor looks' page? (cg: i guess this can stay as a flavour)
+- compare MO/UMO ingame and in the docs (mainly for missing/extra + and - signs and a few letter changes), I think I updated all, but it doesn't hurt to check. I think you can use legacy umo from ss. (also, obv, stun attack with length is fine)
+- try to contact tub about updating his online skillpoint planner first, if he doesn't respond again (edit: he's not responding, I sent him a mail...), do this: remove tub page link, and link to his page when saving in skillpoint planner and replace it with online docs skillpoint planner
+- check korcola's guide/post for uber details and rewrite them if necessary: http://www.medianxl.com/t6739p100-mxlu-xvc-docs-2-94-unfinished#185409
+- faq: What are Challenges?, lc0 req exactly lvl 5, not at most; What are Uberquests? maybe add heroics. maybe change color from blue to something normal?
+- Change: Rename some of the areas that have changed names (uberquest pages, challenges, quest reference list and anywhere else that it might appear). Change their parent level names too if they're different.
