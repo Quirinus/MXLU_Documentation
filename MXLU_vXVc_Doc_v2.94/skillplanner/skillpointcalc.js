@@ -1283,7 +1283,7 @@
 		b += "&name=" + encodeURIComponent(cname);
 		//k="http://www.authmann.de/d2/mxl/skillpointplanner/";
 		//k="http://mxl.vn.cz/doc/MXLU_vXVc_Doc_v2.94/skillplanner/index.html";
-		k='http://mxl.vn.cz/doc/' + window.location.href.match(/([^n\/]*)\/skillplanner\/index\.html/i)[0];
+		k='http://docs.median-xl.com/' + window.location.href.match(/([^n\/]*)\/skillplanner\/index\.html/i)[0];
 		j = k + "?" + b;
 		f = "Skillplan " + cname + " (" + classnames_readable[classnr] + ", " + CURRENT_PATCH_READABLE + ")";
 		set("save_url", f);
@@ -1291,7 +1291,7 @@
 		h = document.getElementById("save_bbcode");
 		h.value = "[url=" + j + "]" + f + "[/url]";
 		//if (!(window.location.href.match(/authmann.de/)))
-		if (window.location.href.indexOf('mxl.vn.cz') === -1)
+		if ((window.location.href.indexOf('mxl.vn.cz') === -1) || (window.location.href.indexOf('docs.median-xl.com') === -1))
 		{
 			show("save_locally");
 			k=window.location.href.split("?")[0];
