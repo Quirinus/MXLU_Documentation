@@ -1291,7 +1291,7 @@
 		h = document.getElementById("save_bbcode");
 		h.value = "[url=" + j + "]" + f + "[/url]";
 		//if (!(window.location.href.match(/authmann.de/)))
-		if ((window.location.href.indexOf('mxl.vn.cz') === -1) || (window.location.href.indexOf('docs.median-xl.com') === -1))
+		if ((window.location.href.indexOf('mxl.vn.cz') === -1) && (window.location.href.indexOf('docs.median-xl.com') === -1))
 		{
 			show("save_locally");
 			k=window.location.href.split("?")[0];
