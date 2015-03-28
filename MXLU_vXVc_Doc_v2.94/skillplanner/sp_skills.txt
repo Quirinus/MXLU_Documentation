@@ -1,0 +1,361 @@
+Ghost Arrow	Призрачная Стрела
+Barrage	Шквал
+Phalanx	Фаланга
+Trinity	Троица
+Wraith Arrow	Стрела Духа
+Triumphant Strike	Триумфальный Удар
+Prowl	Рысканье
+Pounce	Наскок
+Lioness	Львица
+Lightswarm	Рой Света
+Starstreak	Звёздная Вспышка
+Ricochet	Рикошет
+Enfilade	Продольный Огонь
+Moon Warrior	Лунный Воин
+Fairy Ring	Сказочное Кольцо
+Death Ray	Луч Смерти
+Bloodlust	Жажда Крови
+Bloodstorm	Кровавая Буря
+Bacchanalia	Вакханалия
+Magic Missiles	Магические Снаряды
+Defensive Harmony	Защитная Гармония
+Blood Elementals	Огненные Элементали
+Balance	Баланс
+Pact of Blood	Пакт Крови
+Wings of Wrath	Крылья Гнева
+Curare	Кураре
+Paragon	Идеал
+Spirit of Vengeance	Дух Возмездия
+Leadership	Лидерство
+War Spirit	Дух Войны
+Batstrike	Удар Летучей Мыши
+Crucify	Распятие
+Queen of Blades	Королева Лезвий
+Hades Gate	Врата Аида
+Doom	Рок
+Way of the Spider	Путь Паука
+Shadow Refuge	Убежище Теней
+Black Lotus Strike	Удар Чёрного Лотоса
+Death Blossom	Цветок Смерти
+Way of the Phoenix	Путь Феникса
+Scorpion Blade	Клинок Скорпиона
+Storm Crows	Штормовые Вороны
+Wychwind	Ведьмин Ветер
+Maelstrom	Вихрь
+Broadside	Залп
+Seal of Fire	Клеймо Огня
+Rune of Ice	Руна Льда
+Nova Bomb	Бомба Новы
+Immolation Bomb	Жертвенная Бомба
+Singularity	Сингулярность
+Blink	Скачок
+Starburst	Выброс Звёзд
+Premeditation	Премедитация
+Rain of Bombs	Дождь Бомб
+Perfect Being	Идеальное Бытие
+Beacon	Маяк
+Way of the Gryphon	Путь Грифона
+Phase Bomb	Фазовая Бомба
+Vampiric Icon	Вампирский Символ
+Way of the Raven	Путь Ворона
+Titan Strike	Удар Титана
+Bloodhatred	Кровавая Ненависть
+Thunder Slam	Раскат Грома
+Shower of Rocks	Камнепад
+Earthquake	Землятресение
+Bear Claw	Коготь Медведя
+Stampede	Натиск
+Rebound	Отскок
+Eagle Dive	Пикирование Орла
+Hawk Talons	Когти Ястреба
+Guardian Spirit	Дух Стража
+Defender Spirit	Дух Защитника
+Protector Spirit	Дух Покровителя
+Greater Manifestations	Великие Олицетворения
+Shamans Path	Путь Шамана
+Ancient Blood	Древняя Кровь
+Lion Stance	Стойка Льва
+Snake Stance	Стойка Змеи
+Bear Stance	Стойка Медведя
+Eagle Stance	Стойка Орла
+Guard Tower	Охранная Башня
+Berserk Fury	Ярость Берсерка
+Fortress	Крепость
+Spirit Guide	Проводник Духов
+Mountain King	Горный Король
+Kraken Stance	Стойка Кракена
+Runemaster	Повелитель Рун
+Shamanic Trance	Шаманский Транс
+Wolf Stance	Стойка Волка
+Thundergod	Бог Грома
+Charm	Очарование
+Call Leprechaun	Позвать Лепрекона
+Havoc	Опустошение
+Dominate	Доминирование
+Elvensong	Песнь Эльфа
+Mark of the Wild	Метка Диких
+Killer Instinct	Инстинкт Убийцы
+Culling of the Herd	Отстрел Стада
+Brambles	Колючки
+Thrill of the Hunt	Азарт Охоты
+Elemental	Элементаль
+Hunting Banshee	Охотящаяся Банши
+Pagan Rites	Языческие Обряды
+Fire Fountain	Фонтан Огня
+Hailstorm	Гроза с Градом
+Poison Flash	Ядовитая Вспышка
+Circle of Life	Круг Жизни
+Plague Avatar	Аватар Чумы
+Gamma Field	Гамма-Поле
+Summon Acid Fiends	Кислотные Дьяволы
+Blindside	Слабое Место
+Cascade	Каскад
+Spore Shot	Цепной Выстрел
+Elfin Arrows	Эльфийские Стрелы
+Nova Shot	Круговой Выстрел
+Force of Nature	Сила Природы
+Faerie Fire	Феерический Огонь
+Tremor	Сотрясение
+Goodberry	Ягода Жизни
+Lifeshield	Жизненный Щит
+Deaths Fury Totem	Тотем Ярости Смерти
+Blood Tide Totem	Тотем Притока Крови
+Mana Tide Totem	Тотем Притока Маны
+Elemental Totem	Элементальный Тотем
+Howling Totem	Кричащий Тотем
+Totemic Mastery	Владение Тотемами
+Frostclaw Totem	Тотем Когтя Мороза
+Fireheart Totem	Тотем Сердца Огня
+Exploding Totem	Взрывающийся Тотем
+Stormeye Totem	Тотем Глаза Бури
+Buckshot	Картечь
+Angel of Death	Ангел Смерти
+Widowmaker	Вдоводелец
+Soulshatter	Уничтожитель Душ
+Deathstrike	Удар Смерти
+Unholy Armor	Нечестивая Броня
+Sacrifices	Жертвы
+Famine	Голод
+Bend The Shadows	Изгиб Теней
+Talons Hold	Хватка Когтя
+Summon Shadows	Призыв Теней
+Summon Darklings	Призыв Чернотелок
+Summon Rampagor	Призыв Рампагора
+Summon Lamia	Призыв Ламии
+Summon Void Archon	Призыв Архонта Пустоты
+Necromantic Trance	Некромантский Транс
+Rathmas Chosen	Избранник Ратмы
+Death Ward	Опека Смерти
+Unholy Prayer	Нечестивая Молитва
+Liche Form	Форма Лича
+Retaliate	Ответный Удар
+Holy Insanity	Святое Безумие
+Retribute	Возмездие
+Lionheart	Львиное Сердце
+Blessed Life	Благословенная Жизнь
+Searing Orb	Жгучая Сфера
+Ring of Light	Кольцо Света
+Holy Trap	Святая Ловушка
+Wrath	Гнев
+Vindicate	Реабилитация
+Terror Strike	Ужасающий Удар
+Black Sleep	Чёрный Сон
+Lemures	Лярвы
+Blood Thorns	Кровавые Шипы
+Shadowfiends	Дьяволы Тени
+Tainted Blood	Испорченная Кровь
+Mind Flay	Поджарка Мозгов
+Punisher	Каратель
+Slayer	Убийца
+Dark King	Тёмный Король
+Judgement	Сосуд Мудрости
+Rapture	Вознесение
+Light and Shadow	Свет и Тень
+Holy Armor	Святая Броня
+Hymn	Гимн
+Resurrect	Воскрешение
+Superbeast	Суперзверь
+Plague	Чума
+Divine Apparition	Божественное Явление
+Scourge	Бич
+Flamefront	Залп Пламени
+Inner Fire	Внутренний Огонь
+Flamestrike	Удар Пламени
+Pyroblast	Пировзрыв
+Illumination	Освещение
+Frozen Soul	Замёрзшая Душа
+Shatter the Flesh	Дробление Плоти
+Cold Fear	Леденящий Страх
+Abyss	Бездна
+Summon Ice Elementals	Призыв Ледяных Элементалей
+Forked Lightning	Зигзагообразная Молния
+Static Orb	Статическая Сфера
+Lightning Wall	Стена Молний
+Warp Armor	Искривлённая Броня
+Nova Charge	Заряд Новы
+Diseased Cattle	Больной Скот
+Venomous Spirit	Ядовитый Дух
+Hex	Сглаз
+Carpet of Spiders	Ковёр Пауков
+Hive	Рой
+Moonstrike	Лунный Удар
+Wiccaning	Викканство
+Arcane Torrent	Тайный Поток
+Mana Sweep	Сбор Маны
+Starfire	Звёздный Огонь
+Time Field	Поле Времени
+Full Force	Полная Сила
+Bladestorm	Буря Клинков
+Arcane Fury	Скрытая Ярость
+Disintegrate	Дезинтегрирование
+Dragon Force	Драконья Сила
+Rocket Blade	Ракетный Клинок
+Blood Hatred	Кровавая Ненависть
+Stormblast	Удар Бури
+Screaming Eagle	Кричащий Орёл
+Wolf Companion	Волк-Спутник
+Predator	Хищник
+Summon Jinn	Призыв Джинна
+Edict of Forbiddance	Указ о Запрете
+Searing Glow	Жгучее Сияние
+Vessel of Judgement	Сосуд Мудрости
+Fear of Fire	Боязнь Огня
+Ice Lance	Ледяное Копьё
+Frigid Sphere	Холодная Сфера
+Thunderstone	Грозовой Камень
+Lightning Cascade	Каскад Молний
+Lorenado	Лоренадо
+Spiral Dance	Спиральный Танец
+Symbol of Esu	Символ Эзу
+Moonbeam	Лунный Луч
+Great Hunt	Великая Охота
+Lava Pit	Провал Лавы
+Summon Fire Elementals	Огненные Элементали
+Maelstrom2	Вихрь2
+Cryo Beam	Крио-Луч
+Psionic Storm	Псио-Шторм
+Overkill	Многокр. Уничтожение
+Spirit Walk	Прогулка Духов
+Treewarden Form	Форма Сторож. Древа
+Pummel	Избиение
+Wildfire	Пожар
+Rampage	Буйство
+Trap Rat Form	Форма Капканной Крысы
+Quill Storm	Буря Шипов
+Egg Trap	Яичная Ловушка
+Ferocity	Свирепость
+Thorn Wall	Стена Шипов
+Rain of Fire	Огненный Дождь
+Elfin Weapons	Эльфийские Орудия
+Totembound Guardian	Страж Тотемов
+Oathbreaker Totem	Тотем Клятвопреступника
+Parasite	Паразит
+Deathlord	Лорд Смерти
+Summon Veil King	Призыв Сокрытого Короля
+Hammerstrike	Удар Молота
+Merkabah	Меркаба
+Brimstone	Сера
+Living Flame	Живое Пламя
+Mystic Blood	Мистическая Кровь
+Baneblade	Разящий Клинок
+Immortal	Бессмертный
+Balefire	Погребальный Огонь
+Storm Cloud Sentry	Часовой Грозовой Тучи
+Fireball Sentry	Часовой Огненных Шаров
+Embalming	Бальзамирование
+Massacre	Резня
+Flametail Shot	Огнехвостый Выстрел
+Dragonfire Oil	Драконий Напалм
+Fragmentation Shot	Фраг. Выстрел
+Rising Dawn	Восход
+Moon Queen	Лунная Королева
+Ecstatic Frenzy	Неистовый Экстаз
+Spellbind	Околдовывание
+Cyclone	Циклон
+Black Mass	Чёрная Месса
+Chronofield	Хронополе
+Witch Blood	Кровь Ведьмы
+Freezing Gale	Леденящая Буря
+Sovereignty	Суверенитет
+Dragonlore	Драконьи Сказания
+Wyrmshot	Драконий Выстрел
+Takedown	Подавление
+Barrier Strike	Барьерный Удар
+Twin Fang Strike	Удар Двойного Клыка
+Laserblade	Лазерный Клинок
+Maelstrom3	Вихрь3
+Cluster Mine	Кассетная Бомба
+Electrofield Sentry	Часовой Электрополя
+Bionetic Blast	Бионетический Взрыв
+Psychic Scream	Ментальный Крик
+Nephalem Weapons	Орудия Нефалемов
+Idol Of Scosglen	Идол Скосглена
+Mythal	Мифал
+Bane	Погибель
+Graveyard	Кладбище
+Colosseum	Колизей
+Glittering Regalia	Сверкающие Регалии
+Symphony Of Destruction	Симфония Разрушения
+Stormlord	Повелитель Бури
+Sacred Armor	Священная Броня
+Firedance	Огненный Танец
+Snow Queen	Снежная Королева
+Tempest	Буря
+Vengeful Power	Мстительная Сила
+Miasma	Миазмы
+Familiar	Хранитель
+Wild and Free	Свобода Дикой Природы
+Maelstrom4	Вихрь4
+Limpet Laser	Магнитный Лазер
+Voodoo Shot	Выстрел Вуду
+Sunstorm	Солнечный Шторм
+Hyena Strike	Удар Гиены
+Force Blast	Силовой Удар
+Laughing Ghost	Смеющийся Призрак
+Summon Dark Spirit	Призыв Духа Тьмы
+Blazing Fury	Огенная Ярость
+Winterstorm	Зимний Шторм
+Sun Strike	Солнечный Удар
+Maelstrom5	Вихрь5
+Shuriken Flurry	Шквал Сюрикенов
+Tiefling Form	Форма Тифлинга
+Dragon Oath	Драконья Клятва
+Dragonshout	Драконий Рык
+Burnout	Выгорание
+Demonrend	ДемоноРазрыватель
+Deva King	Царь Дэвов
+Thundercrack	Громовой Разрыв
+Stormcall	Зов Бури
+Hammer of Zerae	Молот Зере
+Asterism	Созвездие
+Magnetic Field	Магнитное Поле
+Shadow Dancer	Теневой Танцор
+Noctule	Вечерница
+Backstab	Жало
+Obliteration	Забвение
+Iceburst	Ледовзрыв
+Iron Spiral	Железная Спираль
+Deathgaze	Смертельный Взгляд
+Daedalus	Дедал
+Windform	Ветренница
+Werewolf Form	Форма Волка
+Mana Pulse	Пульсация Маны
+Harbinger	Предвестник
+Feed the Pack	Кормежка
+Twisted Claw	Спиральные Когти
+Boneyard	Вирмятник
+Funeral Pyre	Похоронный Костер
+Rotting Flesh	Гниющая Плоть
+Nightwalker	Лунатик
+Pestilence	Чума
+Vessel of Retribution	Сосуд Возмездия
+Solstice and Equinox	Солнцестояние и Равноденствие
+Hoplite	Гоплит
+Euphoria	Эйфория
+Life and Death	Жизнь и Смерть
+Demiurge	Демиург
+Immersion	Погружение
+Antimass	Антимасса
+Wraithsword	Призрачный Меч
+Fusillade	Стрельба
+Summon Blade Spirits	Призыв Духа Лезвий
