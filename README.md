@@ -6,6 +6,7 @@ Median XL: Ultimative Documentation
 Add to-do stuff here.
 
 TO-DO (for Quirinus):
+- russian translation for skillpoint planner. files are in the skillpoint planner folder.
 - Make all item/gem/etc. pictures PNG. Reorder the picture file paths to make more sense.
 - update: docs --> Characters --> Item-Only Skills page. Use a script to collect oskills from the oskills list in the Items section. Make the script format them nicely, like they are now. I'll also probably have to ask marco for the cotw oskills. Then we just need to add in descriptions manually.
 - Change: Make RW page in two columns; put name/level above properties, put rune description below that, and after that are the properties. Or something like that.
