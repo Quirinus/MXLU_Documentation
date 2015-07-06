@@ -29,6 +29,7 @@ TO-DO (for Quirinus):
 - RW move include type to type column: http://www.medianxl.com/t6739p160-mxlu-xvc-docs-2-94-unfinished#192317
 
 TO-DO (for everyone):
+- update median statue version in LC0
 - maybe change "Level" --> "Area/Monster Level" on the uberquest pages, under the picture
 - "check list.xlsx" (checking/comparing items from game (only items found in XVc, no legacy!) to the docs):
 	- TU/SU/SSU/SSSU items: 17 missing (http://www.medianxl.com/t5619p1060-screenshot-thread#193998 http://www.medianxl.com/t6928p330-new-screenshot-items-2015#193999)
