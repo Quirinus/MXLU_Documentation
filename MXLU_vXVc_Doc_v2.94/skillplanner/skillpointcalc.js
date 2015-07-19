@@ -1032,7 +1032,7 @@
 	{
 		if (b.shiftKey)
 		{
-			changeSkill(a, -100)
+			changeSkill(a, -50)
 		}
 		else
 		{
@@ -1145,7 +1145,7 @@
 		check("blackroad", (f.charAt(16) == "1"));
 		for (b = 4; b <= 12; b++)
 		{
-			check("q" + b, (f.charAt(b + 13) == "1"))
+			check("q" + b, (f.charAt(b + 12) == "1"))
 		}
 		energy = 15;
 		if (classnr == 1 && (CURRENT_PATCH == "199d" || CURRENT_PATCH == "1A9"))
