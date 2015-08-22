@@ -1271,4 +1271,27 @@ table.tu_one img
 	font-size: 9pt;
 }
 
-/* -------------------- EOF -------------------- */
+/* code for displaying fractions */
+
+.fractions {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle; 
+    letter-spacing: 0.001em;
+    text-align: center;
+    font-size: 12px;
+    }
+	.fractions > span { 
+    display: block; 
+    padding: 0.1em; 
+    }
+	.fractions span.fden {border-top: thin solid #884400;}
+	.fractions span.fbar {display: none;}
+	
+	.bracket {
+		font-size: 30px;
+		vertical-align: middle;
+		padding-left: 10px;
+	}
+
+/* <------------- EOF ------------------> */

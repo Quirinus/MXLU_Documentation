@@ -6,28 +6,6 @@
 	<title>Energy Factor</title>
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="m_2.css" />
-	<style>
-	.fractions {
-    display: inline-block;
-    position: relative;
-    vertical-align: middle; 
-    letter-spacing: 0.001em;
-    text-align: center;
-    font-size: 12px;
-    }
-	.fractions > span { 
-    display: block; 
-    padding: 0.1em; 
-    }
-	.fractions span.fden {border-top: thin solid #884400;}
-	.fractions span.fbar {display: none;}
-	
-	.bracket {
-		font-size: 30px;
-		vertical-align: middle;
-		padding-left: 10px;
-	}
-	</style>
 </head>
 <body id="energyfactor" class="content">
 <hr />
@@ -37,7 +15,7 @@
 	<p class="content">The energy factor bonus on some caster items modifies this curve, causing each point into energy to provide a significant benefit until much higher levels of energy. Energy factor is particularly effective for high level characters with most or all points into energy.</p>
 	<p class="content">The formula used to calculate the bonus from energy to spell damage is:</p>
 	
-	<div class="reagent" style="max-width: 750px"><div class="fractions"><span class="fnum">260*(energy + 10)</span><span class="fbar">/</span><span class="fden">250 + energy</span></div><span class="bracket" style="font-size:15px;">+ min</span><span class="bracket" style="padding-left:0px;">(</span><div class="fractions"><span class="fnum">energy*enr_factor</span><span class="fbar">/</span><span class="fden">15000</span></div> , 200<span class="bracket" style="padding-left: 0px;">)</span> <span style="color:#000000; font-size:12px;">% increased spell damage</span></div>
+	<div class="reagent" style="max-width: 750px"><div class="fractions"><span class="fnum">260*(energy + 10)</span><span class="fbar">/</span><span class="fden">250 + energy</span></div><span class="bracket" style="font-size:15px;">+ min</span><span class="bracket" style="padding-left:0px;">(</span><div class="fractions"><span class="fnum">energy * enr_factor</span><span class="fbar">/</span><span class="fden">15000</span></div> , 200<span class="bracket" style="padding-left: 0px;">)</span> <span style="color:#000000; font-size:12px;">% increased spell damage</span></div>
 	
 	<hr />
 	

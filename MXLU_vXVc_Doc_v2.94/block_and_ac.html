@@ -53,7 +53,7 @@
 			<p class="content"><b>Defense</b></p>
 			<p class="content">The chance to be hit, when walking or standing, is as follows:</p>
 
-			<div class="reagent" style="max-width: 750px">Chance to be Hit = 100% * 2 * Attacker_Level/(Attacker_Level + Defender_Level) * Attack_Rating/(Attack_Rating + Defense)</div>
+			<div class="reagent" style="max-width: 750px">Chance to be Hit = 100% * <div class="fractions"><span class="fnum">2 * Attacker_Level</span><span class="fbar">/</span><span class="fden">Attacker_Level + Defender_Level</span></div> * <div class="fractions"><span class="fnum">Attack_Rating</span><span class="fbar">/</span><span class="fden">Attack_Rating + Defense</span></div></div>
 
 			<p class="content">Capped between 5% and 95%, rounded down.</p>
 
@@ -73,7 +73,7 @@
 
 			<p class="content">The block rating is boosted by dexterity as follows:</p>
 
-			<div class="reagent" style="max-width: 750px">Chance to Block = (Block% * (Dexterity - 15))/(Character_Level * 2)</div>
+			<div class="reagent" style="max-width: 750px">Chance to Block = <div class="fractions"><span class="fnum">Block% * (Dexterity - 15)</span><span class="fbar">/</span><span class="fden">2 * Character_Level</span></div></div>
 
 			<p class="content">Capped at 75% chance to block, rounded down.<br />Block% is the base chance to block from: the character class + class-only shield + other bonuses (items/skills/etc.)</p>
 
