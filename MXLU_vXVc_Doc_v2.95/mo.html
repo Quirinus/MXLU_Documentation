@@ -1,0 +1,829 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Mystic Orbs</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<!--<link rel="stylesheet" type="text/css" href="m_2.css" />-->
+		<style type="text/css">
+			body {
+				background-color: #CCCCCC; /*AAABBB*/
+				color: #222222;
+				margin: 7px 5px 0px 5px;
+				font-family: Arial, sans-serif;
+				font-size: 8pt;
+				/*width:100%;*/
+				}
+			body.content {
+				background: #CCCCCC;
+				text-align:left;
+				vertical-align: top;
+				float:none;
+				}
+			.genbig {
+				font-family: Arial, sans-serif;
+				font-size: 12pt;
+				font-weight: bold;
+				color: #626262; /* used to be 626270*/
+				}
+			p {
+				margin-bottom: 1em;
+				}
+			.content {
+				width: 600px;
+				margin-left:50px;
+			}
+			hr {
+				height: 1px;
+				border: 0px; /* overcomes hr color bug in FF */
+				border-top: 1px solid #444444; /* upper border only so the thickness can go below 2px */
+				/* from .content hr */
+				width: 250px;
+				margin-left: 0px;
+				text-align: left;
+				/* from .content */
+				margin-left:50px;
+			}
+			/* width of the regular content pages */
+
+			.content hr {
+
+			}
+			/* the horizontal lines on regular content pages */
+
+			.magic {
+				color: #555570;
+				}
+			.rare {
+				color: #909000;
+				}
+			.orange {
+				color: #b7741c; /* #d08420; from ingame */ /* #706033; old bright one*/
+				}
+			.reagent {
+				color: #884400;
+				margin:0px 0px 0px 65px;
+				/*border: 1px solid #665500;
+				padding: 2px;*/
+				}
+			.set {
+				color: #117011;
+				}
+			.darkgreen {
+				color: #186408; /* veteran and similar, from the game, was #008000 in the old docs */
+			}
+
+			/* -------------------- LINK STYLES -------------------- */
+
+			/* the links in the regular text; this appears to be ignored? I suspect it conflicts with something else, like images */
+			a {
+				color: #333333; /* used to be 333342 */
+				font-family: Arial, sans-serif;
+				font-size: 8pt;
+				text-decoration: none;
+				}
+			/* all unvisited links */
+			a:link  {
+				color: #333333;
+				text-decoration: none;
+				}
+			/* visited links */
+			a:visited  {
+				color: #333333;
+				text-decoration: none;
+				}
+			/* selected links */
+			a:active  {
+				color: #EEEEFF;
+				text-decoration: none;
+				}
+			/* links being hovered on */
+			a:hover  {
+				color: #EEEEFF;
+				text-decoration: none;
+				}
+			img {
+				border: 1px solid #000000;
+				border-color: #000000;
+				}
+			/* charm pics + text on the right (div div img /div div text /div /div) */
+			div.charms {
+				/* text-align:center; */ /* for everything centered */
+				margin-bottom:1em;
+				}
+			div.charms img {
+				padding: 7px;
+				float:right; /* for everything tabled */
+				}
+			div.charms div {
+				display: inline-block;
+				vertical-align:middle;
+				text-align:center;
+				}
+			div.charms  > :nth-child(1) {
+				/* margin-right: 1em; */
+				margin-left:66px; /* for everything tabled */
+				width:72px; /* for everything tabled */
+				}
+			div.charms  > :nth-child(2) {
+				width:350px; /* for everything tabled */
+				}
+			#mo
+			{
+				border-collapse:collapse;
+			}
+			#mo td
+			{
+				vertical-align:top;
+			}
+		</style>
+	</head>
+	<body>
+		<hr />
+		<p class="genbig content">Mystic Orbs</p>
+		<p class="content">These reagents can be bought from any magic items vendor or by killing monsters. Mystic Orbs add a magical bonus to an item at the cost of a higher required level to use the item.</p>
+		<p>
+			<div class="reagent" style="max-width: 750px">Any non-ethereal equippable item + Mystic Orb &rarr; add orb bonus and +2 required level</div>
+		</p>
+		<p class="content"><i>You can only apply up to 15 of the same Mystic Orb to your item.<br />Any Mystic Orb effects applied on a runeword are lost upon unsocketing, but the effects applied to the base item stay.</i></p>
+		</p>
+		<p class="content"><i><b>Warning!</b> The level requirement penalty is applied after taking into account both the base item reqired level and the level of any socket fillers. This means for example if you have a belt with required level 20, add five orbs (level penalty +10) and socket a Rha rune (required level 100), you get a belt with required level 100+10 = 110. For that reason, to avoid going over required level 120 on accident, always add the socket fillers before adding orbs.</i>
+		</p>
+		
+		<p class="content"><b>Oskills</b><br />
+		If an item has a skill bonus with no character class requirement (eg. <span class="magic">+3-6 to Summon Shadows</span>), then
+		the bonus is an &#39;oskill&#39;, giving this skill to any class for free.</p>
+		
+		<hr />
+		
+		<p class="content"><b>NOTE</b>: Not all <span class="orange">Mystic Orbs</span> are for sale. There are 70 known types in circulation, but rumours persist of lost ancient orbs with miraculous powers...</p>
+		
+		<p class="content">See <a href="umo.html" target="_self">THIS PAGE</a> for more information about the <span class="orange">Unique Mystic Orbs</span>.</p>
+		
+
+		<table id="mo">
+		<tr>
+		<td>
+		<hr />
+		<p id="weapon"><b class="content">Any Weapon - Mystic Orbs</b>
+		</p>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">+1% Experience Gained<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">2% Life Stolen per Hit<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">2% Mana Stolen per Hit<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">1% Chance to cast Level 3 Celerity on Attack<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">25% Bonus to Attack Rating<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">+15% Enhanced Damage<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">+10 to Maximum Damage<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">Adds Stun Attack: 0.2 seconds<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">1% Chance of Crushing Blow<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">+4 Life after each Kill<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">1% Chance to cast Level 4 Spike Nova on Attack<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">1% Chance to cast Level 3 Miasma on Attack<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">1% Chance to cast Level 6 Crucify on Attack<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">Luck Trial</span><sup>*</sup>
+				<br /><span class="magic">+2 Required Level</span>
+				<br />
+				<br /><sup>*</sup> 2% chance to add <span class="darkgreen">Orb Effects Applied to this Item are Doubled</span>
+				<br />Only one chance per item, trying more times is useless.
+				<br />If it succedes, the Lucky/Blessed Lucky/Lottery recipe and Athulua's Blessing will always work.
+				<br />The bonus does not double the <span class="orange">Mystic Orb</span> effects added before the Luck Trial recipe.</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">+10 Life on Striking in Melee<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">+10 Mana on Striking in Melee<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">+2 Energy Factor to Spell Damage<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">Enhanced Weapon Damage Plus 10%<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">3% Faster Cast Rate<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_blue.png" alt="Weapon Mystic Orb" title="Weapon Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Weapon to Add Bonus
+				<br /><span class="magic">3% Increased Attack Speed<br />+2 Required Level</span>
+			</div>
+		</div>
+		</td>
+		<td>
+		<hr />
+		<p id="armor"><b class="content">Any Armor - Mystic Orbs</b>
+		</p>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">Fire Resist +6%<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">Cold Resist +6%<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">Lightning Resist +6%<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">Poison Resist +6%<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">2% Curse Length Reduction<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">+15% Enhanced Defense<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">Total Character Defense Plus 2%<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">+4 to Life when Struck<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">+6 to Mana when Struck<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">1% Uninterruptable Attack<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">All Resists +2%<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">Requirements -1%<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">1% Reanimate As: Skeleton<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">10% Damage Reflected<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">3% Faster Block Rate<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">5% Faster Run/Walk<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">3% Faster Hit Recovery<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">Regenerate Life +5<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">1% Reanimate As: Fallen One<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_orange.png" alt="Armor Mystic Orb" title="Armor Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Any Armor to Add Bonus
+				<br /><span class="magic">1% Chance to cast Level 1 Teleport when Struck<br />+2 Required Level</span>
+			</div>
+		</div>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<hr />
+		<p id="ring_amu"><b class="content">Ring/Amulet - Mystic Orbs</b>
+		</p>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_green.png" alt="Ring/Amulet Mystic Orb" title="Ring/Amulet Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Ring/Amulet to Add Bonus
+				<br /><span class="magic">Regenerate Mana 4%<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_green.png" alt="Ring/Amulet Mystic Orb" title="Ring/Amulet Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Ring/Amulet to Add Bonus
+				<br /><span class="magic">3% Bonus to Poison Skill Duration<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_green.png" alt="Ring/Amulet Mystic Orb" title="Ring/Amulet Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Ring/Amulet to Add Bonus
+				<br /><span class="magic">+1 to Wyrd<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_green.png" alt="Ring/Amulet Mystic Orb" title="Ring/Amulet Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Ring/Amulet to Add Bonus
+				<br /><span class="magic">+25 Defense<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_green.png" alt="Ring/Amulet Mystic Orb" title="Ring/Amulet Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Ring/Amulet to Add Bonus
+				<br /><span class="magic">1% Chance to cast Level 3 Thunder Hammer when you Kill an Enemy<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_green.png" alt="Ring/Amulet Mystic Orb" title="Ring/Amulet Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Ring/Amulet to Add Bonus
+				<br /><span class="magic">+25 Crafting Points<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_green.png" alt="Ring/Amulet Mystic Orb" title="Ring/Amulet Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Ring/Amulet to Add Bonus
+				<br /><span class="magic">+1% to Buff/Debuff/Cold Skill Duration<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_green.png" alt="Ring/Amulet Mystic Orb" title="Ring/Amulet Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Ring/Amulet to Add Bonus
+				<br /><span class="magic">Poison Length Reduced by 2%<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_green.png" alt="Ring/Amulet Mystic Orb" title="Ring/Amulet Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Ring/Amulet to Add Bonus
+				<br /><span class="magic">+1 to Summon Daystar<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_green.png" alt="Ring/Amulet Mystic Orb" title="Ring/Amulet Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Ring/Amulet to Add Bonus
+				<br /><span class="magic">+1 to Summon Shredder<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_green.png" alt="Ring/Amulet Mystic Orb" title="Ring/Amulet Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Ring/Amulet to Add Bonus
+				<br /><span class="magic">+1 to Summon Bane Monster<br />+2 Required Level</span>
+			</div>
+		</div>
+		</td>
+		<td>
+		<hr />
+		<p id="item"><b class="content">Item - Mystic Orbs</b>
+		</p>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">+2 to Strength<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">+2 to Dexterity<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">+2 to Energy<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">+2 to Vitality<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">+1% to Fire Spell Damage<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">+1% to Cold Spell Damage<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">+1% to Lightning Spell Damage<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">+1% to Poison Spell Damage<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">+1% to Physical/Magic Spell Damage<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">Damage Reduced by 2<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">+2% Bonus to Summoned Minion Damage<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">+2% Bonus to Summoned Minion Life<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">+1% Bonus to Summoned Minion Resistances<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">10% Extra Gold from Monsters<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">2% Better Chance of Getting Magic Items<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">-1% to Enemy Fire Resistance<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">-1% to Enemy Cold Resistance<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">-1% to Enemy Lightning Resistance<br />+2 Required Level</span>
+			</div>
+		</div>
+		<div class="charms">
+			<div>
+				<img src="images/baseitems/mo_white.png" alt="Item Mystic Orb" title="Item Mystic Orb" />
+			</div>
+			<div><span class="orange">Mystic Orb</span>
+				<br />Cube with Item to Add Bonus
+				<br /><span class="magic">-1% to Enemy Poison Resistance<br />+2 Required Level</span>
+			</div>
+		</div>
+		</td>
+		</tr>
+		</table>
+		<hr />
+	</body>
+
+</html>
