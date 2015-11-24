@@ -203,7 +203,7 @@ Header Specific CSS
 }
 
 #h-header {
-	background-image: url("/src/img/_header.jpg");
+	background-image: url("src/img/_header.jpg");
 	background-position-x: 50%;
 	background-position-y: 100%;
     background-size: cover;
@@ -228,7 +228,7 @@ Header Specific CSS
 	position: absolute;
 	left: 9%;
 	top: 18px;
-	background: url("/src/img/_logo.png"); /*background: url('../../../src/img/logo.png'); */
+	background: url("src/img/_logo.png"); /*background: url('../../../src/img/logo.png'); */
 	width: 184px;
 	height: 40px;
 }
@@ -293,40 +293,6 @@ Header Specific CSS
 #h-twitch { padding-top: 1px !important; }
 
 #h-download { color: rgba(255, 200, 0, 0.79) !important; }
-
-@media only screen and (max-width: 879px), only screen and (max-device-width: 879px) {
-	.s-network {
-		display: none !important;
-	}
-}
-
-@media only screen and (max-width: 799px), only screen and (max-device-width: 799px) {
-	#h-social {
-		display: none !important;
-	}
-}
-
-@media only screen and (max-width: 699px), only screen and (max-device-width: 699px) {
-	#h-menu {
-		width: 100% !important;
-		padding: 0 !important;
-	}
-}
-
-@media only screen and (max-width: 599px), only screen and (max-device-width: 599px) {
-	#h-menu > ul > li {
-		padding: 0 8px !important;
-	}
-	#h-header {
-		height: 30px !important;
-	}
-	#h-menu {
-		margin-top: 0 !important;
-	}
-	#h-logo {
-		display: none !important;
-	}
-}
 
 /* Link Styles
 ---------------------------------------- */
