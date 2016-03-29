@@ -24,7 +24,7 @@ Poison is by far the most complicated damage type in the game (of which there ar
 <br>
 <span style="font-weight: bold;">Amazon:</span>
 <br>
-Hyena Strike: Active poison damage
+Hyena Strike: Passive poison damage
 <br>
 Curare: Passive poison damage
 <br>
@@ -60,6 +60,10 @@ Acid fiends: Minion poison damage
 <span style="font-weight: bold;">Necromancer:</span>
 <br>
 Angel of Death: Active poison damage
+<br>
+Rotting Flesh: Spell poison damage
+<br>
+Pestilence: Spell poison damage
 <br>
 <br>
 <span style="font-weight: bold;">Paladin:</span>
@@ -134,6 +138,7 @@ Now that you know the basics of poison damage, we can get into more detail about
 <br>
 <span style="font-weight: bold;">Spell poison damage:</span>
 <br>
+<br>
 This type of poison damage is fairly simple.
 <br>
 <span style="text-decoration: underline;">affected by-</span>
@@ -144,6 +149,9 @@ This type of poison damage is fairly simple.
 <br>
 +poison duration.
 <br>
+Energy and Energy Factor / Strength Factor
+<br>
+<br>
 <span style="text-decoration: underline;">not affected by-</span>
 
 <br>
@@ -153,11 +161,11 @@ weapon damage multiplier.
 <br>
 
 <br>
-
 <br>
 <span style="font-weight: bold;">Passive poison damage:</span>
 <br>
 Passive poison damage includes all the skills that passively add poison damage to your attacks. Poison damage added from items works in the same way.
+<br>
 <br>
 <span style="text-decoration: underline;">affected by-</span>
 <br>
@@ -170,13 +178,15 @@ weapon damage multiplier
 <br>
 +x poison damage over y seconds.
 <br>
+<br>
 <span style="text-decoration: underline;">not affected by-</span>
 <br>
 +poison duration
 <br>
 +spell/poison skill damage (only with missiles, see note)
 <br>
-
+Energy and Energy Factor / Strength Factor
+<br>
 <br>
 
 Even though it is not affected by poison duration, there still is a way to increase the duration of those skills-
@@ -193,12 +203,33 @@ You have a pair of gloves that do 10 poison damage per second over 9 seconds. Fi
 <br>
 Note: This type of poison damage has different mechanics depending on the type of attack. What happens is that when this poison damage is applied with missiles, it is not affected by +spell/poison damage. But when used in melee, it is affected by +spell/poison damage. Also it's important to understand that the nova on retaliate (or any other nova attack) is considered a missile, aswell as the rocks on shower of rocks, and the spikes on crucify.
 <br>
-
+<br>
 <br>
 <span style="font-weight: bold;">Active poison damage:</span>
 
 <br>
-This is probably the weirdest thing about poison. Only 3 skills in the game are using the "Active poison damage" (yes I made up the name). That skills are: Scorpion Blade, Prowl and Angel of Death. What happens with them is simple- you don't average the duration.
+This is probably the weirdest thing about poison. Only 2 skills in the game are using the "Active poison damage" (yes I made up the name). That skills are: Scorpion Blade and Angel of Death. What happens with them is simple- you don't average the duration.
+<br>
+<br>
+<span style="text-decoration: underline;">affected by-</span>
+<br>
++spell/poison skill damage (only in melee, see note)
+<br>
++skills
+<br>
+weapon damage multiplier
+<br>
++x poison damage over y seconds.
+<br>
+Energy and Energy Factor / Strength Factor
+<br>
++poison duration
+<br>
+<br>
+<span style="text-decoration: underline;">not affected by-</span>
+<br>
++spell/poison skill damage (only with missiles, see note)
+<br>
 <br>
 Example:
 <br>
