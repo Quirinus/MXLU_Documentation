@@ -3,5 +3,8 @@ Median XL: Ultimative Documentation
 
 ===================================
 
-[Median XL Ultimative forum](http://forum.median-xl.com/index.php)
-[Median XL Documentation](http://docs.median-xl.com/) (last released version) 
+[Forum](http://forum.median-xl.com/index.php)
+
+[Documentation](http://docs.median-xl.com/) (last released version)
+
+[Bug reports & feedback](http://forum.median-xl.com/viewtopic.php?f=25&t=450)
