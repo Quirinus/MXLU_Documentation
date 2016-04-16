@@ -141,8 +141,8 @@
 	var classnames_readable = new Array("", "Amazon", "Assassin", "Barbarian", "Druid", "Necromancer", "Paladin", "Sorceress");
 	var skillnames;
 	var func_constraints;
-	var SKILLICONS_VERSION = "uxiii";
-	var CURRENT_PATCH = "uxiii";
+	var SKILLICONS_VERSION = "uxvi";
+	var CURRENT_PATCH = "uxvi";
 	var CURRENT_PATCH_READABLE;
 	var IS_1E9_OR_NEWER = true;
 	var IS_OMEGA = true;
@@ -517,6 +517,28 @@
 			skillnames = skillnames_uxvc;
 			func_constraints = check_constraints_uxvc;
 			break
+		case "uxvi":
+			hide("ac500_row");
+			uncheck("ac500");
+			hide("windowsinhell");
+			show("minigamerow");
+			show("signetofskillrow");
+			show("enneadplusone");
+			set("toraja_bonus", "1");
+			getFormElement("q7").value = 1;
+			
+			show("laz_upg");
+			show("khanduran");
+			show("feels");
+			check("q10");
+			uncheck("q11");
+			uncheck("q12");
+			
+			show("xvc_skills");
+			
+			skillnames = skillnames_uxvi;
+			func_constraints = check_constraints_uxvc;
+			break
 		}
 		changeClass()
 	}
@@ -546,7 +568,7 @@
 		{
 			hide("energy_row")
 		}
-		if (CURRENT_PATCH == "uxvc")
+		if (CURRENT_PATCH == "uxvc" || CURRENT_PATCH == "uxvi")
 		{
 			skill_number = 35;
 		}
@@ -628,7 +650,7 @@
 						b = current_name[1];
 						if (f)
 						{
-							if ((b < 0) || (b >skill_number))
+							if (b < 0)
 							{
 								f.style.backgroundColor = "red";
 								f.style.backgroundImage = "none";
@@ -804,7 +826,7 @@
 				slvlitembonus += get("q" + e)
 			}
 		}
-		if (CURRENT_PATCH == "uxvc")
+		if (CURRENT_PATCH == "uxvc" || CURRENT_PATCH == "uxvi")
 		{
 			skill_number = 35;
 		}
@@ -880,7 +902,7 @@
 	{
 		var a, d, b, c;
 		slvlskillbonus = 0;
-		if (CURRENT_PATCH == "uxvc")
+		if (CURRENT_PATCH == "uxvc" || CURRENT_PATCH == "uxvi")
 		{
 			skill_number = 35;
 		}
@@ -1043,7 +1065,7 @@
 	function resetSkills()
 	{
 		var a;
-		if (CURRENT_PATCH == "uxvc")
+		if (CURRENT_PATCH == "uxvc" || CURRENT_PATCH == "uxvi")
 		{
 			skill_number = 35;
 		}
@@ -1163,7 +1185,7 @@
 			return
 		}
 		p = l.slice(7).split("_");
-		if (CURRENT_PATCH == "uxvc")
+		if (CURRENT_PATCH == "uxvc" || CURRENT_PATCH == "uxvi")
 		{
 			skill_number = 35;
 		}
@@ -1254,7 +1276,7 @@
 			b += "&energy=" + energy
 		}
 		b += "&skills=";
-		if (CURRENT_PATCH == "uxvc")
+		if (CURRENT_PATCH == "uxvc" || CURRENT_PATCH == "uxvi")
 		{
 			skill_number = 35;
 		}
