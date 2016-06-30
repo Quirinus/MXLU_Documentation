@@ -8,3 +8,5 @@ Median XL: Ultimative Documentation
 [Documentation](http://docs.median-xl.com/) (last released version)
 
 [Bug reports & feedback](http://forum.median-xl.com/viewtopic.php?f=25&t=450)
+
+[GitHub project](https://github.com/Quirinus/MXLU_Documentation)
