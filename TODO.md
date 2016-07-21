@@ -26,6 +26,14 @@ TO-DO (for everyone):
 - [ ] Fleshbane rw: remove spaces between poison over time dmg numbers xxx - yyy should be xxx-yyy
 - [ ] In the "Quest Reference" section the "Reward/Recipe" of the "Level Challenge 1" is wrong. (WolfieeifloW)
 - [ ] Barb Windform to Poison Damage Explained: http://forum.median-xl.com/viewtopic.php?p=33760#p33760
+- [ ] Unformed Land: elemental runes/unknown skull: they don't have the same chance to drop, skulls have 50% chance less to drop.
+- [ ] Sangreal Xis rw: (125 to 25)% FHR & IAS --> (25 to 125)% (Stealthmaster)
+- [ ] On Attack --> On Melee Attack change everywhere unless it messes up formatting because no space (like in the SU page maybe) (ShadowDawn)
+- [x] quest reference list: remove char orb (Siosilvar)
+- [ ] characters -> item only -> Pandemonium skill rename to Hellgate (Stealthmaster)
+- [ ] Dajjal rw: +(5 to 5) Life on Striking --> +5 Life on Striking (Stealthmaster)
+- [ ] Barb Shaman set with 4 items: +2 to Maximum Barbarian Minions --> 100% minion dmg (ChuckNoRis)
+- [ ] Veteran Token: Clawstorm Terror - Catacombs 1-3 --> Jail 1-3 (Dakoon)
 
 TO-DO (for Quirinus):
 - [ ] for all procs/oskills/skills, add a link to SB's [MXLDB] Skill Calculator, or even better, a hover: http://forum.median-xl.com/viewtopic.php?f=4&t=1741
@@ -53,14 +61,6 @@ TO-DO (for Quirinus):
 - [ ] RW move include type to type column: http://www.medianxl.com/t6739p160-mxlu-xvc-docs-2-94-unfinished#192317
 - [ ] adblock slows down docs loading
 - [ ] fix great maul tu su ssu sssu pic, it's moved and cut off compared to the base item
-- [ ] Unformed Land: elemental runes/unknown skull: they don't have the same chance to drop, skulls have 50% chance less to drop.
-- [ ] Sangreal Xis rw: (125 to 25)% FHR & IAS --> (25 to 125)% (Stealthmaster)
-- [ ] On Attack --> On Melee Attack change everywhere unless it messes up formatting because no space (like in the SU page maybe) (ShadowDawn)
-- [x] quest reference list: remove char orb (Siosilvar)
-- [ ] characters -> item only -> Pandemonium skill rename to Hellgate (Stealthmaster)
-- [ ] Dajjal rw: +(5 to 5) Life on Striking --> +5 Life on Striking (Stealthmaster)
-- [ ] Barb Shaman set with 4 items: +2 to Maximum Barbarian Minions --> 100% minion dmg (ChuckNoRis)
-- [ ] Veteran Token: Clawstorm Terror - Catacombs 1-3 --> Jail 1-3 (Dakoon)
 
 Suggestions:
 - [ ] Claygame: Add a pic below every recipe showing what the ingredient look like, for example: minigame recepie have pic of cc and the rune below or beside the recipe text.
