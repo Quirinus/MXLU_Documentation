@@ -7,6 +7,9 @@ Median XL: Ultimative Documentation
 
 Add to-do stuff here.
 
+Last time updated with this post:
+http://forum.median-xl.com/viewtopic.php?p=55862#p55862
+
 TO-DO (for everyone):
 - [x] update median statue version in LC0
 - [ ] maybe change "Level" --> "Area/Monster Level" on the uberquest pages, under the picture
@@ -36,6 +39,13 @@ TO-DO (for everyone):
 - [ ] Dajjal rw: +(5 to 5) Life on Striking --> +5 Life on Striking (Stealthmaster)
 - [ ] Barb Shaman set with 4 items: +2 to Maximum Barbarian Minions --> 100% minion dmg (ChuckNoRis)
 - [ ] Veteran Token: Clawstorm Terror - Catacombs 1-3 --> Jail 1-3 (Dakoon)
+- [ ] Add Strength Factor to Concepts --> Energy Factor; maybe even add a formula that combines that with %SD and char level: http://forum.median-xl.com/viewtopic.php?p=55801#p55801
+- [ ] Add a page that explains ED/TCD, ED/EWD, with formulas, maybe a heatmap like Energy Factor: http://forum.median-xl.com/viewtopic.php?p=55777#p55777
+- [ ] LFAQ: Ethereal - add that sets can't be ethereal. check if it's true: http://forum.median-xl.com/viewtopic.php?p=55831#p55831
+- [ ] Oskills/Procs list says: Last updated for MXL:U XIII. check if true.
+- [ ] Oskills list: remove Character Orb from Charm Charges
+- [ ] Shrine page and Monster Stats (Old): Hidden shrine reanim range is (1256 to 1553). Fix in the text and table.
+- [ ] Uldy: Remove commented out text.
 
 TO-DO (for Quirinus):
 - [ ] for all procs/oskills/skills, add a link to SB's [MXLDB] Skill Calculator, or even better, a hover: http://forum.median-xl.com/viewtopic.php?f=4&t=1741
@@ -62,7 +72,7 @@ TO-DO (for Quirinus):
 - [ ] some items have negative stats listed as -(x to y) and others as (-x to -y). In some instances both can be found on one single item. (void http://www.medianxl.com/t3217p430-mxl-u-xiv-b-docs-v2-93#193048) - fix with regexp
 - [ ] RW move include type to type column: http://www.medianxl.com/t6739p160-mxlu-xvc-docs-2-94-unfinished#192317
 - [ ] adblock slows down docs loading
-- [ ] fix great maul tu su ssu sssu pic, it's moved and cut off compared to the base item
+- [x] fix great maul tu su ssu sssu pic, it's moved and cut off compared to the base item
 
 Suggestions:
 - [ ] Claygame: Add a pic below every recipe showing what the ingredient look like, for example: minigame recepie have pic of cc and the rune below or beside the recipe text.
