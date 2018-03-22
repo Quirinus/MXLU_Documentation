@@ -1,7 +1,9 @@
-# MXLU_Documentation
+**OUTDATED:** This ancient documentation code and formatting has been reworked and moved to a private repository. It will be made public again at some point.
+
+# MXLU Documentation
 Median XL: Ultimative Documentation
 
-===================================
+_______
 
 [Forum](http://forum.median-xl.com/index.php)
 
